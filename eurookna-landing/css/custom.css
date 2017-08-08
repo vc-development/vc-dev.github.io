@@ -1,0 +1,11 @@
+@media screen and (max-width: 1080px) {
+    .call-special {
+        font-size: 12px;
+    }
+    .bg-special-1 {
+        background-position: 58% 50%;
+    }
+    .bg-special-2 {
+        background-position: 45% 50%;
+    }
+}
