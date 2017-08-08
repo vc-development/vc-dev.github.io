@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Евроокна - Балконы и лоджии</title>
+	<title>Евроокна - Пластиковые окна</title>
 	<link rel="icon" href="favicon.ico">
 	<link rel="stylesheet" href="css/uikit.eurookna.min.css">
 	<link rel="stylesheet" href="css/custom.css">
@@ -26,14 +26,16 @@
 			});
 			myMap.behaviors.disable("scrollZoom");
 			myMap.behaviors.disable("drag");
-			var myPlacemark = new ymaps.Placemark([55.775535, 37.60302], {
-				hintContent: "127006, г. Москва, м. Новослободская, ул. Долгоруковская д. 21 стр. 1, этаж 3, офис 303",
-				iconCaption: "Центральный офис продаж"
-			}, {
-				iconColor: "#cc0000",
-				preset: "islands#greenDotIconWithCaption"
-			});
-			myMap.geoObjects.add(myPlacemark)
+			var myPlacemark = new ymaps.Placemark(
+				[55.775535, 37.60302], {
+					hintContent: "127006, г. Москва, м. Новослободская, ул. Долгоруковская д. 21 стр. 1, этаж 3, офис 303",
+					iconCaption: "Центральный офис продаж"
+				}, {
+					iconColor: "#cc0000",
+					preset: "islands#greenDotIconWithCaption"
+				}
+			);
+			myMap.geoObjects.add(myPlacemark);
 		});
 	</script>
 </head>
@@ -47,7 +49,7 @@
 				<a class="uk-navbar-toggle" href="#offcanvas" uk-toggle uk-navbar-toggle-icon></a>
 			</div>
 			<div class="uk-navbar-center">
-				<a class="uk-navbar-item uk-logo uk-padding-small" href="page-1.html">
+				<a class="uk-navbar-item uk-logo uk-padding-small" href="index.html">
                     <img class="uk-responsive-height" src="images/logo.svg" alt="Евроокна" width="200">
                 </a>
 			</div>
@@ -75,7 +77,7 @@
 			<div class="uk-container">
 				<div class="uk-flex-middle uk-grid-large" uk-grid>
 					<div class="uk-width-1-5">
-						<a class="uk-logo" href="page-1.html"><img class="uk-logo" src="images/logo.svg" alt="Евроокна"></a>
+						<a class="uk-logo" href="index.html"><img class="uk-logo" src="images/logo.svg" alt="Евроокна"></a>
 					</div>
 					<div class="uk-width-expand">
 						<div class="uk-child-width-1-2 uk-grid-small" uk-grid>
@@ -104,9 +106,9 @@
 				<div class="uk-container">
 					<nav uk-navbar>
 						<ul class="uk-navbar-nav uk-text-bold uk-width-1-1 uk-child-width-expand uk-grid-collapse" uk-grid>
-							<li><a href="page-1.html">Пластиковые окна</a></li>
-							<li class="uk-active"><a href="page-2.html">Балконы и лоджии</a></li>
-							<li><a href="page-3.html">Рассчитать стоимость</a></li>
+							<li class="uk-active"><a href="index.html">Пластиковые окна</a></li>
+							<li><a href="index-2.html">Балконы и лоджии</a></li>
+							<li><a href="index-3.html">Рассчитать стоимость</a></li>
 							<li class="uk-width-auto uk-width-expand@l"><a href="#contact" uk-scroll>Контакты</a></li>
 						</ul>
 					</nav>
@@ -114,25 +116,25 @@
 			</div>
 		</div>
 
-		<!-- Баннер: Остекление балконов скидка 50% -->
-		<section id="discount" class="uk-section uk-background-cover uk-background-image@m" style="background-image: url('images/bg1-2.jpg');">
+		<!-- Баннер: Пластиковые окна скидка 50% -->
+		<section id="discount" class="uk-section uk-background-cover uk-background-image@m" style="background-image: url('images/bg1.jpg');">
 			<div class="uk-container">
 				<div uk-grid>
 					<div class="uk-width-expand uk-position-relative uk-visible@m">
-						<img class="uk-float-left uk-margin-xlarge-left" src="images/stamp-2.png" alt="Повышенная надежность конструкции" uk-scrollspy="cls:uk-animation-scale-down; delay: 300">
+						<img class="uk-float-right uk-box-shadow-small" src="images/germany-quality.png" alt="Немецкое качество" uk-scrollspy="cls:uk-animation-scale-down; delay: 300">
 					</div>
 					<div class="uk-width-auto@m uk-width-1-3@l">
-						<div class="uk-panel uk-background-default uk-box-shadow-small" uk-scrollspy="cls: uk-animation-slide-bottom-small">
+						<div class="uk-panel uk-background-default uk-box-shadow-small" uk-scrollspy="cls:uk-animation-slide-bottom-medium">
 							<div class="uk-height-medium uk-cover-container uk-hidden@m">
-								<img src="images/bg1-2-small.jpg" alt="Пластиковые окна" uk-cover>
-								<div class="uk-margin-right uk-position-center-right">
-									<img src="images/stamp-2.png" alt="Повышенная надежность конструкции" width="100" uk-scrollspy="cls: uk-animation-scale-down; delay: 300">
+								<img src="images/bg1-small.jpg" alt="Пластиковые окна" uk-cover>
+								<div class="uk-position-small uk-position-top-right">
+									<img src="images/germany-quality.png" alt="Немецкое качество" width="80" uk-scrollspy="cls:uk-animation-slide-bottom-medium; delay: 300">
 								</div>
 							</div>
 							<div class="uk-padding uk-text-left@m uk-text-center">
 								<div uk-scrollspy="cls: uk-animation-slide-bottom-small">
-									<h2 class="uk-h1 uk-text-uppercase">Остекление<br>балконов<br><span class="uk-text-danger">скидка 50%</span></h2>
-									<p><span class="uk-margin-right"><s class="uk-text-bold uk-text-muted">4 820</s> руб/м<sup>2</sup></span> от&nbsp;<span class="uk-h2 uk-text-bold">2&nbsp;410</span>&nbsp;руб/м<sup>2</sup></p>
+									<h2 class="uk-h1 uk-text-uppercase">Пластиковые<br>окна<br><span class="uk-text-danger">скидка 50%</span></h2>
+									<p><span class="uk-margin-right"><s class="uk-text-bold uk-text-muted">9 600</s> руб/м<sup>2</sup></span> от&nbsp;<span class="uk-h2 uk-text-bold">4&nbsp;800</span>&nbsp;руб/м<sup>2</sup></p>
 								</div>
 								<hr uk-scrollspy="cls: uk-animation-scale-up">
 								<div class="uk-text-center uk-text-muted">
@@ -173,7 +175,7 @@
 						<p class="uk-text-uppercase uk-h3 uk-text-left@m uk-text-center">Оставьте заявку сейчас<br>и получите скидку 50%<br>+ подарок</p>
 					</div>
 					<div class="uk-width-expand">
-						<form action="" method="">
+						<form action="" method="post">
 							<div class="uk-child-width-1-2@s" uk-grid>
 								<div>
 									<div class="uk-inline uk-width-1-1">
@@ -194,49 +196,417 @@
 			</div>
 		</section>
 
-		<!-- Виды остекления балконов -->
+		<!--Только до 25 мая скидка на все окна 50% -->
 		<section class="uk-section uk-section-default uk-text-center">
 			<div class="uk-container">
 				<div class="uk-position-relative">
-					<div class="uk-width-xxlarge uk-margin-auto uk-margin-medium-bottom" uk-scrollspy="cls:uk-animation-slide-bottom-small">
-						<h2 class="uk-h1 uk-width-xlarge uk-margin-auto uk-text-center uk-text-uppercase">Виды остекления балконов</h2>
+					<div class="uk-width-xxlarge uk-margin-auto" uk-scrollspy="cls: uk-animation-slide-bottom-small">
+						<h2 class="uk-h1 uk-width-xlarge uk-margin-auto uk-text-center uk-text-uppercase">Только до 25 мая<br>скидка на все окна 50%</h2>
 						<p class="uk-text-muted">Компания «ЕвроОкна» применяет честную политику ценообразования. Собственное производство и оптимизированная система расчета позволяет предлагать клиентам выгодные цены на окна.</p>
 					</div>
-					<div class="uk-child-width-1-2@m uk-margin-large" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-small; delay: 300">
+					<div class="uk-child-width-1-3@m uk-margin-large" uk-grid uk-scrollspy="target: > div > div; cls:uk-animation-slide-bottom-small; delay: 300">
 						<div>
-							<h3 class="uk-text-uppercase uk-margin-small">Пластиковое остекление</h3>
-							<p class="uk-text-muted uk-margin-remove">Теплое остекление</p>
-							<div class="uk-inline uk-margin-medium">
-								<img src="images/balcony-pvh.jpg" alt="Пластиковое остекление">
-								<div class="uk-overlay uk-position-center-left uk-padding-remove">
-									<div class="uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="width: 130px; height: 130px;">
-										<div>
-											<p class="uk-margin-remove"><s>8 083</s><br><span class="uk-h2 uk-text-danger">4 850</span><br> руб/м<sup>2</sup></p>
-										</div>
+							<div class="uk-position-relative">
+								<img src="images/window-1.png" alt="">
+								<div class="uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-top-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+									<div>
+										<p class="uk-margin-remove">
+											<s>11 440</s><br>
+											<span class="uk-h2 uk-text-danger">5 720</span><br> руб/м<sup>2</sup>
+										</p>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div>
-							<h3 class="uk-text-uppercase uk-margin-small">Алюминиевое остекление</h3>
-							<p class="uk-text-muted uk-margin-remove">Холодное остекление</p>
-							<div class="uk-inline uk-margin-medium">
-								<img src="images/balcony-aluminium.jpg" alt="Алюминиевое остекление">
-								<div class="uk-overlay uk-position-center-left uk-padding-remove">
-									<div class="uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="width: 130px; height: 130px;">
-										<div>
-											<p class="uk-margin-remove"><s>4 016</s><br><span class="uk-h2 uk-text-danger">2 410</span><br> руб/м<sup>2</sup></p>
-										</div>
+							<div class="uk-position-relative">
+								<img src="images/window-2.png" alt="">
+								<div class="uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-top-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+									<div>
+										<p class="uk-margin-remove">
+											<s>11 200</s><br>
+											<span class="uk-h2 uk-text-danger">5 600</span><br> руб/м<sup>2</sup>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="uk-position-relative">
+								<img src="images/window-3.png" alt="">
+								<div class="uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-top-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+									<div>
+										<p class="uk-margin-remove">
+											<s>11 300</s><br>
+											<span class="uk-h2 uk-text-danger">5 650</span><br> руб/м<sup>2</sup>
+										</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="uk-margin" uk-scrollspy="cls: uk-animation-slide-bottom-small">
-						<a class="uk-button uk-button-danger uk-text-uppercase" href="#" uk-toggle="target: #modal-1">Оставить заявку</a>
-						<p class="uk-text-muted">Рассчитаем за 15 минут!</p>
+					<div class="uk-hidden@m">
+						<div uk-scrollspy="cls: uk-animation-fade">
+							<a class="uk-button uk-button-danger uk-text-uppercase" href="#" uk-toggle="target: #modal-1">Оставить заявку</a>
+							<p class="uk-text-muted">Рассчитаем за 15 минут!</p>
+						</div>
+					</div>
+					<div class="uk-visible@m uk-position-bottom-center">
+						<div uk-scrollspy="cls: uk-animation-fade">
+							<a class="uk-button uk-button-danger uk-text-uppercase" href="#" uk-toggle="target: #modal-1">Оставить заявку</a>
+							<p class="uk-text-muted uk-margin-remove-bottom">Рассчитаем за 15 минут!</p>
+						</div>
 					</div>
 				</div>
+			</div>
+		</section>
+
+		<!-- Слайдер продукции -->
+		<section class="uk-section uk-section-muted">
+			<div class="uk-container">
+				<div class="uk-flex uk-flex-center uk-text-center">
+					<div class="uk-button-group" uk-switcher="connect: #slide-product; animation: uk-animation-slide-right, uk-animation-slide-left" uk-scrollspy="cls:uk-animation-fade">
+						<button class="uk-button uk-button-secondary uk-padding-small uk-padding-remove-vertical">Евро 60</button>
+						<button class="uk-button uk-button-secondary uk-padding-small uk-padding-remove-vertical">Евро 70</button>
+						<button class="uk-button uk-button-secondary uk-padding-small uk-padding-remove-vertical">Евро 82</button>
+					</div>
+				</div>
+				<ul id="slide-product" class="uk-switcher uk-margin-large" uk-scrollspy="cls:uk-animation-slide-bottom-small">
+					<li>
+						<div class="uk-child-width-1-2@m" uk-grid>
+							<div>
+								<div class="uk-child-width-1-2@s" uk-grid>
+									<div class="uk-position-relative uk-text-center uk-text-left@s uk-flex-last@s">
+										<img class="uk-position-top-right" src="images/veka-logo.png" alt="VEKA" width="100" uk-scrollspy="cls:uk-animation-scale-down; delay: 300">
+										<img class="uk-visible@s" src="images/Euro-60.png" alt="VEKA Евро 60" style="max-height: 375px;">
+										<img class="uk-hidden@s" src="images/Euro-60.png" alt="VEKA Евро 60" style="height: 250px;">
+									</div>
+									<div class="uk-text-center uk-text-left@s">
+										<h3 class="uk-h2 uk-margin-remove">Евро 60</h3>
+										<p>Профиль VEKA EUROLINE 60 мм</p>
+										<div class="uk-visible@s">
+											<h3>Целевое назначение</h3>
+											<ul class="uk-list uk-list-bullet">
+												<li>Балконы и лоджии</li>
+												<li>Нежилые помещения</li>
+												<li>Летние дачи</li>
+												<li>Простое остекление (съёмная квартира, дом под снос)</li>
+											</ul>
+										</div>
+										<div class="uk-text-center uk-text-left@s uk-hidden@m">
+											<a class="uk-button uk-button-primary" href="#" uk-toggle="target: #euro-60">Характеристики</a>
+										</div>
+										<div id="euro-60" uk-modal>
+											<div class="uk-modal-dialog">
+												<button class="uk-modal-close-default" type="button" uk-close></button>
+												<div class="uk-modal-header">
+													<h2 class="uk-modal-title">Евро 60</h2>
+												</div>
+												<div class="uk-modal-body" uk-overflow-auto>
+													<p>Профиль VEKA EUROLINE 60&nbsp;мм</p>
+													<h3>Целевое назначение</h3>
+													<ul class="uk-list uk-list-bullet">
+														<li>Балконы и лоджии</li>
+														<li>Нежилые помещения</li>
+														<li>Летние дачи</li>
+														<li>Простое остекление (съёмная квартира, дом под снос)</li>
+													</ul>
+													<hr>
+													<table class="uk-table uk-table-divider uk-table-small uk-table-middle uk-table-responsive">
+														<tbody>
+															<tr>
+																<td class="uk-text-muted">Количество камер</td>
+																<td>3</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Монтажная ширина</td>
+																<td>58 мм</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Толщина наружной сетки</td>
+																<td>3 мм (класс А по ГОСТ 30673-99)</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Максимальная толщина стеклопакета</td>
+																<td>32 мм</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Сопротивление теплопередаче</td>
+																<td>0,68 м<sup>2</sup> х С/Вт</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Количество контуров уплотнения</td>
+																<td>2</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Фурнитура</td>
+																<td>Maco Multi Matic с покрытием silber look</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="uk-visible@m">
+								<table class="uk-table uk-table-divider uk-table-small uk-table-middle uk-table-responsive">
+									<tbody>
+										<tr>
+											<td>Количество камер</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td>Монтажная ширина</td>
+											<td>58 мм</td>
+										</tr>
+										<tr>
+											<td>Толщина наружной сетки</td>
+											<td>3 мм (класс А по ГОСТ 30673-99)</td>
+										</tr>
+										<tr>
+											<td>Максимальная толщина стеклопакета</td>
+											<td>32 мм</td>
+										</tr>
+										<tr>
+											<td>Сопротивление теплопередаче</td>
+											<td>0,68 м<sup>2</sup> х С/Вт</td>
+										</tr>
+										<tr>
+											<td>Количество контуров уплотнения</td>
+											<td>2</td>
+										</tr>
+										<tr>
+											<td>Фурнитура</td>
+											<td>Maco Multi Matic с покрытием silber look</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="uk-child-width-1-2@m" uk-grid>
+							<div>
+								<div class="uk-child-width-1-2@s" uk-grid>
+									<div class="uk-position-relative uk-text-center uk-text-left@s uk-flex-last@s">
+										<img class="uk-position-top-right" src="images/veka-logo.png" alt="VEKA" width="100" uk-scrollspy="cls:uk-animation-scale-down; delay: 300">
+										<img class="uk-visible@s" src="images/Euro-70.png" alt="VEKA Евро 70" style="max-height: 375px;">
+										<img class="uk-hidden@s" src="images/Euro-70.png" alt="VEKA Евро 70" style="height: 250px;">
+									</div>
+									<div class="uk-text-center uk-text-left@s">
+										<h3 class="uk-h2 uk-margin-remove">Евро 70</h3>
+										<p>Профиль VEKA SOFTLINE 70 мм</p>
+										<div class="uk-visible@s">
+											<h3>Целевое назначение</h3>
+											<ul class="uk-list uk-list-bullet">
+												<li>Квартиры и лоджии в панельных, кирпичных и сталинских домах</li>
+												<li>Коттеджи и загородные дома</li>
+											</ul>
+										</div>
+										<div class="uk-text-center uk-text-left@s uk-hidden@m">
+											<a class="uk-button uk-button-primary" href="#" uk-toggle="target: #euro-70">Характеристики</a>
+										</div>
+										<div id="euro-70" uk-modal>
+											<div class="uk-modal-dialog">
+												<button class="uk-modal-close-default" type="button" uk-close></button>
+												<div class="uk-modal-header">
+													<h2 class="uk-modal-title">Евро 70</h2>
+												</div>
+												<div class="uk-modal-body" uk-overflow-auto>
+													<p>Профиль VEKA SOFTLINE 70 мм</p>
+													<h3>Целевое назначение</h3>
+													<ul class="uk-list uk-list-bullet">
+														<li>Квартиры и лоджии в панельных, кирпичных и сталинских домах</li>
+														<li>Коттеджи и загородные дома</li>
+													</ul>
+													<hr>
+													<table class="uk-table uk-table-divider uk-table-small uk-table-middle uk-table-responsive">
+														<tbody>
+															<tr>
+																<td class="uk-text-muted">Количество камер</td>
+																<td>5</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Монтажная ширина</td>
+																<td>70 мм</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Толщина наружной сетки</td>
+																<td>3 мм (класс А по ГОСТ 30673-99)</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Максимальная толщина стеклопакета</td>
+																<td>40 мм</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Сопротивление теплопередаче</td>
+																<td>0,75 - 0,78 м<sup>2</sup> х С/Вт</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Количество контуров уплотнения</td>
+																<td>2</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Фурнитура</td>
+																<td>Maco Multi Matic с покрытием silber look</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="uk-visible@m">
+								<table class="uk-table uk-table-divider uk-table-small uk-table-middle uk-table-responsive">
+									<tbody>
+										<tr>
+											<td>Количество камер</td>
+											<td>5</td>
+										</tr>
+										<tr>
+											<td>Монтажная ширина</td>
+											<td>70 мм</td>
+										</tr>
+										<tr>
+											<td>Толщина наружной сетки</td>
+											<td>3 мм (класс А по ГОСТ 30673-99)</td>
+										</tr>
+										<tr>
+											<td>Максимальная толщина стеклопакета</td>
+											<td>40 мм</td>
+										</tr>
+										<tr>
+											<td>Сопротивление теплопередаче</td>
+											<td>0,75 - 0,78 м<sup>2</sup> х С/Вт</td>
+										</tr>
+										<tr>
+											<td>Количество контуров уплотнения</td>
+											<td>2</td>
+										</tr>
+										<tr>
+											<td>Фурнитура</td>
+											<td>Maco Multi Matic с покрытием silber look</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="uk-child-width-1-2@m" uk-grid>
+							<div>
+								<div class="uk-child-width-1-2@s" uk-grid>
+									<div class="uk-position-relative uk-text-center uk-text-left@s uk-flex-last@s">
+										<img class="uk-position-top-right" src="images/veka-logo.png" alt="VEKA" width="100" uk-scrollspy="cls:uk-animation-scale-down; delay: 300">
+										<img class="uk-visible@s" src="images/Euro-82.png" alt="VEKA Евро 82" style="max-height: 375px;">
+										<img class="uk-hidden@s" src="images/Euro-82.png" alt="VEKA Евро 82" style="height: 250px;">
+									</div>
+									<div class="uk-text-center uk-text-left@s">
+										<h3 class="uk-h2 uk-margin-remove">Евро 82</h3>
+										<p>Профиль VEKA SOFTLINE 82 мм</p>
+										<div class="uk-visible@s">
+											<h3>Целевое назначение</h3>
+											<ul class="uk-list uk-list-bullet">
+												<li>Квартиры и лоджии в панельных, кирпичных и сталинских домах</li>
+												<li>Коттеджи и загородные дома</li>
+											</ul>
+										</div>
+										<div class="uk-text-center uk-text-left@s uk-hidden@m">
+											<a class="uk-button uk-button-primary" href="#" uk-toggle="target: #euro-82">Характеристики</a>
+										</div>
+										<div id="euro-82" uk-modal>
+											<div class="uk-modal-dialog">
+												<button class="uk-modal-close-default" type="button" uk-close></button>
+												<div class="uk-modal-header">
+													<h2 class="uk-modal-title">Евро 82</h2>
+												</div>
+												<div class="uk-modal-body" uk-overflow-auto>
+													<p>Профиль VEKA EUROLINE 82 мм</p>
+													<h3>Целевое назначение</h3>
+													<ul class="uk-list uk-list-bullet">
+														<li>Квартиры и лоджии в панельных, кирпичных и сталинских домах</li>
+														<li>Коттеджи и загородные дома</li>
+													</ul>
+													<hr>
+													<table class="uk-table uk-table-divider uk-table-small uk-table-middle uk-table-responsive">
+														<tbody>
+															<tr>
+																<td class="uk-text-muted">Количество камер</td>
+																<td>7</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Монтажная ширина</td>
+																<td>82 мм</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Толщина наружной сетки</td>
+																<td>3 мм (класс А по ГОСТ 30673-99)</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Максимальная толщина стеклопакета</td>
+																<td>44 мм</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Сопротивление теплопередаче</td>
+																<td>1,06 м<sup>2</sup> х С/Вт</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Количество контуров уплотнения</td>
+																<td>3</td>
+															</tr>
+															<tr>
+																<td class="uk-text-muted">Фурнитура</td>
+																<td>Maco Multi Matic с покрытием silber look</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="uk-visible@m">
+								<table class="uk-table uk-table-divider uk-table-small uk-table-middle uk-table-responsive">
+									<tbody>
+										<tr>
+											<td>Количество камер</td>
+											<td>7</td>
+										</tr>
+										<tr>
+											<td>Монтажная ширина</td>
+											<td>82 мм</td>
+										</tr>
+										<tr>
+											<td>Толщина наружной сетки</td>
+											<td>3 мм (класс А по ГОСТ 30673-99)</td>
+										</tr>
+										<tr>
+											<td>Максимальная толщина стеклопакета</td>
+											<td>44 мм</td>
+										</tr>
+										<tr>
+											<td>Сопротивление теплопередаче</td>
+											<td>1,06 м<sup>2</sup> х С/Вт</td>
+										</tr>
+										<tr>
+											<td>Количество контуров уплотнения</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td>Фурнитура</td>
+											<td>Maco Multi Matic с покрытием silber look</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</section>
 
@@ -273,8 +643,8 @@
 					<div>
 						<div class="uk-panel uk-background-default uk-box-shadow-small" uk-scrollspy="cls:uk-animation-slide-bottom-medium">
 							<div class="uk-height-medium uk-background-contain uk-hidden@m" style="background-image: url('images/bg4-small.png');">
-								<!-- <img src="images/bg4.png" alt="Энергосберегающий стеклопакет Guardian"> -->
-								<!-- <img class="uk-position-small uk-position-top-right" src="images/stamp.png" alt="Немецкое качество" width="100" uk-scrollspy="cls:uk-animation-scale-down; delay: 300"> -->
+								<!-- <img src="images/bg4-small.png" alt="Энергосберегающий стеклопакет Guardian"> -->
+								<!-- <img class="uk-position-small uk-position-top-right" src="images/guardian-logo.png" alt="Немецкое качество" width="100" uk-scrollspy="cls:uk-animation-scale-down; delay: 300"> -->
 							</div>
 							<div class="uk-padding" uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 200">
 								<img src="images/guardian-logo.png" alt="Энергосберегающий стеклопакет Guardian">
@@ -462,7 +832,7 @@
 			<div class="uk-container">
 				<div class="uk-margin-auto uk-margin-medium uk-width-xxlarge" uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 300">
 					<h2 class="uk-h1 uk-text-uppercase">Качественная работа — высокая репутация</h2>
-					<p class="uk-text-muted uk-margin-auto uk-width-xxlarge">Уже несколько лет «Евроокна» выбирают для реализации проектов телепередачи «<Школа&nbsp;ремонта». К нам обращаются за стильными современными решениями для прогрессивных московских семей.</p>
+					<p class="uk-text-muted uk-margin-auto uk-width-xxlarge">Уже несколько лет «Евроокна» выбирают для реализации проектов телепередачи «Школа&nbsp;ремонта». К нам обращаются за стильными современными решениями для прогрессивных московских семей.</p>
 				</div>
 				<div class="uk-margin-medium uk-text-left@s uk-text-center uk-child-width-1-2@m" uk-grid>
 					<div class="uk-cover-containe">
@@ -510,103 +880,8 @@
 			</div>
 		</section>
 
-		<!-- Примеры наших работ -->
-		<section class="uk-section uk-section-muted uk-text-center">
-			<div class="uk-container">
-				<div class="uk-margin-auto uk-margin-medium uk-width-xxlarge" uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 300">
-					<h2 class="uk-h1 uk-text-uppercase">Примеры наших работ</h2>
-					<p class="uk-text-muted uk-margin-auto uk-width-xxlarge">Воплотим любую мечту в жизнь!</p>
-				</div>
-				<div class="uk-child-width-1-2 uk-child-width-1-4@s" uk-grid uk-lightbox uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-small; delay: 300">
-					<div>
-						<div class="uk-inline-clip uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge">
-							<a href="images/gallery-image-1.jpg" caption="Пример наших работ">
-                                <img class="uk-transition-scale-up uk-transition-opaque" src="images/gallery-thumb-1.jpg" alt="Наши работы">
-                                <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
-                                    <span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
-                                </div>
-                            </a>
-						</div>
-					</div>
-					<div>
-						<div class="uk-inline-clip uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge">
-							<a href="images/gallery-image-2.jpg" caption="Пример наших работ">
-                                <img class="uk-transition-scale-up uk-transition-opaque" src="images/gallery-thumb-2.jpg" alt="Наши работы">
-                                <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
-                                    <span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
-                                </div>
-                            </a>
-						</div>
-					</div>
-					<div>
-						<div class="uk-inline-clip uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge">
-							<a href="images/gallery-image-3.jpg" caption="Пример наших работ">
-                                <img class="uk-transition-scale-up uk-transition-opaque" src="images/gallery-thumb-3.jpg" alt="Наши работы">
-                                <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
-                                    <span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
-                                </div>
-                            </a>
-						</div>
-					</div>
-					<div>
-						<div class="uk-inline-clip uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge">
-							<a href="images/gallery-image-4.jpg" caption="Пример наших работ">
-                                <img class="uk-transition-scale-up uk-transition-opaque" src="images/gallery-thumb-4.jpg" alt="Наши работы">
-                                <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
-                                    <span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
-                                </div>
-                            </a>
-						</div>
-					</div>
-					<div>
-						<div class="uk-inline-clip uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge">
-							<a href="images/gallery-image-5.jpg" caption="Пример наших работ">
-                                <img class="uk-transition-scale-up uk-transition-opaque" src="images/gallery-thumb-5.jpg" alt="Наши работы">
-                                <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
-                                    <span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
-                                </div>
-                            </a>
-						</div>
-					</div>
-					<div>
-						<div class="uk-inline-clip uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge">
-							<a href="images/gallery-image-6.jpg" caption="Пример наших работ">
-                                <img class="uk-transition-scale-up uk-transition-opaque" src="images/gallery-thumb-6.jpg" alt="Наши работы">
-                                <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
-                                    <span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
-                                </div>
-                            </a>
-						</div>
-					</div>
-					<div>
-						<div class="uk-inline-clip uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge">
-							<a href="images/gallery-image-7.jpg" caption="Пример наших работ">
-                                <img class="uk-transition-scale-up uk-transition-opaque" src="images/gallery-thumb-7.jpg" alt="Наши работы">
-                                <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
-                                    <span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
-                                </div>
-                            </a>
-						</div>
-					</div>
-					<div>
-						<div class="uk-inline-clip uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge">
-							<a href="images/gallery-image-8.jpg" caption="Пример наших работ">
-                                <img class="uk-transition-scale-up uk-transition-opaque" src="images/gallery-thumb-8.jpg" alt="Наши работы">
-                                <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
-                                    <span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
-                                </div>
-                            </a>
-						</div>
-					</div>
-				</div>
-				<div class="uk-margin-large" uk-scrollspy="cls: uk-animation-slide-bottom-small">
-					<a class="uk-button uk-button-danger uk-text-uppercase" href="#" uk-toggle="target: #modal-1">Хочу такой же</a>
-				</div>
-			</div>
-		</section>
-
 		<!-- Отзывы клиентов-->
-		<section class="uk-section uk-section-default uk-text-center">
+		<section class="uk-section uk-section-muted uk-text-center">
 			<div class="uk-container">
 				<div class="uk-margin-auto uk-margin-medium uk-width-xxlarge" uk-scrollspy="cls:uk-animation-slide-bottom-small">
 					<h2 class="uk-h1 uk-text-uppercase">Отзывы клиентов</h2>
@@ -716,7 +991,6 @@
 			<div class="uk-height-large">
 				<div id="ymap" style="width: 100%; height: 100%; padding: 0; margin: 0;"></div>
 			</div>
-
 			<div class="uk-container uk-padding">
 				<div class="uk-child-width-1-2@m uk-flex-middle uk-grid-large" uk-grid>
 					<div>
@@ -736,7 +1010,7 @@
 			</div>
 		</section>
 
-		<!-- Подвал -->
+		<!-- Footer -->
 		<footer class="uk-section uk-section-small uk-text-center uk-text-muted">
 			<div class="uk-container uk-container-small">
 				<p>© 1995 - 2017 ООО "Евроoкна".</p>
@@ -744,9 +1018,10 @@
 			</div>
 		</footer>
 
-		<!-- Modal 1 (modal) -->
+		<!-- Modal 1 -->
 		<div id="modal-1" uk-modal="center: true">
 			<div class="uk-modal-dialog uk-modal-body">
+				<button class="uk-modal-close-default" type="button" uk-close></button>
 				<h3 class="uk-text-center">Закажите обратный звонок менеджера</h3>
 				<p class="uk-text-center">Укажите контактный номер телефона.</p>
 				<form action="" method="post">
@@ -761,14 +1036,14 @@
 					</div>
 					<button class="uk-button uk-button-danger uk-width-1-1" type="submit">Отправить</button>
 				</form>
-				<button class="uk-modal-close-default" type="button" uk-close></button>
 			</div>
 		</div>
 
-		<!-- Modal 2 (modal) -->
+		<!-- Modal 2 -->
 		<div id="modal-2" uk-modal="center: true">
 			<div class="uk-modal-dialog uk-modal-body">
-				<h3 class="uk-text-large uk-text-center">Закажите обратный звонок менеджера</h3>
+				<button class="uk-modal-close-default" type="button" uk-close></button>
+				<h3 class="uk-text-large uk-text-center">Запишитесь на бесплатный замер</h3>
 				<p class="uk-text-center">Укажите контактный номер телефона.</p>
 				<form action="" method="post">
 					<div class="uk-margin">
@@ -782,11 +1057,10 @@
 					</div>
 					<button class="uk-button uk-button-danger uk-width-1-1" type="submit">Отправить</button>
 				</form>
-				<button class="uk-modal-close-default" type="button" uk-close></button>
 			</div>
 		</div>
 
-		<!-- Modal 3 (modal) -->
+		<!-- Modal 3 -->
 		<div id="modal-3" uk-modal="center: true">
 			<div class="uk-modal-dialog uk-modal-body uk-box-shadow-medium">
 				<button class="uk-modal-close-default" type="button" uk-close></button>
@@ -817,9 +1091,10 @@
 			</div>
 		</div>
 
-		<!-- Modal 4 (modal) -->
+		<!-- Modal 4 -->
 		<div id="modal-4" uk-modal="center: true">
 			<div class="uk-modal-dialog uk-modal-body uk-width-1-3@m">
+				<button class="uk-modal-close-default" type="button" uk-close></button>
 				<ul class="uk-flex uk-flex-center" uk-tab="animation: uk-animation-fade">
 					<li><a class="uk-text-uppercase" href="#">Заказать звонок</a></li>
 					<li><a class="uk-text-uppercase" href="#">Заказать замер</a></li>
@@ -840,7 +1115,6 @@
 							</div>
 							<button class="uk-button uk-button-danger uk-width-1-1" type="submit">Отправить</button>
 						</form>
-						<button class="uk-modal-close-default" type="button" uk-close></button>
 					</li>
 					<li>
 						<h3 class="uk-text-center">Запишитесь на бесплатный замер</h3>
@@ -857,13 +1131,12 @@
 							</div>
 							<button class="uk-button uk-button-danger uk-width-1-1" type="submit">Отправить</button>
 						</form>
-						<button class="uk-modal-close-default" type="button" uk-close></button>
 					</li>
 				</ul>
 			</div>
 		</div>
 
-		<!-- Политика конфиденциальности (modal) -->
+		<!-- Modal 5 (Политика конфиденциальности) -->
 		<div id="modal-5" uk-modal>
 			<div class="uk-modal-dialog" uk-overflow-auto>
 				<button class="uk-modal-close-default" type="button" uk-close></button>
@@ -932,7 +1205,7 @@
 		<div id="offcanvas" uk-offcanvas>
 			<div class="uk-offcanvas-bar" uk-margin="margin: uk-margin">
 				<div class="uk-text-center">
-					<a class="uk-logo" href="page-1.html">
+					<a class="uk-logo" href="index.html">
                         <img class="uk-width-small" src="images/logo.svg" alt="Евроокна">
                     </a>
 				</div>
@@ -943,9 +1216,9 @@
 				</div>
 				<hr>
 				<ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-					<li><a href="page-1.html">Пластиковые окна</a></li>
-					<li class="uk-active"><a href="page-2.html">Балконы и лоджии</a></li>
-					<li><a href="page-3.html">Расчитать стоимость</a></li>
+					<li class="uk-active"><a href="index.html">Пластиковые окна</a></li>
+					<li><a href="index-2.html">Балконы и лоджии</a></li>
+					<li><a href="index-3.html">Расчитать стоимость</a></li>
 					<li><a href="#contact" uk-scroll>Контакты</a></li>
 				</ul>
 				<hr>
