@@ -1,1 +1,1 @@
-# vc-dev.github.io
+# vc-development.github.io
