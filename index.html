@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-gb" dir="ltr" vocab="http://schema.org/">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <title>VC-Development</title>
+    <meta name="description" content="VC-Development repository.">
+    <link rel="canonical" href="https://vc-development.github.io/">
+
+    <!-- Verify ownership -->
+    <meta name="google-site-verification" content="verification_token">
+    <meta name="yandex-verification" content="verification_token">
+    <meta name="msvalidate.01" content="verification_token">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css">
+
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+    <script>
+        $(function() {
+            $("body").niceScroll();
+        });
+    </script>
 </head>
 
 <body>
@@ -21,7 +41,7 @@
                         <a class="uk-navbar-item uk-logo" href="https://vc-development.github.io">VC-Development</a>
                     </div>
                     <div class="uk-navbar-right">
-                        <a class="uk-icon-link" uk-icon="icon: github" href="https://github.com/vc-development/vc-development.github.io"></a>
+                        <a class="uk-navbar-item uk-icon-link" uk-icon="icon: github" href="https://github.com/vc-development/vc-development.github.io"></a>
                     </div>
                 </nav>
             </div>
@@ -30,12 +50,12 @@
             <div class="uk-container uk-text-center">
                 <div class="uk-margin-auto uk-margin-large uk-width-xxlarge">
                     <h1 class="uk-heading-primary">Some Projects</h1>
-                    <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-                <div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="target: > div > div; cls: uk-animation-slide-bottom-small; delay: 300">
+                <div class="uk-child-width-1-3@m" uk-grid uk-height-match="target: > div > div; row: false" uk-scrollspy="target: > div > div; cls: uk-animation-slide-bottom-small; delay: 300">
                     <div>
                         <div class="uk-card uk-card-default uk-box-shadow-hover-large uk-transition-toggle">
+                            <div class="uk-card-badge uk-label">Landing Page</div>
                             <div class="uk-card-media-top uk-inline-clip uk-light">
                                 <img class="uk-transition-scale-up uk-transition-opaque" src="https://unsplash.it/1024/768" alt="Eurookna Landing">
                                 <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
@@ -43,28 +63,11 @@
                                 </div>
                             </div>
                             <div class="uk-card-body">
-                                <h3 class="uk-card-title">Eurookna Landing</h3>
+                                <h3 class="uk-card-title">Eurookna</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             </div>
                             <div class="uk-card-footer">
                                 <a href="./eurookna-landing/index.html" class="uk-button uk-button-text">View</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-default uk-box-shadow-hover-large uk-transition-toggle">
-                            <div class="uk-card-media-top uk-inline-clip uk-light">
-                                <img class="uk-transition-scale-up uk-transition-opaque" src="https://unsplash.it/1024/768" alt="Eurookna Landing Night">
-                                <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
-                                    <span class="uk-transition-fade" uk-icon="icon: link; ratio: 2"></span>
-                                </div>
-                            </div>
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Eurookna Landing Night</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                            </div>
-                            <div class="uk-card-footer">
-                                <a href="#" class="uk-button uk-button-text">View</a>
                             </div>
                         </div>
                     </div>
@@ -81,30 +84,38 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             </div>
                             <div class="uk-card-footer">
-                                <a href="#" class="uk-button uk-button-text">View</a>
+                                <a href="./oknarosta/index.html" class="uk-button uk-button-text">View</a>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class="uk-placeholder uk-height-large uk-text-muted uk-flex uk-flex-middle uk-flex-center">
+                        <div class="uk-placeholder uk-height-large uk-background-muted uk-text-muted uk-flex uk-flex-middle uk-flex-center">
                             <div>
-                                <span uk-icon="icon: clock"></span>
+                                <span uk-icon="icon: happy"></span>
                                 <p>Coming Soon</p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class="uk-placeholder uk-height-large uk-text-muted uk-flex uk-flex-middle uk-flex-center">
+                        <div class="uk-placeholder uk-height-large uk-background-muted uk-text-muted uk-flex uk-flex-middle uk-flex-center">
                             <div>
-                                <span uk-icon="icon: clock"></span>
+                                <span uk-icon="icon: happy"></span>
                                 <p>Coming Soon</p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class="uk-placeholder uk-height-large uk-text-muted uk-flex uk-flex-middle uk-flex-center">
+                        <div class="uk-placeholder uk-height-large uk-background-muted uk-text-muted uk-flex uk-flex-middle uk-flex-center">
                             <div>
-                                <span uk-icon="icon: clock"></span>
+                                <span uk-icon="icon: happy"></span>
+                                <p>Coming Soon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-placeholder uk-height-large uk-background-muted uk-text-muted uk-flex uk-flex-middle uk-flex-center">
+                            <div>
+                                <span uk-icon="icon: happy"></span>
                                 <p>Coming Soon</p>
                             </div>
                         </div>
@@ -112,9 +123,12 @@
                 </div>
             </div>
         </div>
+        <footer class="uk-section uk-section-small uk-section-muted uk-text-center">
+            <p>&copy; 2017 VC-Development</p>
+        </footer>
     </div>
 
-    <div id="my-id" uk-offcanvas>
+    <div id="offcanvas" uk-offcanvas>
         <div class="uk-offcanvas-bar">
             <button class="uk-offcanvas-close" type="button" uk-close></button>
         </div>
