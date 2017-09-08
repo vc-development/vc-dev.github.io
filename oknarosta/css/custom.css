@@ -1,3 +1,9 @@
+#top-menu .uk-navbar-nav>li>a {
+	padding: 0 20px;
+	height: 40px;
+	font-size: 14px;
+}
+
 .tm-sub-navbar.uk-navbar-nav>li>a {
     height: 45px;
 }
