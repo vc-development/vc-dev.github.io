@@ -1,0 +1,25 @@
+.tm-navbar.uk-navbar-nav > li > a {
+	height: 40px;
+}
+
+.discounts-border-form,
+.discounts-border-form:focus {
+	border-color: transparent;
+}
+
+.or-section .uk-badge {
+	margin-bottom: 5px;
+	background-color: #fcba1d;
+}
+
+/*@media screen and (max-width: 1080px) {
+    .call-special {
+        font-size: 12px;
+    }
+    .bg-special-1 {
+        background-position: 58% 50%;
+    }
+    .bg-special-2 {
+        background-position: 45% 50%;
+    }
+}*/
