@@ -87,7 +87,6 @@
 	<script src="vendor/inputmask/phone-codes/phone-ru.min.js"></script>
 	<script src="vendor/lazysizes/ls.bgset.min.js" async></script>
 	<script src="vendor/lazysizes/lazysizes.min.js" async></script>
-	<script src="vendor/holder/holder.min.js"></script>
 	<script src="js/custom.js"></script>
 </head>
 
@@ -122,17 +121,19 @@
 			<div id="top-menu" class="uk-section-secondary uk-padding-small uk-padding-remove-horizontal uk-text-small uk-visible@l">
 				<div class="uk-container">
 					<ul class="uk-subnav uk-float-left uk-margin-remove">
-						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: iconmonstr-location-1; ratio: .6"></span>Офисы продаж</a></li>
-						<div class="uk-background-secondary" uk-dropdown>
-							<ul class="uk-nav uk-nav-default uk-dropdown-nav">
-								<li><a href="#">Мобильный офис</a></li>
-								<li><a href="#">Все офисы продаж</a></li>
-							</ul>
-						</div>
+						<li>
+							<a href="index.html"><span class="uk-margin-small-right" uk-icon="icon: iconmonstr-location-1; ratio: .6"></span>Офисы продаж</a>
+							<div class="uk-background-secondary" uk-dropdown>
+								<ul class="uk-nav uk-nav-default uk-dropdown-nav">
+									<li><a href="#">Мобильный офис</a></li>
+									<li><a href="#">Все офисы продаж</a></li>
+								</ul>
+							</div>
+						</li>
 					</ul>
 					<ul class="uk-subnav uk-float-right uk-margin-remove">
 						<li>
-							<a href="#">О компании</a>
+							<a href="index.html">О компании</a>
 							<div class="uk-background-secondary" uk-dropdown>
 								<ul class="uk-nav uk-nav-default uk-dropdown-nav">
 									<li><a href="#">Почему мы?</a></li>
@@ -147,7 +148,7 @@
 							</div>
 						</li>
 						<li>
-							<a href="#">Услуги и сервис</a>
+							<a href="index.html">Услуги и сервис</a>
 							<div class="uk-background-secondary" uk-dropdown>
 								<ul class="uk-nav uk-nav-default uk-dropdown-nav">
 									<li><a href="#">Кредит и рассрочка</a></li>
@@ -170,8 +171,8 @@
 								</ul>
 							</div>
 						</li>
-						<li><a href="#">Акции</a></li>
-						<li><a href="#">Цены</a></li>
+						<li><a href="index.html">Акции</a></li>
+						<li><a href="index.html">Цены</a></li>
 						<li><a href="#" uk-search-icon></a></li>
 					</ul>
 				</div>
@@ -185,11 +186,11 @@
 						</div>
 
 						<div class="uk-text-center">
-							<a class="uk-button uk-button-link uk-link-reset" uk-toggle="target: #modal-1" href="#"><span class="uk-text-warning uk-margin-small-right" uk-icon="icon: file-edit; ratio: 1"></span>Запись на замер</a>
+							<a class="uk-button uk-button-link uk-link-reset" uk-toggle="target: #modal-1" href="#"><span class="uk-text-warning uk-margin-small-right" uk-icon="icon: iconmonstr-ruler-30; ratio: 1"></span>Запись на замер</a>
 						</div>
 
 						<div class="uk-text-center">
-							<a class="uk-button uk-button-link uk-link-reset" href="#"><span class="uk-text-warning uk-margin-small-right" uk-icon="icon: copy; ratio: 1"></span>Расчёт стоимости</a>
+							<a class="uk-button uk-button-link uk-link-reset" href="#"><span class="uk-text-warning uk-margin-small-right" uk-icon="icon: iconmonstr-calculator-1; ratio: 1"></span>Расчёт стоимости</a>
 						</div>
 
 						<div class="uk-text-right">
@@ -219,7 +220,7 @@
 					<div class="uk-background-default uk-padding-remove-horizontal test-class">
 						<div class="uk-container">
 							<nav class="uk-navbar" uk-navbar role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-								<ul class="tm-navbar uk-navbar-nav uk-margin-remove">
+								<ul class="tm-sub-navbar uk-navbar-nav uk-margin-remove">
 									<li class="uk-active">
 										<a href="#">Тестовое подменю</a>
 										<div class="uk-background-default uk-box-shadow-small" uk-dropdown>
@@ -300,10 +301,10 @@
 							</div>
 							<div class="uk-card-large uk-card-body">
 								<h2 class="uk-h1 uk-text-bold uk-text-uppercase uk-text-primary">Заключите договор в&nbsp;день замера</h2>
-								<h3 class="uk-h3 uk-margin">и получите дополнительную скидку 5%!</h3>
+								<h3 class="uk-h3 uk-margin">и получите дополнительную скидку&nbsp;5%!</h3>
 								<div class="uk-child-width-auto@s uk-grid-small" uk-grid>
 									<div>
-										<a class="uk-button uk-button-primary uk-text-uppercase uk-text-bold uk-width-1-1" href="#">Записаться на замер</a>
+										<a class="uk-button uk-button-primary uk-text-uppercase uk-text-bold uk-width-1-1" href="#">Заказать замер</a>
 									</div>
 									<div>
 										<a class="uk-button uk-button-default uk-text-uppercase uk-text-bold uk-width-1-1" href="#">Подробнее</a>
@@ -324,7 +325,7 @@
 								<h3 class="uk-h3 uk-margin">и получите дополнительную скидку 5%!</h3>
 								<div class="uk-child-width-auto@s uk-grid-small" uk-grid>
 									<div>
-										<a class="uk-button uk-button-primary uk-text-uppercase uk-text-bold uk-width-1-1" href="#">Записаться на замер</a>
+										<a class="uk-button uk-button-primary uk-text-uppercase uk-text-bold uk-width-1-1" href="#">Заказать замер</a>
 									</div>
 									<div>
 										<a class="uk-button uk-button-default uk-text-uppercase uk-text-bold uk-width-1-1" href="#">Подробнее</a>
@@ -345,7 +346,7 @@
 								<h3 class="uk-h3 uk-margin">и получите дополнительную скидку 5%!</h3>
 								<div class="uk-child-width-auto@s uk-grid-small" uk-grid>
 									<div>
-										<a class="uk-button uk-button-primary uk-text-uppercase uk-text-bold uk-width-1-1" href="#">Записаться на замер</a>
+										<a class="uk-button uk-button-primary uk-text-uppercase uk-text-bold uk-width-1-1" href="#">Заказать замер</a>
 									</div>
 									<div>
 										<a class="uk-button uk-button-default uk-text-uppercase uk-text-bold uk-width-1-1" href="#">Подробнее</a>
@@ -522,7 +523,7 @@
 				<div class="uk-container">
 					<h2 class="uk-h1 uk-text-bold">Почему именно мы?</h2>
 					<div class="uk-padding uk-panel uk-background-primary uk-border-rounded uk-margin-medium-top" style="background-color: #fcba1d;">
-						<div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 300">
+						<div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 200">
 							<div>
 								<p class="uk-heading-primary uk-text-bold uk-light" style="color: #fff;">21</p>
 								<p><span class="uk-text-uppercase uk-text-bold">год опыта работы</span><br>на оконном рынке России</p>
@@ -537,7 +538,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="uk-margin-large-top uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-large" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 300">
+					<div class="uk-margin-large-top uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-large" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 200">
 						<div>
 							<span class="uk-margin-medium uk-text-warning" uk-icon="icon: iconmonstr-trophy-8; ratio: 3"></span>
 							<p class="uk-margin-remove"><span class="uk-text-uppercase uk-text-bold">Лидирующее положение</span><br>среди производителей светопрозрачных конструкций</p>
@@ -569,7 +570,7 @@
 			<div id="awards" class="uk-section uk-section-muted uk-text-center">
 				<div class="uk-container">
 					<h2 class="uk-h1 uk-text-bold">Наши награды</h2>
-					<div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-margin-large-top" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 300">
+					<div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-margin-large-top" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 200">
 						<div>
 							<img src="images/awards/award-1.png" alt="Золотое окно 2013">
 							<p>Премия «Золотое окно 2013»</p>
@@ -634,7 +635,7 @@
 			<div id="info" class="uk-section uk-section-default uk-box-shadow-small uk-position-relative or-section">
 				<div class="uk-container">
 					<h2 class="uk-h1 uk-text-center uk-text-bold uk-width-xxlarge uk-margin-auto">При заказе пластиковых окон у каждого клиента есть:</h2>
-					<div class="uk-child-width-1-2@m uk-margin-large-top uk-grid-large" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 300">
+					<div class="uk-child-width-1-2@m uk-margin-large-top uk-grid-large" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 200">
 						<div>
 							<h3 class="uk-h3 uk-text-bold"><span class="uk-badge uk-margin-small-right uk-text-middle">1</span>Бесплатные замер и консультация</h3>
 							<p>Оформите заявку на бесплатный замер, и специалист нашей компании подъедет в удобное время. Он проведет точные измерения и сделает просчет стоимости заказа.</p>
@@ -700,24 +701,24 @@
 
 			<div id="bottom-menu" class="uk-section uk-section-secondary uk-text-center uk-text-left@s">
 				<div class="uk-container">
-					<div class="uk-visible@s uk-child-width-expand@m uk-child-width-1-2@s" uk-grid uk-scrollspy="cls: uk-animation-slide-top-small; target: > div; delay: 300">
+					<div class="uk-visible@s uk-child-width-expand@m uk-child-width-1-2@s" uk-grid uk-scrollspy="cls: uk-animation-slide-top-small; target: > div; delay: 200">
 						<div>
-							<a class="uk-button uk-button-link uk-text-uppercase uk-text-bold" href="#"><span class="uk-margin-small-right" uk-icon="icon: iconmonstr-location-1" style="color: #FFBB00;"></span>Офисы продаж</a>
+							<a class="uk-button uk-button-link uk-text-uppercase uk-text-bold" href="#"><span class="uk-margin-small-right" uk-icon="icon: iconmonstr-location-1; ratio: .8" style="color: #FFBB00;"></span>Офисы продаж</a>
 						</div>
 						<div>
-							<a class="uk-button uk-button-link uk-text-uppercase uk-text-bold" uk-toggle="target: #modal-1" href="#"><span class="uk-margin-small-right" uk-icon="icon: iconmonstr-tools-9" style="color: #FFBB00;"></span>Запись на замер</a>
+							<a class="uk-button uk-button-link uk-text-uppercase uk-text-bold" uk-toggle="target: #modal-1" href="#"><span class="uk-margin-small-right" uk-icon="icon: iconmonstr-tools-9; ratio: .8" style="color: #FFBB00;"></span>Запись на замер</a>
 						</div>
 						<div>
-							<a class="uk-button uk-button-link uk-text-uppercase uk-text-bold" href="#"><span class="uk-margin-small-right" uk-icon="icon: iconmonstr-calculator-1" style="color: #FFBB00;"></span>Расчёт стоимости</a>
+							<a class="uk-button uk-button-link uk-text-uppercase uk-text-bold" href="#"><span class="uk-margin-small-right" uk-icon="icon: iconmonstr-calculator-1; ratio: .8" style="color: #FFBB00;"></span>Расчёт стоимости</a>
 						</div>
 						<div>
-							<a class="uk-button uk-button-link uk-text-uppercase uk-text-bold" href="#"><span class="uk-margin-small-right" uk-icon="icon: iconmonstr-help-4" style="color: #FFBB00;"></span>Помощь в выборе</a>
+							<a class="uk-button uk-button-link uk-text-uppercase uk-text-bold" href="#"><span class="uk-margin-small-right" uk-icon="icon: iconmonstr-help-4; ratio: .8" style="color: #FFBB00;"></span>Помощь в выборе</a>
 						</div>
 					</div>
 
 					<hr class="uk-margin-large uk-visible@s" uk-scrollspy="cls: uk-animation-scale-up">
 
-					<div class="uk-child-width-1-4@m uk-child-width-1-2@s" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 300">
+					<div class="uk-child-width-1-4@m uk-child-width-1-2@s" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 200">
 						<div class="uk-visible@s">
 							<h3 class="uk-text-muted">Продукция</h3>
 							<ul class="uk-list uk-link-muted">
@@ -758,12 +759,14 @@
 								<a class="uk-text-primary uk-margin-remove" href="#" uk-toggle="target: #modal-2">Заказать обратный звонок</a>
 							</div>
 
-							<p>Принимаем оплату на дому:</p>
-							<span class="uk-margin-small-right" uk-icon="icon: iconmonstr-payment-3; ratio: 2"></span>
-							<span class="uk-margin-small-right" uk-icon="icon: iconmonstr-payment-5; ratio: 2"></span>
+							<h5 class="uk-margin uk-margin-small-bottom">Принимаем оплату на дому:</h5>
+							<ul class="uk-iconnav uk-text-bold uk-flex uk-flex-center uk-flex-left@s">
+								<li><a href="#" uk-icon="icon: iconmonstr-payment-3; ratio: 2"></a></li>
+								<li><a href="#" uk-icon="icon: iconmonstr-payment-5; ratio: 2"></a></li>
+							</ul>
 
-							<p>Мы в социальных сетях:</p>
-							<ul class="uk-iconnav uk-text-bold">
+							<h5 class="uk-margin uk-margin-small-bottom">Мы в социальных сетях:</h5>
+							<ul class="uk-iconnav uk-text-bold uk-flex uk-flex-center uk-flex-left@s">
 								<li><a href="#" uk-icon="icon: iconmonstr-facebook-4; ratio: 1.5"></a></li>
 								<li><a href="#" uk-icon="icon: iconmonstr-twitter-4; ratio: 1.5"></a></li>
 								<li><a href="#" uk-icon="icon: iconmonstr-vk-4; ratio: 1.5"></a></li>
@@ -780,7 +783,7 @@
 		<footer id="footer" class="uk-section uk-section-secondary uk-padding-remove-top uk-text-center uk-position-relative" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 			<meta itemprop="copyrightYear" content="1996 - 2017">
 			<meta itemprop="copyrightHolder" content="ОКНА РОСТА">
-			<div class="uk-container" uk-scrollspy=" target: > *; cls: uk-animation-slide-bottom-small; delay: 300">
+			<div class="uk-container" uk-scrollspy=" target: > *; cls: uk-animation-slide-bottom-small; delay: 200">
 				<p>&copy; 1996 - 2017 Официальный сайт производственной компании «ОКНА&nbsp;РОСТА». Все права защищены.</p>
 				<a class="uk-margin" href="#" uk-totop uk-scroll></a>
 			</div>
@@ -924,16 +927,27 @@
 			</ul>
 			<hr>
 			<div>
+				<p class="uk-margin-remove">Ежедневно с 9:00 до 21:00</p>
+				<p class="uk-text-large uk-text-bold uk-margin-remove">8 800 <span class="uk-text-primary">555-12-31</span></p>
+				<a class="uk-text-primary uk-margin-remove" href="#" uk-toggle="target: #modal-2">Заказать обратный звонок</a>
+			</div>
+			<hr>
+			<div class="" uk-margin>
 				<div>
-					<p class="uk-margin-remove">Ежедневно с 9:00 до 21:00</p>
-					<p class="uk-text-large uk-text-bold uk-margin-remove">8 800 <span class="uk-text-warning">555-12-31</span></p>
-					<a class="uk-text-primary uk-margin-remove" href="#" uk-toggle="target: #modal-2">Заказать обратный звонок</a>
+					<a class="uk-button uk-button-link uk-text-uppercase uk-text-bold" uk-toggle="target: #modal-1" href="#"><span class="uk-margin-small-right uk-text-primary" uk-icon="icon: iconmonstr-tools-9; ratio: .8"></span>Запись на замер</a>
+				</div>
+				<div>
+					<a class="uk-button uk-button-link uk-text-uppercase uk-text-bold" href="#"><span class="uk-margin-small-right uk-text-primary" uk-icon="icon: iconmonstr-calculator-1; ratio: .8"></span>Расчёт стоимости</a>
+				</div>
+				<div>
+					<a class="uk-button uk-button-link uk-text-uppercase uk-text-bold" href="#"><span class="uk-margin-small-right uk-text-primary" uk-icon="icon: iconmonstr-help-4; ratio: .8"></span>Помощь в выборе</a>
 				</div>
 			</div>
+
 		</div>
 	</div>
 
-	<!-- Modal 1: Записаться на замер -->
+	<!-- Modal 1: Заказать замер -->
 	<div id="modal-1" uk-modal="center: true">
 		<div class="uk-modal-dialog uk-modal-body uk-width-1-1 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l uk-box-shadow-medium">
 			<div class="uk-margin uk-text-center">
@@ -943,13 +957,13 @@
 			<form action="/" method="post">
 				<div class="uk-margin">
 					<div class="uk-inline uk-width-1-1">
-						<span class="uk-form-icon" uk-icon="icon: user"></span>
+						<span class="uk-form-icon" uk-icon="icon: iconmonstr-user-1; ratio: .6"></span>
 						<input id="or-user-name" class="uk-input uk-border-rounded" type="text" placeholder="Имя" required>
 					</div>
 				</div>
 				<div class="uk-margin">
 					<div class="uk-inline uk-width-1-1">
-						<span class="uk-form-icon" uk-icon="icon: receiver"></span>
+						<span class="uk-form-icon" uk-icon="icon: iconmonstr-phone-1; ratio: .6"></span>
 						<input id="or-user-phone" class="uk-input uk-border-rounded phone-mask" type="tel" placeholder="Телефон" required>
 					</div>
 				</div>
@@ -970,13 +984,13 @@
 			<form action="/" method="post">
 				<div class="uk-margin">
 					<div class="uk-inline uk-width-1-1">
-						<span class="uk-form-icon" uk-icon="icon: user"></span>
+						<span class="uk-form-icon" uk-icon="icon: iconmonstr-user-1; ratio: .6"></span>
 						<input id="or-user-name" class="uk-input uk-border-rounded" type="text" placeholder="Имя" required>
 					</div>
 				</div>
 				<div class="uk-margin">
 					<div class="uk-inline uk-width-1-1">
-						<span class="uk-form-icon" uk-icon="icon: receiver"></span>
+						<span class="uk-form-icon" uk-icon="icon: iconmonstr-phone-1; ratio: .6"></span>
 						<input id="or-user-phone" class="uk-input uk-border-rounded phone-mask" type="tel" placeholder="Телефон" required>
 					</div>
 				</div>

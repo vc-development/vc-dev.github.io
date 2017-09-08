@@ -1,5 +1,13 @@
-.tm-navbar.uk-navbar-nav > li > a {
-	height: 40px;
+.tm-sub-navbar.uk-navbar-nav > li > a {
+	height: 45px;
+}
+
+.uk-navbar-nav > li.uk-active > a,
+.uk-navbar-nav > li.uk-active > a,
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a.uk-open,
+.uk-navbar-nav > li > a:focus {
+	color: #f91b24;
 }
 
 .discounts-border-form,
