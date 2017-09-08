@@ -124,7 +124,7 @@
 						<ul class="uk-navbar-nav">
 							<li>
 								<a href="index.html"><span class="uk-margin-small-right" uk-icon="icon: iconmonstr-location-1; ratio: .6"></span>Офисы продаж</a>
-								<div class="uk-background-secondary" uk-dropdown>
+								<div class="uk-background-secondary" uk-dropdown="offset: 0">
 									<ul class="uk-nav uk-nav-default uk-dropdown-nav">
 										<li><a href="#">Мобильный офис</a></li>
 										<li><a href="#">Все офисы продаж</a></li>
@@ -137,7 +137,7 @@
 						<ul class="uk-navbar-nav">
 							<li>
 								<a href="index.html">О компании</a>
-								<div class="uk-background-secondary" uk-dropdown>
+								<div class="uk-background-secondary" uk-dropdown="offset: 0">
 									<ul class="uk-nav uk-nav-default uk-dropdown-nav">
 										<li><a href="#">Почему мы?</a></li>
 										<li><a href="#">Новости</a></li>
@@ -152,7 +152,7 @@
 							</li>
 							<li>
 								<a href="index.html">Услуги и сервис</a>
-								<div class="uk-background-secondary" uk-dropdown>
+								<div class="uk-background-secondary" uk-dropdown="offset: 0">
 									<ul class="uk-nav uk-nav-default uk-dropdown-nav">
 										<li><a href="#">Кредит и рассрочка</a></li>
 										<li><a href="#">Мобильный офис</a></li>
@@ -167,7 +167,7 @@
 							<li><a href="#">Отзывы</a></li>
 							<li>
 								<a href="index.html">Партнёрам</a>
-								<div class="uk-background-secondary" uk-dropdown>
+								<div class="uk-background-secondary" uk-dropdown="offset: 0">
 									<ul class="uk-nav uk-nav-default uk-dropdown-nav">
 										<li><a href="#">Диллерам</a></li>
 										<li><a href="#">Дизайнерам и архитекторам</a></li>
@@ -176,7 +176,21 @@
 							</li>
 							<li><a href="index.html">Акции</a></li>
 							<li><a href="index.html">Цены</a></li>
-							<li><a href="#" uk-search-icon></a></li>
+							<li>
+								<a href="#" uk-icon="icon: iconmonstr-magnifier-1; ratio: .6"></a>
+								<div class="uk-navbar-dropdown uk-background-secondary uk-width-large" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+					                <div class="uk-grid-small uk-flex-middle" uk-grid>
+					                    <div class="uk-width-expand">
+					                        <form class="uk-search uk-search-navbar uk-width-1-1">
+					                            <input class="uk-search-input" type="search" placeholder="Поиск..." autofocus>
+					                        </form>
+					                    </div>
+					                    <div class="uk-width-auto">
+					                        <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+					                    </div>
+					                </div>
+					            </div>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -227,7 +241,7 @@
 								<ul class="tm-sub-navbar uk-navbar-nav uk-margin-remove">
 									<li class="uk-active">
 										<a href="#">Тестовое подменю</a>
-										<div class="uk-background-default uk-box-shadow-small" uk-dropdown>
+										<div class="uk-background-default uk-box-shadow-small" uk-dropdown="offset: 0">
 											<ul class="uk-nav uk-dropdown-nav">
 												<li class="uk-active"><a href="#">Тестовое подменю</a></li>
 												<li><a href="#">Тестовое подменю</a></li>
@@ -239,7 +253,7 @@
 									</li>
 									<li>
 										<a href="#">Тестовое подменю</a>
-										<div class="uk-background-default uk-box-shadow-small" uk-dropdown>
+										<div class="uk-background-default uk-box-shadow-small" uk-dropdown="offset: 0">
 											<ul class="uk-nav uk-dropdown-nav">
 												<li class="uk-active"><a href="#">Тестовое подменю</a></li>
 												<li><a href="#">Тестовое подменю</a></li>
@@ -251,7 +265,7 @@
 									</li>
 									<li>
 										<a href="#">Тестовое подменю</a>
-										<div class="uk-background-default uk-box-shadow-small" uk-dropdown>
+										<div class="uk-background-default uk-box-shadow-small" uk-dropdown="offset: 0">
 											<ul class="uk-nav uk-dropdown-nav">
 												<li class="uk-active"><a href="#">Тестовое подменю</a></li>
 												<li><a href="#">Тестовое подменю</a></li>
@@ -263,7 +277,7 @@
 									</li>
 									<li>
 										<a href="#">Тестовое подменю</a>
-										<div class="uk-background-default uk-box-shadow-small" uk-dropdown>
+										<div class="uk-background-default uk-box-shadow-small" uk-dropdown="offset: 0">
 											<ul class="uk-nav uk-dropdown-nav">
 												<li class="uk-active"><a href="#">Тестовое подменю</a></li>
 												<li><a href="#">Тестовое подменю</a></li>
@@ -275,7 +289,7 @@
 									</li>
 									<li>
 										<a href="#">Тестовое подменю</a>
-										<div class="uk-background-default uk-box-shadow-small" uk-dropdown>
+										<div class="uk-background-default uk-box-shadow-small" uk-dropdown="offset: 0">
 											<ul class="uk-nav uk-dropdown-nav">
 												<li class="uk-active"><a href="#">Тестовое подменю</a></li>
 												<li><a href="#">Тестовое подменю</a></li>
@@ -296,7 +310,7 @@
 
 		<main id="main" role="main" itemscope itemprop="mainContentOfPage">
 
-			<div id="slider">
+			<div id="main-slider">
 				<div class="or-slider" data-flickity='{"wrapAround": true, "autoPlay": 6000, "pageDots": false}'>
 					<div class="uk-section uk-section-default uk-background-cover uk-background-image@s uk-width-1-1 or-slider-padding-remove" style="background-image: url(images/slider/slide1.jpeg);">
 						<div class="uk-container or-slider-padding-remove">
@@ -379,10 +393,10 @@
 						<li><a href="#">Стандарт</a></li>
 						<li><a href="#">Премиум</a></li>
 					</ul>
-					<!-- <div class="uk-text-center uk-text-uppercase uk-margin-large" uk-margin="margin: uk-margin-large" uk-switcher="animation: uk-animation-slide-bottom-medium">
-					    <button class="uk-button uk-button-link uk-text-uppercase uk-text-bold" type="button">Эконом</button>
-					    <button class="uk-button uk-button-link uk-text-uppercase uk-text-bold" type="button">Стандарт</button>
-					    <button class="uk-button uk-button-link uk-text-uppercase uk-text-bold" type="button">Премиум</button>
+					<!-- <div class="uk-text-center uk-text-uppercase uk-margin-large" uk-margin="margin: uk-margin-large" uk-switcher="animation: animation: uk-animation-slide-right-medium, uk-animation-slide-left-medium">
+					    <button class="uk-button uk-button-default uk-text-uppercase uk-text-bold" type="button">Эконом</button>
+					    <button class="uk-button uk-button-default uk-text-uppercase uk-text-bold" type="button">Стандарт</button>
+					    <button class="uk-button uk-button-default uk-text-uppercase uk-text-bold" type="button">Премиум</button>
 					</div> -->
 					<ul class="uk-switcher" uk-scrollspy="cls: uk-animation-slide-bottom-small">
 						<li>
@@ -956,8 +970,8 @@
 			<hr>
 			<div>
 				<p class="uk-margin-remove">Ежедневно с 9:00 до 21:00</p>
-				<p class="uk-text-large uk-text-bold uk-margin-remove">8 800 <span class="uk-text-primary">555-12-31</span></p>
-				<a class="uk-text-primary uk-margin-remove" href="#" uk-toggle="target: #modal-2">Заказать обратный звонок</a>
+				<p class="uk-text-large uk-text-bold uk-margin-remove"><a class="uk-link-reset" href="tel:88005551231">8 800 <span class="uk-text-primary">555-12-31</span></a></p>
+				<p class="uk-margin-remove"><a class="uk-text-primary uk-margin-remove" href="#" uk-toggle="target: #modal-2">Заказать обратный звонок</a></p>
 			</div>
 			<hr>
 			<div class="" uk-margin>

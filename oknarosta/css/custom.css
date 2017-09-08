@@ -21,7 +21,7 @@
     background-color: #fcba1d;
 }
 
-#slider .uk-height-medium {
+#main-slider .uk-height-medium {
     height: 180px;
 }
 
@@ -33,4 +33,12 @@
     .or-slider-padding-remove {
         padding: 0;
     }
+
+	#main-slider .flickity-prev-next-button {
+		top: 20%;
+	}
+
+	.or-slider-reviews .flickity-prev-next-button {
+		display: none;
+	}
 }
