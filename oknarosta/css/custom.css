@@ -42,3 +42,11 @@
 		display: none;
 	}
 }
+
+.install-step-line:before, .install-step-line:after {
+	content: "";
+	position: absolute;
+	top: calc(50% - (1px / 2));
+	width: 2000px;
+	border-bottom: 1px solid #e5e5e5;
+}
