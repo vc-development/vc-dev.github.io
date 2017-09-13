@@ -71,7 +71,6 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="vendor/uikit/uikit.oknarosta.min.css">
-	<link rel="stylesheet" href="vendor/animsition/animsition.min.css">
 	<link rel="stylesheet" href="vendor/flickity/flickity.min.css">
 	<link rel="stylesheet" href="css/custom.css">
 
@@ -79,7 +78,7 @@
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/uikit/uikit.min.js"></script>
 	<script src="vendor/uikit/uikit-icons-oknarosta.min.js"></script>
-	<script src="vendor/animsition/animsition.min.js"></script>
+	<!-- <script src="vendor/barbajs/barba.min.js"></script> -->
 	<script src="vendor/flickity/flickity.pkgd.min.js"></script>
 	<script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 	<script src="vendor/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
@@ -179,17 +178,17 @@
 							<li>
 								<a href="#" uk-icon="icon: iconmonstr-magnifier-1; ratio: .6"></a>
 								<div class="uk-navbar-dropdown uk-background-secondary uk-width-large" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
-					                <div class="uk-grid-small uk-flex-middle" uk-grid>
-					                    <div class="uk-width-expand">
-					                        <form class="uk-search uk-search-navbar uk-width-1-1">
-					                            <input class="uk-search-input" type="search" placeholder="Поиск..." autofocus>
-					                        </form>
-					                    </div>
-					                    <div class="uk-width-auto">
-					                        <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
-					                    </div>
-					                </div>
-					            </div>
+									<div class="uk-grid-small uk-flex-middle" uk-grid>
+										<div class="uk-width-expand">
+											<form class="uk-search uk-search-navbar uk-width-1-1">
+												<input class="uk-search-input" type="search" placeholder="Поиск..." autofocus>
+											</form>
+										</div>
+										<div class="uk-width-auto">
+											<a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+										</div>
+									</div>
+								</div>
 							</li>
 						</ul>
 					</nav>
@@ -212,7 +211,8 @@
 						</div>
 
 						<div class="uk-text-right">
-							<p class="uk-margin-remove uk-text-baseline uk-text-muted">Ежедневно с 9:00 до 21:00</br><a class="uk-text-lead uk-text-bold uk-margin-remove uk-link-reset" href="tel:88005551231">8 800 <span class="uk-text-primary">555-12-31</span></a><br><a class="uk-link uk-text-baseline" uk-toggle="target: #modal-2" href="#">Заказать обратный звонок</a></p>
+							<p class="uk-margin-remove uk-text-baseline uk-text-muted">Ежедневно с 9:00 до 21:00</br><a class="uk-text-lead uk-text-bold uk-margin-remove uk-link-reset" href="tel:88005551231">8 800 <span class="uk-text-primary">555-12-31</span></a><br><a class="uk-link uk-text-baseline" uk-toggle="target: #modal-2"
+								    href="#">Заказать обратный звонок</a></p>
 						</div>
 					</div>
 				</div>
@@ -236,82 +236,83 @@
 						</div>
 					</div>
 					<!-- <div class="uk-background-default uk-padding-remove-horizontal test-class">
-						<div class="uk-container">
-							<nav class="uk-navbar" uk-navbar role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-								<ul class="tm-sub-navbar uk-navbar-nav uk-margin-remove">
-									<li class="uk-active">
-										<a href="#">Тестовое подменю</a>
-										<div class="uk-background-default uk-box-shadow-small" uk-dropdown="offset: 0">
-											<ul class="uk-nav uk-dropdown-nav">
-												<li class="uk-active"><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<a href="#">Тестовое подменю</a>
-										<div class="uk-background-default uk-box-shadow-small" uk-dropdown="offset: 0">
-											<ul class="uk-nav uk-dropdown-nav">
-												<li class="uk-active"><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<a href="#">Тестовое подменю</a>
-										<div class="uk-background-default uk-box-shadow-small" uk-dropdown="offset: 0">
-											<ul class="uk-nav uk-dropdown-nav">
-												<li class="uk-active"><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<a href="#">Тестовое подменю</a>
-										<div class="uk-background-default uk-box-shadow-small" uk-dropdown="offset: 0">
-											<ul class="uk-nav uk-dropdown-nav">
-												<li class="uk-active"><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<a href="#">Тестовое подменю</a>
-										<div class="uk-background-default uk-box-shadow-small" uk-dropdown="offset: 0">
-											<ul class="uk-nav uk-dropdown-nav">
-												<li class="uk-active"><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-												<li><a href="#">Тестовое подменю</a></li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</div> -->
+							<div class="uk-container">
+								<nav class="uk-navbar" uk-navbar role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+									<ul class="tm-sub-navbar uk-navbar-nav uk-margin-remove">
+										<li class="uk-active">
+											<a href="#">Тестовое подменю</a>
+											<div class="uk-background-default uk-box-shadow-small" uk-dropdown="offset: 0">
+												<ul class="uk-nav uk-dropdown-nav">
+													<li class="uk-active"><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<a href="#">Тестовое подменю</a>
+											<div class="uk-background-default uk-box-shadow-small" uk-dropdown="offset: 0">
+												<ul class="uk-nav uk-dropdown-nav">
+													<li class="uk-active"><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<a href="#">Тестовое подменю</a>
+											<div class="uk-background-default uk-box-shadow-small" uk-dropdown="offset: 0">
+												<ul class="uk-nav uk-dropdown-nav">
+													<li class="uk-active"><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<a href="#">Тестовое подменю</a>
+											<div class="uk-background-default uk-box-shadow-small" uk-dropdown="offset: 0">
+												<ul class="uk-nav uk-dropdown-nav">
+													<li class="uk-active"><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<a href="#">Тестовое подменю</a>
+											<div class="uk-background-default uk-box-shadow-small" uk-dropdown="offset: 0">
+												<ul class="uk-nav uk-dropdown-nav">
+													<li class="uk-active"><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+													<li><a href="#">Тестовое подменю</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div> -->
 				</div>
 			</div>
 
 		</header>
-
+		<!-- <div id="barba-wrapper">
+		<div class="barba-container"> -->
 		<main id="main" role="main" itemscope itemprop="mainContentOfPage">
 
 			<div id="main-slider">
-				<div class="or-slider" data-flickity='{"wrapAround": true, "pageDots": false}'>
+				<div class="or-slider" data-flickity='{"wrapAround": true, "pageDots": false, "dragThreshold": 10}'>
 					<div class="uk-section uk-section-default uk-background-cover uk-background-image@s uk-width-1-1 or-slider-padding-remove" style="background-image: url(images/slider/slide1.jpeg);">
 						<div class="uk-container or-slider-padding-remove">
 							<div class="uk-card uk-card-default uk-background-default uk-width-1-2@m uk-width-2-3@s uk-text-center uk-text-left@s uk-box-shadow-small uk-border-rounded">
@@ -394,10 +395,10 @@
 						<li><a href="#">Премиум</a></li>
 					</ul>
 					<!-- <div class="uk-text-center uk-text-uppercase uk-margin-large" uk-margin="margin: uk-margin-large" uk-switcher="animation: animation: uk-animation-slide-right-medium, uk-animation-slide-left-medium">
-					    <button class="uk-button uk-button-default uk-text-uppercase uk-text-bold" type="button">Эконом</button>
-					    <button class="uk-button uk-button-default uk-text-uppercase uk-text-bold" type="button">Стандарт</button>
-					    <button class="uk-button uk-button-default uk-text-uppercase uk-text-bold" type="button">Премиум</button>
-					</div> -->
+						    <button class="uk-button uk-button-default uk-text-uppercase uk-text-bold" type="button">Эконом</button>
+						    <button class="uk-button uk-button-default uk-text-uppercase uk-text-bold" type="button">Стандарт</button>
+						    <button class="uk-button uk-button-default uk-text-uppercase uk-text-bold" type="button">Премиум</button>
+						</div> -->
 					<ul class="uk-switcher" uk-scrollspy="cls: uk-animation-slide-bottom-small">
 						<li>
 							<div class="uk-flex-middle" uk-grid>
@@ -821,7 +822,8 @@
 				</div>
 			</div>
 		</main>
-
+		<!-- </div>
+		</div> -->
 		<footer id="footer" class="uk-section uk-section-secondary uk-padding-remove-top uk-text-center uk-position-relative" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 			<meta itemprop="copyrightYear" content="1996 - 2017">
 			<meta itemprop="copyrightHolder" content="ОКНА РОСТА">
