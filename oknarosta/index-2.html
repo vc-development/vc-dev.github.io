@@ -523,7 +523,7 @@
 
 			<div id="calc-cost" class="uk-section uk-section-muted uk-text-center uk-text-left@s">
 				<div class="uk-container">
-					<div class="uk-flex-middle uk-child-width-expand" uk-grid>
+					<div class="uk-flex-middle uk-child-width-expand" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > *; delay: 200">
 						<div class="uk-width-1-4@m uk-width-1-3@s uk-visible@s">
 							<img src="images/calculator-cost.png" alt="">
 						</div>
@@ -537,7 +537,7 @@
 				</div>
 			</div>
 
-			<div id="discounts" class="uk-section uk-background-primary uk-text-center" style="background-color: #fcba1d;">
+			<div id="discounts" class="uk-section uk-background-primary uk-text-center" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > *; delay: 200" style="background-color: #fcba1d;">
 				<div class="uk-container">
 					<h2 class="uk-h1 uk-text-bold uk-margin-small-bottom">Закажите бесплатный выезд специалиста по замерам</h2>
 					<h4 class="uk-h4 uk-margin-remove">Заполните форму, и мы Вам перезвоним</h4>
@@ -564,39 +564,53 @@
 
 			<div id="action" class="uk-section uk-section-muted uk-box-shadow-small uk-position-relative uk-text-center">
 				<div class="uk-container">
-					<h2 class="uk-h1 uk-text-bold">У нас проходят акции</h2>
-					<p class="uk-text-large uk-margin uk-margin-auto uk-width-xxlarge">Компания «ОКНА РОСТА» постоянно радует своих заказчиков акциями и подарками. Сделав заказ у нас, вы получаете изделия высочайшего качества и профессиональный монтаж с максимальной выгодой для себя!</p>
+					<div uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > *; delay: 200">
+						<h2 class="uk-h1 uk-text-bold">У нас проходят акции</h2>
+						<p class="uk-text-large uk-margin uk-margin-auto uk-width-xxlarge">Компания «ОКНА РОСТА» постоянно радует своих заказчиков акциями и подарками. Сделав заказ у нас, вы получаете изделия высочайшего качества и профессиональный монтаж с максимальной выгодой для себя!</p>
+					</div>
 
 					<!-- TODO: Slider -->
 					<div class="uk-margin-medium-top uk-child-width-1-3@s" uk-grid uk-height-match="target: > div > .uk-card" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > .uk-card; delay: 200">
 						<div>
-							<div class="uk-card uk-background-default">
-								<div class="uk-card-media-top">
-									<img src="images/actions/action-1.png" alt="">
+							<div class="uk-card uk-background-default uk-transition-toggle uk-box-shadow-hover-large">
+								<div class="uk-card-media-top uk-inline-clip">
+									<img class="uk-transition-scale-up uk-transition-opaque" src="images/actions/action-1.png" alt="">
+									<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+										<a class="uk-button uk-button-primary" href="#">Подробнее об акции</a>
+									</div>
 								</div>
 								<div class="uk-card-body">
 									<h3 class="uk-card-title uk-text-bold">Балкон по выгодной цене</h3>
 								</div>
+								<a class="uk-position-cover" href="#"></a>
 							</div>
 						</div>
 						<div>
-							<div class="uk-card uk-background-default">
-								<div class="uk-card-media-top">
-									<img src="images/actions/action-2.png" alt="">
+							<div class="uk-card uk-background-default uk-transition-toggle uk-box-shadow-hover-large">
+								<div class="uk-card-media-top uk-inline-clip">
+									<img class="uk-transition-scale-up uk-transition-opaque" src="images/actions/action-2.png" alt="">
+									<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+										<a class="uk-button uk-button-primary" href="#">Подробнее об акции</a>
+									</div>
 								</div>
 								<div class="uk-card-body">
 									<h3 class="uk-card-title uk-text-bold">Дарим ламинат или линолеум</h3>
 								</div>
+								<a class="uk-position-cover" href="#"></a>
 							</div>
 						</div>
 						<div>
-							<div class="uk-card uk-background-default">
-								<div class="uk-card-media-top">
-									<img src="images/actions/action-3.png" alt="">
+							<div class="uk-card uk-background-default uk-transition-toggle uk-box-shadow-hover-large">
+								<div class="uk-card-media-top uk-inline-clip">
+									<img class="uk-transition-scale-up uk-transition-opaque" src="images/actions/action-3.png" alt="">
+									<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+										<a class="uk-button uk-button-primary" href="#">Подробнее об акции</a>
+									</div>
 								</div>
 								<div class="uk-card-body">
 									<h3 class="uk-card-title uk-text-bold">Расширяйте горизонты</h3>
 								</div>
+								<a class="uk-position-cover" href="#"></a>
 							</div>
 						</div>
 					</div>
