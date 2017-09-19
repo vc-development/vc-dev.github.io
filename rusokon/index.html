@@ -76,11 +76,13 @@
         <header id="header" class="uk-section-xsmall uk-padding-remove-bottom" role="banner" itemscope itemtype="http://schema.org/WPHeader">
             <div class="uk-container">
                 <div class="uk-flex-middle uk-child-width-auto" uk-grid>
-                    <div class="uk-grid-small" uk-grid>
-                        <div><img class="uk-logo" src="images/logos/rusokon.svg" alt="РУСОКОН"></div>
-                        <div>
-                            <p><span class="uk-h2">Русокон</span>
-                                <br> Нам 12 лет!</p>
+                    <div>
+                        <div class="uk-grid-small" uk-grid>
+                            <div><img class="uk-logo" src="images/logos/rusokon.svg" alt="РУСОКОН"></div>
+                            <div>
+                                <p><span class="uk-h2">Русокон</span>
+                                    <br> Нам 12 лет!</p>
+                            </div>
                         </div>
                     </div>
                     <div class="uk-width-expand">Скидка на окна 5 поколения
@@ -93,8 +95,8 @@
                 </div>
                 <nav uk-navbar>
                     <ul class="uk-navbar-nav uk-width-1-1 uk-child-width-expand uk-grid-collapse uk-text-uppercase" uk-grid>
-                        <li class="uk-active"><a class="uk-padding-remove-left" href="#">пластиковые окна</a></li>
-                        <li><a href="#">остекление коттеджей</a></li>
+                        <li><a class="uk-padding-remove-left" href="#">пластиковые окна</a></li>
+                        <li class="uk-active"><a href="#">остекление коттеджей</a></li>
                         <li><a href="#">деревянные окна</a></li>
                         <li><a class="uk-padding-remove-right" href="#">Остекление балконов</a></li>
                     </ul>
@@ -417,7 +419,7 @@
                                     <div class="uk-inline">
                                         <img src="images/func-1.png" alt="">
                                         <div class="uk-position-top-left uk-position-small"><img src="images/icon-func-1.png" alt=""></div>
-                                        <div class="uk-position-bottom-left uk-position-small"><span class="uk-text-large">-50%</span>
+                                        <div class="uk-position-bottom-left uk-position-small"><span class="uk-text-large uk-text-primary">-50%</span>
                                             <br>теплопотерь</div>
                                     </div>
                                 </div>
@@ -438,7 +440,7 @@
                                     <div class="uk-inline">
                                         <img src="images/func-2.png" alt="">
                                         <div class="uk-position-top-left uk-position-small"><img src="images/icon-func-2.png" alt=""></div>
-                                        <div class="uk-position-bottom-left uk-position-small">на <span class="uk-text-large">10</span> дБ
+                                        <div class="uk-position-bottom-left uk-position-small">на <span class="uk-text-large uk-text-primary">10</span> дБ
                                             <br>тише</div>
                                     </div>
                                 </div>
@@ -458,7 +460,7 @@
                                     <div class="uk-inline">
                                         <img src="images/func-3.png" alt="">
                                         <div class="uk-position-top-left uk-position-small"><img src="images/icon-func-3.png" alt=""></div>
-                                        <div class="uk-position-bottom-left uk-position-small">в <span class="uk-text-large">3-5</span> раза
+                                        <div class="uk-position-bottom-left uk-position-small">в <span class="uk-text-large uk-text-primary">3-5</span> раза
                                             <br>прочнее</div>
                                     </div>
                                 </div>
@@ -478,27 +480,49 @@
                 <!-- /.uk-container -->
             </section>
             <!-- /.uk-section uk-section-default -->
-
             <!-- Секция. Красота окна -->
-
             <section class="uk-section uk-section-muted">
-            	<div class="uk-container">
-            		<h2 class="uk-h1 uk-text-center">Красота окна </h2>
-            		<hr class="uk-divider-small uk-margin-medium uk-text-center">
+                <div class="uk-container">
+                    <h2 class="uk-h1 uk-text-center">Красота окна </h2>
+                    <hr class="uk-divider-small uk-margin-medium uk-text-center">
+                    <div class="uk-child-width-1-2 uk-grid-collapse" uk-grid uk-height-match="target: > div">
+                        <div>
+                            <ul id="switcher-2" class="uk-switcher">
+                                <li>
+                                	<img src="images/beauty-1.jpg" alt="Серебрянная платина">
+                               
+                           <!--          <div class="uk-cover-container" uk-height-viewport >
+                                        <img src="images/beauty-1.jpg" alt="Серебрянная платина" uk-cover>
+                                    </div> -->
 
-            		<div class="uk-child-width-1-2 uk-grid-collapse" uk-grid>
-            			<div>
-            				<img src="images/beauty-1.jpg" alt="">
-            			</div>
-            			<div class="uk-padding">
-            				<h3>Ламинация</h3> 
-            				<p>36 цветов ламинации от мирового лидера – компании RENOLIT (Германия). Пленкам RENOLIT не страшны ни солнце, ни ветер, ни дождь. Пленки RENOLIT облагораживают окна, балконные, межкомнатные и входные двери, зимние сады, усиливают защитные свойства, энергоэффективность и увеличивают срок службы конструкций. </p>
-            				<h4>Популярные цвета</h4>
-            			</div>
-            		</div>
-            		
-            	</div>
-            	<!-- /.uk-container -->
+                          <!--           <div class="uk-cover-container">
+                                        <canvas width="600" height="600"></canvas>
+                                        <img uk-cover src="images/beauty-1.jpg" alt="">
+                                    </div> -->
+                                </li>
+                                <li><img src="images/beauty-2.jpg" alt="Драгоценная платина"></li>
+                                <li><img src="images/beauty-3.jpg" alt="Коричневый шоколад"></li>
+                                <li><img src="images/beauty-4.jpg" alt="Черная вишня"></li>
+                                <li><img src="images/beauty-5.jpg" alt="Золотой дуб"></li>
+                                <li><img src="images/beauty-6.jpg" alt="Антик"></li>
+                            </ul>
+                        </div>
+                        <div class="uk-padding">
+                            <h3>Ламинация</h3>
+                            <p>36 цветов ламинации от мирового лидера – компании RENOLIT (Германия). Пленкам RENOLIT не страшны ни солнце, ни ветер, ни дождь. Пленки RENOLIT облагораживают окна, балконные, межкомнатные и входные двери, зимние сады, усиливают защитные свойства, энергоэффективность и увеличивают срок службы конструкций. </p>
+                            <h4>Популярные цвета</h4>
+                            <ul class="uk-child-width-expand uk-grid-small" uk-grid uk-switcher="connect: #switcher-2; animation: uk-animation-fade">
+                                <li><a href="#" title="Серебрянная платина" uk-tooltip="offset: 20"><img class="uk-border-rounded" src="images/serebryanaya-platina.png" alt=""></a></li>
+                                <li><a href="#" title="Драгоценная платина" uk-tooltip="offset: 20"><img class="uk-border-rounded" src="images/dragocennaya-platina.png" alt=""></a></li>
+                                <li><a href="#" title="Коричневый шоколад" uk-tooltip="offset: 20"><img class="uk-border-rounded" src="images/koricnevij-shokolad.png" alt=""></a></li>
+                                <li><a href="#" title="Черная вишня" uk-tooltip="offset: 20"><img class="uk-border-rounded" src="images/chernaya-vishnya.png" alt=""></a></li>
+                                <li><a href="#" title="Золотой дуб" uk-tooltip="offset: 20"><img class="uk-border-rounded" src="images/zolotoy-dub.png" alt=""></a></li>
+                                <li><a href="#" title="Антик" uk-tooltip="offset: 20"><img class="uk-border-rounded" src="images/antik.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.uk-container -->
             </section>
             <!-- /.uk-section -->
         </main>
