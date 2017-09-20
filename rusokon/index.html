@@ -63,17 +63,20 @@
     <meta name="msvalidate.01" content="verification_token">
     <!-- Styles -->
     <link rel="stylesheet" href="css/uikit.rusokon.min.css">
+    <link rel="stylesheet" href="css/flickity.css">
     <link rel="stylesheet" href="css/custom.css">
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons-rusokon.min.js"></script>
+    <script src="js/flickity.js"></script>
     <script src="js/custom.js"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
     <div class="uk-offcanvas-content">
-        <header id="header" class="uk-section-xsmall uk-padding-remove-bottom" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+        <!-- Шапка сайта -->
+        <header id="header" class="uk-section-xsmall" role="banner" itemscope itemtype="http://schema.org/WPHeader">
             <div class="uk-container">
                 <div class="uk-flex-middle uk-child-width-auto" uk-grid>
                     <div>
@@ -81,46 +84,169 @@
                             <div><img class="uk-logo" src="images/logos/rusokon.svg" alt="РУСОКОН"></div>
                             <div>
                                 <p><span class="uk-h2 uk-text-uppercase">Русокон</span>
-                                    <br> Нам 12 лет!</p>
+                                    <br> <span class="uk-text-primary">Нам 12 лет!</span></p>
                             </div>
                         </div>
                     </div>
                     <div class="uk-width-expand">Скидка на окна 5 поколения
                         <br> до 50%!</div>
-                    <div class="uk-width-expand"><span class="uk-text-large"><a class="uk-link-reset" href="tel:+74957818777">8 495 781-87-77</a></span>
+                    <div class="uk-width-expand uk-text-right"><span class="uk-text-large uk-text-bold"><a class="uk-link-reset" href="tel:+74957818777">8 495 781-87-77</a></span>
                         <br> с 9:00 до 21:00, без выходных</div>
                     <div>
                         <button class="uk-button uk-button-primary" uk-toggle="target: #modal-call">Перезвоните мне</button>
                     </div>
                 </div>
-                <nav uk-navbar>
-                    <ul class="uk-navbar-nav uk-width-1-1 uk-child-width-expand uk-grid-collapse uk-text-uppercase" uk-grid>
-                        <li><a class="uk-padding-remove-left" href="#">пластиковые окна</a></li>
-                        <li class="uk-active"><a href="#">остекление коттеджей</a></li>
-                        <li><a href="#">деревянные окна</a></li>
-                        <li><a class="uk-padding-remove-right" href="#">Остекление балконов</a></li>
-                    </ul>
-                </nav>
             </div>
             <!-- /.container -->
         </header>
+        <!-- Навигация -->
+        <div class="uk-container">
+            <nav uk-navbar style="border-top: 1px solid #ccc;">
+                <ul class="uk-navbar-nav uk-width-1-1 uk-child-width-expand uk-grid-collapse uk-text-uppercase" uk-grid>
+                    <li><a class="uk-padding-remove-left" href="#">пластиковые окна</a></li>
+                    <li class="uk-active"><a href="#">остекление коттеджей</a></li>
+                    <li><a href="#">деревянные окна</a></li>
+                    <li><a class="uk-padding-remove-right" href="#">Остекление балконов</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /.uk-container -->
         <main id="main" role="main" itemscope itemprop="mainContentOfPage">
             <!-- Секция. Баннер -->
-            <section class="uk-section uk-section-muted uk-height-large">
+            <section class="uk">
+                <div data-flickity='{ "wrapAround": true, "pageDots": false, "dragThreshold": 10 }'>
+                    <div class="uk-width-1-1 uk-section uk-section-default uk-background-cover uk-background-image@s" style="background: url('images/main-banner.jpg');">
+                        <div class="uk-container">
+                            <div class="uk-child-width-1-3 uk-flex-middle" uk-grid>
+                                <div>
+                                    <h1 class="uk-heading-primary uk-text-uppercase">Остекление коттеджей</h1>
+                                    <h3>Проект обновленного дома заранее</h3>
+                                    <p>3D-визуализация сложных изделий на фото вашего дома. Посмотрите, как будет выглядеть именно ваш дом с новым остеклением!</p>
+                                </div>
+                                <div></div>
+                                <div>
+                                    <div class="uk-background-primary uk-padding-small">
+                                        <div class="uk-background-default uk-padding uk-text-center">
+                                            <h3>Заполните заявку</h3>
+                                            <form action="" method="POST">
+                                                <div class="uk-margin">
+                                                    <div class="uk-inline uk-width-1-1">
+                                                        <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                                        <input class="uk-input" type="text" placeholder="Ваше имя..." title="Введите ваше имя" uk-tooltip="pos: top-left ">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <div class="uk-inline uk-width-1-1">
+                                                        <span class="uk-form-icon" uk-icon="icon: receiver"></span>
+                                                        <input class="uk-input" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <input class="uk-button uk-button-primary uk-width-1-1" type="submit" value="Получить скидку">
+                                                </div>
+                                            </form>
+                                            <p class="uk-text-muted uk-text-small uk-margin-remove-bottom">Нажимая на кнопку, Вы даете согласие на обработку своих персональных данных.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.uk-container -->
+                    </div>
+                    <div class="uk-width-1-1 uk-section uk-section-default uk-background-cover uk-background-image@s" style="background: url('images/main-banner-2.jpg');">
+                        <div class="uk-container">
+                            <div class="uk-child-width-1-3 uk-flex-middle" uk-grid>
+                                <div>
+                                    <h1 class="uk-heading-primary uk-text-uppercase">Остекление коттеджей</h1>
+                                    <h3>Проект обновленного дома заранее</h3>
+                                    <p>3D-визуализация сложных изделий на фото вашего дома. Посмотрите, как будет выглядеть именно ваш дом с новым остеклением!</p>
+                                </div>
+                                <div></div>
+                                <div>
+                                    <div class="uk-background-primary uk-padding-small">
+                                        <div class="uk-background-default uk-padding uk-text-center">
+                                            <h3>Заполните заявку</h3>
+                                            <form action="" method="POST">
+                                                <div class="uk-margin">
+                                                    <div class="uk-inline uk-width-1-1">
+                                                        <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                                        <input class="uk-input" type="text" placeholder="Ваше имя..." title="Введите ваше имя" uk-tooltip="pos: top-left ">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <div class="uk-inline uk-width-1-1">
+                                                        <span class="uk-form-icon" uk-icon="icon: receiver"></span>
+                                                        <input class="uk-input" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <input class="uk-button uk-button-primary uk-width-1-1" type="submit" value="Получить скидку">
+                                                </div>
+                                            </form>
+                                            
+                                            <p class="uk-text-muted uk-text-small uk-margin-remove-bottom">Нажимая на кнопку, Вы даете согласие на обработку своих персональных данных.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.uk-container -->
+                    </div>
+                    <div class="uk-width-1-1 uk-section uk-section-default uk-background-cover uk-background-image@s" style="background: url('images/main-banner.jpg');">
+                        <div class="uk-container">
+                            <div class="uk-child-width-1-3 uk-flex-middle" uk-grid>
+                                <div>
+                                    <h1 class="uk-heading-primary uk-text-uppercase">Остекление коттеджей</h1>
+                                    <h3>Проект обновленного дома заранее</h3>
+                                    <p>3D-визуализация сложных изделий на фото вашего дома. Посмотрите, как будет выглядеть именно ваш дом с новым остеклением!</p>
+                                </div>
+                                <div></div>
+                                <div>
+                                    <div class="uk-background-primary uk-padding-small">
+                                        <div class="uk-background-default uk-padding uk-text-center">
+                                            <h3>Заполните заявку</h3>
+                                            <form action="" method="POST">
+                                                <div class="uk-margin">
+                                                    <div class="uk-inline uk-width-1-1">
+                                                        <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                                        <input class="uk-input" type="text" placeholder="Ваше имя..." title="Введите ваше имя" uk-tooltip="pos: top-left ">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-margin">
+                                                    <div class="uk-inline uk-width-1-1">
+                                                        <span class="uk-form-icon" uk-icon="icon: receiver"></span>
+                                                        <input class="uk-input" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <input class="uk-button uk-button-primary uk-width-1-1" type="submit" value="Получить скидку">
+                                                </div>
+                                            </form>
+                                            <p class="uk-text-muted uk-text-small uk-margin-remove-bottom">Нажимая на кнопку, Вы даете согласие на обработку своих персональных данных.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.uk-container -->
+                    </div>
+                </div>
             </section>
             <!-- Секция. Подменю -->
-            <div class="uk-container">
-                <nav uk-navbar style="border-bottom: 1px solid #ccc;">
-                    <ul class="uk-navbar-nav uk-text-uppercase">
-                        <li class="uk-active"><a href="">Пластиковые окна</a></li>
-                        <li><a href="">Деревянные окна</a></li>
-                    </ul>
-                </nav>
-                <!-- /.uk-navbar -->
+            <div class="uk-background-default" uk-sticky="cls-inactive: uk-box-shadow-medium">
+                <div class="uk-container">
+                    <nav uk-navbar>
+                        <ul class="uk-navbar-nav uk-text-uppercase">
+                            <li class="uk-active"><a href="">Пластиковые окна</a></li>
+                            <li><a href="">Деревянные окна</a></li>
+                        </ul>
+                    </nav>
+                    <!-- /.uk-navbar -->
+                </div>
+                <!-- /.uk-container -->
             </div>
-            <!-- /.uk-container -->
             <!-- Секция. Преимущества -->
-            <div class="uk-section uk-text-center">
+            <div class="uk-section uk-text-center" style="border-top: 1px solid #ccc;">
                 <div class="uk-container">
                     <h2 class="uk-h1">Преимущества</h2>
                     <h3 class="uk-margin-remove-top uk-text-muted uk-text-uppercase uk-h4">Лучшее, что Вы можете выбрать</h3>
@@ -485,18 +611,11 @@
                 <div class="uk-container">
                     <h2 class="uk-h1 uk-text-center">Красота окна </h2>
                     <hr class="uk-divider-small uk-margin-medium uk-text-center">
-                    <div class="uk-child-width-1-2 uk-grid-collapse uk-box-shadow-medium uk-background-default" uk-grid uk-height-match="target: > div">
+                    <div class="uk-child-width-1-2 uk-grid-collapse uk-box-shadow-medium uk-background-default uk-flex-middle" uk-grid uk-height-match="target: > div">
                         <div>
                             <ul id="switcher-2" class="uk-switcher">
                                 <li>
                                     <img src="images/beauty-1.jpg" alt="Серебрянная платина">
-                                    <!--          <div class="uk-cover-container" uk-height-viewport >
-                                        <img src="images/beauty-1.jpg" alt="Серебрянная платина" uk-cover>
-                                    </div> -->
-                                    <!--           <div class="uk-cover-container">
-                                        <canvas width="600" height="600"></canvas>
-                                        <img uk-cover src="images/beauty-1.jpg" alt="">
-                                    </div> -->
                                 </li>
                                 <li><img src="images/beauty-2.jpg" alt="Драгоценная платина"></li>
                                 <li><img src="images/beauty-3.jpg" alt="Коричневый шоколад"></li>
@@ -520,7 +639,7 @@
                         </div>
                     </div>
                     <!-- 2 -->
-                    <div class="uk-margin-medium-top uk-child-width-1-2 uk-grid-collapse uk-box-shadow-medium uk-background-default" uk-grid>
+                    <div class="uk-margin-medium-top uk-child-width-1-2 uk-grid-collapse uk-box-shadow-medium uk-background-default uk-flex-middle" uk-grid>
                         <div class="uk-padding">
                             <h3>Окрашивание</h3>
                             <p>Позволяет придать ПВХ-профилю практически любой цвет по шкале RAL, в том числе и «металлик». Применяются современные, долговечные и экологически безопасные краски Zobel Chemie с высокой атмосфероустойчивостью покрытий. </p>
@@ -553,7 +672,7 @@
                         </div>
                     </div>
                     <!-- 3 -->
-                    <div class="uk-margin-medium-top uk-child-width-1-2 uk-grid-collapse uk-box-shadow-medium uk-background-default" uk-grid>
+                    <div class="uk-margin-medium-top uk-child-width-1-2 uk-grid-collapse uk-box-shadow-medium uk-background-default uk-flex-middle" uk-grid>
                         <div>
                             <img src="images/beauty-8.jpg" alt="">
                         </div>
@@ -664,7 +783,7 @@
             <!-- Секция. Москитные сетки   -->
             <section class="uk-section uk-section-muted">
                 <div class="uk-container">
-                    <h2 class="uk-h1 uk-text-center">Москитные сетки  </h2>
+                    <h2 class="uk-h1 uk-text-center">Москитные сетки</h2>
                     <hr class="uk-divider-small uk-margin-medium uk-text-center">
                     <!-- 1 -->
                     <div class="uk-margin-medium-top uk-child-width-1-2 uk-grid-collapse uk-box-shadow-medium uk-background-default uk-flex-middle" uk-grid>
