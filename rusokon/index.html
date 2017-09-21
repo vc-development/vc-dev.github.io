@@ -107,20 +107,20 @@
         </header>
 
         <!-- Навигация -->
-        <div class="uk-container">
-            <nav uk-navbar style="border-top: 1px solid #ccc;">
+        <nav class="uk-navbar" uk-navbar style="border-top: 1px solid #ccc;">
+			<div class="uk-container">
                 <ul class="uk-navbar-nav uk-width-1-1 uk-child-width-expand uk-grid-collapse uk-text-uppercase" uk-grid>
                     <li><a class="uk-padding-remove-left" href="#">пластиковые окна</a></li>
                     <li class="uk-active"><a href="#">остекление коттеджей</a></li>
                     <li><a href="#">деревянные окна</a></li>
                     <li><a class="uk-padding-remove-right" href="#">Остекление балконов</a></li>
                 </ul>
-            </nav>
-        </div>
-        <!-- /.uk-container -->
+			</div>
+        </nav>
+
         <main id="main" role="main" itemscope itemprop="mainContentOfPage">
             <!-- Секция. Баннер -->
-            <section>
+            <section id="main-banner">
                 <div data-flickity='{ "wrapAround": true, "pageDots": false, "dragThreshold": 10 }'>
                     <div class="uk-width-1-1 uk-section uk-section-default uk-background-cover uk-background-image@s" style="background-image: url('images/main-banner.jpg');">
                         <div class="uk-container">
@@ -331,7 +331,7 @@
                 <div class="uk-container">
                     <h2 class="uk-h1">Преимущества</h2>
                     <h3 class="uk-margin-remove-top uk-text-muted uk-text-uppercase uk-h4">Лучшее, что Вы можете выбрать</h3>
-                    <hr class="uk-divider-small uk-margin-medium">
+                    <hr class="uk-divider-primary uk-divider-small uk-margin-medium">
                     <div class="uk-child-width-expand@s" uk-grid>
                         <div>
                             <img src="images/icon-advan-1.png" alt="Экономия">
