@@ -25,3 +25,7 @@
 	border-top: 4px solid #ff1a44;
 	vertical-align: top;
 }
+
+.rs-border-primary {
+	border: 7px solid #ff1a44;
+}
