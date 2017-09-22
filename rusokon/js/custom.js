@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function($) {
 
     $("#rs-slider").slick({
         accessibility: false,
@@ -13,20 +13,29 @@ $(document).ready(function() {
         nextArrow: '<a href="#" class="uk-position-center-right uk-position-medium uk-position-z-index" uk-icon="icon: chevron-right; ratio: 3"></a>'
     });
 
+    $("#rs-carousel-reviews").slick({
+        accessibility: false,
+        // autoplay: true,
+        autoplaySpeed: 3000,
+        waitForAnimate: false,
+        prevArrow: '<a href="#" class="uk-position-center-left uk-position-medium uk-position-z-index" uk-icon="icon: chevron-left; ratio: 3"></a>',
+        nextArrow: '<a href="#" class="uk-position-center-right uk-position-medium uk-position-z-index" uk-icon="icon: chevron-right; ratio: 3"></a>'
+    });
+
     // Slick Carousel
     $("#rs-carousel").slick({
         accessibility: false,
         arrows: false,
         autoplay: true,
         autoplaySpeed: 3000,
-        rows: 1,
+        // rows: 1,
         slidesToShow: 3,
         slidesToScroll: 3,
         centerPadding: '50px',
         dots: true,
         dotsClass: 'uk-flex uk-flex-center uk-margin uk-dotnav',
         customPaging: function(slider, i) {
-            return $('<span></span>');
+            return $('<span class="uk-link"></span>');
         },
         waitForAnimate: false,
         responsive: [{
