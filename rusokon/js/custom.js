@@ -3,11 +3,13 @@ jQuery(document).ready(function($) {
     $("#rs-slider").slick({
         accessibility: false,
         autoplay: true,
-		autoplaySpeed: 5000,
+        autoplaySpeed: 5000,
         infinite: true,
         speed: 500,
         fade: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        prevArrow: '<a href="#" class="uk-position-center-left uk-position-medium uk-position-z-index" uk-icon="icon: chevron-left; ratio: 3"></a>',
+        nextArrow: '<a href="#" class="uk-position-center-right uk-position-medium uk-position-z-index" uk-icon="icon: chevron-right; ratio: 3"></a>'
     });
 
     // Slick Carousel
@@ -19,11 +21,4 @@ jQuery(document).ready(function($) {
         slidesToShow: 3,
         slidesToScroll: 1
     });
-    // $("#next").click(function() {
-    //     $(".your-class").slick("slickNext");
-    // });
-    // $("#prev").click(function() {
-    //     $(".your-class").slick("slickPrev");
-    // });
-
 });
