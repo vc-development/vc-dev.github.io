@@ -2,32 +2,45 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600,600i&amp;subset=cyrillic,cyrillic-ext");
 
 @font-face {
-	font-family: "Proxima Nova";
-	src: url("../fonts/ProximaNova-Light.woff2") format("woff2"),
-		url("../fonts/ProximaNova-Light.woff") format("woff");
-		font-weight: 300;
-		font-style: normal;
+    font-family: "Proxima Nova";
+    src: url("../fonts/ProximaNova-Light.woff2") format("woff2"),
+    url("../fonts/ProximaNova-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: "Proxima Nova";
-	src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"),
-		url("../fonts/ProximaNova-Semibold.woff") format("woff");
-	font-weight: 600;
-	font-style: normal;
+    font-family: "Proxima Nova";
+    src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"),
+    url("../fonts/ProximaNova-Semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
 }
+
 
 /* New Divider */
+
 .uk-divider-primary.uk-divider-small::after {
-	content: "";
-	display: inline-block;
-	width: 100px;
-	max-width: 100%;
-	border-top: 4px solid #ff1a44;
-	vertical-align: top;
+    content: "";
+    display: inline-block;
+    width: 100px;
+    max-width: 100%;
+    border-top: 4px solid #ff1a44;
+    vertical-align: top;
 }
 
+<<<<<<< HEAD
 #rs-carousel .uk-dotnav > .slick-active> * {
 	/*background-color: rgba(102,102,102,0.4);*/
 	background-color: #ff1a44;
+=======
+#rs-carousel .uk-dotnav>li>* {
+    cursor: pointer;
 }
+
+#rs-carousel .uk-dotnav>.slick-active>* {
+    /*background-color: rgba(102,102,102,0.4);*/
+    background-color: #ff1a44;
+>>>>>>> 841940689bc1fa2f59182b40d90402b25072b959
+}
+
