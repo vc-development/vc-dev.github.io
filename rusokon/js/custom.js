@@ -1,7 +1,12 @@
 jQuery(document).ready(function($) {
 
+	$("#rs-slider").slick({
+		accessibility: false,
+		autoplay: true
+	});
+
     // Slick Carousel
-    $(".rs-carousel").slick({
+    $("#rs-carousel").slick({
         accessibility: false,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -9,11 +14,11 @@ jQuery(document).ready(function($) {
         slidesToShow: 3,
 		slidesToScroll: 1
     });
-    $("#next").click(function() {
-        $(".your-class").slick("slickNext");
-    });
-    $("#prev").click(function() {
-        $(".your-class").slick("slickPrev");
-    });
+    // $("#next").click(function() {
+    //     $(".your-class").slick("slickNext");
+    // });
+    // $("#prev").click(function() {
+    //     $(".your-class").slick("slickPrev");
+    // });
 
 });
