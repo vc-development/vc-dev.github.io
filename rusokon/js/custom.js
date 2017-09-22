@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+$(document).ready(function() {
 
     $("#rs-slider").slick({
         accessibility: false,
@@ -21,4 +21,5 @@ jQuery(document).ready(function($) {
         slidesToShow: 3,
         slidesToScroll: 1
     });
+
 });
