@@ -178,3 +178,8 @@
     display: none;
   }
 }
+
+/*Стили для форм в банерах*/
+.custom-order {
+  border: 8px solid #ff1a44;
+}
