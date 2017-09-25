@@ -29,52 +29,48 @@
   /*background-color: rgba(102,102,102,0.4);*/
   background-color: #ff1a44;
 }
+/*Стилизация свитчера в блоке
+Решение «РУСОКОН» для коттеджей*/
 
 .custom-list li.uk-active img {
   border: 2px solid red;
 }
 
-
-/*.custom-list li img {
-    position: relative;
-}*/
-
 .custom-list li a {
   position: relative;
-	/*background: #ff1a44;*/
 }
 
 .custom-list li.uk-active a:before {
-	bottom: 100%;
-	left: 0;
+  bottom: 100%;
+  left: 0;
   right: 0;
   margin: 0 auto;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(255, 38, 125, 0);
-	border-bottom-color: #ff1a44;
-	border-width: 8px;
-	/*margin-left: -30px;*/
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 38, 125, 0);
+  border-bottom-color: #ff1a44;
+  border-width: 8px;
 }
 
-
-
-
-/*убрали верхние поля на мобильных*/
-
-
-/*.custom-list li:nth-of-type(1n+2) {
-    margin-top: 0;
+@media (min-width: 960px) {
+  .custom-list li.uk-active a:before {
+    left: 100%;
+    top: 35%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 38, 125, 0);
+    border-left-color: #ff1a44;
+    border-width: 8px;
+  }
 }
-  @media (min-width: 960px) {
-    .custom-list li:nth-of-type(1n+2) {
-        margin-top: 10px;
-    }
-  }*/
 
 .custom-list img {
   border: 2px solid #b0afac;
