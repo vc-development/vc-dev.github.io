@@ -164,7 +164,7 @@
 												<div class="uk-margin">
 													<div class="uk-inline uk-width-1-1">
 														<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-phone-1; ratio:.7"></span>
-														<input class="uk-input" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
+														<input class="uk-input input-phone" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
 													</div>
 												</div>
 												<div>
@@ -617,7 +617,7 @@
 								<div>
 									<div class="uk-inline uk-width-1-1">
 										<span class="uk-form-icon" uk-icon="icon: iconmonstr-phone-1; ratio: 0.6"></span>
-										<input class="uk-input" title="Введите ваш номер телефона" uk-tooltip="pos: top-left" type="text" placeholder="Ваш телефон...">
+										<input class="uk-input input-phone" title="Введите ваш номер телефона" uk-tooltip="pos: top-left" type="text" placeholder="Ваш телефон...">
 									</div>
 								</div>
 								<div>
@@ -840,7 +840,7 @@
 										<div class="uk-margin">
 											<div class="uk-inline uk-width-1-1">
 												<span class="uk-form-icon" uk-icon="icon: iconmonstr-phone-1; ratio: 0.6"></span>
-												<input class="uk-input" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
+												<input class="uk-input input-phone" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
 											</div>
 										</div>
 										<div>
@@ -987,7 +987,7 @@
 								<div>
 									<div class="uk-inline uk-width-1-1">
 										<span class="uk-form-icon" uk-icon="icon: iconmonstr-phone-1; ratio: 0.6"></span>
-										<input class="uk-input" title="Введите ваш номер телефона" uk-tooltip="pos: top-left" type="text" placeholder="Ваш телефон...">
+										<input class="uk-input input-phone" title="Введите ваш номер телефона" uk-tooltip="pos: top-left" type="text" placeholder="Ваш телефон...">
 									</div>
 								</div>
 								<div>
@@ -1315,7 +1315,7 @@
 										<div class="uk-flex uk-margin">
 											<span class="uk-margin-small-right" uk-icon="icon: iconmonstr-time-3; ratio: 0.6"></span>
 											<div>
-												<span class="uk-text-muted">Часы работы:</span> с 9:00 до 21:00, без выходных
+												<span class="uk-intext-muted">Часы работы:</span> с 9:00 до 21:00, без выходных
 											</div>
 										</div>
 
@@ -1433,7 +1433,7 @@
 										<div>
 											<div class="uk-inline uk-width-1-1">
 												<span class="uk-form-icon" uk-icon="icon: iconmonstr-phone-1; ratio: 0.6"></span>
-												<input class="uk-input" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
+												<input class="uk-input input-phone" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
 											</div>
 										</div>
 										<div>
@@ -1513,7 +1513,7 @@
 				<div class="uk-margin">
 					<div class="uk-inline uk-width-1-1">
 						<span class="uk-form-icon" uk-icon="icon: iconmonstr-phone-1; ratio: 0.6"></span>
-						<input class="uk-input" type="text" placeholder="Ваш телефон...">
+						<input class="uk-input input-phone" type="text" placeholder="Ваш телефон...">
 					</div>
 				</div>
 				<div>
@@ -1527,6 +1527,7 @@
 
 	<!-- API Яндекс.карта -->
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="js/masked-input.js"></script>
 	<script>
 		ymaps.ready(function() {
 			var myMap1 = new ymaps.Map("ymap1", {
