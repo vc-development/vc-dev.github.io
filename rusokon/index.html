@@ -63,17 +63,20 @@
 	<meta name="msvalidate.01" content="verification_token">
 	<!-- Styles -->
 	<link rel="stylesheet" href="css/uikit.rusokon.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
-	<link rel="stylesheet" href="css/flickity.min.css">
+	<!-- <link rel="stylesheet" href="css/flickity.min.css"> -->
 	<link rel="stylesheet" href="css/custom.css">
 	<!-- Scripts -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate.min.js"></script>
 	<script src="js/uikit.min.js"></script>
 	<script src="js/uikit-icons-rusokon.min.js"></script>
+	<!-- <script src="js/swiper.min.js"></script> -->
+	<script src="js/swiper.jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
-	<script src="js/flickity.pkgd.min.js"></script>
+	<!-- <script src="js/flickity.pkgd.min.js"></script> -->
 	<script src="js/custom.js"></script>
 </head>
 
@@ -133,61 +136,187 @@
 		<main id="main" role="main" itemscope itemprop="mainContentOfPage">
 
 			<!-- Секция. Баннер -->
-			<section id="rs-slider" class="uk-position-relative">
-				<div class="uk-width-1-1 uk-section uk-section-default uk-background-cover uk-background-image@s" style="background-image: url('images/main-banner.jpg');">
-					<div class="uk-container">
-						<div class="uk-child-width-1-3 uk-flex-middle uk-grid-small" uk-grid>
-							<div>
-								<h1 class="uk-heading-primary uk-text-uppercase">Остекление коттеджей</h1>
-								<h3 class="uk-text-uppercase uk-text-primary">Сопроводительные работы за наш счет!</h3>
-								<p>Не просто окна! Решаем все необходимые вопросы от подготовки дома до выноса мусора.</p>
+			<section id="rs-slider" class="swiper-container uk-position-relative uk-inline">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide uk-width-1-1 uk-section uk-section-default uk-background-cover uk-background-image@s" style="background-image: url('images/main-banner.jpg');">
+						<div class="uk-container">
+							<div class="uk-child-width-1-3 uk-flex-middle uk-grid-small" uk-grid>
+								<div>
+									<h1 class="uk-heading-primary uk-text-uppercase">Остекление коттеджей</h1>
+									<h3 class="uk-text-uppercase uk-text-primary">Сопроводительные работы за наш счет!</h3>
+									<p>Не просто окна! Решаем все необходимые вопросы от подготовки дома до выноса мусора.</p>
+								</div>
+								<div></div>
+								<div>
+									<div class="uk-background-primary uk-padding-small">
+										<div class="uk-background-default uk-padding uk-text-center uk-position-relative">
+											<img class="uk-position-top-center" src="images/icon-banner.png" alt="" style="top: -55px;">
+											<h3 class="uk-margin-remove-bottom"><span class="uk-text-uppercase uk-display-block">Закажите</span> окна со скидкой 50%</h3>
+											<p class="uk-margin-small-top">Бесплатный замер</p>
+
+											<form class="uk-margin" action="/" method="POST">
+												<div class="uk-margin">
+													<div class="uk-inline uk-width-1-1">
+														<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-user-1; ratio:.7"></span>
+														<input class="uk-input" type="text" placeholder="Ваше имя..." title="Введите ваше имя" uk-tooltip="pos: top-left ">
+													</div>
+												</div>
+												<div class="uk-margin">
+													<div class="uk-inline uk-width-1-1">
+														<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-phone-1; ratio:.7"></span>
+														<input class="uk-input" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
+													</div>
+												</div>
+												<div>
+													<input class="uk-button uk-button-primary uk-width-1-1" type="submit" value="Получить скидку">
+												</div>
+											</form>
+
+											<!-- Countdown -->
+											<div class="uk-grid-small uk-child-width-auto uk-flex-center uk-text-center" uk-grid uk-countdown="date: 2017-09-27T08:54:29+00:00">
+												<div>
+													<div class="uk-countdown-number uk-countdown-days uk-text-large"></div>
+													<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Дни</div>
+												</div>
+												<div class="uk-countdown-separator uk-text-large">:</div>
+												<div>
+													<div class="uk-countdown-number uk-countdown-hours uk-text-large"></div>
+													<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Час.</div>
+												</div>
+												<div class="uk-countdown-separator uk-text-large">:</div>
+												<div>
+													<div class="uk-countdown-number uk-countdown-minutes uk-text-large"></div>
+													<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Мин.</div>
+												</div>
+												<div class="uk-countdown-separator uk-text-large">:</div>
+												<div>
+													<div class="uk-countdown-number uk-countdown-seconds uk-text-large"></div>
+													<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Сек.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div></div>
-							<div>
-								<div class="uk-background-primary uk-padding-small">
-									<div class="uk-background-default uk-padding uk-text-center uk-position-relative">
-										<img class="uk-position-top-center" src="images/icon-banner.png" alt="" style="top: -55px;">
-										<h3 class="uk-margin-remove-bottom"><span class="uk-text-uppercase uk-display-block">Закажите</span> окна со скидкой 50%</h3>
-										<p class="uk-margin-small-top">Бесплатный замер</p>
+						</div>
+					</div>
+					<div class="swiper-slide uk-width-1-1 uk-section uk-section-default uk-background-cover uk-background-image@s" style="background-image: url('images/main-banner-2.jpg');">
+						<div class="uk-container">
+							<div class="uk-child-width-1-3 uk-flex-middle uk-grid-small" uk-grid>
+								<div>
+									<h1 class="uk-heading-primary uk-text-uppercase">Остекление коттеджей</h1>
+									<h3 class="uk-text-uppercase uk-text-primary">Сопроводительные работы за наш счет!</h3>
+									<p>Не просто окна! Решаем все необходимые вопросы от подготовки дома до выноса мусора.</p>
+								</div>
+								<div></div>
+								<div>
+									<div class="uk-background-primary uk-padding-small">
+										<div class="uk-background-default uk-padding uk-text-center uk-position-relative">
+											<img class="uk-position-top-center" src="images/icon-banner.png" alt="" style="top: -55px;">
+											<h3 class="uk-margin-remove-bottom"><span class="uk-text-uppercase uk-display-block">Закажите</span> окна со скидкой 50%</h3>
+											<p class="uk-margin-small-top">Бесплатный замер</p>
 
-										<form class="uk-margin" action="/" method="POST">
-											<div class="uk-margin">
-												<div class="uk-inline uk-width-1-1">
-													<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-user-1; ratio:.7"></span>
-													<input class="uk-input" type="text" placeholder="Ваше имя..." title="Введите ваше имя" uk-tooltip="pos: top-left ">
+											<form class="uk-margin" action="/" method="POST">
+												<div class="uk-margin">
+													<div class="uk-inline uk-width-1-1">
+														<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-user-1; ratio: .7"></span>
+														<input class="uk-input" type="text" placeholder="Ваше имя..." title="Введите ваше имя" uk-tooltip="pos: top-left ">
+													</div>
+												</div>
+												<div class="uk-margin">
+													<div class="uk-inline uk-width-1-1">
+														<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-phone-1; ratio: .7"></span>
+														<input class="uk-input" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
+													</div>
+												</div>
+												<div>
+													<input class="uk-button uk-button-primary uk-width-1-1" type="submit" value="Получить скидку">
+												</div>
+											</form>
+
+											<!-- Countdown -->
+											<div class="uk-grid-small uk-child-width-auto uk-flex-center uk-text-center" uk-grid uk-countdown="date: 2017-09-27T08:54:29+00:00">
+												<div>
+													<div class="uk-countdown-number uk-countdown-days uk-text-large"></div>
+													<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Дни</div>
+												</div>
+												<div class="uk-countdown-separator uk-text-large">:</div>
+												<div>
+													<div class="uk-countdown-number uk-countdown-hours uk-text-large"></div>
+													<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Час.</div>
+												</div>
+												<div class="uk-countdown-separator uk-text-large">:</div>
+												<div>
+													<div class="uk-countdown-number uk-countdown-minutes uk-text-large"></div>
+													<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Мин.</div>
+												</div>
+												<div class="uk-countdown-separator uk-text-large">:</div>
+												<div>
+													<div class="uk-countdown-number uk-countdown-seconds uk-text-large"></div>
+													<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Сек.</div>
 												</div>
 											</div>
-											<div class="uk-margin">
-												<div class="uk-inline uk-width-1-1">
-													<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-phone-1; ratio:.7"></span>
-													<input class="uk-input" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
-												</div>
-											</div>
-											<div>
-												<input class="uk-button uk-button-primary uk-width-1-1" type="submit" value="Получить скидку">
-											</div>
-										</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide uk-width-1-1 uk-section uk-section-default uk-background-cover uk-background-image@s" style="background-image: url('images/main-banner.jpg');">
+						<div class="uk-container">
+							<div class="uk-child-width-1-3 uk-flex-middle uk-grid-small" uk-grid>
+								<div>
+									<h1 class="uk-heading-primary uk-text-uppercase">Остекление коттеджей</h1>
+									<h3 class="uk-text-uppercase uk-text-primary">Сопроводительные работы за наш счет!</h3>
+									<p>Не просто окна! Решаем все необходимые вопросы от подготовки дома до выноса мусора.</p>
+								</div>
+								<div></div>
+								<div>
+									<div class="uk-background-primary uk-padding-small">
+										<div class="uk-background-default uk-padding uk-text-center uk-position-relative">
+											<img class="uk-position-top-center" src="images/icon-banner.png" alt="" style="top: -55px;">
+											<h3 class="uk-margin-remove-bottom"><span class="uk-text-uppercase uk-display-block">Закажите</span> окна со скидкой 50%</h3>
+											<p class="uk-margin-small-top">Бесплатный замер</p>
 
-										<!-- Countdown -->
-										<div class="uk-grid-small uk-child-width-auto uk-flex-center uk-text-center" uk-grid uk-countdown="date: 2017-09-27T08:54:29+00:00">
-											<div>
-												<div class="uk-countdown-number uk-countdown-days uk-text-large"></div>
-												<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Дни</div>
-											</div>
-											<div class="uk-countdown-separator uk-text-large">:</div>
-											<div>
-												<div class="uk-countdown-number uk-countdown-hours uk-text-large"></div>
-												<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Час.</div>
-											</div>
-											<div class="uk-countdown-separator uk-text-large">:</div>
-											<div>
-												<div class="uk-countdown-number uk-countdown-minutes uk-text-large"></div>
-												<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Мин.</div>
-											</div>
-											<div class="uk-countdown-separator uk-text-large">:</div>
-											<div>
-												<div class="uk-countdown-number uk-countdown-seconds uk-text-large"></div>
-												<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Сек.</div>
+											<form class="uk-margin" action="/" method="POST">
+												<div class="uk-margin">
+													<div class="uk-inline uk-width-1-1">
+														<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-user-1; ratio: .7"></span>
+														<input class="uk-input" type="text" placeholder="Ваше имя..." title="Введите ваше имя" uk-tooltip="pos: top-left ">
+													</div>
+												</div>
+												<div class="uk-margin">
+													<div class="uk-inline uk-width-1-1">
+														<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-phone-1; ratio: .7"></span>
+														<input class="uk-input" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
+													</div>
+												</div>
+												<div>
+													<input class="uk-button uk-button-primary uk-width-1-1" type="submit" value="Получить скидку">
+												</div>
+											</form>
+
+											<!-- Countdown -->
+											<div class="uk-grid-small uk-child-width-auto uk-flex-center uk-text-center" uk-grid uk-countdown="date: 2017-09-27T08:54:29+00:00">
+												<div>
+													<div class="uk-countdown-number uk-countdown-days uk-text-large"></div>
+													<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Дни</div>
+												</div>
+												<div class="uk-countdown-separator uk-text-large">:</div>
+												<div>
+													<div class="uk-countdown-number uk-countdown-hours uk-text-large"></div>
+													<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Час.</div>
+												</div>
+												<div class="uk-countdown-separator uk-text-large">:</div>
+												<div>
+													<div class="uk-countdown-number uk-countdown-minutes uk-text-large"></div>
+													<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Мин.</div>
+												</div>
+												<div class="uk-countdown-separator uk-text-large">:</div>
+												<div>
+													<div class="uk-countdown-number uk-countdown-seconds uk-text-large"></div>
+													<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Сек.</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -196,130 +325,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="uk-width-1-1 uk-section uk-section-default uk-background-cover uk-background-image@s" style="background-image: url('images/main-banner-2.jpg');">
-					<div class="uk-container">
-						<div class="uk-child-width-1-3 uk-flex-middle uk-grid-small" uk-grid>
-							<div>
-								<h1 class="uk-heading-primary uk-text-uppercase">Остекление коттеджей</h1>
-								<h3 class="uk-text-uppercase uk-text-primary">Сопроводительные работы за наш счет!</h3>
-								<p>Не просто окна! Решаем все необходимые вопросы от подготовки дома до выноса мусора.</p>
-							</div>
-							<div></div>
-							<div>
-								<div class="uk-background-primary uk-padding-small">
-									<div class="uk-background-default uk-padding uk-text-center uk-position-relative">
-										<img class="uk-position-top-center" src="images/icon-banner.png" alt="" style="top: -55px;">
-										<h3 class="uk-margin-remove-bottom"><span class="uk-text-uppercase uk-display-block">Закажите</span> окна со скидкой 50%</h3>
-										<p class="uk-margin-small-top">Бесплатный замер</p>
-
-										<form class="uk-margin" action="/" method="POST">
-											<div class="uk-margin">
-												<div class="uk-inline uk-width-1-1">
-													<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-user-1; ratio: .7"></span>
-													<input class="uk-input" type="text" placeholder="Ваше имя..." title="Введите ваше имя" uk-tooltip="pos: top-left ">
-												</div>
-											</div>
-											<div class="uk-margin">
-												<div class="uk-inline uk-width-1-1">
-													<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-phone-1; ratio: .7"></span>
-													<input class="uk-input" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
-												</div>
-											</div>
-											<div>
-												<input class="uk-button uk-button-primary uk-width-1-1" type="submit" value="Получить скидку">
-											</div>
-										</form>
-
-										<!-- Countdown -->
-										<div class="uk-grid-small uk-child-width-auto uk-flex-center uk-text-center" uk-grid uk-countdown="date: 2017-09-27T08:54:29+00:00">
-											<div>
-												<div class="uk-countdown-number uk-countdown-days uk-text-large"></div>
-												<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Дни</div>
-											</div>
-											<div class="uk-countdown-separator uk-text-large">:</div>
-											<div>
-												<div class="uk-countdown-number uk-countdown-hours uk-text-large"></div>
-												<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Час.</div>
-											</div>
-											<div class="uk-countdown-separator uk-text-large">:</div>
-											<div>
-												<div class="uk-countdown-number uk-countdown-minutes uk-text-large"></div>
-												<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Мин.</div>
-											</div>
-											<div class="uk-countdown-separator uk-text-large">:</div>
-											<div>
-												<div class="uk-countdown-number uk-countdown-seconds uk-text-large"></div>
-												<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Сек.</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="uk-width-1-1 uk-section uk-section-default uk-background-cover uk-background-image@s" style="background-image: url('images/main-banner.jpg');">
-					<div class="uk-container">
-						<div class="uk-child-width-1-3 uk-flex-middle uk-grid-small" uk-grid>
-							<div>
-								<h1 class="uk-heading-primary uk-text-uppercase">Остекление коттеджей</h1>
-								<h3 class="uk-text-uppercase uk-text-primary">Сопроводительные работы за наш счет!</h3>
-								<p>Не просто окна! Решаем все необходимые вопросы от подготовки дома до выноса мусора.</p>
-							</div>
-							<div></div>
-							<div>
-								<div class="uk-background-primary uk-padding-small">
-									<div class="uk-background-default uk-padding uk-text-center uk-position-relative">
-										<img class="uk-position-top-center" src="images/icon-banner.png" alt="" style="top: -55px;">
-										<h3 class="uk-margin-remove-bottom"><span class="uk-text-uppercase uk-display-block">Закажите</span> окна со скидкой 50%</h3>
-										<p class="uk-margin-small-top">Бесплатный замер</p>
-
-										<form class="uk-margin" action="/" method="POST">
-											<div class="uk-margin">
-												<div class="uk-inline uk-width-1-1">
-													<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-user-1; ratio: .7"></span>
-													<input class="uk-input" type="text" placeholder="Ваше имя..." title="Введите ваше имя" uk-tooltip="pos: top-left ">
-												</div>
-											</div>
-											<div class="uk-margin">
-												<div class="uk-inline uk-width-1-1">
-													<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-phone-1; ratio: .7"></span>
-													<input class="uk-input" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
-												</div>
-											</div>
-											<div>
-												<input class="uk-button uk-button-primary uk-width-1-1" type="submit" value="Получить скидку">
-											</div>
-										</form>
-
-										<!-- Countdown -->
-										<div class="uk-grid-small uk-child-width-auto uk-flex-center uk-text-center" uk-grid uk-countdown="date: 2017-09-27T08:54:29+00:00">
-											<div>
-												<div class="uk-countdown-number uk-countdown-days uk-text-large"></div>
-												<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Дни</div>
-											</div>
-											<div class="uk-countdown-separator uk-text-large">:</div>
-											<div>
-												<div class="uk-countdown-number uk-countdown-hours uk-text-large"></div>
-												<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Час.</div>
-											</div>
-											<div class="uk-countdown-separator uk-text-large">:</div>
-											<div>
-												<div class="uk-countdown-number uk-countdown-minutes uk-text-large"></div>
-												<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Мин.</div>
-											</div>
-											<div class="uk-countdown-separator uk-text-large">:</div>
-											<div>
-												<div class="uk-countdown-number uk-countdown-seconds uk-text-large"></div>
-												<div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Сек.</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				<div class="swiper-pagination"></div>
+				<ul class="uk-dotnav uk-flex uk-flex-center uk-margin uk-flex-nowrap"></ul>
+				<a href="#" class="uk-position-center-left uk-position-medium uk-position-z-index uk-slidenav-large uk-slidenav-previous" uk-slidenav-previous></a>
+				<a href="#" class="uk-position-center-right uk-position-medium uk-position-z-index uk-slidenav-large uk-slidenav-next" uk-slidenav-next></a>
 			</section>
 
 			<!-- Секция. Подменю -->
@@ -625,78 +634,78 @@
 					<h2 class="uk-h1 uk-text-center">Функциональные стеклопакеты</h2>
 					<p class="uk-margin-remove-top uk-text-muted uk-text-uppercase uk-h4 uk-text-center uk-width-xxlarge uk-margin-auto">Помимо стандартных стеклопакетов Вы можете заказать стеклопакеты с дополнительным функционалом.</h3>
 
-					<hr class="uk-divider-primary uk-divider-small uk-margin-medium uk-text-center">
+						<hr class="uk-divider-primary uk-divider-small uk-margin-medium uk-text-center">
 
-					<div class="uk-child-width-1-3@s" uk-grid uk-height-match="target: > div > .uk-card">
-						<div>
-							<div class="uk-card uk-card-small uk-box-shadow-medium uk-background-default">
-								<div class="uk-card-media-top">
-									<div class="uk-inline">
-										<img src="images/func-1.png" alt="">
-										<div class="uk-position-top-left uk-position-small">
-											<img src="images/icon-func-1.png" alt="">
-										</div>
-										<div class="uk-position-bottom-left uk-position-small">
-											<span class="uk-text-large uk-text-primary">-50%</span><br> теплопотерь
+						<div class="uk-child-width-1-3@s" uk-grid uk-height-match="target: > div > .uk-card">
+							<div>
+								<div class="uk-card uk-card-small uk-box-shadow-medium uk-background-default">
+									<div class="uk-card-media-top">
+										<div class="uk-inline">
+											<img src="images/func-1.png" alt="">
+											<div class="uk-position-top-left uk-position-small">
+												<img src="images/icon-func-1.png" alt="">
+											</div>
+											<div class="uk-position-bottom-left uk-position-small">
+												<span class="uk-text-large uk-text-primary">-50%</span><br> теплопотерь
+											</div>
 										</div>
 									</div>
+									<div class="uk-card-body">
+										<h3>Мульти&shy;функ&shy;циональный</h3>
+										<ul class="uk-list uk-list-bullet">
+											<li>снижает теплопотери более чем на 50% по сравнению с обычным стеклом;</li>
+											<li>защищает помещения от перегрева в летний период;</li>
+											<li>препятствует образованию конденсата и запотеванию;</li>
+											<li>свето&shy;прозрачность обычного стекла.</li>
+										</ul>
+									</div>
 								</div>
-								<div class="uk-card-body">
-									<h3>Мульти&shy;функ&shy;циональный</h3>
-									<ul class="uk-list uk-list-bullet">
-										<li>снижает теплопотери более чем на 50% по сравнению с обычным стеклом;</li>
-										<li>защищает помещения от перегрева в летний период;</li>
-										<li>препятствует образованию конденсата и запотеванию;</li>
-										<li>свето&shy;прозрачность обычного стекла.</li>
-									</ul>
+							</div>
+							<div>
+								<div class="uk-card uk-card-small uk-box-shadow-medium uk-background-default">
+									<div class="uk-card-media-top">
+										<div class="uk-inline">
+											<img src="images/func-2.png" alt="">
+											<div class="uk-position-top-left uk-position-small"><img src="images/icon-func-2.png" alt=""></div>
+											<div class="uk-position-bottom-left uk-position-small">на <span class="uk-text-large uk-text-primary">10</span> дБ
+												<br>тише</div>
+										</div>
+									</div>
+									<div class="uk-card-body">
+										<h3>Шумо&shy;защитный</h3>
+										<p>Создается сочетанием более толстого стекла и камер разной ширины для снижения звукового резонанса между стеклами – на 10 дБ тише по сравнению с 2-камерным стеклопакетом.</p>
+										<ul class="uk-list uk-list-bullet">
+											<li>1 стекло 6 мм вместо 4 мм,</li>
+											<li>ассимметричные камеры</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="uk-card uk-card-small uk-box-shadow-medium uk-background-default">
+									<div class="uk-card-media-top">
+										<div class="uk-inline">
+											<img src="images/func-3.png" alt="">
+											<div class="uk-position-top-left uk-position-small">
+												<img src="images/icon-func-3.png" alt="">
+											</div>
+											<div class="uk-position-bottom-left uk-position-small">
+												в <span class="uk-text-large uk-text-primary">3-5</span> раза<br> прочнее
+											</div>
+										</div>
+									</div>
+									<div class="uk-card-body">
+										<h3>Ударо&shy;стойкий</h3>
+										<p>Специальные стекла при ударе не разбиваются сразу, увеличивая шум и затраты времени при взломе.</p>
+										<ul>
+											<li>Триплекс – два слоя, склеенных полимером, осколки не распадаются;</li>
+											<li>Закаленное стекло в 3-5 раз прочнее обычного, разбиваясь, не образует острых осколков;</li>
+											<li>Специальная защитная пленка удержит осколки внутри.</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div>
-							<div class="uk-card uk-card-small uk-box-shadow-medium uk-background-default">
-								<div class="uk-card-media-top">
-									<div class="uk-inline">
-										<img src="images/func-2.png" alt="">
-										<div class="uk-position-top-left uk-position-small"><img src="images/icon-func-2.png" alt=""></div>
-										<div class="uk-position-bottom-left uk-position-small">на <span class="uk-text-large uk-text-primary">10</span> дБ
-											<br>тише</div>
-									</div>
-								</div>
-								<div class="uk-card-body">
-									<h3>Шумо&shy;защитный</h3>
-									<p>Создается сочетанием более толстого стекла и камер разной ширины для снижения звукового резонанса между стеклами – на 10 дБ тише по сравнению с 2-камерным стеклопакетом.</p>
-									<ul class="uk-list uk-list-bullet">
-										<li>1 стекло 6 мм вместо 4 мм,</li>
-										<li>ассимметричные камеры</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div>
-							<div class="uk-card uk-card-small uk-box-shadow-medium uk-background-default">
-								<div class="uk-card-media-top">
-									<div class="uk-inline">
-										<img src="images/func-3.png" alt="">
-										<div class="uk-position-top-left uk-position-small">
-											<img src="images/icon-func-3.png" alt="">
-										</div>
-										<div class="uk-position-bottom-left uk-position-small">
-											в <span class="uk-text-large uk-text-primary">3-5</span> раза<br> прочнее
-										</div>
-									</div>
-								</div>
-								<div class="uk-card-body">
-									<h3>Ударо&shy;стойкий</h3>
-									<p>Специальные стекла при ударе не разбиваются сразу, увеличивая шум и затраты времени при взломе.</p>
-									<ul>
-										<li>Триплекс – два слоя, склеенных полимером, осколки не распадаются;</li>
-										<li>Закаленное стекло в 3-5 раз прочнее обычного, разбиваясь, не образует острых осколков;</li>
-										<li>Специальная защитная пленка удержит осколки внутри.</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</section>
 
@@ -1102,8 +1111,8 @@
 								<div>
 									<div class="uk-flex uk-flex-middle uk-padding uk-height-1-1">
 										<blockquote cite="#">
-										    <p>Добрый день! Заказала окна в «РУСОКОН» в октябре м-це с. г. Приехала бригада монтажников: Стецкий Евгений и Ярослав. Установили качественно, быстро, аккуратно. В декабре снова заказала в этой компании и попросила, чтобы прислали этих ребят, к
-												моей просьбе отнеслись с пониманием, и снова я встретилась с этими мастерами. Огромное спасибо!!! Буду рекомендовать всем.</p>
+											<p>Добрый день! Заказала окна в «РУСОКОН» в октябре м-це с. г. Приехала бригада монтажников: Стецкий Евгений и Ярослав. Установили качественно, быстро, аккуратно. В декабре снова заказала в этой компании и попросила, чтобы прислали этих ребят,
+												к моей просьбе отнеслись с пониманием, и снова я встретилась с этими мастерами. Огромное спасибо!!! Буду рекомендовать всем.</p>
 										</blockquote>
 										<div class="uk-flex-bottom">
 											<span class="uk-margin-small-right" data-uk-icon="icon: iconmonstr-star-3"></span>
@@ -1131,8 +1140,8 @@
 								<div>
 									<div class="uk-flex uk-flex-middle uk-padding uk-height-1-1">
 										<blockquote cite="#">
-										    <p>Добрый день! Заказала окна в «РУСОКОН» в октябре м-це с. г. Приехала бригада монтажников: Стецкий Евгений и Ярослав. Установили качественно, быстро, аккуратно. В декабре снова заказала в этой компании и попросила, чтобы прислали этих ребят, к
-												моей просьбе отнеслись с пониманием, и снова я встретилась с этими мастерами. Огромное спасибо!!! Буду рекомендовать всем.</p>
+											<p>Добрый день! Заказала окна в «РУСОКОН» в октябре м-це с. г. Приехала бригада монтажников: Стецкий Евгений и Ярослав. Установили качественно, быстро, аккуратно. В декабре снова заказала в этой компании и попросила, чтобы прислали этих ребят,
+												к моей просьбе отнеслись с пониманием, и снова я встретилась с этими мастерами. Огромное спасибо!!! Буду рекомендовать всем.</p>
 										</blockquote>
 										<div class="uk-flex-bottom">
 											<span class="uk-margin-small-right" data-uk-icon="icon: iconmonstr-star-3"></span>
@@ -1160,8 +1169,8 @@
 								<div>
 									<div class="uk-flex uk-flex-middle uk-padding uk-height-1-1">
 										<blockquote cite="#">
-										    <p>Добрый день! Заказала окна в «РУСОКОН» в октябре м-це с. г. Приехала бригада монтажников: Стецкий Евгений и Ярослав. Установили качественно, быстро, аккуратно. В декабре снова заказала в этой компании и попросила, чтобы прислали этих ребят, к
-												моей просьбе отнеслись с пониманием, и снова я встретилась с этими мастерами. Огромное спасибо!!! Буду рекомендовать всем.</p>
+											<p>Добрый день! Заказала окна в «РУСОКОН» в октябре м-це с. г. Приехала бригада монтажников: Стецкий Евгений и Ярослав. Установили качественно, быстро, аккуратно. В декабре снова заказала в этой компании и попросила, чтобы прислали этих ребят,
+												к моей просьбе отнеслись с пониманием, и снова я встретилась с этими мастерами. Огромное спасибо!!! Буду рекомендовать всем.</p>
 										</blockquote>
 										<div class="uk-flex-bottom">
 											<span class="uk-margin-small-right" data-uk-icon="icon: iconmonstr-star-3"></span>
