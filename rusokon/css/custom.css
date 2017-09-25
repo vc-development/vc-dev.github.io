@@ -29,6 +29,8 @@
   /*background-color: rgba(102,102,102,0.4);*/
   background-color: #ff1a44;
 }
+
+
 /*Стилизация свитчера в блоке
 Решение «РУСОКОН» для коттеджей*/
 
@@ -84,12 +86,15 @@
   }
 }
 
+
 /*Блок Из чего мы производим окна
 нового поколения*/
-.custom-tab  {
+
+.custom-tab {
   margin-bottom: 0;
   z-index: 3;
 }
+
 .custom-tab li.uk-active a {
   background-color: #ff1a44;
   color: #fff;
@@ -99,18 +104,22 @@
 }
 
 .custom-tab.uk-tab::before {
-    border-bottom: none;
+  border-bottom: none;
 }
+
+
 /*.custom-tab.uk-tab>* {
   padding-left: 8px;
 }*/
+
 .custom-tab li:nth-of-type(1n+2) {
-    padding-left: 10px;
-  }
+  padding-left: 10px;
+}
+
 .custom-tab li a {
   padding: 20px 10px;
-
 }
+
 .custom-tab-content {
   z-index: 2;
   top: -10px;
@@ -132,10 +141,12 @@
   border-width: 10px;
 }
 
+
 /*Стилизация светчера в блоке популярных цветов*/
-.popular-colors  img {
-    border: 2px solid #b0afac;
-    border-radius: 10px;
+
+.popular-colors img {
+  border: 2px solid #b0afac;
+  border-radius: 10px;
 }
 
 .popular-colors li.uk-active img {
@@ -160,15 +171,10 @@
   border-color: rgba(255, 38, 125, 0);
   border-bottom-color: #ff1a44;
   border-width: 8px;
-
-
-
 }
-  @media (min-width: 640px) {
-    .popular-colors li.uk-active a:before {
-display: none;
 
-
-
-    }
+@media (min-width: 640px) {
+  .popular-colors li.uk-active a:before {
+    display: none;
   }
+}
