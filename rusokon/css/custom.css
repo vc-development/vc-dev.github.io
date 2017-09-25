@@ -33,3 +33,12 @@
     /*background-color: rgba(102,102,102,0.4);*/
     background-color: #ff1a44;
 }
+
+
+
+
+  @media (min-width: 960px) {
+    .custom-list {
+      flex-direction: column;
+    }
+  }
