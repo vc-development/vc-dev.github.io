@@ -37,4 +37,7 @@ $(document).ready(function() {
         bulletActiveClass: "uk-active"
     });
 
+
+
+
 });
