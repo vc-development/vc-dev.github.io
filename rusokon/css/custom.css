@@ -1,65 +1,76 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i&amp;subset=cyrillic,cyrillic-ext");
-
 @font-face {
-    font-family: "Proxima Nova";
-    src: url("../fonts/ProximaNova-Light.woff2") format("woff2"),
-    url("../fonts/ProximaNova-Light.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Light.woff2") format("woff2"), url("../fonts/ProximaNova-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Proxima Nova";
-    src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"),
-    url("../fonts/ProximaNova-Semibold.woff") format("woff");
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
 }
 
 
 /* New Divider */
 
 .uk-divider-primary.uk-divider-small::after {
-    content: "";
-    display: inline-block;
-    width: 100px;
-    max-width: 100%;
-    border-top: 4px solid #ff1a44;
-    vertical-align: top;
+  content: "";
+  display: inline-block;
+  width: 100px;
+  max-width: 100%;
+  border-top: 4px solid #ff1a44;
+  vertical-align: top;
 }
 
-#rs-carousel .uk-dotnav>.slick-active>*,
-#rs-carousel-reviews .uk-dotnav>.slick-active>*  {
-    /*background-color: rgba(102,102,102,0.4);*/
-    background-color: #ff1a44;
+#rs-carousel .uk-dotnav>.slick-active>*, #rs-carousel-reviews .uk-dotnav>.slick-active>* {
+  /*background-color: rgba(102,102,102,0.4);*/
+  background-color: #ff1a44;
 }
-
+/*Стилизация свитчера в блоке
+Решение «РУСОКОН» для коттеджей*/
 
 .custom-list li.uk-active img {
   border: 2px solid red;
+}
+
+.custom-list li a {
   position: relative;
 }
-.custom-list li.uk-active img:before {
-  content:""; /*вместо того, чтобы создавать div с фоном и позиционировать внутри родительского блока*/
-  position:absolute;
-  top:0;
-  left:0;
-  z-index: 222;
-  width:20px;
-  height:20px;
-  background:url(../images/iconmonstr-triangle-1.svg);
+
+.custom-list li.uk-active a:before {
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 38, 125, 0);
+  border-bottom-color: #ff1a44;
+  border-width: 8px;
 }
 
-
-/*убрали верхние поля на мобильных*/
-/*.custom-list li:nth-of-type(1n+2) {
-    margin-top: 0;
+@media (min-width: 960px) {
+  .custom-list li.uk-active a:before {
+    left: 100%;
+    top: 35%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 38, 125, 0);
+    border-left-color: #ff1a44;
+    border-width: 8px;
+  }
 }
-  @media (min-width: 960px) {
-    .custom-list li:nth-of-type(1n+2) {
-        margin-top: 10px;
-    }
-  }*/
 
 .custom-list img {
   border: 2px solid #b0afac;
@@ -67,8 +78,8 @@
   border-radius: 10px;
 }
 
-  @media (min-width: 960px) {
-    .custom-list {
-      flex-direction: column;
-    }
+@media (min-width: 960px) {
+  .custom-list {
+    flex-direction: column;
   }
+}
