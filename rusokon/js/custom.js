@@ -89,6 +89,6 @@ $(document).ready(function() {
     });
 
 
-
+// UIkit.tab('#my-tab').$destroy();
 
 });
