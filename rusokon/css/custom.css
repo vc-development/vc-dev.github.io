@@ -255,6 +255,9 @@
 .contacts-tab.uk-tab::before {
   border-bottom: none;
 }
+.custom-padding-top {
+  padding-top: 5px;
+}
 
 
 /*
