@@ -33,7 +33,10 @@ $(document).ready(function() {
         effect: "fade",
         slidesPerView: 1,
         nextButton: ".uk-slidenav-next",
-        prevButton: ".uk-slidenav-previous"
+        prevButton: ".uk-slidenav-previous",
+		// containerModifierClass: "rs-slider-container",
+		// slideClass: "rs-slider-slide",
+		// wrapperClass: "rs-slider-wrapper"
     });
 
     // Reviews Carousel
