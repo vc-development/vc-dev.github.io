@@ -157,26 +157,6 @@
   border: 2px solid red;
 }
 
-.popular-colors li a {
-  position: relative;
-}
-
-.popular-colors li.uk-active a:before {
-  bottom: 200%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: rgba(255, 38, 125, 0);
-  border-bottom-color: #ff1a44;
-  border-width: 8px;
-}
-
 @media (min-width: 640px) {
   .popular-colors li.uk-active a:before {
     display: none;
@@ -189,11 +169,6 @@
 .custom-order {
   border: 8px solid #ff1a44;
 }
-
-
-/*.custom-order [type="submit"] {
-  font-weight: 600;
-}*/
 
 
 /*Раздел контакты, стилизация табов*/
