@@ -77,8 +77,11 @@
 <body itemscope itemtype="http://schema.org/WebPage">
 	<div class="uk-offcanvas-content">
 
-		<!-- Шапка сайта -->
-		<header id="header" class="uk-section-xsmall" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+		<!-- Header -->
+		<div class="uk-hidden@m">
+			test
+		</div>
+		<header id="header" class="header uk-section-xsmall uk-padding-remove-bottom uk-background-default uk-box-shadow-medium uk-visible@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #rs-slider; target: true" role="banner" itemscope itemtype="http://schema.org/WPHeader" style="z-index: 2;">
 			<div class="uk-container">
 				<div class="uk-flex-middle uk-child-width-auto" uk-grid>
 					<div>
@@ -101,28 +104,26 @@
 						<button class="uk-button uk-button-primary" uk-toggle="target: #modal-call">Перезвоните мне</button>
 					</div>
 				</div>
+
+				<!-- Menu -->
+				<nav class="uk-navbar uk-margin-top" uk-navbar style="border-top: 1px solid #ccc;">
+					<ul class="uk-navbar-nav uk-width-1-1 uk-child-width-expand uk-grid-collapse uk-text-uppercase" uk-grid>
+						<li>
+							<a class="uk-padding-remove-left" href="index.html">пластиковые окна</a>
+						</li>
+						<li class="uk-active">
+							<a href="index.html">остекление коттеджей</a>
+						</li>
+						<li>
+							<a href="index.html">деревянные окна</a>
+						</li>
+						<li>
+							<a class="uk-padding-remove-right" href="index.html">Остекление балконов</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
 		</header>
-
-		<!-- Навигация -->
-		<div class="uk-container">
-			<nav class="uk-navbar" uk-navbar style="border-top: 1px solid #ccc;">
-				<ul class="uk-navbar-nav uk-width-1-1 uk-child-width-expand uk-grid-collapse uk-text-uppercase" uk-grid>
-					<li>
-						<a class="uk-padding-remove-left" href="index.html">пластиковые окна</a>
-					</li>
-					<li class="uk-active">
-						<a href="index.html">остекление коттеджей</a>
-					</li>
-					<li>
-						<a href="index.html">деревянные окна</a>
-					</li>
-					<li>
-						<a class="uk-padding-remove-right" href="index.html">Остекление балконов</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
 
 		<main id="main" role="main" itemscope itemprop="mainContentOfPage">
 
@@ -327,8 +328,8 @@
 			</section>
 
 			<!-- Секция. Подменю -->
-			<div id="main-menu" class="uk-visible@l">
-				<div class="rs-main-menu uk-background-default" uk-sticky>
+			<div id="sub-menu" class="uk-visible@m">
+				<div class="rs-sub-menu uk-background-default" uk-sticky="top: header; cls-active: uk-box-shadow-medium">
 					<div class="uk-container">
 						<nav class="uk-navbar" uk-navbar>
 							<ul class="uk-navbar-nav">
