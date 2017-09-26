@@ -123,6 +123,7 @@
 .custom-tab-content {
   z-index: 2;
   top: -10px;
+  padding-top: 40px;
 }
 
 .custom-tab li.uk-active a:before {
