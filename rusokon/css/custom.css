@@ -97,9 +97,10 @@
 .custom-tab li.uk-active a {
   background-color: #ff1a44;
   color: #fff;
-  padding: 30px 0;
+  padding: 24px 0;
   position: relative;
   display: block;
+  font-weight: 600;
 }
 
 .custom-tab.uk-tab::before {
@@ -116,12 +117,13 @@
 }
 
 .custom-tab li a {
-  padding: 20px 10px;
+  padding: 14px 10px;
 }
 
 .custom-tab-content {
   z-index: 2;
   top: -10px;
+  padding-top: 40px;
 }
 
 .custom-tab li.uk-active a:before {
@@ -184,6 +186,9 @@
 .custom-order {
   border: 8px solid #ff1a44;
 }
+/*.custom-order [type="submit"] {
+  font-weight: 600;
+}*/
 
 
 /*Раздел контакты, стилизация табов*/
@@ -203,9 +208,10 @@
   .contacts-tab li.uk-active a {
     background-color: #ff1a44;
     color: #fff;
-    padding: 30px 0;
+    padding: 24px 0;
     position: relative;
     display: block;
+    font-weight: 600;
   }
   .contacts-tab.uk-tab::before {
     border-bottom: none;
@@ -214,7 +220,7 @@
     padding-left: 10px;
   }
   .contacts-tab li a {
-    padding: 20px 10px;
+    padding: 14px 10px;
   }
   @media (min-width: 640px) {
     .contacts-tab li a {
