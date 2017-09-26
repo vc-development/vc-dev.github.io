@@ -178,13 +178,130 @@
   }
 }
 
+
 /*Стили для форм в банерах*/
+
 .custom-order {
   border: 8px solid #ff1a44;
 }
 
+
 /*Раздел контакты, стилизация табов*/
 
-.contacts-tab {
-
+.contacts-tab a {
+  font-size: 12px;
 }
+
+@media (min-width: 640px) {
+  .contacts-tab a {
+    font-size: 16px;
+  }
+  .contacts-tab {
+    margin-bottom: 0;
+    z-index: 3;
+  }
+  .contacts-tab li.uk-active a {
+    background-color: #ff1a44;
+    color: #fff;
+    padding: 30px 0;
+    position: relative;
+    display: block;
+  }
+  .contacts-tab.uk-tab::before {
+    border-bottom: none;
+  }
+  .contacts-tab li:nth-of-type(1n+2) {
+    padding-left: 10px;
+  }
+  .contacts-tab li a {
+    padding: 20px 10px;
+  }
+  @media (min-width: 640px) {
+    .contacts-tab li a {
+      background-color: #57595b;
+      color: #fff;
+    }
+    .contacts-tab li a:hover {
+      color: #fff;
+    }
+  }
+  .contacts-tab-content {
+    z-index: 2;
+    top: -10px;
+    position: relative;
+  }
+  @media (min-width: 640px) {
+    .contacts-tab-content {
+      padding-top: 40px
+    }
+  }
+  .contacts-tab li.uk-active a:before {
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 38, 125, 0);
+    border-top-color: #ff1a44;
+    border-width: 10px;
+  }
+}
+
+.contacts-tab.uk-tab::before {
+  border-bottom: none;
+}
+
+
+/*
+.contacts-tab {
+  margin-bottom: 0;
+  z-index: 3;
+}
+
+.contacts-tab li.uk-active a {
+  background-color: #ff1a44;
+  color: #fff;
+  padding: 30px 0;
+  position: relative;
+  display: block;
+}
+
+.contacts-tab.uk-tab::before {
+  border-bottom: none;
+}*/
+
+
+/*.contacts-tab li:nth-of-type(1n+2) {
+  padding-left: 10px;
+}
+
+.contacts-tab li a {
+  padding: 20px 10px;
+}
+
+.contacts-tab-content {
+  z-index: 2;
+  top: -10px;
+  position: relative;
+}
+
+.contacts-tab li.uk-active a:before {
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 38, 125, 0);
+  border-top-color: #ff1a44;
+  border-width: 10px;
+}*/
