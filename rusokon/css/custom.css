@@ -82,7 +82,10 @@
 
 @media (min-width: 960px) {
   .custom-list {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
