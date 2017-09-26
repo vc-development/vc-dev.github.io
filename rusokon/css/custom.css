@@ -84,8 +84,8 @@
   .custom-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -189,6 +189,8 @@
 .custom-order {
   border: 8px solid #ff1a44;
 }
+
+
 /*.custom-order [type="submit"] {
   font-weight: 600;
 }*/
@@ -264,9 +266,18 @@
 .contacts-tab.uk-tab::before {
   border-bottom: none;
 }
+
 .custom-padding-top {
   padding-top: 5px;
 }
+
 #footer {
   background-color: #2d2f33;
+}
+
+
+/*Нижний бордер для сабменю*/
+
+#sub-menu li.uk-active a {
+  border-bottom: 4px solid #ff1a44;
 }
