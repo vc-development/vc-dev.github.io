@@ -168,7 +168,33 @@
 
 .custom-order {
   border: 8px solid #ff1a44;
+  max-width: 360px;
+  margin: 70px auto 0;
 }
+@media (min-width: 960px) {
+  .custom-order {
+  max-width: 240px;
+    margin: 0;
+    float: right;
+  }
+}
+@media (min-width: 960px) {
+  .swiper-slide {
+    padding-top: 70px !important;
+  }
+
+}
+
+/*Стрелки на мобильных*/
+.custom-nav {
+  top: 15%;
+}
+@media (min-width: 960px) {
+  .custom-nav {
+    top: 50%;
+  }
+}
+
 
 
 /*Раздел контакты, стилизация табов*/
