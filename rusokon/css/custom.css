@@ -170,6 +170,7 @@
   border: 8px solid #ff1a44;
 }
 
+
 /*Модификатор для форм в банерах,
 в том чисел и статических*/
 
@@ -177,31 +178,45 @@
   max-width: 360px;
   margin: 70px auto 0;
 }
+
 @media (min-width: 960px) {
   .custom-order-banner {
-  max-width: 240px;
+    max-width: 240px;
     margin: 0;
     float: right;
   }
 }
+
 @media (min-width: 960px) {
   .swiper-slide {
     padding-top: 70px !important;
   }
-
 }
 
+
 /*Стрелки в главном банере на мобильных*/
+
 .custom-nav {
   top: 15%;
 }
+
+
 /*Стрелки в главном банере на десктопах*/
+
 @media (min-width: 960px) {
   .custom-nav {
     top: 50%;
   }
 }
 
+
+/*Убираем паддинги на десктопах в контенте банера*/
+
+@media (min-width: 960px) {
+  .banner-content {
+    padding: 0;
+  }
+}
 
 
 /*Раздел контакты, стилизация табов*/
