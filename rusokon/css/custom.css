@@ -164,15 +164,21 @@
 }
 
 
-/*Стили для форм в банерах*/
+/*Общий стиль для форм*/
 
 .custom-order {
   border: 8px solid #ff1a44;
+}
+
+/*Модификатор для форм в банерах,
+в том чисел и статических*/
+
+.custom-order-banner {
   max-width: 360px;
   margin: 70px auto 0;
 }
 @media (min-width: 960px) {
-  .custom-order {
+  .custom-order-banner {
   max-width: 240px;
     margin: 0;
     float: right;
@@ -185,10 +191,11 @@
 
 }
 
-/*Стрелки на мобильных*/
+/*Стрелки в главном банере на мобильных*/
 .custom-nav {
   top: 15%;
 }
+/*Стрелки в главном банере на десктопах*/
 @media (min-width: 960px) {
   .custom-nav {
     top: 50%;
