@@ -25,7 +25,7 @@
     vertical-align: top;
 }
 
-#rs-carousel-gallery .uk-dotnav>.slick-active>*, #rs-carousel-reviews .uk-dotnav>.slick-active>* {
+.rs-slider-dot.uk-active>* {
     background-color: #ff1a44;
 }
 
