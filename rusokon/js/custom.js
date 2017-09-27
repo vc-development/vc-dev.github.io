@@ -54,7 +54,7 @@ $(document).ready(function() {
 
     // Gallery Carousel
     var swiperGallery = new Swiper("#rs-carousel-gallery", {
-        slidesPerView: 4,
+        slidesPerView: 3,
         pagination: ".uk-dotnav",
         paginationClickable: true,
         paginationElement: "li",
@@ -77,7 +77,7 @@ $(document).ready(function() {
             },
             // when window width is <= 1200px
             1200: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 30
             }
         }
