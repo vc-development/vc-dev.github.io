@@ -308,7 +308,6 @@
 }
 
 @media (min-width: 640px) {
-<<<<<<< HEAD
   .custom-beauty-1,
   .custom-beauty-2,
   .custom-beauty-3,
@@ -319,11 +318,6 @@
   {
     min-height: 455px;
   }
-=======
-    .custom-beauty-1, .custom-beauty-2, .custom-beauty-3, .custom-beauty-4, .custom-beauty-5, .custom-beauty-6, .custom-paint {
-        min-height: 455px;
-    }
->>>>>>> e7c379f5d6e9cdbe0228a7af4e985250512852da
 }
 
 .custom-beauty-1 {
