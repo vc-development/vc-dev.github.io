@@ -311,7 +311,8 @@
 .custom-beauty-3,
 .custom-beauty-4,
 .custom-beauty-5,
-.custom-beauty-6 {
+.custom-beauty-6,
+.custom-paint {
     min-height: 300px;
 }
 @media (min-width: 640px) {
@@ -320,7 +321,8 @@
   .custom-beauty-3,
   .custom-beauty-4,
   .custom-beauty-5,
-  .custom-beauty-6 {
+  .custom-beauty-6,
+  .custom-paint {
     min-height: 455px;
   }
 }
@@ -341,4 +343,9 @@
 }
 .custom-beauty-6 {
   background-image: url(../images/beauty-6.jpg);
+}
+
+/*Блок окрашивание*/
+.custom-paint {
+    background-image: url(../images/beauty-7.jpg);
 }
