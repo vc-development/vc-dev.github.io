@@ -322,7 +322,8 @@
   .custom-beauty-4,
   .custom-beauty-5,
   .custom-beauty-6,
-  .custom-paint {
+  .custom-paint
+  {
     min-height: 455px;
   }
 }
