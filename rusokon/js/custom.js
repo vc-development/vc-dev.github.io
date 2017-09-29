@@ -72,8 +72,12 @@ $(document).ready(function() {
     });
 
     // Маски для инпутов
-    $(".input-phone").mask("+7 (999) 999-99-99", {
-        placeholder: "+7 (___) ___-__-__"
+    // $(".input-phone").mask("+7 (999) 999-99-99", {
+    //     placeholder: "+7 (___) ___-__-__"
+    // });
+
+	$(".input-phone").inputmask({
+        mask: "+7 (999) 999-99-99"
     });
 
 });
