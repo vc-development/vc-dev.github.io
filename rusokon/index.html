@@ -67,10 +67,11 @@
 	<link rel="stylesheet" href="css/custom.css">
 	<!-- Scripts -->
 	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate.min.js"></script>
+	<!-- <script src="js/jquery-migrate.min.js"></script> -->
 	<script src="js/uikit.min.js"></script>
 	<script src="js/uikit-icons-rusokon.min.js"></script>
 	<script src="js/swiper.jquery.min.js"></script>
+	<script src="js/jquery.inputmask.bundle.min.js"></script>
 	<script src="js/custom.js"></script>
 </head>
 
@@ -100,7 +101,7 @@
 								<img class="uk-logo" src="images/logos/rusokon.svg" alt="РУСОКОН">
 							</div>
 							<div>
-								<p><span class="uk-h2 uk-text-uppercase uk-text-bold">Русокон</span><br><span class="uk-text-primary">Нам 12 лет!</span></p>
+								<h3><span class="uk-h2 uk-text-uppercase uk-text-bold">Русокон</span><br><span class="uk-text-primary">Нам 12 лет!</span></h3>
 							</div>
 						</div>
 					</div>
@@ -1229,8 +1230,7 @@
 					<h2 class="uk-h1 uk-text-center">Отзывы о нашей работе</h2>
 					<hr class="uk-divider-primary uk-divider-primary uk-divider-small uk-text-center">
 				</div>
-
-				<!-- Слайдер -->
+				<!-- Слайдер отзывов -->
 				<div id="rs-carousel-reviews" class="swiper-container uk-margin-medium">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
@@ -1329,25 +1329,24 @@
 					</div>
 					<ul class="uk-dotnav uk-flex-center uk-margin-medium"></ul>
 				</div>
-
+				<!-- Сертификаты -->
 				<div class="uk-container" uk-margin="margin: uk-margin-medium">
-					<!-- Сертификаты -->
 					<p class="uk-text-center uk-text-large uk-width-xxlarge uk-margin-auto">Нашу продукцию оценили не только наши клиенты и телевизионщики, но и профессиональные жюри многих конкурсов</p>
 					<div class="uk-child-width-expand uk-text-center" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > *; delay: 200">
 						<div>
-							<img src="images/sert-1.jpg" alt="">
+							<img src="images/sert-1.jpg" alt="Сертификат">
 						</div>
 						<div>
-							<img src="images/sert-2.jpg" alt="">
+							<img src="images/sert-2.jpg" alt="Сертификат">
 						</div>
 						<div>
-							<img src="images/sert-3.jpg" alt="">
+							<img src="images/sert-3.jpg" alt="Сертификат">
 						</div>
 						<div>
-							<img src="images/sert-4.jpg" alt="">
+							<img src="images/sert-4.jpg" alt="Сертификат">
 						</div>
 						<div>
-							<img src="images/sert-5.jpg" alt="">
+							<img src="images/sert-5.jpg" alt="Сертификат">
 						</div>
 					</div>
 				</div>
@@ -1508,12 +1507,14 @@
 			<div class="uk-container">
 				<div class="uk-flex-middle" uk-grid>
 					<!-- лого -->
-					<div class="uk-grid-small uk-flex-middle uk-margin-auto uk-flex-center" uk-grid>
-						<div>
-							<img class="uk-logo" src="images/logos/rusokon.svg" alt="РУСОКОН">
-						</div>
-						<div>
-							<h2 class="uk-h2 uk-text-uppercase uk-light">Русокон</h2>
+					<div>
+						<div class="uk-grid-small uk-flex-middle uk-margin-auto uk-flex-center" uk-grid>
+							<div>
+								<img class="uk-logo" src="images/logos/rusokon.svg" alt="РУСОКОН">
+							</div>
+							<div>
+								<h3 class="uk-h2 uk-text-uppercase uk-light">Русокон</h3>
+							</div>
 						</div>
 					</div>
 					<!-- скидка -->
@@ -1619,7 +1620,6 @@
 
 	<!-- API Яндекс.карта -->
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-	<script src="js/masked-input.js"></script>
 	<script>
 		ymaps.ready(function() {
 			var myMap1 = new ymaps.Map("ymap1", {
