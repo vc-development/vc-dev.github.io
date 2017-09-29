@@ -182,6 +182,20 @@
   }
 }
 
+/*Стили для форм в статических баннерах*/
+
+.custom-order-static {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+@media (min-width: 960px) {
+  .custom-order-static {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
 @media (min-width: 960px) {
   #cutom-swiper.swiper-slide {
     padding-top: 70px !important;
