@@ -317,12 +317,12 @@
 
 /*Блок красота окна*/
 
-.custom-beauty-1, .custom-beauty-2, .custom-beauty-3, .custom-beauty-4, .custom-beauty-5, .custom-beauty-6, .custom-paint {
+.custom-beauty-1, .custom-beauty-2, .custom-beauty-3, .custom-beauty-4, .custom-beauty-5, .custom-beauty-6, .custom-beauty-9, .custom-beauty-10, .custom-beauty-11, .custom-paint {
   min-height: 300px;
 }
 
 @media (min-width: 640px) {
-  .custom-beauty-1, .custom-beauty-2, .custom-beauty-3, .custom-beauty-4, .custom-beauty-5, .custom-beauty-6, .custom-paint {
+  .custom-beauty-1, .custom-beauty-2, .custom-beauty-3, .custom-beauty-4, .custom-beauty-5, .custom-beauty-6, .custom-beauty-9, .custom-beauty-10, .custom-beauty-11, .custom-paint {
     min-height: 455px;
   }
 }
@@ -351,12 +351,29 @@
   background-image: url(../images/beauty-6.jpg);
 }
 
+/*Слайдер в блоке Декор стекла, витражи и тд*/
+
+.custom-beauty-9 {
+  background-image: url(../images/beauty-9.jpg);
+}
+
+.custom-beauty-10 {
+  background-image: url(../images/beauty-10.jpg);
+}
+
+.custom-beauty-11 {
+  background-image: url(../images/beauty-11.jpg);
+}
+
+
 
 /*Блок окрашивание*/
 
 .custom-paint {
   background-image: url(../images/beauty-7.jpg);
 }
+
+
 
 
 /*Убираем верхний отступ на мобильных в секциях баннера*/
