@@ -863,12 +863,36 @@
 							<div class="uk-card-body">
 								<h4 class="uk-h4">Популярные цвета</h4>
 								<ul class="popular-colors uk-child-width-expand uk-grid-small" uk-grid uk-switcher="connect: #switcher-2">
-									<li><a href="#" title="Серебрянная платина" uk-tooltip="offset: 20"><img class="uk-border-rounded" src="images/serebryanaya-platina.png" alt=""></a></li>
-									<li><a href="#" title="Драгоценная платина" uk-tooltip="offset: 20"><img class="uk-border-rounded" src="images/dragocennaya-platina.png" alt=""></a></li>
-									<li><a href="#" title="Коричневый шоколад" uk-tooltip="offset: 20"><img class="uk-border-rounded" src="images/koricnevij-shokolad.png" alt=""></a></li>
-									<li><a href="#" title="Черная вишня" uk-tooltip="offset: 20"><img class="uk-border-rounded" src="images/chernaya-vishnya.png" alt=""></a></li>
-									<li><a href="#" title="Золотой дуб" uk-tooltip="offset: 20"><img class="uk-border-rounded" src="images/zolotoy-dub.png" alt=""></a></li>
-									<li><a href="#" title="Антик" uk-tooltip="offset: 20"><img class="uk-border-rounded" src="images/antik.png" alt=""></a></li>
+									<li>
+										<a href="#" title="Серебрянная платина" uk-tooltip="offset: 20">
+											<img class="uk-border-rounded" src="images/serebryanaya-platina.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="#" title="Драгоценная платина" uk-tooltip="offset: 20">
+											<img class="uk-border-rounded" src="images/dragocennaya-platina.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="#" title="Коричневый шоколад" uk-tooltip="offset: 20">
+											<img class="uk-border-rounded" src="images/koricnevij-shokolad.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="#" title="Черная вишня" uk-tooltip="offset: 20">
+											<img class="uk-border-rounded" src="images/chernaya-vishnya.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="#" title="Золотой дуб" uk-tooltip="offset: 20">
+											<img class="uk-border-rounded" src="images/zolotoy-dub.png" alt="">
+										</a>
+									</li>
+									<li>
+										<a href="#" title="Антик" uk-tooltip="offset: 20">
+											<img class="uk-border-rounded" src="images/antik.png" alt="">
+										</a>
+									</li>
 								</ul>
 								<div class="uk-margin uk-flex-first@m">
 									<h3 class="uk-h2">Ламинация</h3>
@@ -911,21 +935,32 @@
 					</div>
 					<!-- 3 -->
 					<div class="uk-card uk-card-default uk-child-width-1-2@m uk-grid-collapse" uk-grid uk-height-match uk-scrollspy="cls: uk-animation-slide-bottom-small">
-						<div>
-							<div id="rs-carousel-window" class="swiper-container uk-position-relative">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide custom-beauty-9 uk-background-cover"></div>
-									<div class="swiper-slide custom-beauty-10 uk-background-cover"></div>
-									<div class="swiper-slide custom-beauty-11 uk-background-cover"></div>
-								</div>
-								<div class="uk-position-bottom-center uk-position-medium uk-position-z-index">
-									<ul class="uk-dotnav uk-flex-nowrap"></ul>
-								</div>
+						<div class="uk-card-media-left uk-position-relative">
+							<ul id="switcher-3" class="uk-switcher uk-cover-container uk-height-1-1">
+								<li class="uk-height-1-1">
+									<img src="images/beauty-9.jpg" alt="Декор стекла" uk-cover>
+									<canvas width="600" height="400"></canvas>
+								</li>
+								<li class="uk-height-1-1">
+									<img src="images/beauty-10.jpg" alt="Декор стекла" uk-cover>
+									<canvas width="600" height="400"></canvas>
+								</li>
+								<li class="uk-height-1-1">
+									<img src="images/beauty-11.jpg" alt="Декор стекла" uk-cover>
+									<canvas width="600" height="400"></canvas>
+								</li>
+							</ul>
+							<div class="uk-position-bottom-center uk-padding">
+								<ul class="uk-dotnav uk-flex-nowrap" uk-switcher="connect: #switcher-3; animation: uk-animation-fade">
+									<li class="uk-active"><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+								</ul>
 							</div>
 						</div>
-						<div class="uk-padding">
+						<div class="uk-card-body">
 							<h3 class="uk-h2">Декор стекла: витражи, раскладка, гравировка</h3>
-							<ul class="uk-list uk-list-bullet">
+							<ul class="uk-list uk-list-bullet" uk-switcher="connect: #switcher-3">
 								<li><strong>Пленочный витраж</strong> по английской технологии вставляется внутрь стеклопакета и создает уникальный стиль окна, сохраняя при этом все свойства стеклопакета и простоту ухода. Гарантия 5 лет. </li>
 								<li><strong>Декоративная раскладка</strong> — специальный профиль, который разграничивает пространство стекла, придавая окнам благородный вид. </li>
 								<li><strong>Алмазная гравировка</strong> — фигурная резьба по стеклу с помощью фрезеровочного станка. Наносится как на обычное стекло, так и окрашенное, матовое, зеркальное.</li>
