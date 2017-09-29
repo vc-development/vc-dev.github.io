@@ -387,3 +387,9 @@
     padding-top: 70px;
   }
 }
+
+/* Video Noise*/
+.noise-overlay {
+	background-image: url(../images/noise.gif);
+	opacity: .1;
+}
