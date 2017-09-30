@@ -79,7 +79,7 @@
 	<div class="uk-offcanvas-content">
 
 		<!-- Mobile Menu -->
-		<div class=" uk-background-default uk-hidden@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-medium;" style="z-index: 2;">
+		<div class="uk-background-default uk-hidden@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-medium;" style="z-index: 2;">
 			<nav class="uk-navbar">
 				<div class="uk-navbar-left">
 					<a class="uk-navbar-item uk-link-reset" href="index.html">
@@ -94,10 +94,11 @@
 					<a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas" href="#"></a>
 				</div>
 			</nav>
-			<div class="uk-padding-small" style="border-top: 1px solid #ddd;">
-				<div class="uk-container">
-					<p class="uk-text-large uk-text-bold uk-text-center"><a class="uk-link-reset" href="tel:+74957818777">8 495 781-87-77</a></p>
-				</div>
+		</div>
+
+		<div class="uk-background-default uk-padding-small uk-hidden@m" style="border-top: 1px solid #ddd;">
+			<div class="uk-container">
+				<p class="uk-text-primary uk-text-bold uk-text-center"><a class="uk-link-reset" href="tel:+74957818777">8 495 781-87-77</a></p>
 			</div>
 		</div>
 
@@ -1619,28 +1620,32 @@
 			<hr class="uk-hr">
 			<ul class="uk-nav uk-nav-default">
 				<li class="uk-parent">
-					<a class="uk-text-uppercase" href="index.html">Пластиковые окна</a>
+					<a class="uk-text-uppercase uk-text-bold" href="index.html">Пластиковые окна</a>
 					<ul class="uk-nav-sub">
 						<li><a href="#">Пункт подменю</a></li>
 						<li><a href="#">Пункт подменю</a></li>
 					</ul>
 				</li>
+				<hr>
 				<li class="uk-parent">
-					<a class="uk-text-uppercase" href="index.html">Остекление коттеджей</a>
+					<a class="uk-text-uppercase uk-text-bold" href="index.html">Остекление коттеджей</a>
 					<ul class="uk-nav-sub">
-						<li><a href="#">Пункт подменю</a></li>
-						<li><a href="#">Пункт подменю</a></li>
+						<li><a href="#">Пластиковые окна</a></li>
+						<li><a href="#">Деревянные окна</a></li>
 					</ul>
 				</li>
+				<hr>
 				<li class="uk-parent">
-					<a class="uk-text-uppercase" href="index.html">Деревянные окна</a>
+					<a class="uk-text-uppercase uk-text-bold" href="index.html">Деревянные окна</a>
 					<ul class="uk-nav-sub">
-						<li><a href="#">Пункт подменю</a></li>
-						<li><a href="#">Пункт подменю</a></li>
+						<li><a href="#">Wood standart</a></li>
+						<li><a href="#">Wood classic</a></li>
+						<li><a href="#">Wood premium</a></li>
 					</ul>
 				</li>
+				<hr>
 				<li class="uk-parent">
-					<a class="uk-text-uppercase" href="index.html">Остекление балконов</a>
+					<a class="uk-text-uppercase uk-text-bold" href="index.html">Остекление балконов</a>
 					<ul class="uk-nav-sub">
 						<li><a href="#">Пункт подменю</a></li>
 						<li><a href="#">Пункт подменю</a></li>
@@ -1648,6 +1653,10 @@
 				</li>
 			</ul>
 			<hr class="uk-hr">
+			<div class="">
+				<p><span class="uk-text-large uk-text-bold"><a class="uk-link-reset" href="tel:+74957818777">8 495 781-87-77</a></span><br> <span class="uk-text-muted">с 9:00 до 21:00, без выходных</span></p>
+				<button class="uk-button uk-button-primary" uk-toggle="target: #modal-call">Перезвоните мне</button>
+			</div>
 		</div>
 	</div>
 
