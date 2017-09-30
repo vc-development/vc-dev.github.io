@@ -362,7 +362,7 @@
 						<div class="uk-background-default uk-padding uk-box-shadow-medium uk-margin-medium">
 							<h2 class="uk-text-center">Профильная система VEKA WHS</h2>
 							<hr class="uk-margin-medium">
-							<div class="uk-child-width-1-3@s" uk-grid>
+							<div class="uk-child-width-1-3@m" uk-grid>
 								<div class="uk-text-center">
 									<img src="images/feat-1.png" alt="Профильная система VEKA WHS">
 								</div>
@@ -405,7 +405,7 @@
 						<div class="uk-background-default uk-padding uk-box-shadow-medium uk-margin-medium">
 							<h2 class="uk-text-center">Стеклопакет с i-стеклом GUARDIAN ClimaGuard N</h2>
 							<hr class="uk-margin-medium">
-							<div class="uk-child-width-1-2@s" uk-grid>
+							<div class="uk-child-width-1-2@m" uk-grid>
 								<div><img src="images/feat-2.jpg" alt=""></div>
 								<div>
 									<p><strong>Преимущества:</strong></p>
@@ -439,7 +439,7 @@
 						<div class="uk-background-default uk-padding uk-box-shadow-medium uk-margin-medium">
 							<h2 class="uk-text-center">Фурнитура поворотно-откидная MACO MULTI-MATIC</h2>
 							<hr class="uk-margin-medium">
-							<div class="uk-child-width-1-2@s" uk-grid>
+							<div class="uk-child-width-1-2@m" uk-grid>
 								<div><img src="images/feat-3.jpg" alt=""></div>
 								<div>
 									<p><strong>Технические характеристики</strong></p>
@@ -471,7 +471,7 @@
 						<div class="uk-background-default uk-padding uk-box-shadow-medium uk-margin-medium">
 							<h2 class="uk-text-center">Ручки MACO Rhapsody</h2>
 							<hr class="uk-margin-medium">
-							<div class="uk-child-width-1-2@s" uk-grid>
+							<div class="uk-child-width-1-2@m" uk-grid>
 								<div><img src="images/feat-5.jpg" alt=""></div>
 								<div>
 									<p><strong>Технические характеристики</strong></p>
@@ -502,7 +502,7 @@
 						<div class="uk-background-default uk-padding uk-box-shadow-medium uk-margin-medium">
 							<h2 class="uk-text-center">Подоконники CRYSTALLIT или деревянные</h2>
 							<hr class="uk-margin-medium">
-							<div class="uk-child-width-1-2@s" uk-grid>
+							<div class="uk-child-width-1-2@m" uk-grid>
 								<div><img src="images/feat-4.jpg" alt=""></div>
 								<div>
 									<p><strong>Подоконники Crystallit</strong></p>
@@ -519,6 +519,8 @@
 							</div>
 						</div>
 					</div>
+
+
 					<!-- Блок с табами на десктопах -->
 					<div class="uk-margin-medium uk-visible@m" uk-scrollspy="cls: uk-animation-slide-bottom-small">
 						<ul id="my-tab" class="custom-tab uk-child-width-expand@s uk-child-width-1-1 uk-light uk-flex uk-flex-middle" uk-tab="animation: uk-animation-fade">
@@ -575,66 +577,77 @@
 							<li>
 								<h2 class="uk-text-center">Стеклопакет с i-стеклом GUARDIAN ClimaGuard N</h2>
 								<hr class="uk-margin-medium">
-								<div class="uk-child-width-1-2@s" uk-grid>
-									<div><img src="images/feat-2.jpg" alt=""></div>
-									<div>
-										<p><strong>Преимущества:</strong></p>
-										<ul class="uk-list uk-list-bullet">
-											<li>увеличенная толщина - 40 мм;</li>
-											<li>теплопотери снижаются более чем на 50%;</li>
-											<li>препятствует образованию конденсата;</li>
-											<li>отражает тепло от батарей и нагретых предметов внутри помещения;</li>
-											<li>защищает от перегрева летом;</li>
-											<li>высокое светопропускание.</li>
-										</ul>
-										<div class="uk-text-center uk-text-small uk-margin-medium uk-child-width-expand@s uk-child-width-1-2 uk-grid-small" uk-grid>
-											<div>
-												<img src="images/icon-feat-1.png" alt="">
-												<p>Экономия<br> тепла</p>
-											</div>
-											<div>
-												<img src="images/icon-feat-5.png" alt="">
-												<p>Без<br> конденсата</p>
-											</div>
-											<div>
-												<img src="images/icon-feat-6.png" alt="">
-												<p>Защита<br> от солнца</p>
-											</div>
-										</div>
-									</div>
+								<div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+								    <div class="uk-card-media-left uk-cover-container">
+								        <img src="images/feat-2.jpg" alt="" uk-cover>
+								        <canvas width="600" height="400"></canvas>
+								    </div>
+								    <div>
+								        <div class="uk-card-body uk-padding-remove-vertical">
+													<p><strong>Преимущества:</strong></p>
+													<ul class="uk-list uk-list-bullet">
+														<li>увеличенная толщина - 40 мм;</li>
+														<li>теплопотери снижаются более чем на 50%;</li>
+														<li>препятствует образованию конденсата;</li>
+														<li>отражает тепло от батарей и нагретых предметов внутри помещения;</li>
+														<li>защищает от перегрева летом;</li>
+														<li>высокое светопропускание.</li>
+													</ul>
+													<div class="uk-text-center uk-text-small uk-margin-medium uk-child-width-expand@s uk-child-width-1-2 uk-grid-small" uk-grid>
+														<div>
+															<img src="images/icon-feat-1.png" alt="">
+															<p>Экономия<br> тепла</p>
+														</div>
+														<div>
+															<img src="images/icon-feat-5.png" alt="">
+															<p>Без<br> конденсата</p>
+														</div>
+														<div>
+															<img src="images/icon-feat-6.png" alt="">
+															<p>Защита<br> от солнца</p>
+														</div>
+													</div>
+								        </div>
+								    </div>
 								</div>
 							</li>
 							<!-- 3 -->
 							<li>
 								<h2 class="uk-text-center">Фурнитура поворотно-откидная MACO MULTI-MATIC</h2>
 								<hr class="uk-margin-medium">
-								<div class="uk-child-width-1-2@s" uk-grid>
-									<div><img src="images/feat-3.jpg" alt=""></div>
-									<div>
-										<p><strong>Технические характеристики</strong></p>
-										<ul class="uk-list uk-list-bullet">
-											<li>Выдерживает 45000 циклов открывания-закрывания.</li>
-											<li>Серийно встроенный приподниматель- блокиратор ошибочного действия.</li>
-											<li>Гарантированный срок эксплуатации – 10 лет.</li>
-											<li>100% защита от коррозии – 500 часов в солевом растворе.</li>
-											<li>Различные классы взломостойкости.</li>
-										</ul>
-										<div class="uk-text-center uk-text-small uk-margin-medium uk-child-width-expand@s uk-child-width-1-2 uk-grid-small" uk-grid>
-											<div>
-												<img src="images/icon-feat-10.png" alt="">
-												<p>Противо&shy;взломность
-												</p>
-											</div>
-											<div>
-												<img src="images/icon-feat-11.png" alt="">
-												<p>Защитное<br> покрытие</p>
-											</div>
-											<div>
-												<img src="images/icon-feat-12.png" alt="">
-												<p>7 вариантов<br> проветривания</p>
-											</div>
-										</div>
-									</div>
+
+								<div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+								    <div class="uk-card-media-left uk-cover-container">
+								        <img src="images/feat-3.jpg" alt="" uk-cover>
+								        <canvas width="600" height="400"></canvas>
+								    </div>
+								    <div>
+								        <div class="uk-card-body uk-padding-remove-vertical">
+													<p><strong>Технические характеристики</strong></p>
+													<ul class="uk-list uk-list-bullet">
+														<li>Выдерживает 45000 циклов открывания-закрывания.</li>
+														<li>Серийно встроенный приподниматель- блокиратор ошибочного действия.</li>
+														<li>Гарантированный срок эксплуатации – 10 лет.</li>
+														<li>100% защита от коррозии – 500 часов в солевом растворе.</li>
+														<li>Различные классы взломостойкости.</li>
+													</ul>
+													<div class="uk-text-center uk-text-small uk-margin-medium uk-child-width-expand@s uk-child-width-1-2 uk-grid-small" uk-grid>
+														<div>
+															<img src="images/icon-feat-10.png" alt="">
+															<p>Противо&shy;взломность
+															</p>
+														</div>
+														<div>
+															<img src="images/icon-feat-11.png" alt="">
+															<p>Защитное<br> покрытие</p>
+														</div>
+														<div>
+															<img src="images/icon-feat-12.png" alt="">
+															<p>7 вариантов<br> проветривания</p>
+														</div>
+													</div>
+								        </div>
+								    </div>
 								</div>
 							</li>
 							<!-- 4 -->
