@@ -35,12 +35,15 @@
 
 .custom-list li a {
   position: relative;
+  display: inline-block;
+
 }
 
 .custom-list li.uk-active a:before {
-  bottom: 100%;
+
   left: 0;
   right: 0;
+    bottom: 100%;
   margin: 0 auto;
   border: solid transparent;
   content: " ";
@@ -53,7 +56,7 @@
   border-width: 8px;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 640px) {
   .custom-list li.uk-active a:before {
     left: 100%;
     top: 35%;
@@ -145,17 +148,37 @@
 .popular-colors img {
   border: 2px solid #b0afac;
 }
+.popular-colors li a {
+  position: relative;
+  display: inline-block;
+}
 
 .popular-colors li.uk-active img {
   border: 2px solid #ff1a44;
 }
 
-@media (min-width: 640px) {
-  .popular-colors li.uk-active a:before {
-    display: none;
-  }
+.popular-colors li.uk-active a:before {
+
+  left: 0;
+  right: 0;
+    bottom: 100%;
+  margin: 0 auto;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 38, 125, 0);
+  border-bottom-color: #ff1a44;
+  border-width: 8px;
 }
 
+@media (min-width: 960px) {
+.popular-colors li.uk-active a:before {
+  display: none;
+  }
+}
 
 /*Общий стиль для форм*/
 
