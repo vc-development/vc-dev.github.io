@@ -72,7 +72,6 @@
 .custom-list img {
   border: 2px solid #b0afac;
   display: block;
-  border-radius: 10px;
 }
 
 @media (min-width: 960px) {
@@ -145,11 +144,10 @@
 
 .popular-colors img {
   border: 2px solid #b0afac;
-  border-radius: 10px;
 }
 
 .popular-colors li.uk-active img {
-  border: 2px solid red;
+  border: 2px solid #ff1a44;
 }
 
 @media (min-width: 640px) {
