@@ -1,1 +1,31 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="52px" height="52px" viewBox="0 0 52 52"><defs><style>.cls-1{fill:#8f8f8f;}.cls-2,.cls-3,.cls-4{isolation:isolate;}.cls-3{font-size:23.96px;}.cls-3,.cls-4{fill:#ff1a44;font-family:ProximaNova-Light, Proxima Nova;}.cls-4{font-size:15.97px;}</style></defs><title>icon-feat-4</title><path class="cls-1" d="M51,51H0V0H51ZM1,50H50V1H1Z"/><g class="cls-2"><text class="cls-3" transform="translate(11.48 26.97)">40 </text><text class="cls-4" transform="translate(13.38 40.27)">лет</text></g></svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="52px" height="52px" viewBox="0 0 52 52">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8f8f8f;
+      }
+      .cls-2,
+      .cls-3,
+      .cls-4 {
+        isolation: isolate;
+      }
+      .cls-3 {
+        font-size: 23.96px;
+      }
+      .cls-3,
+      .cls-4 {
+        fill: #ff1a44;
+        font-family: ProximaNova-Light, Proxima Nova;
+      }
+      .cls-4 {
+        font-size: 15.97px;
+      }
+    </style>
+  </defs>
+  <title>icon-feat-4</title><path class="cls-1" d="M51,51H0V0H51ZM1,50H50V1H1Z"/>
+  <g class="cls-2">
+    <text class="cls-3" transform="translate(11.48 26.97)">40
+    </text>
+    <text class="cls-4" transform="translate(13.38 40.27)">лет</text>
+  </g>
+</svg>
