@@ -246,6 +246,19 @@
   .banner-content {
     padding: 0;
   }
+  .banner-content h3, .banner-content p {
+    /*margin: inherit;*/
+  }
+}
+
+.banner-content h3, .banner-content p {
+  margin: 20px auto 0;
+}
+
+@media (min-width: 960px) {
+  .banner-content h3, .banner-content p {
+    margin: 20px 0 0 0;
+  }
 }
 
 
