@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-    // UIkit.tab('#my-tab').$destroy();
-
     // Main Slider
     var swiperSlider = new Swiper("#rs-slider", {
         loop: true,
@@ -76,7 +74,7 @@ $(document).ready(function() {
     //     placeholder: "+7 (___) ___-__-__"
     // });
 
-	$(".input-phone").inputmask({
+    $(".input-phone").inputmask({
         mask: "+7 (999) 999-99-99"
     });
 
