@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+	// Lazysizes
+	lazySizes.init();
+
     // Main Slider
     var swiperSlider = new Swiper("#rs-slider", {
         loop: true,
