@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	// Lazysizes
-	lazySizes.init();
+	// lazySizes.init();
 
     // Main Slider
     var swiperSlider = new Swiper("#rs-slider", {
