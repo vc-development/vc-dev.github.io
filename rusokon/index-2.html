@@ -78,6 +78,7 @@
 	<script src="js/uikit.min.js"></script>
 	<script src="js/uikit-icons-rusokon.min.js"></script>
 	<script src="js/swiper.jquery.min.js"></script>
+	<script src="js/jquery.inputmask.bundle.min.js"></script>
 
 	<!-- Inputmask -->
 	<script src="js/inputmask/inputmask.min.js"></script>
@@ -85,14 +86,13 @@
 	<script src="js/inputmask/jquery.inputmask.min.js"></script>
 	<script src="js/inputmask/phone-codes/phone-ru.min.js"></script>
 
+	<!-- Lazysizes (lazy loader for images) -->
+	<script src="js/lazysizes/lazysizes.min.js"></script>
+
 	<!-- Picturefill (responsive image polyfill) -->
 	<script>document.createElement("picture");</script>
 	<script src="js/picturefill/picturefill.min.js" async></script>
 
-	<!-- Lazysizes (lazy loader for images) -->
-	<script src="js/lazysizes/lazysizes.min.js"></script>
-
-	<!-- Custom JS code -->
 	<script src="js/custom.js"></script>
 </head>
 
@@ -444,6 +444,7 @@
 								</div>
 							</div>
 							<div class="uk-background-default uk-padding uk-box-shadow-medium">
+
 								<h2 class="uk-text-center">Стеклопакет с i-стеклом GUARDIAN ClimaGuard N</h2>
 								<hr class="uk-margin-medium">
 								<div class="uk-child-width-1-2@m" uk-grid>
@@ -905,7 +906,7 @@
 									<img src="images/unstand-2.png" alt="Арочные круглые полукруглые">
 								</div>
 								<div class="uk-card-body">
-									<h3 class="uk-card-title">Арочные, круглые, полукруглые</h3>
+									<h3 class="uk-card-title">Арочные, круглые, полукруглые </h3>
 									<p>Минимальный радиус гибки профиля для не открывающегося окна 400 мм, для открывающегося – 440 мм.</p>
 								</div>
 							</div>
@@ -916,7 +917,7 @@
 									<img src="images/unstand-3.png" alt="Стрельчатые">
 								</div>
 								<div class="uk-card-body">
-									<h3 class="uk-card-title">Стрельчатые</h3>
+									<h3 class="uk-card-title">Стре&shy;льчатые</h3>
 									<p>Сложный вид арочных окон, сочетающий гнутый профиль и острый угол в верхней части окна.</p>
 								</div>
 							</div>
@@ -1351,25 +1352,31 @@
 			<div class="uk-section uk-section-muted uk-background-cover uk-background-image@m uk-position-relative uk-position-z-index" style="background-image: url(images/bg-measure-banner.jpg);">
 				<div class="uk-container">
 					<div class="uk-flex-middle uk-child-width-1-2@m uk-grid-large" uk-grid>
-						<div class="uk-width-expand uk-margin">
+						<div class=" uk-width-expand uk-margin">
 							<div class="uk-flex uk-flex-center uk-flex-left@m">
 								<img src="images/icon-zamer.svg" alt="Бесплатный замер">
 							</div>
 							<h2 class="uk-h1 uk-text-uppercase uk-text-center uk-text-left@m">Бесплатный замер<br> предоставляем<br> всегда!</h2>
 						</div>
 						<div>
-							<div class="custom-order uk-width-1-1 uk-wi uk-background-default uk-padding uk-text-center">
+							<div class="custom-order custom-order-banner uk-margin-remove-top uk-background-default uk-padding uk-text-center" uk-margin="margin: uk-margin">
 								<h3 class="uk-h3">Заполните заявку</h3>
-								<form action="/" method="post" uk-margin="margin: uk-margin-top">
-									<div class="uk-width-1-1 uk-inline">
-										<span class="uk-form-icon" uk-icon="icon: iconmonstr-user-1; ratio: 0.6"></span>
-										<input class="uk-input" type="tel" placeholder="Ваше имя..." title="Введите ваше имя" uk-tooltip="pos: top-left">
+								<form action="/" method="POST" uk-margin="margin: uk-margin">
+									<div>
+										<div class="uk-inline uk-width-1-1">
+											<span class="uk-form-icon" uk-icon="icon: iconmonstr-user-1; ratio: 0.6"></span>
+											<input class="uk-input" type="text" placeholder="Ваше имя..." title="Введите ваше имя" uk-tooltip="pos: top-left">
+										</div>
 									</div>
-									<div class="uk-width-1-1 uk-inline">
-										<span class="uk-form-icon" uk-icon="icon: iconmonstr-phone-3; ratio: 0.6"></span>
-										<input class="uk-input input-phone" type="tel" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left">
+									<div>
+										<div class="uk-inline uk-width-1-1">
+											<span class="uk-form-icon" uk-icon="icon: iconmonstr-phone-3; ratio: 0.6"></span>
+											<input class="uk-input input-phone" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left">
+										</div>
 									</div>
-									<button class="uk-button uk-button-primary uk-width-1-1" type="submit">Получить скидку</button>
+									<div>
+										<button class="uk-button uk-button-primary uk-width-1-1" type="submit">Получить скидку</button>
+									</div>
 								</form>
 							</div>
 						</div>
@@ -1406,7 +1413,6 @@
 		</footer>
 	</div>
 
-	<!-- Offcanvas menu -->
 	<div id="offcanvas" uk-offcanvas>
 		<div class="uk-offcanvas-bar uk-box-shadow-medium">
 			<div class="uk-margin">
@@ -1462,28 +1468,42 @@
 		</div>
 	</div>
 
-	<!-- Modal call form -->
+	<div id="product-modal-1" uk-modal>
+		<div class="uk-modal-dialog uk-modal-body">
+			<h2 class="uk-modal-title"></h2>
+			<button class="uk-modal-close-default" type="button" uk-close></button>
+		</div>
+	</div>
+
 	<div id="modal-call" uk-modal>
 		<div class="uk-modal-dialog uk-modal-body uk-padding uk-text-center uk-width-large">
+			<img src="images/modal-bg.png" alt="">
+			<h3 class="uk-margin-medium">Закажите бесплатный звонок</h3>
 			<button class="uk-modal-close-default" type="button" uk-close></button>
-			<img src="images/modal-bg.png" alt="Закажите бесплатный звонок">
-			<h3 class="uk-h3">Закажите бесплатный звонок</h3>
-			<form action="/" method="post" uk-margin="margin: uk-margin-top">
-				<div class="uk-width-1-1 uk-inline">
-					<span class="uk-form-icon" uk-icon="icon: iconmonstr-user-1; ratio: 0.6"></span>
-					<input class="uk-input" type="text" placeholder="Ваше имя...">
+
+			<form action="" method="POST">
+				<div class="uk-margin">
+					<div class="uk-inline uk-width-1-1">
+						<span class="uk-form-icon" uk-icon="icon: iconmonstr-user-1; ratio: 0.6"></span>
+						<input class="uk-input" type="text" placeholder="Ваше имя...">
+					</div>
 				</div>
-				<div class="uk-width-1-1 uk-inline">
-					<span class="uk-form-icon" uk-icon="icon: iconmonstr-phone-3; ratio: 0.6"></span>
-					<input class="uk-input input-phone" type="tel" placeholder="Ваш телефон...">
+				<div class="uk-margin">
+					<div class="uk-inline uk-width-1-1">
+						<span class="uk-form-icon" uk-icon="icon: iconmonstr-phone-3; ratio: 0.6"></span>
+						<input class="uk-input input-phone" type="text" placeholder="Ваш телефон...">
+					</div>
 				</div>
-				<button class="uk-button uk-button-primary uk-width-1-1" type="submit">Получить скидку</button>
+				<div>
+					<input class="uk-button uk-button-primary uk-width-1-1 uk-text-uppercase" type="submit">
+				</div>
 			</form>
+
 			<p class="uk-text-muted uk-text-small">Нажимая на кнопку, Вы даете согласие на обработку своих персональных данных.</p>
 		</div>
 	</div>
 
-	<!-- Yandex map -->
+	<!-- API Yandex Map -->
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script>
 		ymaps.ready(function() {
