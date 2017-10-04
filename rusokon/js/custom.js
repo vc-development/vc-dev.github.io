@@ -73,10 +73,8 @@ $(document).ready(function() {
     });
 
 	// Inputmask
-    $(".input-phone").inputmask({
-        mask: "+7 (999) 999-99-99"
-    });
-
-	// $(":input").inputmask();
+	$("input[type='tel']").inputmask({
+		mask: "+7 (999) 999-99-99"
+	});
 
 });
