@@ -72,6 +72,11 @@
 	<script src="js/uikit-icons-rusokon.min.js"></script>
 	<script src="js/swiper.jquery.min.js"></script>
 	<script src="js/jquery.inputmask.bundle.min.js"></script>
+
+	<!-- Picturefill (a responsive image polyfill) -->
+	<script>document.createElement("picture");</script>
+	<script src="js/picturefill.min.js" async></script>
+
 	<script src="js/custom.js"></script>
 </head>
 
@@ -685,7 +690,7 @@
 				<div class="uk-container" uk-margin="margin: uk-margin-medium">
 					<h2 class="uk-h1 uk-text-center">Красота окна</h2>
 					<hr class="uk-divider-primary uk-divider-small uk-margin-medium-bottom uk-text-center">
-					<!-- 1 -->
+
 					<div class="uk-card uk-card-default uk-child-width-1-2@m uk-grid-collapse" uk-grid uk-height-match uk-scrollspy="cls: uk-animation-slide-bottom-small">
 						<div>
 							<ul id="switcher-2" class="uk-switcher uk-cover-container uk-height-1-1">
@@ -758,7 +763,6 @@
 							</div>
 						</div>
 					</div>
-					<!-- 2 -->
 					<div class="uk-card uk-card-default uk-child-width-1-2@m uk-grid-collapse" uk-grid uk-height-match uk-scrollspy="cls: uk-animation-slide-bottom-small">
 						<div class="uk-card-media-left uk-cover-container">
 							<img src="images/beauty-7.jpg" alt="Окрашивание" uk-cover>
@@ -789,7 +793,6 @@
 							</div>
 						</div>
 					</div>
-					<!-- 3 -->
 					<div class="uk-card uk-card-default uk-child-width-1-2@m uk-grid-collapse" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small">
 						<div class="uk-card-media-left uk-position-relative">
 							<ul id="switcher-3" class="uk-switcher uk-cover-container uk-height-1-1">
@@ -832,22 +835,20 @@
 			<div class="uk-section uk-section-muted uk-background-cover uk-background-image@m" style="background-image: url(images/bg-discount-banner.jpg);">
 				<div class="uk-container">
 					<div class="uk-flex-middle uk-child-width-1-2@m uk-grid-large" uk-grid>
-						<!-- 1 -->
 						<div class="uk-text-uppercase uk-h2 uk-width-expand@m uk-text-center uk-text-left@m">
 							<p>Закажите<br> остекление дома<br> <span class="uk-text-primary uk-heading-primary uk-text-uppercase">со скидкой <br>до 50%</span></p>
 						</div>
-						<!-- 2 -->
 						<div>
 							<div class="custom-order custom-order-banner uk-background-default uk-padding uk-text-center uk-margin-remove-top">
 								<h3 class="uk-h3">Заполните заявку</h3>
-								<form action="/" method="POST">
-									<div class="uk-margin">
+								<form action="/" method="POST" uk-margin="margin: uk-margin">
+									<div>
 										<div class="uk-inline uk-width-1-1">
 											<span class="uk-form-icon" uk-icon="icon: iconmonstr-user-1; ratio: 0.6"></span>
 											<input class="uk-input" type="text" placeholder="Ваше имя..." title="Введите ваше имя" uk-tooltip="pos: top-left ">
 										</div>
 									</div>
-									<div class="uk-margin">
+									<div>
 										<div class="uk-inline uk-width-1-1">
 											<span class="uk-form-icon" uk-icon="icon: iconmonstr-phone-3; ratio: 0.6"></span>
 											<input class="uk-input input-phone" type="text" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
@@ -857,7 +858,6 @@
 										<button class="uk-button uk-button-primary uk-padding-small uk-padding-remove-vertical uk-width-1-1" type="submit">Получить скидку</button>
 									</div>
 								</form>
-								<p class="uk-text-muted uk-text-small uk-margin-remove-bottom">Нажимая на кнопку, Вы даете согласие на обработку своих персональных данных.</p>
 							</div>
 						</div>
 					</div>
@@ -1361,7 +1361,6 @@
 										<button class="uk-button uk-button-primary uk-width-1-1" type="submit">Получить скидку</button>
 									</div>
 								</form>
-								<p class="uk-text-muted uk-text-small uk-margin-remove-bottom">Нажимая на кнопку, Вы даете согласие на обработку своих персональных данных.</p>
 							</div>
 						</div>
 					</div>
