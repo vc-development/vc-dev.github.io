@@ -104,10 +104,6 @@
 		<div class="uk-background-default uk-hidden@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-box-shadow-medium;" style="z-index: 2;">
 			<nav class="uk-navbar">
 				<div class="uk-navbar-left">
-					<!-- <a class="uk-navbar-item uk-link-reset" href="index.html">
-						<img class="uk-logo" src="images/logos/rusokon.svg" alt="РУСОКОН" style="width: 44px;">
-						<span class="uk-h3 uk-margin-remove uk-text-uppercase uk-text-bold">Русокон</span>
-					</a> -->
 					<a class="uk-navbar-item uk-logo" href="index.html">
 						<img class="uk-responsive-height" src="images/logos/rusokon-logo.svg" alt="РУСОКОН" style="width: 140px;">
 					</a>
@@ -175,70 +171,145 @@
 		<main id="main" role="main" itemscope itemprop="mainContentOfPage">
 
 			<!-- Секция. Баннер -->
-			<section id="rs-slider" class="swiper-container uk-background-muted uk-position-relative uk-inline">
-				<div id="cutom-swiper" class="swiper-wrapper">
-					<!-- 1. Слайд -->
-					<div class="swiper-slide custom-slide uk-section uk-width-1-1 uk-background-muted uk-background-top-center uk-background-cover uk-background-image@m" style="background-image: url('images/main-banner.jpg');">
-						<div class="uk-height-medium uk-background-top-center uk-background-norepeat uk-hidden@m" style="background-image: url('images/main-banner-small.jpg');"></div>
-						<div class="uk-container">
-							<div class="uk-child-width-1-3@m uk-flex-middle uk-grid-collapse" uk-grid>
-								<!-- 1 -->
-								<div class="banner-content uk-text-center uk-text-left@m uk-padding-large">
-									<h2 class="uk-heading-primary uk-text-uppercase">Остекление коттеджей</h2>
-									<h3 class="uk-text-uppercase uk-text-primary uk-width-medium">Сопроводительные работы за наш счет!</h3>
-									<p class="uk-width-medium">Не просто окна! Решаем все необходимые вопросы от подготовки дома до выноса мусора.</p>
+			<section class="uk-background-muted uk-position-relative">
+				<div id="rs-slider" class="swiper-container uk-background-muted uk-position-relative uk-inline">
+					<div id="cutom-swiper" class="swiper-wrapper">
+						<!-- 1. Слайд -->
+						<div class="swiper-slide custom-slide uk-section uk-width-1-1 uk-background-top-center uk-background-cover uk-background-image@m" style="background-image: url('images/main-banner.jpg');">
+							<div class="uk-padding-large uk-padding-remove-top uk-padding-remove-horizontal">
+								<div class="uk-height-medium uk-background-top-center uk-background-norepeat uk-hidden@m" style="background-image: url('images/main-banner-small.jpg');"></div>
+								<div class="uk-container">
+									<div class="uk-child-width-1-3@m uk-flex-middle uk-grid-collapse" uk-grid>
+										<!-- 1 -->
+										<div class="banner-content uk-text-center uk-text-left@m uk-padding-large">
+											<h2 class="uk-heading-primary uk-text-uppercase">Остекление коттеджей</h2>
+											<h3 class="uk-text-uppercase uk-text-primary uk-width-medium">Сопроводительные работы за наш счет!</h3>
+											<p class="uk-width-medium">Не просто окна! Решаем все необходимые вопросы от подготовки дома до выноса мусора.</p>
+										</div>
+										<!-- 2 -->
+										<div class="uk-width-expand"></div>
+										<!-- 3 -->
+										<div>
+											<div class="custom-order custom-order-banner uk-background-default uk-padding uk-text-center uk-position-relative">
+												<img class="uk-position-top-center" src="images/icon-banner.svg" alt="" style="top: -55px;">
+												<h3 class="uk-margin-remove-bottom"><span class="uk-text-uppercase uk-display-block">Закажите</span> окна со скидкой 50%</h3>
+												<p class="uk-margin-small-top">Бесплатный замер</p>
+
+												<!-- Form -->
+												<form class="uk-margin" action="/" method="POST">
+													<div class="uk-margin">
+														<div class="uk-inline uk-width-1-1">
+															<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-user-1; ratio:.7"></span>
+															<input class="uk-input" type="text" placeholder="Ваше имя..." title="Введите ваше имя" uk-tooltip="pos: top-left ">
+														</div>
+													</div>
+													<div class="uk-margin">
+														<div class="uk-inline uk-width-1-1">
+															<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-phone-3; ratio:.7"></span>
+															<input class="uk-input" type="tel" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
+														</div>
+													</div>
+													<div>
+														<button class="uk-button uk-button-primary uk-padding-small uk-padding-remove-vertical uk-width-1-1" type="submit">Получить скидку</button>
+													</div>
+												</form>
+
+												<!-- Countdown -->
+												<div class="uk-grid-small uk-child-width-auto uk-flex-center uk-text-center" uk-grid uk-countdown="date: 2017-10-27">
+													<div>
+														<div class="uk-countdown-number uk-countdown-days uk-text-large uk-text-bold"></div>
+														<div class="uk-countdown-label uk-text-center uk-text-small uk-text-muted uk-margin-small uk-margin-remove">Дни</div>
+													</div>
+													<div class="uk-countdown-separator uk-text-large uk-text-bold">:</div>
+
+													<div>
+														<div class="uk-countdown-number uk-countdown-hours uk-text-large uk-text-bold"></div>
+														<div class="uk-countdown-label uk-text-center uk-text-small uk-text-muted uk-margin-small uk-margin-remove">Час.</div>
+													</div>
+													<div class="uk-countdown-separator uk-text-large uk-text-bold">:</div>
+
+													<div>
+														<div class="uk-countdown-number uk-countdown-minutes uk-text-large uk-text-bold"></div>
+														<div class="uk-countdown-label uk-text-center uk-text-small uk-text-muted uk-margin-small uk-margin-remove">Мин.</div>
+													</div>
+													<div class="uk-countdown-separator uk-text-large uk-text-bold">:</div>
+
+													<div>
+														<div class="uk-countdown-number uk-countdown-seconds uk-text-large uk-text-bold"></div>
+														<div class="uk-countdown-label uk-text-center uk-text-small uk-text-muted uk-margin-small uk-margin-remove">Сек.</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<!-- 2 -->
-								<div class="uk-width-expand"></div>
-								<!-- 3 -->
-								<div>
-									<div class="custom-order custom-order-banner uk-background-default uk-padding uk-text-center uk-position-relative">
-										<img class="uk-position-top-center" src="images/icon-banner.svg" alt="" style="top: -55px;">
-										<h3 class="uk-margin-remove-bottom"><span class="uk-text-uppercase uk-display-block">Закажите</span> окна со скидкой 50%</h3>
-										<p class="uk-margin-small-top">Бесплатный замер</p>
+							</div>
+						</div>
+						<!-- 2. Слайд -->
+						<div class="swiper-slide custom-slide uk-section uk-width-1-1 uk-background-top-center uk-background-cover uk-background-image@m" style="background-image: url('images/main-banner-2.jpg');">
+							<div class="uk-padding-large uk-padding-remove-top uk-padding-remove-horizontal">
+								<div class="uk-height-medium uk-background-top-center uk-background-norepeat uk-hidden@m" style="background-image: url('images/main-banner-2-small.jpg');"></div>
+								<div class="uk-container ">
+									<div class="uk-child-width-1-3@m uk-flex-middle uk-grid-collapse" uk-grid>
+										<!-- 1 -->
+										<div class="banner-content uk-text-center uk-text-left@m uk-padding-large">
+											<h2 class="uk-heading-primary uk-text-uppercase">Остекление коттеджей</h2>
+											<h3 class="uk-text-uppercase uk-text-primary uk-width-medium">Сопроводительные работы за наш счет!</h3>
+											<p class="uk-width-medium">Не просто окна! Решаем все необходимые вопросы от подготовки дома до выноса мусора.</p>
+										</div>
+										<!-- 2 -->
+										<div class="uk-width-expand"></div>
+										<!-- 3 -->
+										<div>
+											<div class="custom-order custom-order-banner uk-background-default uk-padding uk-text-center uk-position-relative">
+												<img class="uk-position-top-center" src="images/icon-banner.svg" alt="" style="top: -55px;">
+												<h3 class="uk-margin-remove-bottom"><span class="uk-text-uppercase uk-display-block">Закажите</span> окна со скидкой 50%</h3>
+												<p class="uk-margin-small-top">Бесплатный замер</p>
 
-										<!-- Form -->
-										<form class="uk-margin" action="/" method="POST">
-											<div class="uk-margin">
-												<div class="uk-inline uk-width-1-1">
-													<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-user-1; ratio:.7"></span>
-													<input class="uk-input" type="text" placeholder="Ваше имя..." title="Введите ваше имя" uk-tooltip="pos: top-left ">
+												<!-- Form -->
+												<form class="uk-margin" action="/" method="POST">
+													<div class="uk-margin">
+														<div class="uk-inline uk-width-1-1">
+															<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-user-1; ratio:.7"></span>
+															<input class="uk-input" type="text" placeholder="Ваше имя..." title="Введите ваше имя" uk-tooltip="pos: top-left ">
+														</div>
+													</div>
+													<div class="uk-margin">
+														<div class="uk-inline uk-width-1-1">
+															<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-phone-3; ratio:.7"></span>
+															<input class="uk-input" type="tel" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
+														</div>
+													</div>
+													<div>
+														<button class="uk-button uk-button-primary uk-padding-small uk-padding-remove-vertical uk-width-1-1" type="submit">Получить скидку</button>
+													</div>
+												</form>
+
+												<!-- Countdown -->
+												<div class="uk-grid-small uk-child-width-auto uk-flex-center uk-text-center" uk-grid uk-countdown="date: 2017-10-27">
+													<div>
+														<div class="uk-countdown-number uk-countdown-days uk-text-large uk-text-bold"></div>
+														<div class="uk-countdown-label uk-text-center uk-text-small uk-text-muted uk-margin-small uk-margin-remove">Дни</div>
+													</div>
+													<div class="uk-countdown-separator uk-text-large uk-text-bold">:</div>
+
+													<div>
+														<div class="uk-countdown-number uk-countdown-hours uk-text-large uk-text-bold"></div>
+														<div class="uk-countdown-label uk-text-center uk-text-small uk-text-muted uk-margin-small uk-margin-remove">Час.</div>
+													</div>
+													<div class="uk-countdown-separator uk-text-large uk-text-bold">:</div>
+
+													<div>
+														<div class="uk-countdown-number uk-countdown-minutes uk-text-large uk-text-bold"></div>
+														<div class="uk-countdown-label uk-text-center uk-text-small uk-text-muted uk-margin-small uk-margin-remove">Мин.</div>
+													</div>
+													<div class="uk-countdown-separator uk-text-large uk-text-bold">:</div>
+
+													<div>
+														<div class="uk-countdown-number uk-countdown-seconds uk-text-large uk-text-bold"></div>
+														<div class="uk-countdown-label uk-text-center uk-text-small uk-text-muted uk-margin-small uk-margin-remove">Сек.</div>
+													</div>
 												</div>
-											</div>
-											<div class="uk-margin">
-												<div class="uk-inline uk-width-1-1">
-													<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-phone-3; ratio:.7"></span>
-													<input class="uk-input" type="tel" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
-												</div>
-											</div>
-											<div>
-												<button class="uk-button uk-button-primary uk-padding-small uk-padding-remove-vertical uk-width-1-1" type="submit">Получить скидку</button>
-											</div>
-										</form>
-
-										<!-- Countdown -->
-										<div class="uk-grid-small uk-child-width-auto uk-flex-center uk-text-center" uk-grid uk-countdown="date: 2017-10-27">
-											<div>
-												<div class="uk-countdown-number uk-countdown-days uk-text-large uk-text-bold"></div>
-												<div class="uk-countdown-label uk-text-center uk-text-small uk-text-muted uk-margin-small uk-margin-remove">Дни</div>
-											</div>
-											<div class="uk-countdown-separator uk-text-large uk-text-bold">:</div>
-
-											<div>
-												<div class="uk-countdown-number uk-countdown-hours uk-text-large uk-text-bold"></div>
-												<div class="uk-countdown-label uk-text-center uk-text-small uk-text-muted uk-margin-small uk-margin-remove">Час.</div>
-											</div>
-											<div class="uk-countdown-separator uk-text-large uk-text-bold">:</div>
-
-											<div>
-												<div class="uk-countdown-number uk-countdown-minutes uk-text-large uk-text-bold"></div>
-												<div class="uk-countdown-label uk-text-center uk-text-small uk-text-muted uk-margin-small uk-margin-remove">Мин.</div>
-											</div>
-											<div class="uk-countdown-separator uk-text-large uk-text-bold">:</div>
-
-											<div>
-												<div class="uk-countdown-number uk-countdown-seconds uk-text-large uk-text-bold"></div>
-												<div class="uk-countdown-label uk-text-center uk-text-small uk-text-muted uk-margin-small uk-margin-remove">Сек.</div>
 											</div>
 										</div>
 									</div>
@@ -246,79 +317,27 @@
 							</div>
 						</div>
 					</div>
-					<!-- 2. Слайд -->
-					<div class="swiper-slide custom-slide uk-section uk-width-1-1 uk-background-muted uk-background-top-center uk-background-cover uk-background-image@m" style="background-image: url('images/main-banner-2.jpg');">
-						<div class="uk-height-medium uk-background-top-center uk-background-norepeat uk-hidden@m" style="background-image: url('images/main-banner-2-small.jpg');"></div>
-						<div class="uk-container ">
-							<div class="uk-child-width-1-3@m uk-flex-middle uk-grid-collapse" uk-grid>
-								<!-- 1 -->
-								<div class="banner-content uk-text-center uk-text-left@m uk-padding-large">
-									<h2 class="uk-heading-primary uk-text-uppercase">Остекление коттеджей</h2>
-									<h3 class="uk-text-uppercase uk-text-primary uk-width-medium">Сопроводительные работы за наш счет!</h3>
-									<p class="uk-width-medium">Не просто окна! Решаем все необходимые вопросы от подготовки дома до выноса мусора.</p>
+					<!-- Sliden Nav Arrows -->
+					<a href="#" class="custom-nav uk-position-center-left uk-position-medium uk-position-z-index uk-slidenav-large uk-slidenav-previous" uk-slidenav-previous></a>
+					<a href="#" class="custom-nav uk-position-center-right uk-position-medium uk-position-z-index uk-slidenav-large uk-slidenav-next" uk-slidenav-next></a>
+				</div>
+				<div class="uk-position-bottom uk-position-z-index uk-visible@m">
+					<div class="uk-container">
+						<div class="uk-overlay-primary uk-padding-small">
+							<div class="uk-child-width-1-3 uk-grid-divider" uk-grid>
+								<div class="uk-panel">
+									<p>Сопроводительные<br> работы за наш счет</p>
 								</div>
-								<!-- 2 -->
-								<div class="uk-width-expand"></div>
-								<!-- 3 -->
-								<div>
-									<div class="custom-order custom-order-banner uk-background-default uk-padding uk-text-center uk-position-relative">
-										<img class="uk-position-top-center" src="images/icon-banner.svg" alt="" style="top: -55px;">
-										<h3 class="uk-margin-remove-bottom"><span class="uk-text-uppercase uk-display-block">Закажите</span> окна со скидкой 50%</h3>
-										<p class="uk-margin-small-top">Бесплатный замер</p>
-
-										<!-- Form -->
-										<form class="uk-margin" action="/" method="POST">
-											<div class="uk-margin">
-												<div class="uk-inline uk-width-1-1">
-													<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-user-1; ratio:.7"></span>
-													<input class="uk-input" type="text" placeholder="Ваше имя..." title="Введите ваше имя" uk-tooltip="pos: top-left ">
-												</div>
-											</div>
-											<div class="uk-margin">
-												<div class="uk-inline uk-width-1-1">
-													<span class="uk-form-icon uk-icon" uk-icon="icon: iconmonstr-phone-3; ratio:.7"></span>
-													<input class="uk-input" type="tel" placeholder="Ваш телефон..." title="Введите ваш телефон" uk-tooltip="pos: top-left ">
-												</div>
-											</div>
-											<div>
-												<button class="uk-button uk-button-primary uk-padding-small uk-padding-remove-vertical uk-width-1-1" type="submit">Получить скидку</button>
-											</div>
-										</form>
-
-										<!-- Countdown -->
-										<div class="uk-grid-small uk-child-width-auto uk-flex-center uk-text-center" uk-grid uk-countdown="date: 2017-10-27">
-											<div>
-												<div class="uk-countdown-number uk-countdown-days uk-text-large uk-text-bold"></div>
-												<div class="uk-countdown-label uk-text-center uk-text-small uk-text-muted uk-margin-small uk-margin-remove">Дни</div>
-											</div>
-											<div class="uk-countdown-separator uk-text-large uk-text-bold">:</div>
-
-											<div>
-												<div class="uk-countdown-number uk-countdown-hours uk-text-large uk-text-bold"></div>
-												<div class="uk-countdown-label uk-text-center uk-text-small uk-text-muted uk-margin-small uk-margin-remove">Час.</div>
-											</div>
-											<div class="uk-countdown-separator uk-text-large uk-text-bold">:</div>
-
-											<div>
-												<div class="uk-countdown-number uk-countdown-minutes uk-text-large uk-text-bold"></div>
-												<div class="uk-countdown-label uk-text-center uk-text-small uk-text-muted uk-margin-small uk-margin-remove">Мин.</div>
-											</div>
-											<div class="uk-countdown-separator uk-text-large uk-text-bold">:</div>
-
-											<div>
-												<div class="uk-countdown-number uk-countdown-seconds uk-text-large uk-text-bold"></div>
-												<div class="uk-countdown-label uk-text-center uk-text-small uk-text-muted uk-margin-small uk-margin-remove">Сек.</div>
-											</div>
-										</div>
-									</div>
+								<div class="uk-panel">
+									<p>Проект обновленного<br> дома заранее</p>
+								</div>
+								<div class="uk-panel">
+									<p>Специальные цены<br> на весь объем</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Sliden Nav Arrows -->
-				<a href="#" class="custom-nav uk-position-center-left uk-position-medium uk-position-z-index uk-slidenav-large uk-slidenav-previous" uk-slidenav-previous></a>
-				<a href="#" class="custom-nav uk-position-center-right uk-position-medium uk-position-z-index uk-slidenav-large uk-slidenav-next" uk-slidenav-next></a>
 			</section>
 
 			<!-- Секция. Подменю -->
