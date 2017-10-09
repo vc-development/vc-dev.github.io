@@ -90,6 +90,8 @@
 .custom-tab {
     margin-bottom: 0;
     z-index: 3;
+    position: relative;
+    top: 10px;
 }
 
 .custom-tab li.uk-active a {
