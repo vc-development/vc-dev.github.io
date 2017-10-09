@@ -12,11 +12,11 @@
 			fill: #FF1A44;
 		}
 		.sec {
-			-webkit-transform-origin: 25% 75%;
-			-moz-transform-origin: 25% 75%;
-			-ms-transform-origin: 25% 75%;
-			-o-transform-origin: 25% 75%;
-			transform-origin: 25% 75%;
+			-webkit-transform-origin: 24.5% 75.5%;
+			-moz-transform-origin: 24.5% 75.5%;
+			-ms-transform-origin: 24.5% 75.5%;
+			-o-transform-origin: 24.5% 75.5%;
+			transform-origin: 24.5% 75.5%;
 			-webkit-animation: "spin" 30s linear infinite;
 			-moz-animation: "spin" 30s linear infinite;
 			animation: "spin" 30s linear infinite;
