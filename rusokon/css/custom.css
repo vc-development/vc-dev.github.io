@@ -440,31 +440,53 @@
 .rs-stopwatch-label {
     padding: 6px 20px;
     font-size: 1rem;
+    border-radius: 0;
+}
+
+.rs-stopwatch-label::before {
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    margin: 0 auto;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 38, 125, 0);
+    border-bottom-color: #ff1a44;
+    border-width: 8px;
 }
 
 .rs-stopwatch-block-1 {
-	top: 10px;
-	right: 135px;
+    top: 10px;
+    right: 135px;
 }
+
 .rs-stopwatch-block-2 {
-	top: 235px;
-	right: 130px;
+    top: 235px;
+    right: 130px;
 }
+
 .rs-stopwatch-block-3 {
-	bottom: 10px;
-	right: 206px;
+    bottom: 10px;
+    right: 206px;
 }
+
 .rs-stopwatch-block-4 {
-	bottom: 10px;
-	left: 225px;
+    bottom: 10px;
+    left: 225px;
 }
+
 .rs-stopwatch-block-5 {
-	top: 245px;
-	left: 125px;
+    top: 245px;
+    left: 125px;
 }
+
 .rs-stopwatch-block-6 {
-	top: 10px;
-	left: 172px;
+    top: 10px;
+    left: 172px;
 }
 
 @media screen and (max-width: 960px) {
