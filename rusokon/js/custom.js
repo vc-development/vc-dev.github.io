@@ -3,6 +3,11 @@ $(document).ready(function() {
 	// Lazysizes
 	// lazySizes.init();
 
+  // Wood Slider (sleeping)
+  var woodSwiper = new Swiper('#slider-wood', {
+effect: 'fade',
+});
+
     // Main Slider
     var swiperSlider = new Swiper("#rs-slider", {
         loop: true,
