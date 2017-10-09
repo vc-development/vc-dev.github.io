@@ -111,6 +111,7 @@
     }
 }
 
+
 /*.custom-tab.uk-tab>* {
   padding-left: 8px;
 }*/
@@ -431,4 +432,70 @@
 .noise-overlay {
     background-image: url(../images/noise.gif);
     opacity: .1;
+}
+
+
+/* Stopwatch */
+
+.rs-stopwatch-label {
+    padding: 6px 20px;
+    font-size: 1rem;
+}
+
+.rs-stopwatch-block-1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.rs-stopwatch-block-2 {
+	position: absolute;
+	top: 45%;
+	right: 0;
+}
+.rs-stopwatch-block-3 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.rs-stopwatch-block-4 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.rs-stopwatch-block-5 {
+	position: absolute;
+	top: 45%;
+	left: 0;
+}
+.rs-stopwatch-block-6 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@media screen and (max-width: 960px) {
+    .rs-stopwatch-block-1 {
+        position: absolute;
+        top: 0;
+    }
+    .rs-stopwatch-block-2 {
+        position: absolute;
+        top: 0;
+    }
+    .rs-stopwatch-block-3 {
+        position: absolute;
+        top: 0;
+    }
+    .rs-stopwatch-block-4 {
+        position: absolute;
+        top: 0;
+    }
+    .rs-stopwatch-block-5 {
+        position: absolute;
+        top: 0;
+    }
+    .rs-stopwatch-block-6 {
+        position: absolute;
+        top: 0;
+    }
 }
