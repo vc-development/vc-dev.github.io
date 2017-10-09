@@ -499,3 +499,11 @@
         top: 0;
     }
 }
+
+
+/*высота линии в блоке на странице дерево*/
+
+.uk-divider-primary-cont.uk-divider-primary.uk-divider-small::after {
+    border-top: 2px solid #ff1a44;
+    width: 50px;
+}
