@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
-	// Lazysizes
-	// lazySizes.init();
+    // Lazysizes
+    // lazySizes.init();
 
-  // Wood Slider (sleeping)
-  var woodSwiper = new Swiper('#slider-wood', {
-effect: 'fade',
-});
+    // Wood Slider (sleeping)
+    var woodSwiper = new Swiper('#slider-wood', {
+        effect: 'fade',
+    });
 
     // Main Slider
     var swiperSlider = new Swiper("#rs-slider", {
@@ -59,17 +59,14 @@ effect: 'fade',
         bulletActiveClass: "uk-active",
         spaceBetween: 40,
         breakpoints: {
-            // when window width is <= 480px
             480: {
                 slidesPerView: 1,
                 spaceBetween: 30
             },
-            // when window width is <= 640px
             640: {
                 slidesPerView: 2,
                 spaceBetween: 30
             },
-            // when window width is <= 1200px
             1200: {
                 slidesPerView: 3,
                 spaceBetween: 40
@@ -77,9 +74,9 @@ effect: 'fade',
         }
     });
 
-	// Inputmask
-	$("input[type='tel']").inputmask({
-		mask: "+7 (999) 999-99-99"
-	});
+    // Inputmask
+    $("input[type='tel']").inputmask({
+        mask: "+7 (999) 999-99-99"
+    });
 
 });
