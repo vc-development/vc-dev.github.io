@@ -615,6 +615,9 @@
   /*Иконки в дереве выравиваются друг под другом на @s*/
   @media (min-width: 640px) {
     .custom-icon-style {
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         -ms-flex-direction: column;
       flex-direction: column !important;
 
     }
