@@ -446,58 +446,6 @@
     position: relative;
 }
 
-/*.rs-stopwatch-block-1 {
-	top: 2%;
-right: 10%;
-}
-
-.rs-stopwatch-block-2 {
-    top: 235px;
-    right: 130px;
-}
-
-.rs-stopwatch-block-3 {
-    bottom: 10px;
-    right: 206px;
-}
-
-.rs-stopwatch-block-4 {
-    bottom: 10px;
-    left: 225px;
-}
-
-.rs-stopwatch-block-5 {
-    top: 245px;
-    left: 125px;
-}
-
-
-.rs-stopwatch-block-6 {
-	top: 2%;
-left: 13%;
-}*/
-
-@media screen and (max-width: 960px) {
-    /*.rs-stopwatch-block-1 {
-        top: 0;
-    }
-    .rs-stopwatch-block-2 {
-        top: 0;
-    }
-    .rs-stopwatch-block-3 {
-        top: 0;
-    }
-    .rs-stopwatch-block-4 {
-        top: 0;
-    }
-    .rs-stopwatch-block-5 {
-        top: 0;
-    }
-    .rs-stopwatch-block-6 {
-        top: 0;
-    }*/
-}
-
 
 /*высота линии в блоке на странице дерево*/
 
