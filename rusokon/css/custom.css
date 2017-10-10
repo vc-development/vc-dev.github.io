@@ -515,3 +515,26 @@ left: 13%;
           margin-left: 0 !important;
       }
   }
+
+  /*Иконки в дереве выравиваются друг под другом на @s*/
+  @media (min-width: 640px) {
+    .custom-icon-style {
+      flex-direction: column !important;
+
+    }
+    .custom-par {
+        padding-top: 0;
+    }
+  }
+  @media (min-width: 960px) {
+
+    .custom-par {
+        padding: 0 0 0 15px;
+    }
+  }
+  @media (min-width: 1200px) {
+
+    .custom-par {
+        padding: 0 0 0 40px;
+    }
+  }
