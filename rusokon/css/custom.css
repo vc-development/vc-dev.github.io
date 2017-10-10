@@ -519,6 +519,9 @@ left: 13%;
   /*Иконки в дереве выравиваются друг под другом на @s*/
   @media (min-width: 640px) {
     .custom-icon-style {
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         -ms-flex-direction: column;
       flex-direction: column !important;
 
     }
@@ -529,7 +532,7 @@ left: 13%;
   @media (min-width: 960px) {
 
     .custom-par {
-        padding: 0 0 0 15px;
+        padding: 0 0 0 10px;
     }
   }
   @media (min-width: 1200px) {
