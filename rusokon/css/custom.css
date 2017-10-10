@@ -90,6 +90,8 @@
 .custom-tab {
     margin-bottom: 0;
     z-index: 3;
+    position: relative;
+    top: 10px;
 }
 
 .custom-tab li.uk-active a {
@@ -599,3 +601,13 @@
     border-top: 2px solid #ff1a44;
     width: 50px;
 }
+
+/*Убираем выравнивание по центру списка на
+дектопах в баннере дерева*/
+
+  @media (min-width: 960px) {
+      .custom-l {
+          /*margin: 0;*/
+          margin-left: 0 !important;
+      }
+  }
