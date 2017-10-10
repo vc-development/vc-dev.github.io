@@ -446,7 +446,7 @@
     position: relative;
 }
 
-.rs-stopwatch-block-1 {
+/*.rs-stopwatch-block-1 {
 	top: 2%;
 right: 10%;
 }
@@ -475,10 +475,10 @@ right: 10%;
 .rs-stopwatch-block-6 {
 	top: 2%;
 left: 13%;
-}
+}*/
 
 @media screen and (max-width: 960px) {
-    .rs-stopwatch-block-1 {
+    /*.rs-stopwatch-block-1 {
         top: 0;
     }
     .rs-stopwatch-block-2 {
@@ -495,7 +495,7 @@ left: 13%;
     }
     .rs-stopwatch-block-6 {
         top: 0;
-    }
+    }*/
 }
 
 
