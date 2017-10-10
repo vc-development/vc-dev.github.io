@@ -1116,39 +1116,71 @@
 
 			<!-- Монтаж окон -->
 			<section class="uk-section uk-section-default">
-				<div class="uk-container">
+				<div class="uk-container" uk-margin="margin: uk-margin">
 					<div class="uk-width-5-6@s uk-margin-auto uk-text-center">
 						<h2 class="uk-h1">Монтаж окон</h2>
 						<p class="uk-text-muted uk-text-uppercase uk-text-large">Бастро и точно</p>
 						<hr class="uk-divider-primary uk-divider-small uk-margin-medium">
 					</div>
-					<div class="uk-padding uk-position-relative">
-						<div class="uk-width-2-5@s uk-margin-auto uk-border-circle uk-padding-large" style="background-image: url(images/wood/stopwatch-bg.svg);">
+					<div class="uk-padding uk-padding-remove-horizontal uk-flex uk-flex-middle uk-flex-center uk-position-relative uk-child-width-1-1@m uk-child-width-1-2@s" uk-grid>
+						<div class="">
+						<div class="uk-width-2-5@m uk-width-1-1@s uk-width-4-5 uk-margin-auto uk-padding uk-background-norepeat" style="background-image: url(images/wood/stopwatch-bg.svg);">
 							<img src="images/wood/stopwatch.svg" alt="Монтаж окон">
 						</div>
-						<div class="rs-stopwatch-block-6 uk-text-large uk-position-absolute uk-flex uk-flex-middle">
-							<p class="uk-text-right uk-margin-remove">Вывоз строительного<br> мусора с территории работ</p>
-							<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-left">6</span>
 						</div>
-						<div class="rs-stopwatch-block-5 uk-text-large uk-position-absolute uk-flex uk-flex-middle">
-							<p class="uk-text-right uk-margin-remove">Установка откосов</p>
-							<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-left">5</span>
+
+						<div class="uk-visible@m">
+							<div class="rs-stopwatch-block-6 uk-position-absolute uk-flex uk-flex-right uk-flex-middle uk-width-auto" style="right: 59%; top: 3%">
+								<p class="uk-text-right uk-margin-remove">Вывоз строительного мусора<br> с территории работ</p>
+								<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-left">6</span>
+							</div>
+							<div class="rs-stopwatch-block-5 uk-position-absolute uk-flex uk-flex-right uk-flex-middle uk-width-auto" style="right: 69%; top: 45%">
+								<p class="uk-text-right uk-margin-remove">Установка<br> откосов</p>
+								<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-left">5</span>
+							</div>
+							<div class="rs-stopwatch-block-4 uk-position-absolute uk-flex uk-flex-right uk-flex-middle uk-width-auto" style="right: 59%; bottom: 3%">
+								<p class="uk-text-right uk-margin-remove">Установка новой<br> оконной конструкции</p>
+								<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-left">4</span>
+							</div>
+							<div class="rs-stopwatch-block-3 uk-position-absolute uk-flex uk-flex-left uk-flex-middle uk-width-auto" style="left: 62%; bottom: 3%">
+								<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-right">3</span>
+								<p class="uk-margin-remove">Выравнивание рабочих<br> поверхностей проема</p>
+							</div>
+							<div class="rs-stopwatch-block-2 uk-position-absolute uk-flex uk-flex-left uk-flex-middle uk-width-auto" style="left: 72%; top: 45%">
+								<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-right">2</span>
+								<p class="uk-margin-remove">Демонтаж старых<br> окон</p>
+							</div>
+							<div class="rs-stopwatch-block-1 uk-position-absolute uk-flex uk-flex-left uk-flex-middle uk-width-auto" style="left: 62%; top: 3%">
+								<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-right">1</span>
+								<p class="uk-margin-remove">Доставка специализированным<br> транспортом</p>
+							</div>
 						</div>
-						<div class="rs-stopwatch-block-4 uk-text-large uk-position-absolute uk-flex uk-flex-middle">
-							<p class="uk-text-right uk-margin-remove">Установка новой<br> оконной конструкции</p>
-							<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-left">4</span>
-						</div>
-						<div class="rs-stopwatch-block-3 uk-text-large uk-position-absolute uk-flex uk-flex-middle">
-							<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-right">3</span>
-							<p class="uk-margin-remove">Выравнивание рабочих<br> поверхностей проема</p>
-						</div>
-						<div class="rs-stopwatch-block-2 uk-text-large uk-position-absolute uk-flex uk-flex-middle">
-							<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-right">2</span>
-							<p class="uk-margin-remove">Демонтаж старых<br> окон</p>
-						</div>
-						<div class="rs-stopwatch-block-1 uk-text-large uk-position-absolute uk-flex uk-flex-middle">
-							<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-right">1</span>
-							<p class="uk-margin-remove">Доставка специализирвоанным<br> транспортом</p>
+
+						<div class="uk-hidden@m" uk-margin="margin: uk-margin">
+							<div class="rs-stopwatch-block-1 uk-flex uk-flex-middle">
+								<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-right">1</span>
+								<p class="uk-margin-remove">Доставка специ&shy;али&shy;зиро&shy;ван&shy;ным транспортом</p>
+							</div>
+							<div class="rs-stopwatch-block-2 uk-flex uk-flex-middle">
+								<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-right">2</span>
+								<p class="uk-margin-remove">Демонтаж старых окон</p>
+							</div>
+							<div class="rs-stopwatch-block-3 uk-flex uk-flex-middle">
+								<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-right">3</span>
+								<p class="uk-margin-remove">Выравнивание рабочих поверхностей проема</p>
+							</div>
+							<div class="rs-stopwatch-block-4 uk-flex uk-flex-middle">
+								<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-right">4</span>
+								<p class="uk-margin-remove">Установка новой оконной конструкции</p>
+							</div>
+							<div class="rs-stopwatch-block-5 uk-flex uk-flex-middle">
+								<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-right">5</span>
+								<p class="uk-margin-remove">Установка откосов</p>
+							</div>
+							<div class="rs-stopwatch-block-6 uk-flex uk-flex-middle">
+								<span class="rs-stopwatch-label uk-label uk-text-bold uk-margin-right">6</span>
+								<p class="uk-margin-remove">Вывоз строительного мусора с территории работ</p>
+							</div>
 						</div>
 					</div>
 
