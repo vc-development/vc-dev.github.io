@@ -532,7 +532,7 @@ left: 13%;
   @media (min-width: 960px) {
 
     .custom-par {
-        padding: 0 0 0 15px;
+        padding: 0 0 0 10px;
     }
   }
   @media (min-width: 1200px) {
