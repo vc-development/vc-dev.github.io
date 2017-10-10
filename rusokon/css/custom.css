@@ -525,9 +525,9 @@ left: 13%;
       flex-direction: column !important;
 
     }
-    .custom-par {
+    /*.custom-par {
         padding-top: 0;
-    }
+    }*/
   }
   @media (min-width: 960px) {
 
