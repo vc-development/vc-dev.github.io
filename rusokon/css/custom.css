@@ -282,7 +282,7 @@
     }
     .contacts-tab {
         margin-bottom: 0;
-        z-index: 3;
+        z-index: 1;
     }
     .contacts-tab li.uk-active a {
         background-color: #ff1a44;
@@ -311,7 +311,7 @@
         }
     }
     .contacts-tab-content {
-        z-index: 2;
+        /*z-index: 2;*/
         top: -10px;
         position: relative;
     }
@@ -343,6 +343,13 @@
 
 .custom-padding-top {
     padding-top: 5px;
+}
+
+.custom-accordion > * {
+	border: 3px solid #ddd;
+}
+.custom-accordion > .uk-open {
+	border: 3px solid #ff1a44;
 }
 
 #footer {
