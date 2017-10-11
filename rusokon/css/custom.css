@@ -351,6 +351,17 @@
 .custom-accordion > .uk-open {
 	border: 3px solid #ff1a44;
 }
+.custom-accordion .uk-accordion-title {
+	position: relative;
+	padding-right: 30px;
+}
+.custom-accordion .uk-accordion-title::after {
+	position: absolute;
+	top: 24%;
+	right: 0;
+}
+
+
 
 #footer {
     background-color: #2d2f33;
