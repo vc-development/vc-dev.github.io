@@ -31,8 +31,8 @@ $(document).ready(function() {
         bulletActiveClass: "uk-active"
     });
 
-    // KV Carousel
-    var swiperReviews = new Swiper("#rs-carousel-kv", {
+    // KV Slider
+    var swiperSliderkv = new Swiper("#rs-slider-kv", {
         loop: true,
         slidesPerView: 1,
         pagination: ".uk-dotnav",
@@ -43,6 +43,35 @@ $(document).ready(function() {
         },
         bulletClass: "rs-slider-dot",
         bulletActiveClass: "uk-active"
+    });
+
+	// KV Carousel
+    var swiperCarouselkv = new Swiper("#rs-carousel-kv", {
+        loop: true,
+        slidesPerView: 3,
+        pagination: ".uk-dotnav",
+        paginationClickable: true,
+        paginationElement: "li",
+        paginationBulletRender: function(swiper, index, className) {
+            return '<li class="' + className + '"><a href="#"></a></li>';
+        },
+        bulletClass: "rs-slider-dot",
+        bulletActiveClass: "uk-active",
+        spaceBetween: 40,
+        breakpoints: {
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 40
+            }
+        }
     });
 
     // Reviews Carousel
