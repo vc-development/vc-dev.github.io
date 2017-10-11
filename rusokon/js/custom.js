@@ -31,6 +31,20 @@ $(document).ready(function() {
         bulletActiveClass: "uk-active"
     });
 
+    // KV Carousel
+    var swiperReviews = new Swiper("#rs-carousel-kv", {
+        loop: true,
+        slidesPerView: 1,
+        pagination: ".uk-dotnav",
+        paginationClickable: true,
+        paginationElement: "li",
+        paginationBulletRender: function(swiper, index, className) {
+            return '<li class="' + className + '"><a href="#"></a></li>';
+        },
+        bulletClass: "rs-slider-dot",
+        bulletActiveClass: "uk-active"
+    });
+
     // Reviews Carousel
     var swiperReviews = new Swiper("#rs-carousel-reviews", {
         loop: true,
