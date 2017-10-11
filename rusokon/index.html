@@ -135,7 +135,7 @@
 		</header>
 
 		<!-- Menu -->
-		<div class="uk-background-default uk-visible@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #rs-slider; cls-active: uk-box-shadow-medium; target: true" style="z-index: 2;">
+		<div class="uk-background-default uk-visible@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #rs-slider; cls-active: uk-box-shadow-medium uk-position-z-index; target: true" style="z-index: 2;">
 			<div class="uk-container">
 				<nav class="uk-navbar" uk-navbar>
 					<ul class="uk-navbar-nav uk-width-1-1 uk-child-width-expand uk-grid-collapse uk-text-uppercase" uk-grid>
@@ -1212,24 +1212,62 @@
 				<div class="uk-container">
 					<h2 class="uk-h1 uk-text-center">Популярные вопросы</h2>
 					<hr class="uk-divider-primary uk-divider-small uk-margin-medium uk-text-center">
-					<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@m uk-margin" uk-grid>
+					<div class="uk-card uk-card-default uk-margin uk-flex-middle uk-child-width-1-2@m uk-grid-collapse" uk-grid>
 						<div class="uk-card-media-left uk-cover-container">
-							<img src="images/wood/our-manufacture.jpg" alt="" uk-cover>
+							<img src="images/wood/our-manufacture.jpg" alt="Популярные вопросы" uk-cover>
 							<canvas width="600" height="400"></canvas>
 						</div>
 						<div>
 							<div class="uk-card-body">
-								<h4 class="uk-card-title uk-text-uppercase">Самый популярный вопрос:</h4>
-								<h3 class="uk-card-title uk-text-uppercase">Сколько стоит замерщик?</h3>
-								<p></p>
+								<h4 class="uk-text-uppercase uk-margin-remove">Самый популярный вопрос:</h4>
+								<h3 class="uk-card-title uk-text-uppercase uk-margin-remove">Сколько стоит замерщик?</h3>
+								<p>Отвечаем на него отдельно. Замерщик выезжает</p>
 								<ul class="uk-list uk-list-bullet">
-									<li>Техническое оснащение комплекса включает новейшее оборудование от мировых лидеров.</li>
-									<li>На производстве заняты специалисты высочайшей квалификации. </li>
-									<li>Строгий контроль качества, отбор первоклассного материала без природных дефектов и тщательная обработка.</li>
+									<li>бесплатно</li>
+									<li>в течении одного дня</li>
+									<li>с большим опытом работы</li>
 								</ul>
 							</div>
 						</div>
 					</div>
+					<!-- Accordion -->
+					<ul class="custom-accordion uk-margin" uk-accordion>
+					    <li class="uk-padding-small uk-border-rounded uk-open">
+					        <h3 class="uk-accordion-title"><span class="uk-h1 uk-margin-right">1</span> Что такое окна 5-го поколения?</h3>
+					        <div class="uk-accordion-content">
+								<hr class="uk-hr">
+					            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					        </div>
+					    </li>
+					    <li class="uk-padding-small uk-border-rounded">
+					        <h3 class="uk-accordion-title"><span class="uk-h1 uk-margin-right">2</span> От чего зависит цена на пластиковое окно?</h3>
+					        <div class="uk-accordion-content">
+								<hr class="uk-hr">
+					            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+					        </div>
+					    </li>
+					    <li class="uk-padding-small uk-border-rounded">
+					        <h3 class="uk-accordion-title"><span class="uk-h1 uk-margin-right">3</span> Можно ли менять окна ПВХ зимой?</h3>
+					        <div class="uk-accordion-content">
+								<hr class="uk-hr">
+					            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+					        </div>
+					    </li>
+					    <li class="uk-padding-small uk-border-rounded">
+					        <h3 class="uk-accordion-title"><span class="uk-h1 uk-margin-right">4</span> Какая разница между профилями?</h3>
+					        <div class="uk-accordion-content">
+								<hr class="uk-hr">
+					            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+					        </div>
+					    </li>
+					    <li class="uk-padding-small uk-border-rounded">
+					        <h3 class="uk-accordion-title"><span class="uk-h1 uk-margin-right">5</span> Зачем нужно вызывать замерщика?</h3>
+					        <div class="uk-accordion-content">
+								<hr class="uk-hr">
+					            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+					        </div>
+					    </li>
+					</ul>
 				</div>
 			</section>
 
