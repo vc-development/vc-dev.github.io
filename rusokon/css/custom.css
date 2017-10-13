@@ -273,7 +273,8 @@
 /*Раздел контакты, стилизация табов*/
 
 .contacts-tab a {
-    font-size: 12px;
+    font-size: 10px;
+    color: #fff;
 }
 
 @media (min-width: 640px) {
