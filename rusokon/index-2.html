@@ -74,15 +74,13 @@
 	<link rel="stylesheet" href="css/custom.css">
 
 	<!-- Scripts -->
-	<script src="js/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 	<script src="js/uikit.min.js"></script>
 	<script src="js/uikit-icons-rusokon.min.js"></script>
-	<script src="js/swiper.jquery.min.js"></script>
-	<script src="js/jquery.inputmask.bundle.min.js"></script>
-	<script src="js/lazysizes/lazysizes.min.js"></script>
-	<script>document.createElement("picture");</script>
-	<script src="js/picturefill/picturefill.min.js" async></script>
-
+	<script src="js/lazysizes/lazysizes.min.js" async></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/inputmask/dependencyLibs/inputmask.dependencyLib.min.js"></script>
+	<script src="js/inputmask/inputmask.min.js"></script>
 	<script src="js/custom.js"></script>
 </head>
 
@@ -161,7 +159,7 @@
 
 			<!-- Секция. Баннер -->
 			<section class="uk-position-relative">
-				<div id="rs-slider" class="swiper-container uk-position-relative uk-inline">
+				<div id="rs-slider" class="rs-slider swiper-container swiper-container-horizontal uk-position-relative uk-inline">
 					<div id="cutom-swiper" class="swiper-wrapper">
 						<!-- Slide 1 -->
 						<div class="swiper-slide custom-slide uk-section uk-width-1-1 uk-background-muted uk-background-top-center uk-background-cover uk-background-image@m" style="background-image: url('images/main-banner.jpg');">
@@ -858,27 +856,29 @@
 
 
 					<div class="uk-card uk-card-default uk-child-width-1-2@m uk-grid-collapse" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small">
-						<div class="uk-card-media-left uk-position-relative">
-							<ul id="switcher-3" class="uk-switcher uk-cover-container uk-height-1-1">
-								<li class="uk-height-1-1">
-									<img src="images/beauty-9.jpg" alt="Декор стекла" uk-cover>
-									<canvas width="600" height="400"></canvas>
-								</li>
-								<li class="uk-height-1-1">
-									<img src="images/beauty-10.jpg" alt="Декор стекла" uk-cover>
-									<canvas width="600" height="400"></canvas>
-								</li>
-								<li class="uk-height-1-1">
-									<img src="images/beauty-11.jpg" alt="Декор стекла" uk-cover>
-									<canvas width="600" height="400"></canvas>
-								</li>
-							</ul>
-							<div class="uk-position-bottom-center uk-padding">
-								<ul class="uk-dotnav uk-flex-nowrap" uk-switcher="connect: #switcher-3; animation: uk-animation-fade">
-									<li class="uk-active"><a href="#">1</a></li>
-									<li><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
+						<div class="uk-card-media-left" uk-slideshow="ratio: false">
+							<div class="uk-position-relative uk-visible-toggle uk-height-1-1">
+								<ul class="uk-slideshow-items uk-cover-container uk-height-1-1">
+									<li class="uk-height-1-1">
+										<img src="images/beauty-9.jpg" alt="Декор стекла" uk-cover>
+										<canvas width="600" height="400"></canvas>
+									</li>
+									<li class="uk-height-1-1">
+										<img src="images/beauty-10.jpg" alt="Декор стекла" uk-cover>
+										<canvas width="600" height="400"></canvas>
+									</li>
+									<li class="uk-height-1-1">
+										<img src="images/beauty-11.jpg" alt="Декор стекла" uk-cover>
+										<canvas width="600" height="400"></canvas>
+									</li>
 								</ul>
+								<div class="uk-position-bottom-center uk-position-medium">
+				                    <ul class="uk-dotnav ">
+				                        <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+				                        <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+				                        <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+				                    </ul>
+				                </div>
 							</div>
 						</div>
 						<div class="uk-card-body">
