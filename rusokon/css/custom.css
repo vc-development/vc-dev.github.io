@@ -273,8 +273,13 @@
 /*Раздел контакты, стилизация табов*/
 
 .contacts-tab a {
-    font-size: 12px;
+    font-size: 10px;
 }
+ .contacts-tab li.uk-active a {
+        background-color: #ff1a44;
+        color: #fff;
+
+        }
 
 @media (min-width: 640px) {
     .contacts-tab a {
@@ -346,19 +351,19 @@
 }
 
 .custom-accordion > * {
-	border: 3px solid #ddd;
+  border: 3px solid #ddd;
 }
 .custom-accordion > .uk-open {
-	border: 3px solid #ff1a44;
+  border: 3px solid #ff1a44;
 }
 .custom-accordion .uk-accordion-title {
-	position: relative;
-	padding-right: 30px;
+  position: relative;
+  padding-right: 30px;
 }
 .custom-accordion .uk-accordion-title::after {
-	position: absolute;
-	top: 24%;
-	right: 0;
+  position: absolute;
+  top: 24%;
+  right: 0;
 }
 
 
