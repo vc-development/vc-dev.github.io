@@ -74,14 +74,13 @@
 	<link rel="stylesheet" href="css/custom.css">
 
 	<!-- Scripts -->
-	<script src="js/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 	<script src="js/uikit.min.js"></script>
 	<script src="js/uikit-icons-rusokon.min.js"></script>
-	<script src="js/swiper.jquery.min.js"></script>
-	<script src="js/jquery.inputmask.bundle.min.js"></script>
-	<script src="js/lazysizes/lazysizes.min.js"></script>
-	<!-- <script>document.createElement("picture");</script>
-	<script src="js/picturefill/picturefill.min.js" async></script> -->
+	<script src="js/lazysizes/lazysizes.min.js" async></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/inputmask/dependencyLibs/inputmask.dependencyLib.min.js"></script>
+	<script src="js/inputmask/inputmask.min.js"></script>
 	<script src="js/custom.js"></script>
 </head>
 
@@ -1567,69 +1566,60 @@
 		</main>
 
         <!-- Footer -->
-        <footer id="footer" class="uk-section uk-section-xsmall uk-background-secondary uk-light uk-box-shadow-small uk-position-relative" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
-            <div class="uk-container">
-                <div class="uk-flex-middle" uk-grid>
-                    <!-- 1 -->
-                    <div class="uk-margin-auto">
-                        <div class="uk-grid-small uk-flex-middle uk-flex-center" uk-grid>
-                            <!-- 1.1 -->
-                            <div>
-                                <img class="uk-logo" src="images/logos/rusokon-footer.svg" alt="РУСОКОН">
-                            </div>
-                            <!-- 1.2 -->
-                            <div>
-                                <h3 class="uk-h2 uk-text-uppercase uk-text-bold uk-text-muted">Русокон</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 2 -->
-                    <div class="uk-width-1-1 uk-width-1-2@s uk-width-expand@m uk-text-center uk-text-left@m">
-                        <p>Пластиковые окна
-                            <br> в Москве и Московской области</p>
-                    </div>
-                    <!-- 3 -->
-                    <div class="uk-width-1-1 uk-width-1-2@s uk-width-expand@m uk-text-center uk-text-right@m">
-                        <p class="uk-h2"><a class="uk-link-reset" href="tel:+74957818777"><span class="uk-text-muted">8 495</span> <span class="uk-text-bold">781-87-77</span></a></p>
-                    </div>
-                    <!-- 4 -->
-                    <div class="uk-width-1-1 uk-width-1-2@s uk-width-auto@m uk-text-center">
-                        <button class="uk-button uk-background-primary uk-padding-small uk-padding-remove-vertical" uk-toggle="target: #modal-call">Перезвоните мне</button>
-                    </div>
-                </div>
-                <hr class="uk-hr">
-                <div class="uk-child-width-1-1" uk-grid>
-                    <!-- 1 -->
-                    <div class="uk-width-expand@m uk-text-center uk-text-left@m uk-flex-first@m uk-flex-last">
-                        <span class="uk-text-uppercase">Внимание!</span> Наш интернет-ресурс, носит исключительно информационный характер и
-           не является публичной офертой, определяемой положениями Статьи 437(2) ГК РФ
-                   
-                        <p>&copy; 2005 - 2017, Русокон</p>
-                    </div>
-                    <div class="uk-width-auto@m uk-flex-last@m">
-                        <div class="uk-child-width-1-1 uk-child-width-auto@s uk-flex-center uk-text-center" uk-grid>
-                            <div>
-                                <button class="uk-button uk-button-default">Оплатить заказ</button>
-                            </div>
-                            <div>
-                                <div class="uk-flex-center uk-grid-small" uk-grid>
-                                    <div><img src="images/icon-master-card.svg" alt="MasterCard"></div>
-                                    <div><img src="images/icon-footer-visa.svg" alt="Visa"></div>
-                                    <div><img src="images/icon-footer-jcb.svg" alt="JSB"></div>
-                                </div>
-                                <p class="uk-text-uppercase uk-margin-small-top uk-text-right@m">Принимаем к оплате</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="uk-hr">
-                <div class="uk-text-center uk-text-muted uk-width-xxlarge uk-margin-auto">
-                    <meta itemprop="copyrightYear" content="2005 - 2017">
-                    <meta itemprop="copyrightHolder" content="РУСОКОН">
-                    <a href="#" uk-totop uk-scroll></a>
-                </div>
-            </div>
-        </footer>
+		<footer id="footer" class="uk-section uk-section-xsmall uk-background-secondary uk-light uk-box-shadow-small uk-position-relative" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+			<div class="uk-container">
+				<div class="uk-flex-middle" uk-grid>
+					<div class="uk-margin-auto">
+						<div class="uk-grid-small uk-flex-middle uk-flex-center" uk-grid>
+							<div>
+								<img class="uk-logo" src="images/logos/rusokon-footer.svg" alt="РУСОКОН">
+							</div>
+							<div>
+								<h3 class="uk-h2 uk-text-uppercase uk-text-bold uk-text-muted">Русокон</h3>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-1 uk-width-1-2@s uk-width-expand@m uk-text-center uk-text-left@m">
+						<p>Пластиковые окна
+							<br> в Москве и Московской области</p>
+					</div>
+					<div class="uk-width-1-1 uk-width-1-2@s uk-width-expand@m uk-text-center uk-text-right@m">
+						<p class="uk-h2"><a class="uk-link-reset" href="tel:+74957818777"><span class="uk-text-muted">8 495</span> <span class="uk-text-bold">781-87-77</span></a></p>
+					</div>
+					<div class="uk-width-1-1 uk-width-1-2@s uk-width-auto@m uk-text-center">
+						<button class="uk-button uk-background-primary uk-padding-small uk-padding-remove-vertical" uk-toggle="target: #modal-call">Перезвоните мне</button>
+					</div>
+				</div>
+				<hr class="uk-hr">
+				<div class="uk-child-width-1-1" uk-grid>
+					<div class="uk-width-expand@m uk-text-center uk-text-left@m uk-flex-first@m uk-flex-last">
+						<span class="uk-text-uppercase">Внимание!</span> Наш интернет-ресурс, носит исключительно информационный характер и не является публичной офертой, определяемой положениями Статьи 437(2) ГК РФ
+						<p>&copy; 2005 - 2017 «РУСОКОН»</p>
+					</div>
+					<div class="uk-width-auto@m uk-flex-last@m">
+						<div class="uk-child-width-1-1 uk-child-width-auto@s uk-flex-center uk-text-center" uk-grid>
+							<div>
+								<a class="uk-button uk-button-default" href="index-5.html">Оплатить заказ</a>
+							</div>
+							<div>
+								<div class="uk-flex-center uk-grid-small" uk-grid>
+									<div><img src="images/icon-master-card.svg" alt="MasterCard"></div>
+									<div><img src="images/icon-footer-visa.svg" alt="Visa"></div>
+									<div><img src="images/icon-footer-jcb.svg" alt="JSB"></div>
+								</div>
+								<p class="uk-text-uppercase uk-margin-small-top uk-text-right@m">Принимаем к оплате</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="uk-hr">
+				<div class="uk-text-center uk-text-muted uk-width-xxlarge uk-margin-auto">
+					<meta itemprop="copyrightYear" content="2005 - 2017">
+					<meta itemprop="copyrightHolder" content="РУСОКОН">
+					<a href="#" uk-totop uk-scroll></a>
+				</div>
+			</div>
+		</footer>
 	</div>
 
 	<div id="offcanvas" class="uk-offcanvas" uk-offcanvas>
