@@ -1,11 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-	// window.onload = function() {
-	// 	// UIkit.scroll(element, options);
-	// 	var el = document.getElementById('#sub-menu');
-	// 	el.scrollIntoView(true);
-	// };
-
 	// var rsScroll = document.getElementById('sub-menu');
 	// UIkit.scroll('#sub-menu').scrollTo(rsScroll);
 
