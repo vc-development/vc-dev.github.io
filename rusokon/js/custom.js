@@ -1,12 +1,21 @@
-document.addEventListener('DOMContentLoaded', function(event) {
+document.addEventListener('DOMContentLoaded', function() {
+
+	// window.onload = function() {
+	// 	// UIkit.scroll(element, options);
+	// 	var el = document.getElementById('#sub-menu');
+	// 	el.scrollIntoView(true);
+	// };
+
+	var rsScroll = document.getElementById('sub-menu');
+	UIkit.scroll('#sub-menu').scrollTo(rsScroll);
 
     // UIkit
     // =========================================================================
-    UIkit.update(event = 'update');
+    // UIkit.update(event = 'update');
 
 	// Lazysizes
 	// =========================================================================
-	lazySizes.init();
+	// lazySizes.init();
 
     // Inputmask
     // =========================================================================
