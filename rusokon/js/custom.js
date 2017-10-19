@@ -109,6 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var swiperReviews = new Swiper({
         el: '#rs-carousel-reviews',
         loop: true,
+		autoHeight: true,
         slidesPerView: 1,
         pagination: ".uk-dotnav",
         paginationClickable: true,
@@ -128,6 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var swiperGallery = new Swiper({
         el: '#rs-carousel-gallery',
         loop: true,
+		autoHeight: true,
         slidesPerView: 3,
         paginationElement: "li",
         pagination: {
