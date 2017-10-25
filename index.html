@@ -9,14 +9,17 @@
 	<meta name="description" content="VC-Development repository.">
 	<link rel="canonical" href="https://vc-development.github.io">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css">
+	<script>document.createElement("picture");</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/js/uikit-icons.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js" async></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1-beta1/lazysizes.min.js" async></script>
 </head>
 
 <body>
 	<div class="uk-navbar-container">
 		<div class="uk-container">
-			<nav class="uk-navbar" uk-navbar>
+			<nav uk-navbar>
 				<div class="uk-navbar-left">
 					<a class="uk-navbar-item uk-logo" href="https://vc-development.github.io">VC-Development</a>
 				</div>
@@ -26,7 +29,7 @@
 			</nav>
 		</div>
 	</div>
-	<div class="uk-section">
+	<div class="uk-section uk-section-default">
 		<div class="uk-container uk-text-center">
 			<div class="uk-margin-auto uk-margin-large uk-width-xxlarge">
 				<h1 class="uk-heading-primary">Some Projects</h1>
@@ -36,46 +39,55 @@
 				<div>
 					<div class="uk-card uk-background-default uk-transition-toggle uk-box-shadow-hover-large">
 						<div class="uk-card-media-top uk-inline-clip">
-							<img class="uk-transition-scale-up uk-transition-opaque" src="https://unsplash.it/1024/768" alt="ЕВРООКНА">
+							<picture>
+								<source type="image/webp" srcset="demo-image.webp">
+								<img class="uk-transition-scale-up uk-transition-opaque lazyload" data-src="demo-image.jpg" alt="ЕВРООКНА">
+							</picture>
 							<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
-								<a class="uk-button uk-button-primary" href="./eurookna-landing/index.html">Подробнее</a>
+								<a class="uk-button uk-button-primary" href="eurookna-landing/index.html">Подробнее</a>
 							</div>
 						</div>
 						<div class="uk-card-body">
 							<h3 class="uk-card-title uk-text-bold">ЕВРООКНА</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 						</div>
-						<a class="uk-position-cover" href="./eurookna-landing/index.html"></a>
+						<a class="uk-position-cover" href="eurookna-landing/index.html"></a>
 					</div>
 				</div>
 				<div>
 					<div class="uk-card uk-background-default uk-transition-toggle uk-box-shadow-hover-large">
 						<div class="uk-card-media-top uk-inline-clip">
-							<img class="uk-transition-scale-up uk-transition-opaque" src="https://unsplash.it/1024/768" alt="ОКНА РОСТА">
+							<picture>
+								<source type="image/webp" srcset="demo-image.webp">
+								<img class="uk-transition-scale-up uk-transition-opaque lazyload" data-src="demo-image.jpg" alt="ЕВРООКНА">
+							</picture>
 							<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
-								<a class="uk-button uk-button-primary" href="./oknarosta/index.html">Подробнее</a>
+								<a class="uk-button uk-button-primary" href="oknarosta/index.html">Подробнее</a>
 							</div>
 						</div>
 						<div class="uk-card-body">
 							<h3 class="uk-card-title uk-text-bold">ОКНА РОСТА</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 						</div>
-						<a class="uk-position-cover" href="./oknarosta/index.html"></a>
+						<a class="uk-position-cover" href="oknarosta/index.html"></a>
 					</div>
 				</div>
 				<div>
 					<div class="uk-card uk-background-default uk-transition-toggle uk-box-shadow-hover-large">
 						<div class="uk-card-media-top uk-inline-clip">
-							<img class="uk-transition-scale-up uk-transition-opaque" src="https://unsplash.it/1024/768" alt="РУСОКОН">
+							<picture>
+								<source type="image/webp" srcset="demo-image.webp">
+								<img class="uk-transition-scale-up uk-transition-opaque lazyload" data-src="demo-image.jpg" alt="ЕВРООКНА">
+							</picture>
 							<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
-								<a class="uk-button uk-button-primary" href="./rusokon/index.html">Подробнее</a>
+								<a class="uk-button uk-button-primary" href="rusokon/index.html">Подробнее</a>
 							</div>
 						</div>
 						<div class="uk-card-body">
 							<h3 class="uk-card-title uk-text-bold">РУСОКОН</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 						</div>
-						<a class="uk-position-cover" href="./rusokon/index.html"></a>
+						<a class="uk-position-cover" href="rusokon/index.html"></a>
 					</div>
 				</div>
 				<div>
