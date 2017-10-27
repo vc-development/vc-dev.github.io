@@ -1,52 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306.1 306.1" onload="setClock()">
-	<script>
-		function setClock()
-		{
-			var date = new Date()
-			var s = parseInt(date.getSeconds())
-			var second = 6*s
-			secondHand.setAttribute("transform","rotate("+ second.toString() +")")
-		}
-	</script>
-	<style>
-		.st0 {
-			fill: #F2F2F2;
-		}
-
-		.st1 {
-			fill: #282828;
-		}
-
-		.st2 {
-			fill: #FF1A44;
-		}
-
-		<!-- .sec {
-			-webkit-animation: spin 30s linear 0s infinite;
-			-moz-animation: spin 30s linear 0s infinite;
-			animation: spin 30s linear 0s infinite;
-		}
-
-		@-webkit-keyframes spin {
-			100% {
-				-webkit-transform-origin: 50% 75%;
-				-webkit-transform: rotate(360deg);
-			}
-		}
-
-		@-moz-keyframes spin {
-			100% {
-				-moz-transform-origin: 10% 50%;
-				-moz-transform: rotate(360deg);
-			}
-		}
-
-		@keyframes spin {
-			100% {
-				transform-origin: 10% 50%;
-				transform: rotate(360deg);
-			}
-		} -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306.1 306.1">
+	<style>.st0{fill: #F2F2F2;}.st1{fill: #282828;}.st2{fill: #FF1A44;}
 	</style>
 	<circle cx="153.1" cy="153.1" r="150.5" class="st0"/>
 	<path
@@ -62,9 +15,8 @@
 		<g id="hands" transform="rotate(180)">
 			<g id="second">
 				<line stroke-width="2" y1="-20" y2="72" stroke-linecap="round" stroke="#282828" />
-				<animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="60s" by="360" />
+				<animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="30s" by="360" />
 			</g>
 		</g>
 	</g>
-
 </svg>
