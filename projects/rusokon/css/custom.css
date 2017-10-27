@@ -474,6 +474,45 @@
     position: relative;
 }
 
+/*.rs-stopwatch.st0 {
+		fill: #F2F2F2;
+	}
+
+.rs-stopwatch.st1 {
+		fill: #282828;
+	}
+
+.rs-stopwatch.st2 {
+		fill: #FF1A44;
+	}
+
+.rs-stopwatch.sec {
+		-webkit-animation: spin 30s linear 0s infinite;
+		-moz-animation: spin 30s linear 0s infinite;
+		animation: spin 30s linear 0s infinite;
+	}
+
+	@-webkit-keyframes spin {
+		100% {
+			-webkit-transform-origin: 50% 75%;
+			-webkit-transform: rotate(360deg);
+		}
+	}
+
+	@-moz-keyframes spin {
+		100% {
+			-moz-transform-origin: 10% 50%;
+			-moz-transform: rotate(360deg);
+		}
+	}
+
+	@keyframes spin {
+		100% {
+			transform-origin: 10% 50%;
+			transform: rotate(360deg);
+		}
+	}*/
+
 
 /*высота линии в блоке на странице дерево*/
 
