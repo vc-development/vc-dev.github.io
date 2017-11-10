@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Snow Banner</title>
+	<meta name="description" content="Snow Banner">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.34/css/uikit.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.34/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.34/js/uikit-icons.min.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+
+			var canvas = document.getElementById('snow'),
+				ctx = canvas.getContext('2d'),
+				width = ctx.canvas.width = document.body.offsetWidth,
+				height = ctx.canvas.height = document.body.offsetHeight,
+				animFrame = window.requestAnimationFrame ||
+				window.mozRequestAnimationFrame ||
+				window.webkitRequestAnimationFrame ||
+				window.msRequestAnimationFrame,
+				snowflakes = [];
+
+			window.onresize = function() {
+				width = ctx.canvas.width = document.body.offsetWidth,
+				height = ctx.canvas.height = document.body.offsetHeight;
+			}
+
+			function update() {
+				for (var i = 0; i < snowflakes.length; i++) {
+					snowflakes[i].update();
+				}
+			}
+
+			function Snow() {
+				this.x = random(0, width);
+				this.y = random(-height, 0);
+				this.radius = random(0.5, 3.0);
+				this.speed = random(1, 3);
+				this.wind = random(-0.5, 3.0);
+			}
+
+			Snow.prototype.draw = function() {
+				ctx.beginPath();
+				ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+				ctx.fillStyle = '#fff';
+				ctx.fill();
+				ctx.closePath();
+			}
+
+			Snow.prototype.update = function() {
+				this.y += this.speed;
+				this.x += this.wind;
+
+				if (this.y > ctx.canvas.height) {
+					this.y = 0;
+					this.x = random(0, width);
+				}
+			}
+
+			function createSnow(count) {
+				for (var i = 0; i < count; i++) {
+					snowflakes[i] = new Snow();
+				}
+			}
+
+			function draw() {
+				ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+				for (var i = 0; i < snowflakes.length; i++) {
+					snowflakes[i].draw();
+				}
+			}
+
+			function loop() {
+				draw();
+				update();
+				animFrame(loop);
+			}
+
+			function random(min, max) {
+				var rand = (min + Math.random() * (max - min)).toFixed(1);
+				rand = Math.round(rand);
+				return rand;
+			}
+
+			createSnow(500);
+			loop();
+
+		});
+	</script>
+</head>
+
+<body>
+	<div class="uk-container uk-container-expand">
+		<div class="uk-flex uk-margin-auto uk-position-relative uk-inline" style="width: 1680px; height: 500px;">
+			<img class="uk-position-absolute uk-position-z-index" src="snow-banner-1.png" alt="">
+			<img class="uk-position-absolute" src="snow-banner-2.jpg" alt="">
+			<canvas id="snow" class="uk-width-1-1 uk-height-1-1 uk-position-cover"></canvas>
+		</div>
+	</div>
+</body>

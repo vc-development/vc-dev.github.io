@@ -16,34 +16,66 @@
 
 <body>
 
-	<!-- Header -->
-	<header class="uk-section uk-section-small uk-section-secondary" role="banner">
-		<div class="uk-container">
-			
-		</div>
-	</header>
+	<div>
 
-	<!-- Banner -->
-	<section class="uk-section uk-section-primary uk-padding-remove-vertical">
-		<div class="uk-container">
-			<div class="uk-child-width-1-5" uk-grid>
-				<div class="">
-					test<br>
-					test
+		<!-- Header -->
+		<header class="uk-section uk-section-small uk-section-secondary" role="banner">
+			<div class="uk-container">
+
+			</div>
+		</header>
+
+		<!-- Banner -->
+		<section class="uk-section uk-section-muted uk-padding-remove-vertical">
+			<div class="uk-container">
+				<div class="uk-child-width-1-5" uk-grid>
+
+					<div class="uk-background-primary"></div>
+
+					<div class="uk-width-4-5 uk-padding-remove">
+						<!-- Slideshow -->
+						<div class="uk-position-relative uk-light uk-slideshow" uk-slideshow="animation: push">
+							<ul class="uk-slideshow-items">
+								<li><img src="images/banner/banner.jpg" alt="Баннер 1" uk-cover></li>
+								<li><img src="images/banner/banner.jpg" alt="Баннер 2" uk-cover></li>
+								<li><img src="images/banner/banner.jpg" alt="Баннер 3" uk-cover></li>
+							</ul>
+							<!-- Slidenav -->
+							<a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+							<a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+						</div>
+					</div>
 				</div>
-				<div class="uk-width-expand uk-background-cover" uk-height-viewport="expand: true" style="background-image: url(images/banner/banner.jpg)">
+			</div>
+		</section>
 
+		<!-- Test block -->
+		<div class="uk-section uk-section-default uk-padding-remove-vertical">
+			<div class="uk-container">
+				<div class="uk-child-width-1-5" uk-grid>
+
+					<div class="uk-background-primary uk-light uk-padding-small uk-padding-remove-horizontal">
+						<p class="uk-padding uk-padding-remove-vertical">test</p>
+					</div>
+
+					<div class="uk-width-4-5"></div>
 				</div>
 			</div>
 		</div>
-	</section>
 
-	<!-- Test block -->
-	<div class="uk-section uk-section-small uk-section-default">
-		<div class="uk-container">
-			test
-		</div>
+		<!-- Выберите свой тариф -->
+		<section class="uk-section">
+
+		</section>
+
 	</div>
+
+	<!-- Footer -->
+	<footer class="uk-section uk-section-secondary">
+		<div class="uk-container">
+
+		</div>
+	</footer>
 
 </body>
 
