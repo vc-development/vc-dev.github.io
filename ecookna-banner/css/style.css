@@ -3,6 +3,14 @@ body {
 	padding: 0;
 }
 
+.eo-button{
+	opacity: 0;
+	transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+}
+
 .sparkley:hover .eo-button {
 	box-sizing: border-box;
     width: 60px;
@@ -27,6 +35,12 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+	opacity: 1;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .eo-banner {
