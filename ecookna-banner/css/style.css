@@ -1,0 +1,373 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.eo-banner {
+	width: 1920px;
+	height: 560px;
+	background: url('../image/1920х560.jpg') center center no-repeat;
+	position: relative;
+}
+
+.eo-text {}
+
+.eo-sparkles {}
+
+.sparkle {
+	position: absolute;
+}
+
+/* Sparkle 1 */
+.sparkle.sparkle-1 {
+	top: 195px;
+    right: 810px;
+}
+.sparkle.sparkle-1 .large {
+	-webkit-animation: large 5.5s infinite;
+	-moz-animation: large 5.5s infinite;
+}
+.sparkle.sparkle-1 .large-2 {
+	-webkit-animation: large-2 5.5s infinite;
+	-moz-animation: large-2 5.5s infinite;
+}
+.sparkle.sparkle-1 .small {
+	-webkit-animation: small 5.5s infinite;
+	-moz-animation: small 5.5s infinite;
+}
+
+/* Sparkle 2 */
+.sparkle.sparkle-2 {
+	top: 315px;
+	right: 925px;
+}
+.sparkle.sparkle-2 .large {
+	-webkit-animation: large 4.5s infinite;
+	-moz-animation: large 4.5s infinite;
+}
+.sparkle.sparkle-2 .large-2 {
+	-webkit-animation: large-2 4.5s infinite;
+	-moz-animation: large-2 4.5s infinite;
+}
+.sparkle.sparkle-2 .small {
+	-webkit-animation: small 4.5s infinite;
+	-moz-animation: small 4.5s infinite;
+}
+
+/* Sparkle 3 */
+.sparkle.sparkle-3 {
+	top: 345px;
+    right: 646px;
+}
+.sparkle.sparkle-3 .large {
+	-webkit-animation: large 3.5s infinite;
+	-moz-animation: large 3.5s infinite;
+}
+.sparkle.sparkle-3 .large-2 {
+	-webkit-animation: large-2 3.5s infinite;
+	-moz-animation: large-2 3.5s infinite;
+}
+.sparkle.sparkle-3 .small {
+	-webkit-animation: small 3.5s infinite;
+	-moz-animation: small 3.5s infinite;
+}
+
+/* Sparkle 4 */
+.sparkle.sparkle-4 {
+	top: 440px;
+	right: 725px;
+}
+.sparkle.sparkle-4 .large {
+	-webkit-animation: large 2.5s infinite;
+	-moz-animation: large 2.5s infinite;
+}
+.sparkle.sparkle-4 .large-2 {
+	-webkit-animation: large-2 2.5s infinite;
+	-moz-animation: large-2 2.5s infinite;
+}
+.sparkle.sparkle-4 .small {
+	-webkit-animation: small 2.5s infinite;
+	-moz-animation: small 2.5s infinite;
+}
+
+/* Sparkle 5 */
+.sparkle.sparkle-5 {
+	top: 190px;
+	right: 668px;
+}
+.sparkle.sparkle-5 .large {
+	-webkit-animation: large 4s infinite;
+	-moz-animation: large 4s infinite;
+}
+.sparkle.sparkle-5 .large-2 {
+	-webkit-animation: large-2 4s infinite;
+	-moz-animation: large-2 4s infinite;
+}
+.sparkle.sparkle-5 .small {
+	-webkit-animation: small 4s infinite;
+	-moz-animation: small 4s infinite;
+}
+
+/* Sparkle 6 */
+.sparkle.sparkle-6 {
+	top: 340px;
+	right: 485px;
+}
+.sparkle.sparkle-6 .large {
+	-webkit-animation: large 5s infinite;
+	-moz-animation: large 5s infinite;
+}
+.sparkle.sparkle-6 .large-2 {
+	-webkit-animation: large-2 5s infinite;
+	-moz-animation: large-2 5s infinite;
+}
+.sparkle.sparkle-6 .small {
+	-webkit-animation: small 5s infinite;
+	-moz-animation: small 5s infinite;
+}
+
+.sparkle svg {
+	width: 100%;
+}
+
+.sparkle .group {
+	-webkit-transform: translate(42.5px, 42.5px);
+	-moz-transform: translate(42.5px, 42.5px);
+	transform: translate(42.5px, 42.5px);
+}
+
+.sparkle path {
+	-webkit-transform: translate(-42.5px, -42.5px);
+	-moz-transform: translate(-42.5px, -42.5px);
+	transform: translate(-42.5px, -42.5px);
+}
+
+@-webkit-keyframes draw {
+	30% {
+		fill-opacity: 0;
+	}
+	31% {
+		fill-opacity: 1;
+	}
+	32% {
+		fill-opacity: 0;
+	}
+	33% {
+		fill-opacity: 1;
+	}
+	34% {
+		fill-opacity: 0;
+	}
+	35% {
+		fill-opacity: 1;
+	}
+	from {
+		stroke-dashoffset: 1940;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@-moz-keyframes draw {
+	30% {
+		fill-opacity: 0;
+	}
+	31% {
+		fill-opacity: 1;
+	}
+	32% {
+		fill-opacity: 0;
+	}
+	33% {
+		fill-opacity: 1;
+	}
+	34% {
+		fill-opacity: 0;
+	}
+	35% {
+		fill-opacity: 1;
+	}
+	from {
+		stroke-dashoffset: 1940;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@-webkit-keyframes large {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(0deg) scale(0);
+		transform: rotate(0deg) scale(0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: rotate(360deg) scale(1.5);
+		transform: rotate(360deg) scale(1.5);
+	}
+}
+
+@-moz-keyframes large {
+	0% {
+		opacity: 0;
+		transform: rotate(0deg) scale(0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(360deg) scale(1.5);
+	}
+}
+
+@-webkit-keyframes large-2 {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(45deg) scale(0);
+		transform: rotate(45deg) scale(0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: rotate(405deg) scale(1.1);
+		transform: rotate(405deg) scale(1.1);
+	}
+}
+
+@-moz-keyframes large-2 {
+	0% {
+		opacity: 0;
+		transform: rotate(45deg) scale(0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(405deg) scale(1.1);
+	}
+}
+
+@-webkit-keyframes small {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(0deg) scale(0);
+		transform: rotate(0deg) scale(0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: rotate(-360deg) scale(1);
+		transform: rotate(-360deg) scale(1.5);
+	}
+}
+
+@-moz-keyframes small {
+	0% {
+		opacity: 0;
+		transform: rotate(0deg) scale(0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(-360deg) scale(1.5);
+	}
+}
+
+/* Sparkley */
+.sparkley {
+	position: absolute!important;
+	cursor: pointer;
+}
+
+.sparkley.sparkley-1 {
+	height: 197px;
+    width: 202px;
+    top: 304px;
+    right: 722px;
+    z-index: 1;
+}
+
+.sparkley.sparkley-2 {
+	height: 135px;
+    width: 152px;
+    top: 351px;
+    right: 924px;
+    z-index: 2;
+}
+
+.sparkley.sparkley-3 {
+	height: 140px;
+    width: 150px;
+    top: 362px;
+    right: 572px;
+	z-index: 3;
+}
+
+.sparkley.sparkley-4 {
+	height: 102px;
+    width: 102px;
+    top: 378px;
+    right: 470px;
+    z-index: 4;
+}
+
+.sparkley.sparkley-5 {
+	height: 100px;
+    width: 97px;
+    top: 435px;
+    right: 691px;
+    z-index: 5;
+}
+
+.sparkley.sparkley-6 {
+	height: 110px;
+    width: 108px;
+    top: 243px;
+    right: 924px;
+    z-index: 6;
+}
+
+.sparkley.sparkley-7 {
+	height: 76px;
+	width: 153px;
+	top: 229px;
+	right: 739px;
+	z-index: 7
+}
+
+.sparkley.sparkley-8 {
+	height: 135px;
+    width: 142px;
+    top: 229px;
+    right: 585px;
+    z-index: 8;
+}
+
+.sparkley.sparkley-9 {
+	height: 84px;
+	width: 82px;
+	top: 295px;
+	right: 504px;
+	z-index: 9;
+}
+
+.sparkley.sparkley-10 {
+	height: 77px;
+    width: 82px;
+    top: 160px;
+    right: 825px;
+    z-index: 10;
+}
