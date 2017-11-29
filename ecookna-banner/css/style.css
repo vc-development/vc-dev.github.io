@@ -6,13 +6,15 @@ body {
 .eo-banner {
 	width: 1920px;
 	height: 560px;
-	background: url('../image/1920х560.jpg') center center no-repeat;
+	background: url('../image/ecookna-happy-new-year.jpg') center center no-repeat;
 	position: relative;
 }
 
 .eo-text {}
 
-.eo-sparkles {}
+.sparkles {
+	position: relative;
+}
 
 .sparkle {
 	position: absolute;
