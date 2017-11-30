@@ -53,14 +53,11 @@ body {
 }
 
 .giftbox-banner {
-	width: 1920px;
+	max-width: 100%;
 	height: 560px;
+    position: relative;
+    vertical-align: middle;
 	background: url('../images/ecookna-happy-new-year.jpg') center center no-repeat;
-	position: relative;
-}
-
-.sparkles {
-	position: relative;
 }
 
 .sparkle {
@@ -70,7 +67,7 @@ body {
 /* Sparkle 1 */
 .sparkle.sparkle-1 {
 	top: 195px;
-    right: 810px;
+    right: 42%;
 }
 .sparkle.sparkle-1 .large {
 	-webkit-animation: large 5.5s infinite;
@@ -88,7 +85,7 @@ body {
 /* Sparkle 2 */
 .sparkle.sparkle-2 {
 	top: 315px;
-	right: 925px;
+	right: 48%;
 }
 .sparkle.sparkle-2 .large {
 	-webkit-animation: large 4.5s infinite;
@@ -106,7 +103,7 @@ body {
 /* Sparkle 3 */
 .sparkle.sparkle-3 {
 	top: 345px;
-    right: 646px;
+    right: 33.7%;
 }
 .sparkle.sparkle-3 .large {
 	-webkit-animation: large 3.5s infinite;
@@ -124,7 +121,7 @@ body {
 /* Sparkle 4 */
 .sparkle.sparkle-4 {
 	top: 440px;
-	right: 725px;
+	right: 37.7%;
 }
 .sparkle.sparkle-4 .large {
 	-webkit-animation: large 2.5s infinite;
@@ -142,7 +139,7 @@ body {
 /* Sparkle 5 */
 .sparkle.sparkle-5 {
 	top: 190px;
-	right: 668px;
+	right: 34.8%;
 }
 .sparkle.sparkle-5 .large {
 	-webkit-animation: large 4s infinite;
@@ -160,7 +157,7 @@ body {
 /* Sparkle 6 */
 .sparkle.sparkle-6 {
 	top: 340px;
-	right: 485px;
+	right: 25.2%;
 }
 .sparkle.sparkle-6 .large {
 	-webkit-animation: large 5s infinite;
@@ -335,6 +332,7 @@ body {
 	}
 }
 
+
 /* Sparkley */
 .sparkley {
 	position: absolute !important;
@@ -418,4 +416,222 @@ body {
     top: 160px;
     right: 825px;
     z-index: 10;
+}
+
+@media screen and (max-width: 1360px) {
+	/* Sparkle 1 */
+	.sparkle.sparkle-1 {
+	    right: 39%;
+	}
+
+	/* Sparkle 2 */
+	.sparkle.sparkle-2 {
+		right: 47.3%%;
+	}
+
+	/* Sparkle 3 */
+	.sparkle.sparkle-3 {
+	    right: 26.9%;
+	}
+
+	/* Sparkle 4 */
+	.sparkle.sparkle-4 {
+		right: 32.7%;
+	}
+
+	/* Sparkle 5 */
+	.sparkle.sparkle-5 {
+		right: 28.5%;
+	}
+
+	/* Sparkle 6 */
+	.sparkle.sparkle-6 {
+		right: 15%;
+	}
+
+	/* Sparkley */
+	.sparkley.sparkley-1 {
+		right: 32.5%;
+	}
+
+	.sparkley.sparkley-2 {
+		right: 47.3%;
+	}
+
+	.sparkley.sparkley-3 {
+		right: 21.4%;
+	}
+
+	.sparkley.sparkley-4 {
+		right: 14%;
+	}
+
+	.sparkley.sparkley-5 {
+		right: 30.2%;
+	}
+
+	.sparkley.sparkley-6 {
+		right: 47.3%;
+	}
+
+	.sparkley.sparkley-7 {
+		right: 33.8%;
+	}
+
+	.sparkley.sparkley-8 {
+		right: 22.4%;
+	}
+
+	.sparkley.sparkley-9 {
+		right: 16.5%;
+	}
+
+	.sparkley.sparkley-10 {
+		right: 40%;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	/* Sparkle 1 */
+	.sparkle.sparkle-1 {
+	    right: 38%;
+	}
+
+	/* Sparkle 2 */
+	.sparkle.sparkle-2 {
+		right: 47.2%;
+	}
+
+	/* Sparkle 3 */
+	.sparkle.sparkle-3 {
+	    right: 25.5%;
+	}
+
+	/* Sparkle 4 */
+	.sparkle.sparkle-4 {
+		right: 31.6%;
+	}
+
+	/* Sparkle 5 */
+	.sparkle.sparkle-5 {
+		right: 27.2%;
+	}
+
+	/* Sparkle 6 */
+	.sparkle.sparkle-6 {
+		right: 12.8%;
+	}
+
+	/* Sparkley */
+	.sparkley.sparkley-1 {
+		right: 31.4%;
+	}
+
+	.sparkley.sparkley-2 {
+		right: 47.2%;
+	}
+
+	.sparkley.sparkley-3 {
+		right: 19.6%;
+	}
+
+	.sparkley.sparkley-4 {
+		right: 11.7%;
+	}
+
+	.sparkley.sparkley-5 {
+		right: 29%;
+	}
+
+	.sparkley.sparkley-6 {
+		right: 47.1%;
+	}
+
+	.sparkley.sparkley-7 {
+		right: 32.7%;
+	}
+
+	.sparkley.sparkley-8 {
+		right: 20.7%;
+	}
+
+	.sparkley.sparkley-9 {
+		right: 14.4%;
+	}
+
+	.sparkley.sparkley-10 {
+		right: 39.4%;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.sparkle.sparkle-1 {
+		right: 35%;
+	}
+
+	/* Sparkle 2 */
+	.sparkle.sparkle-2 {
+		right: 46.3%;
+	}
+
+	/* Sparkle 3 */
+	.sparkle.sparkle-3 {
+		right: 18%;
+	}
+
+	/* Sparkle 4 */
+	.sparkle.sparkle-4 {
+		right: 26%;
+	}
+
+	/* Sparkle 5 */
+	.sparkle.sparkle-5 {
+		right: 20.2%;
+	}
+
+	/* Sparkle 6 */
+	.sparkle.sparkle-6 {
+		right: 1.5%;
+	}
+
+	/* Sparkley */
+	.sparkley.sparkley-1 {
+	    right: 25.8%;
+	}
+
+	.sparkley.sparkley-2 {
+	    right: 46.3%;
+	}
+
+	.sparkley.sparkley-3 {
+	    right: 10.3%;
+	}
+
+	.sparkley.sparkley-4 {
+	    right: 0;
+	}
+
+	.sparkley.sparkley-5 {
+	    right: 22.6%;
+	}
+
+	.sparkley.sparkley-6 {
+	    right: 46.2%;
+	}
+
+	.sparkley.sparkley-7 {
+		right: 27.5%;
+	}
+
+	.sparkley.sparkley-8 {
+	    right: 11.7%;
+	}
+
+	.sparkley.sparkley-9 {
+		right: 3.5%;
+	}
+
+	.sparkley.sparkley-10 {
+	    right: 36.2%;
+	}
 }
