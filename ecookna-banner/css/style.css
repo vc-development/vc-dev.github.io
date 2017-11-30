@@ -49,6 +49,7 @@ body {
     transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
     -webkit-transition: all .2s ease-out;
+	z-index: 11
 }
 
 .giftbox-banner {
