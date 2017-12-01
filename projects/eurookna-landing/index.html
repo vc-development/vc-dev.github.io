@@ -119,8 +119,86 @@
 			</div>
 		</div>
 
+		<!-- Баннер: Новогодняя ярмарка -->
+		<section id="discount" class="uk-section uk-position-relative uk-background-cover uk-background-image@m" style="background-image: url('images/happy-new-year.jpg');">
+
+			<!-- Float Tooltip -->
+			<div class="uk-width-1-2 uk-position-absolute uk-position-z-index uk-visible@s" uk-scrollspy="cls:uk-animation-fade">
+				<a class="uk-position-absolute uk-display-block tooltips tooltips-large" href="#modal-happy-new-year" uk-toggle><span>Подробнее о подарках</span></a>
+			</div>
+
+			<div class="uk-container">
+				<div class="uk-grid" uk-grid>
+					<div class="uk-width-expand uk-position-relative uk-visible@m"></div>
+					<div class="uk-width-auto@m uk-width-1-3@l">
+						<div class="uk-panel uk-background-default uk-box-shadow-small" uk-scrollspy="cls:uk-animation-slide-bottom-medium">
+							<div class="uk-height-medium uk-cover-container uk-hidden@m">
+								<img src="images/happy-new-year.jpg" alt="Пластиковые окна" uk-cover>
+								<a class="uk-position-cover" href="#modal-happy-new-year" uk-toggle></a>
+							</div>
+							<div class="uk-padding uk-text-left@m uk-text-center">
+								<div uk-scrollspy="cls: uk-animation-slide-bottom-small">
+									<h2 class="uk-h1 uk-text-uppercase uk-text-danger" style="margin-bottom: 10px;">Новогодняя<br> ярмарка!</h2>
+									<p style="margin: 0 0 10px 0;">Закажи окно и получай подарки<br> каждую неделю + возможность<br> выиграть супер-приз!</p>
+								</div>
+								<hr class="uk-hr" uk-scrollspy="cls: uk-animation-scale-up" style="margin: 11px 0;">
+								<p class="uk-text-small uk-text-muted" style="margin: 0 0 10px 0;">До очередного розыгрыша осталось:</p>
+								<div class="uk-text-center uk-text-muted">
+									<div class="uk-child-width-expand uk-grid-collapse uk-grid-small uk-grid" uk-grid uk-countdown="date: 2017-08-23" uk-scrollspy="target: > div > div; cls: uk-animation-slide-bottom-small; delay: 200">
+										<div>
+											<div class="uk-h1 uk-countdown-days uk-text-muted uk-margin-remove"></div>
+											<div class="uk-countdown-label uk-margin-small uk-text-center uk-text-small">Дни</div>
+										</div>
+										<div class="uk-h2 uk-text-muted">:</div>
+										<div>
+											<div class="uk-h1 uk-countdown-hours uk-text-muted uk-margin-remove"></div>
+											<div class="uk-countdown-label uk-margin-small uk-text-center uk-text-small">Часы</div>
+										</div>
+										<div class="uk-h2 uk-text-muted">:</div>
+										<div>
+											<div class="uk-h1 uk-countdown-minutes uk-text-muted uk-margin-remove"></div>
+											<div class="uk-countdown-label uk-margin-small uk-text-center uk-text-small">Мин.</div>
+										</div>
+										<div class="uk-h2 uk-text-muted">:</div>
+										<div>
+											<div class="uk-h1 uk-countdown-seconds uk-text-muted uk-margin-remove"></div>
+											<div class="uk-countdown-label uk-margin-small uk-text-center uk-text-small">Сек.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="modal-happy-new-year" uk-modal>
+			    <div class="uk-modal-dialog">
+			        <button class="uk-modal-close-default" type="button" uk-close></button>
+			        <div class="uk-modal-body" uk-overflow-auto>
+						<h2 class="uk-h2 uk-text-uppercase">Успейте принять Участие в Новогодней ярмарке!</h2>
+                        <p class="uk-text-large">Акция «Ярмарка подарков» проводится ООО «ЕВРООКНА» с 4 декабря 2017 по 31 января 2018.</p>
+                        <p>Стать участником можно с 4 декабря 2017 по 31 января 2018. Получение подарков до 28 февраля 2018.</p>
+                        <p>В акции принимают участие все клиенты ООО «ЕВРООКНА», оформившие договор поставки в указанный срок действия акции.</p>
+                        <p>Гарантией участия является номер договора, закрепленный на билете участника «Ярмарки Подарков».</p>
+                        <h3 class="uk-h4 uk-text-uppercase">Дарим подарки!</h3>
+                        <p>Супер приз — «Зимнее окно»* номиналом 25 000 рублей и подарки от партнеров, компании GUARDIAN и VEKA.</p>
+                        <p>Внимание! Количество подарков ограничено!</p>
+                        <h4 class="uk-h4 uk-text-uppercase">Розыгрыш подарков от партнеров проводится еженедельно</h4>
+                        <p>С помощью генератора случайных чисел. Результат будет опубликован на сайте компании «ЕВРООКНА» <a href="http://www.eurookna.ru/">www.eurookna.ru</a></p>
+                        <h4 class="uk-h4 uk-text-uppercase">Розыгрыш супер приза состоится 31 января 2018 года</h4>
+                        <p>С помощью генератора случайных чисел. Результат будет опубликован на сайте компании «ЕВРООКНА» <a href="http://www.eurookna.ru/">www.eurookna.ru</a></p>
+                        <h4 class="uk-h4 uk-text-uppercase">Подарок можно будет получить по адресу:</h4>
+                        <p>127006, г. Москва, м. Новослободская, ул. Долгоруковская, д. 21, стр. 1, этаж 3, офис 303</p>
+						<hr class="uk-hr">
+                        <p class="uk-text-small uk-text-muted">* «Зимнее окно» под ключ: профильная система VEKA SOFT LINE 70, м/ф стеклопакет, теплая ручка MACO, 5-ти ступенчатое микропроветривание, подоконник Estera, теплые откосы, отлив, м/с, доставка, зимний монтаж. Номинал изделия не должен превышать 25 тыс. рублей. При условии недобора указанной суммы в договоре поставки, наличный остаток не возвращается, но может распространятся на другой договор поставки скидкой в равнозначной сумме остатка. Срок действия предложения по остатку не более 1 мес с момента оформления Супер приза «Зимнее окно».</p>
+			        </div>
+			    </div>
+			</div>
+		</section>
+
 		<!-- Баннер: Пластиковые окна скидка 50% -->
-		<section id="discount" class="uk-section uk-background-cover uk-background-image@m" style="background-image: url('images/bg1.jpg');">
+		<!-- <section id="discount" class="uk-section uk-background-cover uk-background-image@m" style="background-image: url('images/bg1.jpg');">
 			<div class="uk-container">
 				<div uk-grid>
 					<div class="uk-width-expand uk-position-relative uk-visible@m">
@@ -168,14 +246,14 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<!-- Оставьте заявку -->
 		<section class="uk-section uk-section-small uk-background-secondary">
 			<div class="uk-container">
 				<div class="uk-child-width-1-3@m" uk-grid>
 					<div>
-						<p class="uk-text-uppercase uk-h3 uk-text-left@m uk-text-center">Оставьте заявку сейчас<br>и получите скидку 50%<br>+ подарок</p>
+						<p class="uk-text-uppercase uk-h3 uk-text-left@m uk-text-center">Оставьте заявку и получите<br> зимнюю скидку 50%<br>+ подарок</p>
 					</div>
 					<div class="uk-width-expand">
 						<form action="" method="post">
@@ -614,7 +692,7 @@
 		</section>
 
 		<!-- Подоконник в подарок -->
-		<section class="uk-section uk-background-cover uk-background-image@m" style="background-image: url('images/bg2.jpg');">
+		<!-- <section class="uk-section uk-background-cover uk-background-image@m" style="background-image: url('images/bg2.jpg');">
 			<div class="uk-container uk-text-left@m uk-text-center uk-position-relative">
 				<div class="uk-flex-middle uk-child-width-1-2@m" uk-grid>
 					<div class="uk-text-right uk-visible@m">
@@ -635,6 +713,38 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<!-- Зимнее остекление -->
+		<section class="uk-section uk-background-cover uk-light" style="background-image: url('images/winter.png');">
+			<div class="uk-container uk-text-center">
+				<h2 class="uk-h1 uk-text-uppercase">Зимнее остекление — это выгодно</h2>
+				<div class="uk-text-large uk-margin-large uk-flex-middle uk-flex-center uk-child-width-1-5@m uk-child-width-1-3@s uk-child-width-1-2 uk-grid" uk-grid>
+					<div>
+						<span uk-icon="icon: eo-percentage; ratio: 2.5"></span>
+						<p>Низкие цены<br> скидки до 50%</p>
+					</div>
+					<div>
+						<span uk-icon="icon: iconmonstr-time-6; ratio: 2.5"></span>
+						<p>Короткие сроки<br> изготовления</p>
+					</div>
+					<div>
+						<span uk-icon="icon: iconmonstr-checkbox-22; ratio: 2.5"></span>
+						<p>Проверка качества<br> монтажа</p>
+					</div>
+					<div>
+						<span uk-icon="icon: eo-spray; ratio: 2.5"></span>
+						<p>Спецматериалы<br> зимнего монтажа</p>
+					</div>
+					<div>
+						<span uk-icon="icon: iconmonstr-christmas-37; ratio: 2.5"></span>
+						<p>Энергосберегающий<br> стеклопакет</p>
+					</div>
+				</div>
+				<div>
+					<button class="uk-button uk-button-default" type="button" uk-toggle="target: #modal-1">Заказать по цене -50%</button>
 				</div>
 			</div>
 		</section>

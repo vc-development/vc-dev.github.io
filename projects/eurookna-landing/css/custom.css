@@ -1,3 +1,79 @@
+/* Баннер: Новогодняя ярмарка */
+a.tooltips {
+	position: relative;
+	display: inline;
+	height: 275px;
+	width: 275px;
+	right: 170px;
+	-webkit-animation: float 3s ease-in-out infinite;
+	animation: float 3s ease-in-out infinite;
+}
+
+a.tooltips span {
+	position: absolute;
+	width: 230px;
+	color: #FFFFFF;
+	background: #EC2F2F;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	visibility: visible;
+	border-radius: 0px;
+}
+
+a.tooltips span:after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -12px;
+	width: 0;
+	height: 0;
+	border-top: 12px solid #EC2F2F;
+	border-right: 12px solid transparent;
+	border-left: 12px solid transparent;
+}
+
+@-webkit-keyframes float {
+	0% {
+		-webkit-transform: translatey(0px);
+		transform: translatey(0px);
+	}
+	50% {
+
+		-webkit-transform: translatey(-20px);
+		transform: translatey(-20px);
+	}
+	100% {
+		-webkit-transform: translatey(0px);
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float {
+	0% {
+		-webkit-transform: translatey(0px);
+		transform: translatey(0px);
+	}
+	50% {
+
+		-webkit-transform: translatey(-20px);
+		transform: translatey(-20px);
+	}
+	100% {
+		-webkit-transform: translatey(0px);
+		transform: translatey(0px);
+	}
+}
+
+@media screen and (max-width: 980px) {
+	a.tooltips {
+		right: 4%;
+		top: 30px;
+	}
+}
+/* --- */
+
 @media screen and (max-width: 1080px) {
     .call-special {
         font-size: 12px;
