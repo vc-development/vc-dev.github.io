@@ -116,119 +116,56 @@
         </div>
 
         <!-- Форма расчета стоимости -->
-        <section class="uk-section uk-section-default">
-            <div class="uk-container uk-container-small">
-                <h1 class="uk-h2 uk-text-center uk-text-uppercase" uk-scrollspy="cls: uk-animation-slide-bottom-small">Расчитать стоимость</h1>
-                <ul class="uk-flex uk-flex-center uk-text-uppercase uk-margin-large" uk-tab="connect: .calcform; animation: uk-animation-fade">
-                    <li><a class="uk-text-large uk-text-bold" href="#" uk-scrollspy="cls: uk-animation-slide-left-small">Калькулятор</a></li>
-                    <li><a class="uk-text-large uk-text-bold" href="#" uk-scrollspy="cls: uk-animation-slide-right-small">Быстрый расчет</a></li>
-                </ul>
-                <form class="uk-form-stacked" action="" method="post">
-                    <div class="uk-margin">
-                        <label class="uk-form-label">Тип остекления</label>
-                        <select class="uk-select" name="calc-select-1" required>
-                            <option value="">- Выберите тип остекления -</option>
-                            <option value="1">Пластиковые окна</option>
-                            <option value="2">Остекление балконов</option>
-                        </select>
-                    </div>
-                    <ul class="uk-switcher uk-margin calcform">
-                        <li>
-                            <p class="uk-text-large uk-text-bold">Выберите тип окон</p>
-                            <div class="uk-margin">
-                                <label class="uk-form-label">Количество окон</label>
-                                <div class="uk-form-controls">
-                                    <select class="uk-select" name="calc-select-2" required>
-                                        <option value="">- Выберите количество окон -</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">больше 3х окон</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="uk-margin uk-text-center uk-flex-center uk-child-width-auto@s uk-child-width-1-2" uk-grid>
-                                <div>
-                                    <input id="calc-radio-1" class="uk-radio" type="radio" name="calc-radio" checked>
-                                    <label for="calc-radio-1"><img class="uk-display-block uk-margin-auto" src="images/window-form-1.svg" alt="t1"></label>
-                                </div>
-                                <div>
-                                    <input id="calc-radio-2" class="uk-radio" type="radio" name="calc-radio">
-                                    <label for="calc-radio-2"><img class="uk-display-block uk-margin-auto" src="images/window-form-2.svg" alt="t2"></label>
-                                </div>
-                                <div>
-                                    <input id="calc-radio-3" class="uk-radio" type="radio" name="calc-radio">
-                                    <label for="calc-radio-3"><img class="uk-display-block uk-margin-auto" src="images/window-form-3.svg" alt="t3"></label>
-                                </div>
-                                <div>
-                                    <input id="calc-radio-4" class="uk-radio" type="radio" name="calc-radio">
-                                    <label for="calc-radio-4"><img class="uk-display-block uk-margin-auto" src="images/window-form-4.svg" alt="t4"></label>
-                                </div>
-                            </div>
-                            <hr>
-                            <p class="uk-text-large uk-text-bold">Дополнительные функции</p>
-                            <div class="uk-margin uk-grid-small uk-child-width-expand@s uk-child-width-1-2" uk-grid>
-                                <div>
-                                    <label class="uk-flex uk-flex-middle uk-flex-center">
-                                        <div class="uk-margin-small-right">
-                                            <input class="uk-checkbox" type="checkbox">
-                                        </div>
-                                        <div>Подоконник<br><span class="uk-text-danger">+ 250 руб.</span></div>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="uk-flex uk-flex-middle uk-flex-center">
-                                        <div class="uk-margin-small-right">
-                                            <input class="uk-checkbox" type="checkbox">
-                                        </div>
-                                        <div>Монтаж<br><span class="uk-text-danger">+ 960 руб.</span></div>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="uk-flex uk-flex-middle uk-flex-center">
-                                        <div class="uk-margin-small-right">
-                                            <input class="uk-checkbox" type="checkbox" checked>
-                                        </div>
-                                        <div>Москитная сетка<br><span class="uk-text-danger">бесплатно</span></div>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label class="uk-flex uk-flex-middle uk-flex-center">
-                                        <div class="uk-margin-small-right">
-                                            <input class="uk-checkbox" type="checkbox" checked>
-                                        </div>
-                                        <div>Гребенка<br><span class="uk-text-danger">бесплатно</span></div>
-                                    </label>
-                                </div>
-                            </div>
-                            <hr>
-                            <p class="uk-text-large uk-text-bold">Оставьте заявку сейчас, получите <span class="uk-text-danger">50%</span> скидку!</p>
-                        </li>
-                        <li></li>
-                    </ul>
-                    <div class="uk-margin">
-                        <label class="uk-form-label">Введите адрес - мы рассчитаем стоимость, определив параметры ваших окон на основе данных о доме.</label>
-                        <div class="uk-form-controls">
-                            <textarea class="uk-textarea" name="" rows="1" cols="80" placeholder="Введите адрес вашего дома, например: г. Москва, ул. Проспект мира, д. 1" required></textarea>
-                        </div>
-                    </div>
-                    <div class="uk-child-width-1-2@s uk-flex-bottom" uk-grid>
-                        <div>
-                            <div class="uk-inline uk-width-1-1">
-                                <span class="uk-form-icon" uk-icon="icon: iconmonstr-phone-3; ratio: .7"></span>
-                                <input class="uk-input phone-mask" type="tel" pattern="\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}" placeholder="+7 (___) ___-__-__ " title="Укажите Ваш номер телефона" uk-tooltip="pos: top-left" required>
-                            </div>
-                        </div>
-                        <div>
-                            <button class="uk-button uk-button-danger uk-width-1-1" type="submit">Расчитать стоимость</button>
-                        </div>
-                        <div class="uk-width-1-1">
-                            <label class="uk-text-small"><input class="uk-checkbox uk-margin-small-right" type="checkbox" checked required> Даю согласие на обработку моих персональных данных в соответствии с <a href="#modal-5" uk-toggle>политикой конфиденциальности</a></label>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
+		<!-- Секция. Оплата -->
+		<div class="uk-section uk-section-muted">
+			<div class="uk-container">
+				<div class="uk-width-xxlarge uk-margin-auto" uk-margin="margin: uk-margin-medium">
+					<h2 class="uk-h1 uk-text-center">Оплата заказа</h2>
+					<div class="uk-padding-large uk-box-shadow-medium uk-background-default" uk-scrollspy="cls: uk-animation-slide-bottom-small">
+						<form class="uk-form-stacked uk-panel" action="/" method="post" uk-margin="margin: uk-margin-medium">
+							<div>
+								<label class="uk-form-label uk-text-large" for="form-stacked-text">Шаг 1</label>
+								<div class="uk-form-controls">
+									<input class="uk-input uk-form-large" type="text" placeholder="Номер договора...">
+									<p class="uk-margin-small uk-text-small uk-text-muted"><strong>Внимание!</strong> Номер договора вводится без пробелов!</p>
+								</div>
+							</div>
+							<div>
+								<label class="uk-form-label uk-text-large" for="form-stacked-text">Шаг 2</label>
+								<div class="uk-form-controls">
+									<input class="uk-input uk-form-large" type="text" placeholder="ФИО (как в договоре)">
+									<p class="uk-margin-small uk-text-small uk-text-muted"><strong>Внимание!</strong> В целях безопасности показываются только первые 3 буквы фамилии.</p>
+								</div>
+							</div>
+							<div>
+								<input class="uk-input uk-form-large" type="text" placeholder="Сумма оплаты по договору, руб.">
+							</div>
+							<div>
+								<button class="uk-button uk-button-danger uk-button-large uk-padding-small uk-padding-remove-vertical uk-width-1-1" type="submit">Оплатить</button>
+							</div>
+							<div class="uk-text-muted uk-flex">
+								<div class="uk-margin-auto">
+									<p class="uk-margin-remove">Принимаем к оплате</p>
+									<div>
+										<span uk-icon="icon: icon-payment-mastercard; ratio: 2" title="MasterCard" uk-tooltip="MasterCard"></span>
+										<span uk-icon="icon: icon-payment-visa; ratio: 2" title="VISA" uk-tooltip="VISA"></span>
+										<span uk-icon="icon: icon-payment-jcb; ratio: 2" title="JCB" uk-tooltip="JCB"></span>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="uk-text-small uk-text-muted">
+						<p>При оплате заказа банковской картой, обработка платежа (включая ввод номера карты) происходит на защищенной странице процессинговой системы, которая прошла международную сертификацию. Это значит, что Ваши конфиденциальные данные (реквизиты карты,
+							регистрационные данные и др.) не поступают в интернет-магазин, их обработка полностью защищена и никто, в том числе наш интернет-магазин, не может получить персональные и банковские данные клиента.</p>
+						<p>При работе с карточными данными применяется стандарт защиты информации, разработанный международными платёжными системами Visa и MasterCard - Payment Card Industry Data Security Standard (PCI DSS), что обеспечивает безопасную обработку реквизитов
+							Банковской карты Держателя. Применяемая технология передачи данных гарантирует безопасность по сделкам с Банковскими картами путем использования протоколов Transport Layer Security (TLS), Verified by Visa, Secure Code, и закрытых банковских сетей,
+							имеющих высшую степень защиты.</p>
+						<p>В случае возврата, денежные средства возвращаются на ту же карту, с которой производилась оплата.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
         <!-- Звоните нам, мы работаем круглосуточно -->
         <section class="uk-section uk-section-muted uk-background-cover uk-background-center-center uk-background-image@m" style="background-image: url('images/bg5.jpg');">
@@ -254,34 +191,9 @@
         </section>
 
 		<!-- Способы оплаты -->
-		<section id="payment" class="uk-section uk-section-muted uk-text-center">
-			<div class="uk-container">
-				<h2 class="uk-h1 uk-text-uppercase uk-margin-medium">Способы оплаты</h2>
-				<p class="uk-text-large">У нас ваши новые окна можно оплатить любым удобным для вас способом.</p>
-				<div class="uk-margin-medium uk-child-width-1-3@m uk-grid-large" uk-grid>
-					<div>
-						<span class="uk-text-primary" uk-icon="icon: icon-wallet; ratio: 3"></span>
-						<h3 class="uk-h2 uk-margin">Наличные</h3>
-						<p>Удобно, когда все сразу и в одном месте — именно так Вы можете оплатить договор поставки! Наш менеджер сделает замер, оформит договор и примет оплату: больше никуда ходить не нужно. Хотите посмотреть на Ваше будущее окно? Добро пожаловать в наш офис продаж — шоу-рум, в котором можно увидеть, опробовать и оформить договор.</p>
-					</div>
-					<div>
-						<span class="uk-text-primary" uk-icon="icon: iconmonstr-credit-card-6; ratio: 3"></span>
-						<h3 class="uk-h2 uk-margin">Банковская карта</h3>
-						<p>Пластиковые карты — уже не новомодное средство оплаты, а удобная, повседневно используемая технология, позволяющая отдохнуть от тяжелых кошельков в сумках и рассованных по карманам бумажек. У нас Вы с легкостью можете воспользоваться оплатой пластиковой картой в офисе, дома или на нашем сайте.</p>
-					</div>
-					<div>
-						<span class="uk-text-primary" uk-icon="icon: icon-percent; ratio: 3"></span>
-						<h3 class="uk-h2 uk-margin">Рассрочка</h3>
-						<p>Вы хотите новые теплые и красивые окна, но не желаете тратить всю сумму сразу? Мы предлагаем удобный вариант рассрочки без процентов и дополнительных комиссий. Просто скажите о своем желании менеджеру, получайте уютные окна, а оплату будете вносить небольшими частями по удобному графику выплат.</p>
-					</div>
-				</div>
-				<div class="uk-margin-medium">
-					<a class="uk-button uk-button-danger uk-text-uppercase uk-width-medium" href="index-4.html">Оплатить</a>
-				</div>
-
-				<hr class="uk-hr">
-
-				<h2 class="uk-h2 uk-text-uppercase uk-margin-medium">Принимаем к оплате</h2>
+		<section id="payment" class="uk-section uk-section-muted">
+			<div class="uk-container uk-container-small">
+				<h2 class="uk-h1 uk-text-uppercase uk-text-center uk-margin-medium">Принимаем к оплате</h2>
 				<div class="uk-child-width-expand uk-flex-center uk-flex-middle uk-grid" uk-grid>
 					<div>
 						<p><img src="images/mastercard.svg" width="100" alt="MasterCard"></p>
