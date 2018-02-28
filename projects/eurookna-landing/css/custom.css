@@ -1,5 +1,5 @@
 /* Баннер: Новогодняя ярмарка */
-a.tooltips {
+/* a.tooltips {
 	position: relative;
 	display: inline;
 	height: 275px;
@@ -71,7 +71,7 @@ a.tooltips span:after {
 		right: 4%;
 		top: 30px;
 	}
-}
+} */
 /* --- */
 
 @media screen and (max-width: 1080px) {
@@ -84,4 +84,82 @@ a.tooltips span:after {
     .bg-special-2 {
         background-position: 45% 50%;
     }
+}
+
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes tada {
+	from {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+
+	10%,
+	20% {
+		-webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+		transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+	}
+
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+	}
+
+	40%,
+	60%,
+	80% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+	}
+
+	to {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+@keyframes tada {
+	from {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+
+	10%,
+	20% {
+		-webkit-transform: scale3d(0.7, 0.7, 0.7) rotate3d(0, 0, 1, -4deg);
+		transform: scale3d(0.7, 0.7, 0.7) rotate3d(0, 0, 1, -4deg);
+	}
+
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, 4deg);
+		transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, 4deg);
+	}
+
+	40%,
+	60%,
+	80% {
+		-webkit-transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, -4deg);
+		transform: scale3d(1.5, 1.5, 1.5) rotate3d(0, 0, 1, -4deg);
+	}
+
+	to {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+.tada {
+	-webkit-animation-name: tada;
+	animation-name: tada;
 }
