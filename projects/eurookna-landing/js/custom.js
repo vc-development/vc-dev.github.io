@@ -6,12 +6,12 @@ jQuery(document).ready(function($) {
     });
 
 	// Animation Gift
-	setInterval(function() {
-	    var animationName = 'animated tada';
-	    var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-	    $('.gift').addClass(animationName).one(animationend, function() {
-			$(this).removeClass(animationName);
-		});
-	}, 3000);
+	// setInterval(function() {
+	//     var animationName = 'animated tada';
+	//     var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	//     $('.gift').addClass(animationName).one(animationend, function() {
+	// 		$(this).removeClass(animationName);
+	// 	});
+	// }, 3000);
 
 });
