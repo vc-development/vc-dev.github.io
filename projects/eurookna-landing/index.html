@@ -124,7 +124,7 @@
 			<div class="uk-container">
 				<div uk-grid>
 					<div class="uk-width-expand uk-position-relative uk-visible@m">
-						<!-- <img class="uk-float-right uk-box-shadow-small" src="images/germany-quality.png" alt="Немецкое качество" uk-scrollspy="cls:uk-animation-scale-down; delay: 200"> -->
+						<img class="uk-float-right uk-box-shadow-small" src="images/germany-quality.png" alt="Немецкое качество" uk-scrollspy="cls:uk-animation-scale-down; delay: 200">
 					</div>
 					<div class="uk-width-auto@m uk-width-1-3@l">
 						<div class="uk-panel uk-background-default uk-box-shadow-small" uk-scrollspy="cls:uk-animation-slide-bottom-medium">
@@ -137,7 +137,7 @@
 							<div class="uk-padding uk-text-left@m uk-text-center">
 								<div uk-scrollspy="cls: uk-animation-slide-bottom-small">
 									<h2 class="uk-h2 uk-text-uppercase uk-text-danger">Испытайте ваши новые окна!</h2>
-									<p><span class="uk-margin-right">Протестируйте настоящие Евроокна до покупки и получите подарок <a class="gift uk-text-danger uk-margin-small-left uk-icon" href="#" uk-icon="icon: iconmonstr-christmas-37; ratio: .8"></a></p>
+									<p><span class="uk-margin-right">Протестируйте настоящие Евроокна до покупки и получите подарок <a class="gift uk-text-danger uk-margin-small-left uk-icon" href="#eo-guardian" uk-scroll uk-icon="icon: iconmonstr-christmas-37; ratio: .8"></a></p>
 								</div>
 								<hr uk-scrollspy="cls: uk-animation-scale-up">
 								<div class="uk-text-center uk-text-muted">
@@ -324,7 +324,7 @@
 									</div>
 								</div>
 								<div>
-									<button class="uk-button uk-button-danger uk-text-uppercase uk-width-1-1" type="submit">Записаться на тест-драйв окон</button>
+									<button class="uk-button uk-button-danger uk-text-uppercase uk-width-1-1" type="submit">Оставить заявку</button>
 								</div>
 							</div>
 							<div class="uk-margin-top">
@@ -815,7 +815,7 @@
 		</section>
 
 		<!-- Мультифункциональный стеклопакет в подарок -->
-		<section class="uk-section uk-section-muted uk-background-cover uk-background-image@m bg-special-1" style="background-image: url('images/bg4.png');">
+		<!-- <section class="uk-section uk-section-muted uk-background-cover uk-background-image@m bg-special-1" style="background-image: url('images/bg4.png');">
 			<div class="uk-container uk-text-left@m uk-text-center">
 				<div class="uk-child-width-1-2@m" uk-grid>
 					<div>
@@ -831,6 +831,51 @@
 						</div>
 					</div>
 					<div></div>
+				</div>
+			</div>
+		</section> -->
+		<!-- О компании -->
+		<section id="eo-guardian" class="uk-section uk-section-default">
+			<div class="uk-container">
+				<div class="uk-text-center uk-width-xxlarge uk-margin-auto uk-margin-medium-bottom" uk-scrollspy="cls:uk-animation-slide-bottom-small">
+					<h2 class="uk-h1 uk-text-uppercase">Выбирайте защиту <span class="uk-text-primary">в подарок!</span></h2>
+					<p class="uk-text-muted">Подберите для своего дома лучший стеклопакет со специальными возможностями. Ваш выбор — наш подарок для надежной защиты и ощущения уверенности!</p>
+				</div>
+				<div class="">
+
+					<div class="uk-text-center" uk-switcher="animation: uk-animation-fade">
+					    <button class="uk-button uk-button-default" type="button">Защита от шума</button>
+					    <button class="uk-button uk-button-default" type="button">Защита от солнца</button>
+					</div>
+					<ul class="uk-switcher uk-margin">
+						<li>
+							<div class="uk-flex-middle uk-child-width-1-2" uk-grid>
+								<div class="uk-text-center">
+									<img src="images/eo-image-1.png" alt="Мультифункциональный стеклопакет Guardian">
+								</div>
+								<div>
+									<img class="uk-width-medium" src="images/guardian-logo.png" alt="Guardian">
+									<h3 class="uk-h2 uk-text-uppercase uk-margin">Шумозащитный стеклопакет</h3>
+									<p>За счет увеличенной толщины наружного стекла и разных по ширине камер в шумозащином стеклопакете звуковая волна рассеивается и поглощается: дома будет тихо даже рядом с автомагистралью.</p>
+									<button class="uk-button uk-button-danger" type="button" uk-toggle="target: #modal-1">Получить в подарок</button>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="uk-flex-middle uk-child-width-1-2" uk-grid>
+								<div>
+									<img src="images/eo-image-2.png" alt="Мультифункциональный стеклопакет Guardian">
+								</div>
+								<div>
+									<img class="uk-width-medium" src="images/guardian-logo.png" alt="Guardian">
+									<h3 class="uk-h2 uk-text-uppercase uk-margin">Мультифункциональный стеклопакет</h3>
+									<p>Такие стеклопакеты значительно снижают расходы на отопление зимой и на кондиционирование летом. Высокая теплоизолирующая способность препятствует появлению «эффекта сквозняка».</p>
+									<button class="uk-button uk-button-danger" type="button" uk-toggle="target: #modal-1">Получить в подарок</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+
 				</div>
 			</div>
 		</section>
