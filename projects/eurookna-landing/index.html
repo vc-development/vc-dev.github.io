@@ -404,10 +404,12 @@
 		<!-- Свитчер продукции -->
 		<section class="uk-section uk-section-muted">
 			<div class="uk-container">
-				<div class="uk-flex uk-flex-center uk-button-group" uk-switcher="connect: #slide-product; animation: uk-animation-slide-right, uk-animation-slide-left" uk-scrollspy="cls:uk-animation-fade">
-					<button class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical">Евро 60</button>
-					<button class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical">Евро 70</button>
-					<button class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical">Евро 82</button>
+				<div class="uk-flex uk-flex-center">
+					<div class="" uk-switcher="connect: #slide-product; animation: uk-animation-fade" uk-scrollspy="cls:uk-animation-fade">
+						<button class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical">Евро 60</button>
+						<button class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical">Евро 70</button>
+						<button class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical">Евро 82</button>
+					</div>
 				</div>
 				<ul id="slide-product" class="uk-switcher uk-margin-large" uk-scrollspy="cls:uk-animation-slide-bottom-small">
 					<li>
@@ -841,17 +843,19 @@
 					<p class="uk-text-muted">Подберите для своего дома лучший стеклопакет со специальными возможностями. Ваш выбор — наш подарок для надежной защиты и ощущения уверенности!</p>
 				</div>
 				<div>
-					<div class="uk-flex uk-flex-center uk-button-group uk-margin-medium" uk-switcher="animation: uk-animation-fade">
-					    <button class="uk-button uk-button-default" type="button">Защита от шума</button>
-					    <button class="uk-button uk-button-default" type="button">Защита от солнца</button>
+					<div class="uk-flex uk-flex-center">
+						<div class="uk-margin-medium" uk-switcher="connect: #slide-product-2; animation: uk-animation-fade">
+						    <button class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical" type="button">Защита от шума</button>
+						    <button class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical" type="button">Защита от солнца</button>
+						</div>
 					</div>
-					<ul class="uk-switcher uk-margin">
+					<ul id="slide-product-2" class="uk-switcher uk-margin">
 						<li>
 							<div class="uk-flex-middle uk-child-width-1-2@m" uk-grid>
 								<div class="uk-text-center">
 									<img src="images/eo-image-1.png" alt="Мультифункциональный стеклопакет Guardian">
 								</div>
-								<div>
+								<div class="uk-text-left@m uk-text-center">
 									<img class="uk-width-medium" src="images/guardian-logo.png" alt="Guardian">
 									<h3 class="uk-h2 uk-text-uppercase uk-margin">Шумозащитный стеклопакет</h3>
 									<p>За счет увеличенной толщины наружного стекла и разных по ширине камер в шумозащином стеклопакете звуковая волна рассеивается и поглощается: дома будет тихо даже рядом с автомагистралью.</p>
@@ -861,10 +865,10 @@
 						</li>
 						<li>
 							<div class="uk-flex-middle uk-child-width-1-2@m" uk-grid>
-								<div>
+								<div class="uk-text-center">
 									<img src="images/eo-image-2.png" alt="Мультифункциональный стеклопакет Guardian">
 								</div>
-								<div>
+								<div class="uk-text-left@m uk-text-center">
 									<img class="uk-width-medium" src="images/guardian-logo.png" alt="Guardian">
 									<h3 class="uk-h2 uk-text-uppercase uk-margin">Мультифункциональный стеклопакет</h3>
 									<p>Такие стеклопакеты значительно снижают расходы на отопление зимой и на кондиционирование летом. Высокая теплоизолирующая способность препятствует появлению «эффекта сквозняка».</p>
