@@ -87,8 +87,8 @@ a.tooltips span:after {
 }
 
 .animated {
-	-webkit-animation-duration: 6s;
-	animation-duration: 6s;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 }
@@ -103,19 +103,19 @@ a.tooltips span:after {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
-    2%, 4% {
+    4%, 8% {
         -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -4deg);
         transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -4deg);
     }
-    6%, 10%, 14%, 18% {
+    12%, 20%, 28%, 36% {
         -webkit-transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, 4deg);
         transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, 4deg);
     }
-    8%, 12%, 16% {
+    16%, 24%, 32% {
         -webkit-transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, -4deg);
         transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, -4deg);
     }
-    18%, 33% {
+    36%, 60% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
