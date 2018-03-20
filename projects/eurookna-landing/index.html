@@ -1179,8 +1179,13 @@
 						</div>
 					</li>
 				</ul>
-				<div class="uk-margin-medium">
-					<a class="uk-button uk-button-danger uk-text-uppercase" href="#" uk-toggle="target: #modal-1" uk-scrollspy="cls: uk-animation-slide-bottom-small">Оставить заявку</a>
+				<div class="uk-margin-medium uk-flex-center uk-child-width-auto" uk-grid>
+					<div>
+						<a class="uk-button uk-button-danger uk-text-uppercase" href="#" uk-toggle="target: #modal-review" uk-scrollspy="cls: uk-animation-slide-bottom-small">Оставить отзыв</a>
+					</div>
+					<div>
+						<a class="uk-button uk-button-danger uk-text-uppercase" href="#" uk-toggle="target: #modal-director" uk-scrollspy="cls: uk-animation-slide-bottom-small">Написать директору</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -1474,6 +1479,68 @@
 					<p>Мы имеем право по своему усмотрению обновлять данную политику конфиденциальности в любое время. Мы рекомендуем пользователям регулярно проверять эту страницу для того, чтобы быть в курсе любых изменений о том, как мы защищаем информацию о пользователях,
 						которую мы собираем. Используя сайт, вы соглашаетесь с принятием на себя ответственности за периодическое ознакомление с политикой конфиденциальности и изменениями в ней.</p>
 				</div>
+			</div>
+		</div>
+
+		<!-- Modal Review -->
+		<div id="modal-review" uk-modal="center: true">
+			<div class="uk-modal-dialog uk-modal-body uk-box-shadow-medium">
+				<button class="uk-modal-close-default" type="button" uk-close></button>
+				<h3 class="uk-h3 uk-text-center">Оставьте Ваш отзыв</h3>
+				<form class="uk-grid-small" action="" method="post" uk-grid>
+					<div class="uk-width-1-2@s">
+						<div class="uk-inline uk-width-1-1">
+							<span class="uk-form-icon" uk-icon="icon: iconmonstr-user-1; ratio: .7"></span>
+							<input class="uk-input" type="text" name="name-review" placeholder="Имя" uk-tooltip="title: Укажите Ваше имя; pos: top-left" required>
+						</div>
+					</div>
+					<div class="uk-width-1-2@s">
+						<div class="uk-inline uk-width-1-1">
+							<span class="uk-form-icon" uk-icon="icon: iconmonstr-phone-3; ratio: .7"></span>
+							<input class="uk-input phone-mask" type="tel" name="tel-review" pattern="\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}" placeholder="+7 (___) ___-__-__" uk-tooltip="title: Укажите Ваш номер телефона; pos: top-left" required>
+						</div>
+					</div>
+					<div class="uk-width-1-1">
+						<textarea class="uk-textarea" name="text-review" rows="5" cols="80" placeholder="Сообщение..." required></textarea>
+					</div>
+					<div class="uk-width-1-1">
+						<label class="uk-text-small"><input class="uk-checkbox uk-margin-small-right" type="checkbox" checked required> Даю согласие на обработку моих персональных данных в соответствии с <a href="#modal-5" uk-toggle>политикой конфиденциальности</a></label>
+					</div>
+					<div class="uk-width-1-1 uk-text-right">
+						<button class="uk-button uk-button-danger uk-width-1-1" type="submit" name="button">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- Modal Director -->
+		<div id="modal-director" uk-modal="center: true">
+			<div class="uk-modal-dialog uk-modal-body uk-box-shadow-medium">
+				<button class="uk-modal-close-default" type="button" uk-close></button>
+				<h3 class="uk-h3 uk-text-center">Напишите директору</h3>
+				<form class="uk-grid-small" action="" method="post" uk-grid>
+					<div class="uk-width-1-2@s">
+						<div class="uk-inline uk-width-1-1">
+							<span class="uk-form-icon" uk-icon="icon: iconmonstr-user-1; ratio: .7"></span>
+							<input class="uk-input" type="text" name="name-director" placeholder="Имя" uk-tooltip="title: Укажите Ваше имя; pos: top-left" required>
+						</div>
+					</div>
+					<div class="uk-width-1-2@s">
+						<div class="uk-inline uk-width-1-1">
+							<span class="uk-form-icon" uk-icon="icon: iconmonstr-phone-3; ratio: .7"></span>
+							<input class="uk-input phone-mask" type="tel" name="tel-director" pattern="\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}" placeholder="+7 (___) ___-__-__" uk-tooltip="title: Укажите Ваш номер телефона; pos: top-left" required>
+						</div>
+					</div>
+					<div class="uk-width-1-1">
+						<textarea class="uk-textarea" name="text-director" rows="5" cols="80" placeholder="Сообщение..." required></textarea>
+					</div>
+					<div class="uk-width-1-1">
+						<label class="uk-text-small"><input class="uk-checkbox uk-margin-small-right" type="checkbox" checked required> Даю согласие на обработку моих персональных данных в соответствии с <a href="#modal-5" uk-toggle>политикой конфиденциальности</a></label>
+					</div>
+					<div class="uk-width-1-1 uk-text-right">
+						<button class="uk-button uk-button-danger uk-width-1-1" type="submit" name="button">Отправить</button>
+					</div>
+				</form>
 			</div>
 		</div>
 
