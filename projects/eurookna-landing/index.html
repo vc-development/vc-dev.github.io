@@ -862,20 +862,23 @@
 
 		<!-- Видео -->
 		<section id="discount" class="uk-section uk-section-small uk-cover-container">
-			<iframe src="https://www.youtube-nocookie.com/embed/oPUs7k96Myg?rel=0&controls=0&showinfo=0&loop=1&modestbranding=1&wmode=transparent" width="560" height="315" frameborder="0" allowfullscreen uk-responsive uk-video="autoplay: inview; automute: true" uk-cover></iframe>
+			<video loop muted playsinline poster="video/ecookna-showroom.jpg" uk-video="autoplay: inview" uk-cover>
+				<source src="video/ecookna-showroom.m4v" type="video/mp4">
+				<source src="video/ecookna-showroom.webm" type="video/webm">
+			</video>
 			<div class="uk-container">
 				<div uk-grid>
-					<div class="uk-width-expand uk-position-relative uk-visible@m">
+					<div class="uk-width-expand uk-position-relative uk-visible@s">
 						<img class="uk-float-right uk-box-shadow-small" src="images/germany-quality.svg" alt="Немецкое качество" width="100" uk-scrollspy="cls:uk-animation-scale-down; delay: 200">
 					</div>
-					<div class="uk-width-1-3@m">
+					<div class="uk-width-1-2@s uk-width-1-3@m">
 						<div class="uk-panel uk-background-default uk-box-shadow-small" uk-scrollspy="cls:uk-animation-slide-bottom-medium">
-							<div class="uk-height-medium uk-cover-container uk-hidden@m">
+							<!-- <div class="uk-height-medium uk-cover-container uk-hidden@m">
 								<img src="images/test-drive-window-small.jpg" alt="Пластиковые окна" uk-cover>
 								<div class="uk-position-small uk-position-top-right">
 									<img src="images/germany-quality.svg" alt="Немецкое качество" width="80" uk-scrollspy="cls:uk-animation-slide-bottom-medium; delay: 200">
 								</div>
-							</div>
+							</div> -->
 							<div class="uk-padding uk-text-left@m uk-text-center">
 								<div uk-scrollspy="cls: uk-animation-slide-bottom-small">
 									<h2 class="uk-h2 uk-text-uppercase uk-text-danger">Испытайте ваши новые окна!</h2>
@@ -890,7 +893,7 @@
 									</div>
 								</div>
 								<div class="uk-text-center uk-text-muted">
-									<div class="uk-grid-small uk-grid-collapse uk-child-width-expand" uk-grid uk-countdown="date: 2018-03-23" uk-scrollspy="target: > div > div; cls: uk-animation-slide-bottom-small; delay: 200">
+									<div class="uk-grid-small uk-grid-collapse uk-child-width-expand" uk-grid uk-countdown="date: 2018-06-01" uk-scrollspy="target: > div > div; cls: uk-animation-slide-bottom-small; delay: 200">
 										<div>
 											<div class="uk-h1 uk-countdown-days uk-text-muted uk-margin-remove"></div>
 											<div class="uk-countdown-label uk-margin-small uk-text-center uk-text-small">Дни</div>
