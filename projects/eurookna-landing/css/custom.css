@@ -1,3 +1,19 @@
+.beer-reveal:before {
+	top: 0;
+	transform: translateX(-50%);
+	width: 4px;
+	height: 100%;
+	position: absolute;
+	left: 100%;
+	content: "";
+	background: #facf4d;
+}
+.beer-handle {
+	background: #facf4d;
+}
+.beer-range:focus~.beer-handle {
+	background: #facf4d;
+}
 /* Баннер: Новогодняя ярмарка */
 /* a.tooltips {
 	position: relative;
