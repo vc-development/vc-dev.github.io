@@ -8,35 +8,12 @@
 		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" href="css/uikit.eurookna.min.css">
 		<link rel="stylesheet" href="css/custom.css">
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/uikit.min.js"></script>
 		<script src="js/uikit-icons-eurookna.min.js"></script>
 		<script src="js/jquery.inputmask.bundle.min.js"></script>
 		<script src="js/custom.js"></script>
-		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-		<script>
-			ymaps.ready(function() {
-			var myMap = new ymaps.Map("ymap", {
-				center: [55.775535, 37.60302],
-				controls: [],
-				drag: false,
-				suppressMapOpenBlock: true,
-				zoom: 14
-			});
-			myMap.behaviors.disable("scrollZoom");
-			myMap.behaviors.disable("drag");
-			var myPlacemark = new ymaps.Placemark(
-				[55.775535, 37.60302], {
-					hintContent: "127006, г. Москва, м. Новослободская, ул. Долгоруковская д. 21 стр. 1, этаж 3, офис 303",
-					iconCaption: "Центральный офис продаж"
-				}, {
-					iconColor: "#cc0000",
-					preset: "islands#greenDotIconWithCaption"
-				}
-			);
-			myMap.geoObjects.add(myPlacemark);
-		});
-	</script>
 	</head>
 
 	<body>
