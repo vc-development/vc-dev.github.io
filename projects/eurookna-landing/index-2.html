@@ -12,6 +12,7 @@
 		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" href="css/uikit.eurookna.min.css">
 		<link rel="stylesheet" href="css/BeerSlider.css">
+		<link rel="stylesheet" href="css/ImageComparison.css">
 		<link rel="stylesheet" href="css/custom.css">
 		<script src="js/jquery.min.js"></script>
 		<script src="js/uikit.min.js"></script>
@@ -19,10 +20,31 @@
 		<script src="js/jquery.inputmask.bundle.min.js"></script>
 		<script src="js/custom.js"></script>
 		<script src="js/BeerSlider.js"></script>
+		<script src="js/ImageComparison.js"></script>
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
-				var slider = new BeerSlider(document.getElementById("beer-slider"));
+				new BeerSlider(document.getElementById("eo-slider-compare"), {start: 30});
+
+				var imageComparisonCollection = document.querySelectorAll('.js-comparison-container');
+				for (var i = 0; i < imageComparisonCollection.length; i++) {
+					var imageWidget = imageComparisonCollection[i];
+					var images = imageWidget.querySelectorAll('.comparison-image');
+					new ImageComparison({
+						container: imageWidget,
+						startPosition: imageWidget.getAttribute('start-position'),
+						data: [
+							{
+								image: images[0],
+								label: 'Старый балкон'
+							},
+							{
+								image: images[1],
+								label: 'Ваш новый балкон'
+							}
+						]
+					});
+				}
 			});
 
 			ymaps.ready(function() {
@@ -441,14 +463,19 @@
 			</section>
 
 			<!-- Сравнение -->
-			<section class="uk-section uk-section-muted uk-text-center">
-				<div class="uk-container">
-					<div id="beer-slider" class="beer-slider uk-box-shadow-medium" data-beer-label="После">
-						<img src="images/b2.jpg" alt="Старый балкон">
-						<div class="beer-reveal" data-beer-label="До">
-							<img src="images/b1.jpg" alt="Новый балкон">
-						</div>
+			<section class="uk-section uk-padding-remove uk-position-relative uk-overflow-hidden">
+				<div id="eo-slider-compare" class="beer-slider" data-beer-label="Ваш новый балкон" uk-height-viewport="offset-bottom: 50">
+					<img class="uk-position-cove" src="images/b2.jpeg" alt="Старый балкон">
+					<div class="beer-reveal" data-beer-label="Ваш старый балкон">
+						<img class="uk-position-cove" src="images/b1.jpeg" alt="Новый балкон">
 					</div>
+				</div>
+			</section>
+
+			<section class="uk-section uk-padding-remove uk-position-relative uk-overflow-hidden">
+				<div class="js-comparison-container">
+					<img class="comparison-image" src="images/b1.jpeg" alt="Старый балкон">
+					<img class="comparison-image" src="images/b2.jpeg" alt="Новый балкон">
 				</div>
 			</section>
 
