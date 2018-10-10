@@ -73,24 +73,25 @@ a.tooltips span:after {
 	}
 } */
 /* --- */
-
 @media screen and (max-width: 1080px) {
     .call-special {
         font-size: 12px;
     }
+
     .bg-special-1 {
         background-position: 58% 50%;
     }
+
     .bg-special-2 {
         background-position: 45% 50%;
     }
 }
 
 .animated {
-	-webkit-animation-duration: 3s;
-	animation-duration: 3s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 .animated.infinite {
@@ -103,25 +104,36 @@ a.tooltips span:after {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
-    4%, 8% {
+
+    4%,
+    8% {
         -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -4deg);
         transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -4deg);
     }
-    12%, 20%, 28%, 36% {
+
+    12%,
+    20%,
+    28%,
+    36% {
         -webkit-transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, 4deg);
         transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, 4deg);
     }
-    16%, 24%, 32% {
+
+    16%,
+    24%,
+    32% {
         -webkit-transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, -4deg);
         transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, -4deg);
     }
-    36%, 60% {
+
+    36%,
+    60% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
 }
 
 .tada {
-	-webkit-animation-name: tada;
-	animation-name: tada;
+    -webkit-animation-name: tada;
+    animation-name: tada;
 }

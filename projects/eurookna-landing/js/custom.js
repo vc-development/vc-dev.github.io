@@ -1,9 +1,9 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
 
 	// InputMask
-    $(".phone-mask").inputmask({
-        mask: "+7 (999) 999-99-99"
-    });
+	$(".phone-mask").inputmask({
+		mask: "+7 (999) 999-99-99"
+	});
 
 	// Animation Gift
 	// setInterval(function() {
@@ -13,5 +13,6 @@ jQuery(document).ready(function($) {
 	// 		$(this).removeClass(animationName);
 	// 	});
 	// }, 3000);
+
 
 });
