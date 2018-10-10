@@ -11,14 +11,20 @@
 		<title>Евроокна - Балконы и лоджии</title>
 		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" href="css/uikit.eurookna.min.css">
+		<link rel="stylesheet" href="css/BeerSlider.css">
 		<link rel="stylesheet" href="css/custom.css">
 		<script src="js/jquery.min.js"></script>
 		<script src="js/uikit.min.js"></script>
 		<script src="js/uikit-icons-eurookna.min.js"></script>
 		<script src="js/jquery.inputmask.bundle.min.js"></script>
 		<script src="js/custom.js"></script>
+		<script src="js/BeerSlider.js"></script>
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				var slider = new BeerSlider(document.getElementById("beer-slider"));
+			});
+
 			ymaps.ready(function() {
 			var myMap = new ymaps.Map("ymap", {
 				center: [55.775535, 37.60302],
@@ -429,6 +435,18 @@
 						<div>
 							<span class="uk-text-primary uk-margin-small-bottom" uk-icon="icon: eo-currency-14; ratio: 2"></span>
 							<p>лучшие цены</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Сравнение -->
+			<section class="uk-section uk-section-muted uk-text-center">
+				<div class="uk-container">
+					<div id="beer-slider" class="beer-slider uk-box-shadow-medium" data-beer-label="После">
+						<img src="images/b2.jpg" alt="Старый балкон">
+						<div class="beer-reveal" data-beer-label="До">
+							<img src="images/b1.jpg" alt="Новый балкон">
 						</div>
 					</div>
 				</div>
