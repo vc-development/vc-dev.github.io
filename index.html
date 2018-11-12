@@ -117,20 +117,24 @@
 				</div>
 			</div>
 		</footer>
-		<div id="offcanvas" uk-offcanvas="flip: true">
+		<div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
 			<div class="uk-offcanvas-bar">
 				<button class="uk-offcanvas-close" type="button" uk-close></button>
-				<div class="uk-panel" uk-margin="margin: uk-margin">
-					<div class="uk-card uk-card-body uk-card-secondary uk-card-hover">
+				<div uk-margin="margin: uk-margin-top">
+					<div class="uk-card uk-card-body uk-card-default uk-card-hover">
+						<h3 class="uk-card-title">Card Default</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+					</div>
+					<div class="uk-card uk-card-body uk-card-primary uk-card-hover">
+						<h3 class="uk-card-title">Card Primary</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 					</div>
 					<div class="uk-card uk-card-body uk-card-secondary uk-card-hover">
+						<h3 class="uk-card-title">Card Secondary</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 					</div>
-					<div class="uk-card uk-card-body uk-card-secondary uk-card-hover">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-					</div>
-					<div class="uk-card uk-card-body uk-card-secondary uk-card-hover">
+					<div class="uk-card uk-card-body uk-card-muted uk-card-hover">
+						<h3 class="uk-card-title">Card Muted</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 					</div>
 				</div>
