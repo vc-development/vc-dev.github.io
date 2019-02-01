@@ -10,13 +10,14 @@
 		<script src="js/uikit.min.js"></script>
 		<script src="js/uikit-icons.min.js"></script>
 		<script src="js/SmoothScroll.min.js"></script>
+		<script src="js/script.js"></script>
 	</head>
 
 	<body>
 
-		<header class="uk-background-default" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-active uk-box-shadow-small; cls-inactive: uk-position-relative uk-box-shadow-small" role="banner">
+		<header class="uk-background-default" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-active uk-box-shadow-small; cls-inactive: uk-position-relative uk-position-z-index uk-box-shadow-small">
 			<div class="uk-container">
-				<nav uk-navbar role="navigation">
+				<nav uk-navbar>
 					<div class="uk-navbar-left">
 						<a class="uk-navbar-item uk-logo" href="https://vc-development.github.io/"><span class="uk-text-primary uk-margin-small-right">VC</span> Development</a>
 					</div>
@@ -28,12 +29,18 @@
 			</div>
 		</header>
 
-		<main class="uk-section uk-section-muted uk-text-center" role="main">
+		<section class="uk-section uk-section-muted uk-section-large uk-position-relative uk-text-center">
+			<div id="holder" class="uk-width-1-1 uk-height-1-1 uk-position-cover uk-overflow-hidden uk-animation-fade"></div>
 			<div class="uk-container">
-				<div class="uk-margin-auto uk-margin-large uk-width-xxlarge">
+				<div class="uk-margin-auto uk-margin-large uk-width-xxlarge uk-position-relative">
 					<h1 class="uk-heading-primary">Some Projects</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p class="uk-text-lead uk-text-emphasis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
+			</div>
+		</section>
+
+		<section class="uk-section uk-position-relative uk-text-center uk-box-shadow-small">
+			<div class="uk-container">
 				<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid uk-height-match="target: > div > .uk-card; row: false" uk-scrollspy="target: > div > .uk-card; cls: uk-animation-slide-bottom-small; delay: 200">
 					<div>
 						<div class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-overflow-hidden uk-transition-toggle">
@@ -84,7 +91,7 @@
 						</div>
 					</div>
 					<div>
-						<div class="uk-card uk-flex uk-flex-middle uk-flex-center uk-height-large uk-placeholder uk-text-muted uk-border-rounded">
+						<div class="uk-card uk-card-default uk-flex uk-flex-middle uk-flex-center uk-height-large uk-text-muted uk-border-rounded">
 							<div>
 								<span uk-icon="code"></span>
 								<p>Coming Soon</p>
@@ -92,7 +99,7 @@
 						</div>
 					</div>
 					<div>
-						<div class="uk-card uk-flex uk-flex-middle uk-flex-center uk-height-large uk-placeholder uk-text-muted uk-border-rounded">
+						<div class="uk-card uk-card-default uk-flex uk-flex-middle uk-flex-center uk-height-large uk-text-muted uk-border-rounded">
 							<div>
 								<span uk-icon="code"></span>
 								<p>Coming Soon</p>
@@ -100,7 +107,7 @@
 						</div>
 					</div>
 					<div>
-						<div class="uk-card uk-flex uk-flex-middle uk-flex-center uk-height-large uk-placeholder uk-text-muted uk-border-rounded">
+						<div class="uk-card uk-card-default uk-flex uk-flex-middle uk-flex-center uk-height-large uk-text-muted uk-border-rounded">
 							<div>
 								<span uk-icon="code"></span>
 								<p>Coming Soon</p>
@@ -109,9 +116,9 @@
 					</div>
 				</div>
 			</div>
-		</main>
+		</section>
 
-		<footer class="uk-section uk-section-small uk-section-default uk-box-shadow-small uk-position-relative" role="contentinfo">
+		<footer class="uk-section uk-section-small uk-section-default uk-position-relative uk-box-shadow-small">
 			<div class="uk-container">
 				<div class="uk-text-center uk-flex-middle uk-child-width-expand@s" uk-grid>
 					<div class="uk-text-left@s">
