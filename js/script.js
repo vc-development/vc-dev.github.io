@@ -11,9 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				clsClose: 'uk-notification-close',
 				clsMsg: 'uk-notification-message notification-сookie'
 			});
-
 			UIkit.util.on('.notification-сookie', 'close', function () {
-				console.log('test');
 				Cookies.set('notification', 'yes', {
 					expires: 7
 				});
