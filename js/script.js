@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+
 	var notificationCookie = Cookies.get('notification');
 	if (!notificationCookie) {
 		Cookies.set('notification', 'yes', {
@@ -9,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			UIkit.notification('My message');
 		}, 3000);
 	}
+
 	(function () {
 		var pi = Math.PI;
 		var pi2 = 2 * Math.PI;
