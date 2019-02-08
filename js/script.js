@@ -1,5 +1,26 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+	var notificationCookie = Cookies.get('notification');
+	if (!notificationCookie) {
+		setTimeout(function () {
+			UIkit.notification({
+				message: 'Lorem ipsum dolor sit amet',
+				status: 'primary',
+				timeout: 0,
+				pos: 'top-center',
+				clsClose: 'uk-notification-close',
+				clsMsg: 'uk-notification-message notification-сookie'
+			});
+
+			UIkit.util.on('.notification-сookie', 'close', function () {
+				console.log('test');
+				Cookies.set('notification', 'yes', {
+					expires: 7
+				});
+			});
+		}, 3000);
+	}
+
 	(function () {
 		var pi = Math.PI;
 		var pi2 = 2 * Math.PI;
