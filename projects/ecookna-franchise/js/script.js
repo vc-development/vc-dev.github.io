@@ -24,14 +24,23 @@ document.addEventListener('DOMContentLoaded', function () {
 	// 	}, 1000);
 	// }
 
-	// Inputmask
+	//--- TypeIt
+	// var review = new TypeIt('.js-review', {
+	// 	strings: '',
+	// 	speed: 5,
+	// 	lifeLike: false,
+	// 	cursor: false,
+	// 	waitUntilVisible: true
+	// }).go();
+
+	//--- Inputmask
 	Inputmask({
 		placeholder: '_',
 		showMaskOnHover: false,
 		mask: '+7 (999) 999-99-99'
 	}).mask(document.querySelectorAll('input[type="tel"]'));
 
-	// Superplaceholder
+	//--- Superplaceholder
 	superplaceholder({
 		el: document.querySelector('input[type="email"]'),
 		sentences: ['Укажите Ваш e-mail', 'Например: name@yandex.ru', ' ']
