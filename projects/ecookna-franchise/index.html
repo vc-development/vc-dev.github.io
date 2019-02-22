@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Франшиза ЭКООКНА</title>
-		<meta name="description" content="Франшиза ЭКООКНА">
+		<meta name="description" content="Франшиза компании «ЭКООКНА» с шеснадцатилетним опытом оконного бизнеса.">
 		<meta name="keywords" content="экоокна, франшиза">
 		<link rel="canonical" href="https://example.com/article.html">
 		<meta name="rights" content="Франшиза ЭКООКНА">
@@ -19,25 +19,25 @@
 		<meta name="google-site-verification" content="123456789">
 		<meta name="yandex-verification" content="123456789">
 		<meta name="msvalidate.01" content="123456789">
+		<!-- Open Graph -->
+		<meta property="og:url" content="https://example.com/page.html">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Франшиза ЭКООКНА">
+		<meta property="og:image" content="https://example.com/image.jpg">
+		<meta property="og:description" content="Франшиза компании «ЭКООКНА» с шеснадцатилетним опытом оконного бизнеса.">
+		<meta property="og:site_name" content="ЭКООКНА">
+		<meta property="og:locale" content="ru_RU">
+		<meta property="article:author" content="ЭКООКНА">
 		<!-- Twitter -->
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@ecookna">
 		<meta name="twitter:creator" content="@ecookna">
 		<meta name="twitter:url" content="https://example.com/page.html">
 		<meta name="twitter:title" content="Франшиза ЭКООКНА">
-		<meta name="twitter:description" content="Content description less than 200 characters">
+		<meta name="twitter:description" content="Франшиза компании «ЭКООКНА» с шеснадцатилетним опытом оконного бизнеса.">
 		<meta name="twitter:image" content="https://example.com/image.jpg">
 		<!-- Pinterest -->
 		<meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
-		<!-- Facebook -->
-		<meta property="og:url" content="https://example.com/page.html">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="Франшиза ЭКООКНА">
-		<meta property="og:image" content="https://example.com/image.jpg">
-		<meta property="og:description" content="Description Here">
-		<meta property="og:site_name" content="ЭКООКНА">
-		<meta property="og:locale" content="ru_RU">
-		<meta property="article:author" content="ЭКООКНА">
 		<!-- Favicons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
@@ -50,8 +50,6 @@
 		<meta name="msapplication-config" content="images/favicons/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
 		<!-- Preload -->
-		<!-- <link rel="dns-prefetch" href="//fonts.gstatic.com"> -->
-		<!-- <link rel="preconnect" href="//fonts.gstatic.com"> -->
 		<!-- <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oswald:200,300,400,500,600,700|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext" as="fetch" crossorigin="anonymous"> -->
 		<!-- Styles -->
 		<link rel="stylesheet" href="css/uikit.ecooknafranchise.min.css">
@@ -78,10 +76,79 @@
 					</div>
 					<div class="uk-navbar-right">
 						<div class="uk-navbar-item">
-							<button class="uk-button uk-button-default uk-border-pill" type="button" name="button">Коммерческое предложение</button>
+							<button class="uk-button uk-button-default uk-border-pill" type="button" uk-toggle="target: #modal-call1">Коммерческое предложение</button>
+							<div id="modal-call1" uk-modal>
+								<div class="uk-modal-dialog uk-border-rounded uk-overflow-hidden uk-box-shadow-xlarge">
+									<button class="uk-modal-close-default uk-light" type="button" uk-close></button>
+									<div class="uk-modal-header uk-background-secondary uk-light uk-height-medium uk-flex uk-flex-middle uk-flex-center uk-background-cover" style="background-image: url(images/image1.jpeg);">
+										<h3 class="uk-modal-title">Запросить коммерческое предложение</h3>
+									</div>
+									<div class="uk-modal-body">
+										<form class="uk-form" action="" method="post">
+											<fieldset class="uk-fieldset">
+												<div class="uk-margin">
+													<div class="uk-width-1-1 uk-inline">
+														<span class="uk-form-icon uk-icon" data-uk-icon="user"></span>
+														<input class="uk-input uk-border-pill" type="text" name="name" value="" placeholder="Ваше имя" autocomplete="off" required>
+													</div>
+												</div>
+												<div class="uk-margin">
+													<div class="uk-width-1-1 uk-inline">
+														<span class="uk-form-icon uk-icon" data-uk-icon="mail"></span>
+														<input class="uk-input uk-border-pill" type="email" name="email" value="" placeholder="Ваш e-mail" autocomplete="off" required>
+													</div>
+												</div>
+												<div class="uk-margin">
+													<div class="uk-width-1-1 uk-inline">
+														<span class="uk-form-icon uk-icon" data-uk-icon="receiver"></span>
+														<input class="uk-input uk-border-pill" type="tel" name="tel" value="" placeholder="Ваш телефон" autocomplete="off" required>
+													</div>
+												</div>
+												<button class="uk-button uk-button-primary uk-border-pill uk-width-1-1" type="submit" name="button">Отправить запрос</button>
+												<p class="uk-text-small uk-text-muted uk-margin-remove-bottom">Отправляя форму, вы принимаете условия политики конфиденциальности в отношении обработки персональных данных.</p>
+											</fieldset>
+										</form>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="uk-navbar-item">
-							<button class="uk-button uk-button-primary uk-border-pill" type="button" name="button">Оставить заявку</button>
+							<button class="uk-button uk-button-primary uk-border-pill" type="button" uk-toggle="target: #modal-call2">Оставить заявку</button>
+							<div id="modal-call2" uk-modal>
+								<div class="uk-modal-dialog">
+									<button class="uk-modal-close-default" type="button" uk-close></button>
+									<div class="uk-modal-header">
+										<h3 class="uk-modal-title">Оставить заявку</h3>
+									</div>
+									<div class="uk-modal-body">
+										<form class="uk-form" action="" method="post">
+											<fieldset class="uk-fieldset">
+												<!-- <legend class="uk-h2">Запись на экскурсию</legend> -->
+												<div class="uk-margin">
+													<div class="uk-width-1-1 uk-inline">
+														<span class="uk-form-icon uk-icon" data-uk-icon="user"></span>
+														<input class="uk-input uk-border-pill" type="text" name="name" value="" placeholder="Ваше имя" autocomplete="off" required>
+													</div>
+												</div>
+												<div class="uk-margin">
+													<div class="uk-width-1-1 uk-inline">
+														<span class="uk-form-icon uk-icon" data-uk-icon="mail"></span>
+														<input class="uk-input uk-border-pill" type="email" name="email" value="" placeholder="Ваш e-mail" autocomplete="off" required>
+													</div>
+												</div>
+												<div class="uk-margin">
+													<div class="uk-width-1-1 uk-inline">
+														<span class="uk-form-icon uk-icon" data-uk-icon="receiver"></span>
+														<input class="uk-input uk-border-pill" type="tel" name="tel" value="" placeholder="Ваш телефон" autocomplete="off" required>
+													</div>
+												</div>
+												<button class="uk-button uk-button-primary uk-border-pill uk-width-1-1" type="submit" name="button">Оставить заявку</button>
+												<p class="uk-text-small uk-text-muted uk-margin-remove-bottom">Отправляя форму, вы принимаете условия политики конфиденциальности в отношении обработки персональных данных.</p>
+											</fieldset>
+										</form>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</nav>
@@ -96,7 +163,8 @@
 					<div class="uk-width-xxlarge">
 						<h1 class="uk-heading-primary">Франшиза компании</h1>
 						<p class="uk-h1">с шеснадцатилетним опытом оконного бизнеса</p>
-						<p class="uk-width-large">Мы прошли сквозь кризисы и экономические спады и при этом увеличили производственные мощности более чам в 100 раз, число сотрудников — более чем в 100 раз, количество офисов продаж — в 17 раз. Откройте ваш бизнес с нашим продуктом, поддержкой и опытом!</p>
+						<p class="uk-width-large">Мы прошли сквозь кризисы и экономические спады и при этом увеличили производственные мощности более чам в 100 раз, число сотрудников — более чем в 100 раз, количество офисов продаж — в 17 раз. Откройте ваш бизнес
+							с нашим продуктом, поддержкой и опытом!</p>
 						<button class="uk-button uk-button-primary uk-button-large uk-border-pill" type="button" name="button">Запросить подробное коммерческое предложение</button>
 					</div>
 				</div>
@@ -191,7 +259,8 @@
 			<section class="uk-section uk-section-default uk-section-large uk-text-center" role="region">
 				<div class="uk-container uk-container-large">
 					<h2 class="uk-h1 uk-text-uppercase">Производственные ресурсы<br><span class="uk-text-primary">для вашего бизнеса</span></h2>
-					<p class="uk-width-xxlarge uk-margin-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<p class="uk-width-xxlarge uk-margin-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 					<div class="uk-margin-large uk-child-width-1-4 uk-grid" uk-grid uk-height-match="target: > div > div">
 						<div>
 							<div class="uk-card uk-card-body uk-box-shadow-medium uk-box-shadow-hover-large uk-border-rounded">
@@ -275,6 +344,48 @@
 				</div>
 			</section>
 
+			<!-- Переменные в управлении успеха -->
+			<section class="uk-section uk-section-secondary uk-section-large uk-text-center" role="region">
+				<div class="uk-container">
+					<h2 class="uk-heading-primary uk-text-center">Точки роста<br>салонов франчайзи</h2>
+					<div class="uk-margin-large uk-child-width-expand uk-grid-divider uk-grid" uk-grid>
+						<div>
+							<p>5 салонов 2002</p>
+						</div>
+						<div>
+							<p>20 салонов 2010</p>
+						</div>
+						<div>
+							<p>54 салона 2015</p>
+						</div>
+						<div>
+							<p>68 салонов 2018</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Константы в управлении успеха -->
+			<section class="uk-section uk-section-secondary uk-section-large uk-text-center" role="region">
+				<div class="uk-container">
+					<h2 class="uk-heading-primary uk-text-center">Точки роста<br>салонов франчайзи</h2>
+					<div class="uk-margin-large uk-child-width-expand uk-grid-divider uk-grid" uk-grid>
+						<div>
+							<p>5 салонов 2002</p>
+						</div>
+						<div>
+							<p>20 салонов 2010</p>
+						</div>
+						<div>
+							<p>54 салона 2015</p>
+						</div>
+						<div>
+							<p>68 салонов 2018</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<!-- Франчайзи о бизнесе с «ЭКООКНА» -->
 			<section class="uk-section uk-section-default uk-section-large" role="region">
 				<div class="uk-container">
@@ -293,7 +404,8 @@
 												</div>
 												<div class="uk-width-expand">
 													<blockquote cite="http://">
-														<p class="js-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+														<p class="js-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+															commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 														<footer>Someone famous in <cite><a href="#">Source Title</a></cite></footer>
 													</blockquote>
 												</div>
@@ -302,13 +414,16 @@
 									</li>
 									<li>
 										<div class="uk-panel">
-											<div class="uk-flex-middle uk-grid-large uk-grid" uk-grid>
+											<div class="uk-flex-middle uk-grid" uk-grid>
 												<div class="uk-width-auto">
-													<img class="uk-border-rounded" data-src="https://getuikit.com/docs/images/avatar.jpg" alt="Франчайзи о бизнесе с ЭКООКНА" width="200" height="200" uk-img>
+													<div class="uk-panel uk-padding">
+														<img class="uk-border-rounded uk-box-shadow-large" data-src="https://getuikit.com/docs/images/avatar.jpg" alt="Франчайзи о бизнесе с ЭКООКНА" width="200" height="200" uk-img>
+													</div>
 												</div>
 												<div class="uk-width-expand">
 													<blockquote cite="http://">
-														<p class="js-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+														<p class="js-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+															commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 														<footer>Someone famous in <cite><a href="#">Source Title</a></cite></footer>
 													</blockquote>
 												</div>
@@ -317,13 +432,16 @@
 									</li>
 									<li>
 										<div class="uk-panel">
-											<div class="uk-flex-middle uk-grid-large uk-grid" uk-grid>
+											<div class="uk-flex-middle uk-grid" uk-grid>
 												<div class="uk-width-auto">
-													<img class="uk-border-rounded" data-src="https://getuikit.com/docs/images/avatar.jpg" alt="Франчайзи о бизнесе с ЭКООКНА" width="200" height="200" uk-img>
+													<div class="uk-panel uk-padding">
+														<img class="uk-border-rounded uk-box-shadow-large" data-src="https://getuikit.com/docs/images/avatar.jpg" alt="Франчайзи о бизнесе с ЭКООКНА" width="200" height="200" uk-img>
+													</div>
 												</div>
 												<div class="uk-width-expand">
 													<blockquote cite="http://">
-														<p class="js-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+														<p class="js-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+															commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 														<footer>Someone famous in <cite><a href="#">Source Title</a></cite></footer>
 													</blockquote>
 												</div>
@@ -332,13 +450,16 @@
 									</li>
 									<li>
 										<div class="uk-panel">
-											<div class="uk-flex-middle uk-grid-large uk-grid" uk-grid>
+											<div class="uk-flex-middle uk-grid" uk-grid>
 												<div class="uk-width-auto">
-													<img class="uk-border-rounded" data-src="https://getuikit.com/docs/images/avatar.jpg" alt="Франчайзи о бизнесе с ЭКООКНА" width="200" height="200" uk-img>
+													<div class="uk-panel uk-padding">
+														<img class="uk-border-rounded uk-box-shadow-large" data-src="https://getuikit.com/docs/images/avatar.jpg" alt="Франчайзи о бизнесе с ЭКООКНА" width="200" height="200" uk-img>
+													</div>
 												</div>
 												<div class="uk-width-expand">
 													<blockquote cite="http://">
-														<p class="js-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+														<p class="js-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+															commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 														<footer>Someone famous in <cite><a href="#">Source Title</a></cite></footer>
 													</blockquote>
 												</div>
@@ -347,13 +468,16 @@
 									</li>
 									<li>
 										<div class="uk-panel">
-											<div class="uk-flex-middle uk-grid-large uk-grid" uk-grid>
+											<div class="uk-flex-middle uk-grid" uk-grid>
 												<div class="uk-width-auto">
-													<img class="uk-border-rounded" data-src="https://getuikit.com/docs/images/avatar.jpg" alt="Франчайзи о бизнесе с ЭКООКНА" width="200" height="200" uk-img>
+													<div class="uk-panel uk-padding">
+														<img class="uk-border-rounded uk-box-shadow-large" data-src="https://getuikit.com/docs/images/avatar.jpg" alt="Франчайзи о бизнесе с ЭКООКНА" width="200" height="200" uk-img>
+													</div>
 												</div>
 												<div class="uk-width-expand">
 													<blockquote cite="http://">
-														<p class="js-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+														<p class="js-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+															commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 														<footer>Someone famous in <cite><a href="#">Source Title</a></cite></footer>
 													</blockquote>
 												</div>
@@ -381,7 +505,8 @@
 						</div>
 						<div class="uk-width-4-5">
 							<h3>Наш ассортимент — это не только окна</h3>
-							<p>Это двери, портальное остекление, фасады, жалюзи, рольставни, гаражные ворота, зимние сады, полная отделка балконов и уникальные технологии дизайна светопрозрачных конструкций. Такой ассортимент привлекает больше клиентов и открывает перед бизнесом широкие возможности.</p>
+							<p>Это двери, портальное остекление, фасады, жалюзи, рольставни, гаражные ворота, зимние сады, полная отделка балконов и уникальные технологии дизайна светопрозрачных конструкций. Такой ассортимент привлекает больше клиентов и открывает перед
+								бизнесом широкие возможности.</p>
 						</div>
 					</div>
 					<div class="uk-grid" uk-grid>
@@ -390,7 +515,8 @@
 						</div>
 						<div class="uk-width-4-5">
 							<h3>Наш сервис — важная фишка компании</h3>
-							<p>Клиент получает не только качественный продукт, он получает особое ощущение от покупки, так как с самого начала контакта с компанией окружен вниманием и заботой о его нуждах. Мы научим вас так работать с клиентом, чтобы он навсегда остался с вами и привел к вам знакомых.</p>
+							<p>Клиент получает не только качественный продукт, он получает особое ощущение от покупки, так как с самого начала контакта с компанией окружен вниманием и заботой о его нуждах. Мы научим вас так работать с клиентом, чтобы он навсегда остался
+								с вами и привел к вам знакомых.</p>
 						</div>
 					</div>
 					<div class="uk-grid" uk-grid>
@@ -408,10 +534,61 @@
 				</div>
 			</section>
 
+			<!-- Франчайзи «Экоокон» получает: -->
+			<section class="uk-section uk-section-default uk-section-large uk-text-center" role="region">
+				<div class="uk-container uk-container-large">
+					<h2 class="uk-heading-primary uk-text-uppercase">Франчайзи «Экоокон»<br><span class="uk-text-primary">получает</span></h2>
+					<div class="uk-margin-large uk-child-width-1-3 uk-grid-large uk-grid" uk-grid uk-scrollspy="target: > div > div; cls: uk-animation-slide-bottom-small uk-animation-fade; delay: 100">
+						<div>
+							<div>
+								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Паушальный взнос" uk-img>
+								<h3 class="uk-h3 uk-margin-remove">Паушальный взнос</h3>
+								<p class="uk-margin-remove">согласно дизайн-проекту</p>
+							</div>
+						</div>
+						<div>
+							<div>
+								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Роялти" uk-img>
+								<h3 class="uk-h3 uk-margin-remove">Роялти</h3>
+								<p class="uk-margin-remove">согласно дизайн-проекту</p>
+							</div>
+						</div>
+						<div>
+							<div>
+								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Стартовые инвестиции пот 150 000 руб" uk-img>
+								<h3 class="uk-h3 uk-margin-remove">Ремонт офиса</h3>
+								<p class="uk-margin-remove">согласно дизайн-проекту</p>
+							</div>
+						</div>
+						<div>
+							<div>
+								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Образцы" uk-img>
+								<h3 class="uk-h3 uk-margin-remove">Образцы</h3>
+								<p class="uk-margin-remove">согласно дизайн-проекту</p>
+							</div>
+						</div>
+						<div>
+							<div>
+								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Оргтехника" uk-img>
+								<h3 class="uk-h3 uk-margin-remove">Оргтехника</h3>
+								<p class="uk-margin-remove">согласно дизайн-проекту</p>
+							</div>
+						</div>
+						<div>
+							<div>
+								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Мебель" uk-img>
+								<h3 class="uk-h3 uk-margin-remove">Мебель</h3>
+								<p class="uk-margin-remove">согласно дизайн-проекту</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<!-- Франчайзи «Экоокон» вкладывает: -->
 			<section class="uk-section uk-section-default uk-section-large uk-text-center" role="region">
 				<div class="uk-container uk-container-large">
-					<h2 class="uk-heading-primary uk-width-xxlarge uk-margin-auto">Франчайзи «Экоокон» вкладывает</h2>
+					<h2 class="uk-heading-primary uk-text-uppercase">Франчайзи «Экоокон»<br><span class="uk-text-primary">вкладывает</span></h2>
 					<div class="uk-margin-large uk-child-width-1-3 uk-grid-large uk-grid" uk-grid uk-scrollspy="target: > div > div; cls: uk-animation-slide-bottom-small uk-animation-fade; delay: 100">
 						<div>
 							<div>
@@ -467,13 +644,42 @@
 				</div>
 			</section>
 
+			<!-- Ваш бизнес будет работать эффективнее, если будут выполнены следующие рекомендации: -->
+			<section class="uk-section uk-section-default uk-section-large" role="region">
+				<div class="uk-container uk-container-large">
+					<h2 class="uk-h1">Ваш бизнес будет работать эффективнее, если будут выполнены следующие рекомендации:</h2>
+					<h3>По помещению</h3>
+					<ul class="uk-list uk-list-bullet">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<h3>По персоналу</h3>
+					<ul class="uk-list uk-list-bullet">
+						<li></li>
+						<li></li>
+					</ul>
+					<h3>По предпринимательскому опыту</h3>
+					<ul class="uk-list uk-list-bullet">
+						<li></li>
+						<li></li>
+					</ul>
+					<h3>По обучаемости и компетенциям</h3>
+					<ul class="uk-list uk-list-bullet">
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</section>
+
 			<!-- Собственный учебный центр -->
 			<section class="uk-section uk-section-muted uk-section-large" role="region">
 				<div class="uk-container uk-container-large">
 					<div class="uk-flex-middle uk-grid-large uk-grid" uk-grid>
 						<div class="uk-width-1-2@l">
 							<h2 class="uk-heading-primary uk-text-uppercase">Собственный<br><span class="uk-text-primary">учебный центр</span></h2>
-							<p>Вы получите обучение по продукту и техникам продаж у лучших специалистов Компании. Учебная программа подстраивается под нужды конкретного франчайзи в зависимости от его предшествующего опыта и навыков.</p>
+							<p>Вы получите обучение по продукту и техникам продаж у лучших специалистов компании. Учебная программа подстраивается под нужды конкретного франчайзи в зависимости от его предшествующего опыта и навыков.</p>
 						</div>
 						<div class="uk-width-expand@l">
 							<div>
@@ -561,7 +767,8 @@
 						</div>
 						<div class="uk-width-expand@l">
 							<h2 class="uk-heading-primary uk-text-uppercase">Наши<br><span class="uk-text-primary">шоу-румы</span></h2>
-							<p>Мы стараемся быть ближе к покупателю и для этого открыли уже 7 шоу-румов с самыми яркими и интересными образцами продукции. Наши клиенты могут подержать в руках и попробовать свое будущее окно — никакие красивые слова и рекламные листовки не заменят непосредственного контакта с качественным продуктом! Нам нечего скрывать — мы уверены в качестве каждого изделия и даем возможность убедиться в этом!</p>
+							<p>Мы стараемся быть ближе к покупателю и для этого открыли уже 7 шоу-румов с самыми яркими и интересными образцами продукции. Наши клиенты могут подержать в руках и попробовать свое будущее окно — никакие красивые слова и рекламные листовки
+								не заменят непосредственного контакта с качественным продуктом! Нам нечего скрывать — мы уверены в качестве каждого изделия и даем возможность убедиться в этом!</p>
 						</div>
 					</div>
 				</div>
@@ -577,11 +784,12 @@
 								<h3 class="uk-text-primary">Вы можете приехать<br>к нам на производство</h3>
 								<p>Вы можете приехать к нам на производство (по предварительной записи) и увидеть своими глазами, как собираются надежные функциональные окна для ваших будущих клиентов.</p>
 								<div class="uk-child-width-1-1 uk-grid" uk-grid>
-									<div>
-										<p>Россия, Московская обл., Сергиево-Посадский р-он, пос. Бужаниново, ул. Полевая, 35</p>
+									<div uk-lightbox>
+										<p><a class="uk-link-text" href="https://yandex.ru/map-widget/v1/-/CCQQbC9v" data-caption="Россия, Московская обл., Сергиево-Посадский р-он, пос. Бужаниново, ул. Полевая, 35" data-type="iframe" uk-tooltip="title: Посмотреть на карте">Россия,
+												Московская обл., Сергиево-Посадский р-он, пос. Бужаниново, ул. Полевая, 35</a></p>
 									</div>
 									<div>
-										<p><a class="uk-link-text" href="tel:+78005501150">8 (800) 550-11-50</a><br><a class="uk-link-text" href="tel:+79269803021">8 (926) 980-30-21</a></p>
+										<p><a class="uk-link-text" href="tel:+78005501150" uk-tooltip="title: Позвонить">8 (800) 550-11-50</a><br><a class="uk-link-text" href="tel:+79269803021" uk-tooltip="title: Позвонить">8 (926) 980-30-21</a></p>
 									</div>
 								</div>
 							</div>
@@ -591,11 +799,12 @@
 								<h3 class="uk-text-primary">Посетите наш<br>Московский ШОУ-РУМ</h3>
 								<p>Посмотрите, потрогайте, попробуйте самые интересные продукты нашего производства. Шоу-рум работает в часы работы центрального офиса.</p>
 								<div class="uk-child-width-1-1 uk-grid" uk-grid>
-									<div>
-										<p>Россия, г. Москва, Ярославское ш., д. 42, 4-й этаж</p>
+									<div uk-lightbox>
+										<p><a class="uk-link-text" href="https://yandex.ru/map-widget/v1/-/CCQQbA74" data-caption="Россия, г. Москва, Ярославское ш., д. 42, 4-й этаж" data-type="iframe" uk-tooltip="title: Посмотреть на карте">Россия, г. Москва, Ярославское ш.,
+												д. 42, 4-й этаж</a></p>
 									</div>
 									<div>
-										<p><a class="uk-link-text" href="tel:+79250802810">8 (925) 080-28-10</a></p>
+										<p><a class="uk-link-text" href="tel:+79250802810" uk-tooltip="title: Позвонить">8 (925) 080-28-10</a></p>
 									</div>
 								</div>
 							</div>
