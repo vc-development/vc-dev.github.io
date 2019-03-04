@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-
 	var notificationCookie = Cookies.get('notification');
 	if (!notificationCookie) {
 		setTimeout(function () {
@@ -363,5 +362,4 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	waves.animate();
-
 });

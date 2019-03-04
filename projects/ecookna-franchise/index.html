@@ -65,7 +65,6 @@
 	</head>
 
 	<body>
-
 		<header class="uk-sticky" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-active uk-background-default uk-box-shadow-small; cls-inactive: uk-position-relative" role="banner">
 			<div class="uk-container uk-container-large">
 				<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar role="navigation">
@@ -158,67 +157,77 @@
 		<main role="main">
 
 			<!-- Франшиза компании -->
-			<section class="uk-section uk-section-muted uk-section-large" role="region">
+			<section class="uk-section uk-section-muted uk-background-cover" data-src="images/main.jpg" uk-img role="region">
 				<div class="uk-container uk-container-large">
 					<div class="uk-width-xxlarge">
-						<h1 class="uk-heading-primary">Франшиза компании</h1>
-						<p class="uk-h1">с шеснадцатилетним опытом оконного бизнеса</p>
-						<p class="uk-width-large">Мы прошли сквозь кризисы и экономические спады и при этом увеличили производственные мощности более чам в 100 раз, число сотрудников — более чем в 100 раз, количество офисов продаж — в 17 раз. Откройте ваш бизнес
-							с нашим продуктом, поддержкой и опытом!</p>
-						<button class="uk-button uk-button-primary uk-button-large uk-border-pill" type="button" name="button">Запросить подробное коммерческое предложение</button>
+						<h1 class="uk-heading-primary uk-text-uppercase">Франшиза компании</h1>
+						<p class="uk-h1 uk-text-primary uk-margin">с шеснадцатилетним опытом оконного бизнеса</p>
+						<p class="uk-width-xlarge">Мы прошли сквозь кризисы и экономические спады и при этом увеличили производственные мощности более чам в 100 раз, число сотрудников — более чем в 100 раз, количество офисов продаж — в 17 раз. Откройте ваш бизнес с нашим продуктом, поддержкой и опытом!</p>
+						<button class="uk-button uk-button-secondary uk-button-large uk-border-pill" type="button" name="button">Запросить подробное коммерческое предложение</button>
 					</div>
 				</div>
 			</section>
 
 			<!-- ? -->
-			<section class="uk-section uk-section-default uk-section-large uk-text-center uk-text-large uk-text-primary" role="region">
+			<section class="uk-section uk-section-default uk-text-center uk-text-large uk-text-primary" role="region">
 				<div class="uk-container uk-container-large">
-					<div class="uk-child-width-1-4 uk-grid" uk-grid>
+					<div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-grid" uk-grid>
 						<div>
-							<img data-src="images/logo.svg" width="120" height="120" alt="Паушальный взнос" uk-img>
-							<h3 class="uk-h3">Паушальный взнос</h3>
+							<img data-src="images/icons/eo-1.svg" width="130" height="130" alt="Паушальный взнос" uk-img>
+							<h3 class="uk-h3 uk-text-primary">Паушальный<br>взнос</h3>
 						</div>
 						<div>
-							<img data-src="images/logo.svg" width="120" height="120" alt="Роялти" uk-img>
-							<h3 class="uk-h3">Роялти</h3>
+							<img data-src="images/icons/eo-1.svg" width="130" height="130" alt="Роялти" uk-img>
+							<h3 class="uk-h3 uk-text-primary">Роялти</h3>
 						</div>
 						<div>
-							<img data-src="images/logo.svg" width="120" height="120" alt="Стартовые инвестиции пот 150 000 руб." uk-img>
-							<h3 class="uk-h3">Стартовые инвестиции<br>от 150 000 руб.</h3>
+							<img data-src="images/icons/eo-2.svg" width="130" height="130" alt="Стартовые инвестиции пот 150 000 руб." uk-img>
+							<h3 class="uk-h3 uk-text-primary">Стартовые инвестиции<br>от 150 000 руб.</h3>
 						</div>
 						<div>
-							<img data-src="images/logo.svg" width="120" height="120" alt="Окупаемость от 4-5 месяцев" uk-img>
-							<h3 class="uk-h3">Окупаемость<br>от 4-5 месяцев</h3>
+							<img data-src="images/icons/eo-3.svg" width="130" height="130" alt="Окупаемость от 4-5 месяцев" uk-img>
+							<h3 class="uk-h3 uk-text-primary">Окупаемость<br>от 4-5 месяцев</h3>
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<!-- Вы получаете -->
-			<section class="uk-section uk-section-muted uk-padding-remove" role="region">
-				<div class="uk-container uk-container-expand">
-					<div class="uk-grid" uk-grid>
-						<div class="uk-width-expand">
-							<div class="uk-container-item-padding-remove-left uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
-								<ul class="uk-slideshow-items">
-									<li><img src="images/image1.jpeg" alt="Известное имя" uk-cover></li>
-									<li><img src="images/image2.jpeg" alt="Богатый ассортимент" uk-cover></li>
-									<li><img src="images/image2.jpeg" alt="Полную поддержку" uk-cover></li>
-								</ul>
-								<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-								<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+			<section class="uk-section uk-section-muted" role="region">
+				<div class="uk-container uk-container-large">
+					<h2 class="uk-h1 uk-text-center">Вы получаете</h2>
+					<div class="uk-text-center uk-margin-medium uk-child-width-1-3@m uk-grid" uk-grid>
+						<div>
+							<div class="uk-card uk-card-default uk-border-rounded uk-box-shadow-medium uk-overflow-hidden">
+								<div class="uk-card-media-top uk-height-medium uk-cover-container">
+									<img src="images/img-2.jpg" alt="" uk-cover>
+								</div>
+								<div class="uk-card-body">
+									<h3 class="uk-card-title">Известное имя</h3>
+									<p>Компания «ЭКООКНА» 6 раз становилась обладателем главной профессиональной премии «Золотое Окно». Откройте франшизу под маркой «ЭКООКНА» и все наши достижения станут вашими!</p>
+								</div>
 							</div>
 						</div>
-						<div class="uk-width-1-2">
-							<div class="uk-tile uk-padding-remove-horizontal uk-width-xlarge">
-								<h2 class="uk-heading-primary">Вы получаете</h2>
-								<h3 class="uk-h3">Известное имя</h3>
-								<p>Компания «ЭКООКНА» 6 раз становилась обладателем главной профессиональной премии «Золотое Окно». Откройте франшизу под маркой «ЭКООКНА» и все наши достижения станут вашими!</p>
-								<h3 class="uk-h3">Богатый ассортимент</h3>
-								<p>Окна и ПВХ, дерева, алюминия; двери; портальное остекление; фасады, жалюзи; рольставни; гаражные ворота; зимние сады; комплексная отделка балконов; декорированные конструкции.</p>
-								<a class="uk-button uk-button-default" href="#">Весь ассортимент</a>
-								<h3 class="uk-h3">Полную поддержку</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<div>
+							<div class="uk-card uk-card-default uk-border-rounded uk-box-shadow-medium uk-overflow-hidden">
+								<div class="uk-card-media-top uk-height-medium uk-cover-container">
+									<img src="images/img-1.jpg" alt="" uk-cover>
+								</div>
+								<div class="uk-card-body">
+									<h3 class="uk-card-title">Богатый ассортимент</h3>
+									<p>Окна и ПВХ, дерева, алюминия; двери; портальное остекление; фасады, жалюзи; рольставни; гаражные ворота; зимние сады; комплексная отделка балконов; декорированные конструкции.</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="uk-card uk-card-default uk-border-rounded uk-box-shadow-medium uk-overflow-hidden">
+								<div class="uk-card-media-top uk-height-medium uk-cover-container">
+									<img src="images/img-3.jpg" alt="" uk-cover>
+								</div>
+								<div class="uk-card-body">
+									<h3 class="uk-card-title">Полную поддержку</h3>
+									<p>Помощь в обустройстве торговой точки и оформлении документов, поддержка заказов и обучение продукту, консультации по продажам и сервису, реклама и продвижение, полный комплекс услуг по установке, обслуживанию и ремонту оконных конструкций.</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -226,7 +235,7 @@
 			</section>
 
 			<!-- Мы остеклили -->
-			<section class="uk-section uk-section-secondary uk-section-large uk-text-center" role="region">
+			<section class="uk-section uk-section-secondary uk-text-center" role="region">
 				<div class="uk-container">
 					<div class="uk-flex-middle uk-child-width-1-1 uk-grid" uk-grid="data-uk-grid">
 						<div>
@@ -243,11 +252,11 @@
 			</section>
 
 			<section class="" role="region">
-				<div class="uk-container uk-container-expand">
-					<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:3; animation: push">
+				<div class="uk-container uk-container-expand uk-padding-remove">
+					<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:2; animation: push">
 						<ul class="uk-slideshow-items">
-							<li><img class="uk-cover" src="images/image1.jpeg" alt="Текст" uk-cover></li>
-							<li><img class="uk-cover" src="images/image2.jpeg" alt="Текст" uk-cover></li>
+							<li><img class="uk-cover" src="images/slide-1.jpg" alt="Текст" uk-cover></li>
+							<li><img class="uk-cover" src="images/slide-2.jpg" alt="Текст" uk-cover></li>
 						</ul>
 						<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
 						<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
@@ -256,64 +265,63 @@
 			</section>
 
 			<!-- Производственные ресурсы для вашего бизнеса -->
-			<section class="uk-section uk-section-default uk-section-large uk-text-center" role="region">
+			<section class="uk-section uk-section-default uk-text-center" role="region">
 				<div class="uk-container uk-container-large">
-					<h2 class="uk-h1 uk-text-uppercase">Производственные ресурсы<br><span class="uk-text-primary">для вашего бизнеса</span></h2>
-					<p class="uk-width-xxlarge uk-margin-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<h2 class="uk-h1 uk-text-uppercase uk-text-uppercase">Производственные ресурсы<br><span class="uk-text-primary">для вашего бизнеса</span></h2>
+					<p class="uk-width-xxlarge uk-margin-auto">Бесперебойное выполнение заказов для франчайзи компании «ЭКООКНА» обеспечивает современное производство с высокой степенью автоматизации. На площади 15 000 м<sup>2</sup> работает оборудование из Италии, Германии и Австрии.</p>
 					<div class="uk-margin-large uk-child-width-1-4 uk-grid" uk-grid uk-height-match="target: > div > div">
 						<div>
 							<div class="uk-card uk-card-body uk-box-shadow-medium uk-box-shadow-hover-large uk-border-rounded">
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="62" alt="Text" uk-img>
+								<img class="uk-margin-bottom" data-src="images/icons/resources-1.svg" width="120" height="62" alt="Text" uk-img>
 								<h3 class="uk-h3 uk-margin-remove">3 500 м<sup>2</sup></h3>
 								<p class="uk-margin-remove">стеклопакетов<br>в день</p>
 							</div>
 						</div>
 						<div>
 							<div class="uk-card uk-card-body uk-box-shadow-medium uk-box-shadow-hover-large uk-border-rounded">
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="62" alt="Text" uk-img>
+								<img class="uk-margin-bottom" data-src="images/icons/resources-2.svg" width="120" height="62" alt="Text" uk-img>
 								<h3 class="uk-h3 uk-margin-remove">1 700</h3>
 								<p class="uk-margin-remove">оконных конструкций ПВХ в день</p>
 							</div>
 						</div>
 						<div>
 							<div class="uk-card uk-card-body uk-box-shadow-medium uk-box-shadow-hover-large uk-border-rounded">
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="62" alt="Text" uk-img>
+								<img class="uk-margin-bottom" data-src="images/icons/resources-3.svg" width="120" height="62" alt="Text" uk-img>
 								<h3 class="uk-h3 uk-margin-remove">500</h3>
 								<p class="uk-margin-remove">нестандартных изделий в день</p>
 							</div>
 						</div>
 						<div>
 							<div class="uk-card uk-card-body uk-box-shadow-medium uk-box-shadow-hover-large uk-border-rounded">
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="62" alt="Text" uk-img>
+								<img class="uk-margin-bottom" data-src="images/icons/resources-4.svg" width="120" height="62" alt="Text" uk-img>
 								<h3 class="uk-h3 uk-margin-remove">15 000 м<sup>2</sup></h3>
 								<p class="uk-margin-remove">алюминиевых конструкций в месяц</p>
 							</div>
 						</div>
 						<div>
 							<div class="uk-card uk-card-body uk-box-shadow-medium uk-box-shadow-hover-large uk-border-rounded">
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="62" alt="Text" uk-img>
+								<img class="uk-margin-bottom" data-src="images/icons/resources-5.svg" width="120" height="62" alt="Text" uk-img>
 								<h3 class="uk-h3 uk-margin-remove">14 техник</h3>
 								<p class="uk-margin-remove">декорирования</p>
 							</div>
 						</div>
 						<div>
 							<div class="uk-card uk-card-body uk-box-shadow-medium uk-box-shadow-hover-large uk-border-rounded">
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="62" alt="Text" uk-img>
+								<img class="uk-margin-bottom" data-src="images/icons/resources-6.svg" width="120" height="62" alt="Text" uk-img>
 								<h3 class="uk-h3 uk-margin-remove">700 м<sup>2</sup></h3>
 								<p class="uk-margin-remove">деревянных конструкций в месяц</p>
 							</div>
 						</div>
 						<div>
 							<div class="uk-card uk-card-body uk-box-shadow-medium uk-box-shadow-hover-large uk-border-rounded">
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="62" alt="Text" uk-img>
+								<img class="uk-margin-bottom" data-src="images/icons/resources-7.svg" width="120" height="62" alt="Text" uk-img>
 								<h3 class="uk-h3 uk-margin-remove">3 500 пог. м</h3>
 								<p class="uk-margin-remove">ламинации профиля за смену</p>
 							</div>
 						</div>
 						<div>
 							<div class="uk-card uk-card-body uk-box-shadow-medium uk-box-shadow-hover-large uk-border-rounded">
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="62" alt="Text" uk-img>
+								<img class="uk-margin-bottom" data-src="images/icons/resources-8.svg" width="120" height="62" alt="Text" uk-img>
 								<h3 class="uk-h3 uk-margin-remove">3 500 пог. м</h3>
 								<p class="uk-margin-remove">окрашивания профиля за смену</p>
 							</div>
@@ -324,9 +332,9 @@
 			</section>
 
 			<!-- Точки роста салонов франчайзи -->
-			<section class="uk-section uk-section-secondary uk-section-large uk-text-center" role="region">
+			<section class="uk-section uk-section-secondary uk-text-center" role="region">
 				<div class="uk-container">
-					<h2 class="uk-heading-primary uk-text-center">Точки роста<br>салонов франчайзи</h2>
+					<h2 class="uk-h1 uk-text-uppercase uk-text-center">Точки роста<br>салонов франчайзи</h2>
 					<div class="uk-margin-large uk-child-width-expand uk-grid-divider uk-grid" uk-grid>
 						<div>
 							<p>5 салонов 2002</p>
@@ -345,9 +353,9 @@
 			</section>
 
 			<!-- Переменные в управлении успеха -->
-			<section class="uk-section uk-section-secondary uk-section-large uk-text-center" role="region">
+			<section class="uk-section uk-section-secondary uk-text-center" role="region">
 				<div class="uk-container">
-					<h2 class="uk-heading-primary uk-text-center">Точки роста<br>салонов франчайзи</h2>
+					<h2 class="uk-h1 uk-text-uppercase uk-text-center">Точки роста<br>салонов франчайзи</h2>
 					<div class="uk-margin-large uk-child-width-expand uk-grid-divider uk-grid" uk-grid>
 						<div>
 							<p>5 салонов 2002</p>
@@ -366,9 +374,9 @@
 			</section>
 
 			<!-- Константы в управлении успеха -->
-			<section class="uk-section uk-section-secondary uk-section-large uk-text-center" role="region">
+			<section class="uk-section uk-section-secondary uk-text-center" role="region">
 				<div class="uk-container">
-					<h2 class="uk-heading-primary uk-text-center">Точки роста<br>салонов франчайзи</h2>
+					<h2 class="uk-h1 uk-text-uppercase uk-text-center">Точки роста<br>салонов франчайзи</h2>
 					<div class="uk-margin-large uk-child-width-expand uk-grid-divider uk-grid" uk-grid>
 						<div>
 							<p>5 салонов 2002</p>
@@ -387,9 +395,9 @@
 			</section>
 
 			<!-- Франчайзи о бизнесе с «ЭКООКНА» -->
-			<section class="uk-section uk-section-default uk-section-large" role="region">
+			<section class="uk-section uk-section-default" role="region">
 				<div class="uk-container">
-					<h2 class="uk-heading-primary uk-text-center">Франчайзи о бизнесе<br><span class="uk-text-primary">с «ЭКООКНА»</span></h2>
+					<h2 class="uk-h1 uk-text-uppercase uk-text-center">Франчайзи о бизнесе<br><span class="uk-text-primary">с «ЭКООКНА»</span></h2>
 					<div class="uk-margin-large uk-slider" uk-slider>
 						<div class="uk-position-relative">
 							<div class="uk-slider-container">
@@ -497,88 +505,113 @@
 			<!-- Преимущества компании «ЭКООКНА» -->
 			<section class="uk-section uk-section-muted" role="region">
 				<div class="uk-container uk-container-large">
-					<h2 class="uk-heading-primary">Преимущества компании<br>«ЭКООКНА»</h2>
-					<p class="uk-text-lead">Благодаря грамотной стратегии роста компания «ЭКООКНА» смогла эффективно отстроиться от конкурентов и уверено занять на рынке свою нишу.</p>
-					<div class="uk-grid" uk-grid>
-						<div class="uk-width-1-5">
-							<img data-src="images/logo.svg" width="" height="" alt="" uk-img>
+					<h2 class="uk-h1 uk-text-uppercase">Преимущества компании<br><span class="uk-text-primary">«ЭКООКНА»</span></h2>
+					<p class="uk-text-lead uk-width-xxlarge">Благодаря грамотной стратегии роста компания «ЭКООКНА» смогла эффективно отстроиться от конкурентов и уверено занять на рынке свою нишу.</p>
+					<div class="uk-margin-large uk-child-width-expand uk-grid-large uk-grid" uk-grid>
+						<div>
+							<div class="uk-grid" uk-grid>
+								<div class="uk-width-1-1 uk-text-cente">
+									<img data-src="images/icons/preimushchestva-1.svg" width="160" height="160" alt="Наш ассортимент — это не только окна" uk-img>
+								</div>
+								<div class="uk-width-1-1">
+									<h3>Наш ассортимент —<br><span class="uk-text-primary">это не только окна</span></h3>
+									<p>Это двери, портальное остекление, фасады, жалюзи, рольставни, гаражные ворота, зимние сады, полная отделка балконов и уникальные технологии дизайна светопрозрачных конструкций. Такой ассортимент привлекает больше клиентов и открывает перед бизнесом широкие возможности.</p>
+								</div>
+							</div>
 						</div>
-						<div class="uk-width-4-5">
-							<h3>Наш ассортимент — это не только окна</h3>
-							<p>Это двери, портальное остекление, фасады, жалюзи, рольставни, гаражные ворота, зимние сады, полная отделка балконов и уникальные технологии дизайна светопрозрачных конструкций. Такой ассортимент привлекает больше клиентов и открывает перед
-								бизнесом широкие возможности.</p>
+						<div>
+							<div class="uk-grid" uk-grid>
+								<div class="uk-width-1-1 uk-text-cente">
+									<img data-src="images/icons/preimushchestva-2.svg" width="160" height="160" alt="Наш сервис — важная фишка компании" uk-img>
+								</div>
+								<div class="uk-width-1-1">
+									<h3>Наш сервис —<br><span class="uk-text-primary">важная фишка компании</span></h3>
+									<p>Клиент получает не только качественный продукт, он получает особое ощущение от покупки, так как с самого начала контакта с компанией окружен вниманием и заботой о его нуждах. Мы научим вас так работать с клиентом, чтобы он навсегда остался с вами и привел к вам знакомых.</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="uk-grid" uk-grid>
+								<div class="uk-width-1-1 uk-text-cente">
+									<img data-src="images/icons/preimushchestva-3.svg" width="160" height="160" alt="Наша система лояльности" uk-img>
+								</div>
+								<div class="uk-width-1-1">
+									<h3>Наша система<br><span class="uk-text-primary">лояльности</span></h3>
+									<p>Является эффективным инструментом приобретения постоянных клиентов и успешным компонентом вирусной рекламы. Регулярные акции и скидки, бонусы для покупателей повышают интерес к продукции и нашим услугам.</p>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="uk-grid" uk-grid>
-						<div class="uk-width-1-5">
-							<img data-src="images/logo.svg" width="" height="" alt="" uk-img>
-						</div>
-						<div class="uk-width-4-5">
-							<h3>Наш сервис — важная фишка компании</h3>
-							<p>Клиент получает не только качественный продукт, он получает особое ощущение от покупки, так как с самого начала контакта с компанией окружен вниманием и заботой о его нуждах. Мы научим вас так работать с клиентом, чтобы он навсегда остался
-								с вами и привел к вам знакомых.</p>
-						</div>
-					</div>
-					<div class="uk-grid" uk-grid>
-						<div class="uk-width-1-5">
-							<img data-src="images/logo.svg" width="" height="" alt="" uk-img>
-						</div>
-						<div class="uk-width-4-5">
-							<h3>Наша система лояльности</h3>
-							<p>Является эффективным инструментом приобретения постоянных клиентов и успешным компонентом вирусной рекламы. Регулярные акции и скидки, бонусы для покупателей повышают интерес к продукции и нашим услугам.</p>
-						</div>
-					</div>
-					<div class="uk-margin-medium">
+					<div class="uk-margin-medium uk-text-center">
 						<button class="uk-button uk-button-primary uk-button-large uk-border-pill" type="button" name="button">Запросить подробное коммерческое предложение</button>
 					</div>
 				</div>
 			</section>
 
 			<!-- Франчайзи «Экоокон» получает: -->
-			<section class="uk-section uk-section-default uk-section-large uk-text-center" role="region">
+			<section class="uk-section uk-section-default" role="region">
 				<div class="uk-container uk-container-large">
-					<h2 class="uk-heading-primary uk-text-uppercase">Франчайзи «Экоокон»<br><span class="uk-text-primary">получает</span></h2>
-					<div class="uk-margin-large uk-child-width-1-3 uk-grid-large uk-grid" uk-grid uk-scrollspy="target: > div > div; cls: uk-animation-slide-bottom-small uk-animation-fade; delay: 100">
+					<h2 class="uk-h1 uk-text-uppercase uk-text-center">Франчайзи «Экоокон»<br><span class="uk-text-primary">получает</span></h2>
+					<div class="uk-margin-large uk-child-width-1-2 uk-grid-large uk-grid" uk-grid uk-scrollspy="target: > div > div; cls: uk-animation-slide-bottom-small uk-animation-fade; delay: 100">
 						<div>
-							<div>
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Паушальный взнос" uk-img>
-								<h3 class="uk-h3 uk-margin-remove">Паушальный взнос</h3>
-								<p class="uk-margin-remove">согласно дизайн-проекту</p>
+							<div class="uk-grid" uk-grid>
+								<div class="uk-width-1-3">
+									<img class="uk-margin-bottom" data-src="images/icons/receive-1.svg" width="" height="" alt="" uk-img>
+								</div>
+								<div class="uk-width-2-3">
+									<h3 class="uk-h3 uk-margin-remove">Помощь в обустройстве торговой точки</h3>
+									<ul class="uk-list uk-list-bullet">
+										<li>Индивидуальный дизайн-проект офиса продаж под маркой «Экоокна»</li>
+	                                    <li>Внутреннее оформление и наполнение офиса согласно стандартам компании</li>
+	                                    <li>Полноразмерные образцы по себестоимости</li>
+	                                    <li>Световой рекламный короб до 5 кв.м</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 						<div>
-							<div>
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Роялти" uk-img>
-								<h3 class="uk-h3 uk-margin-remove">Роялти</h3>
-								<p class="uk-margin-remove">согласно дизайн-проекту</p>
+							<div class="uk-grid" uk-grid>
+								<div class="uk-width-1-3">
+									<img class="uk-margin-bottom" data-src="images/icons/receive-2.svg" width="" height="" alt="" uk-img>
+								</div>
+								<div class="uk-width-2-3">
+									<h3 class="uk-h3 uk-margin-remove">Поддержку заказов и обучение продукту</h3>
+									<ul class="uk-list uk-list-bullet">
+										<li>Персонального менеджера откомпании-франчайзера</li>
+	                                    <li>Подключение к корпоративному порталу и программам</li>
+	                                    <li>Очное и дистанционное обучение для персонала и руководителя точки</li>
+	                                    <li>Вебинары по продукту, продажам, ПО, маркетингу, бизнес-кейсам</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 						<div>
-							<div>
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Стартовые инвестиции пот 150 000 руб" uk-img>
-								<h3 class="uk-h3 uk-margin-remove">Ремонт офиса</h3>
-								<p class="uk-margin-remove">согласно дизайн-проекту</p>
+							<div class="uk-grid" uk-grid>
+								<div class="uk-width-1-3">
+									<img class="uk-margin-bottom" data-src="images/icons/receive-3.svg" width="" height="" alt="" uk-img>
+								</div>
+								<div class="uk-width-2-3">
+									<h3 class="uk-h3 uk-margin-remove">Рекламу и продвижение</h3>
+									<ul class="uk-list uk-list-bullet">
+										<li>Размещение контактов на корпоративном сайте</li>
+	                                    <li>Создание и продвижение персонального сайта под торговую точку</li>
+	                                    <li>Перенаправление звонков с сайта по запросу клиента</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 						<div>
-							<div>
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Образцы" uk-img>
-								<h3 class="uk-h3 uk-margin-remove">Образцы</h3>
-								<p class="uk-margin-remove">согласно дизайн-проекту</p>
-							</div>
-						</div>
-						<div>
-							<div>
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Оргтехника" uk-img>
-								<h3 class="uk-h3 uk-margin-remove">Оргтехника</h3>
-								<p class="uk-margin-remove">согласно дизайн-проекту</p>
-							</div>
-						</div>
-						<div>
-							<div>
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Мебель" uk-img>
-								<h3 class="uk-h3 uk-margin-remove">Мебель</h3>
-								<p class="uk-margin-remove">согласно дизайн-проекту</p>
+							<div class="uk-grid" uk-grid>
+								<div class="uk-width-1-3">
+									<img class="uk-margin-bottom" data-src="images/icons/receive-4.svg" width="" height="" alt="" uk-img>
+								</div>
+								<div class="uk-width-2-3">
+									<h3 class="uk-h3 uk-margin-remove">Лучший сервис для своих клиентов</h3>
+									<ul class="uk-list uk-list-bullet">
+										<li>Услуги замера, просчета и монтажа окон</li>
+	                                    <li>Доставка до конечного клиента</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -586,48 +619,48 @@
 			</section>
 
 			<!-- Франчайзи «Экоокон» вкладывает: -->
-			<section class="uk-section uk-section-default uk-section-large uk-text-center" role="region">
+			<section class="uk-section uk-section-muted uk-text-center" role="region">
 				<div class="uk-container uk-container-large">
-					<h2 class="uk-heading-primary uk-text-uppercase">Франчайзи «Экоокон»<br><span class="uk-text-primary">вкладывает</span></h2>
-					<div class="uk-margin-large uk-child-width-1-3 uk-grid-large uk-grid" uk-grid uk-scrollspy="target: > div > div; cls: uk-animation-slide-bottom-small uk-animation-fade; delay: 100">
+					<h2 class="uk-h1 uk-text-uppercase">Франчайзи «Экоокон»<br><span class="uk-text-primary">вкладывает</span></h2>
+					<div class="uk-margin-large uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-large uk-grid" uk-grid uk-scrollspy="target: > div > div; cls: uk-animation-slide-bottom-small uk-animation-fade; delay: 100">
 						<div>
 							<div>
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Паушальный взнос" uk-img>
+								<img class="uk-margin-bottom" data-src="images/icons/eo-1.svg" width="130" height="130" alt="Паушальный взнос" uk-img>
 								<h3 class="uk-h3 uk-margin-remove">Паушальный взнос</h3>
 								<p class="uk-margin-remove">согласно дизайн-проекту</p>
 							</div>
 						</div>
 						<div>
 							<div>
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Роялти" uk-img>
+								<img class="uk-margin-bottom" data-src="images/icons/eo-1.svg" width="130" height="130" alt="Роялти" uk-img>
 								<h3 class="uk-h3 uk-margin-remove">Роялти</h3>
 								<p class="uk-margin-remove">согласно дизайн-проекту</p>
 							</div>
 						</div>
 						<div>
 							<div>
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Стартовые инвестиции пот 150 000 руб" uk-img>
+								<img class="uk-margin-bottom" data-src="images/icons/invest-1.svg" width="130" height="130" alt="Стартовые инвестиции пот 150 000 руб" uk-img>
 								<h3 class="uk-h3 uk-margin-remove">Ремонт офиса</h3>
 								<p class="uk-margin-remove">согласно дизайн-проекту</p>
 							</div>
 						</div>
 						<div>
 							<div>
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Образцы" uk-img>
+								<img class="uk-margin-bottom" data-src="images/icons/invest-2.svg" width="130" height="130" alt="Образцы" uk-img>
 								<h3 class="uk-h3 uk-margin-remove">Образцы</h3>
 								<p class="uk-margin-remove">согласно дизайн-проекту</p>
 							</div>
 						</div>
 						<div>
 							<div>
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Оргтехника" uk-img>
+								<img class="uk-margin-bottom" data-src="images/icons/invest-3.svg" width="130" height="130" alt="Оргтехника" uk-img>
 								<h3 class="uk-h3 uk-margin-remove">Оргтехника</h3>
 								<p class="uk-margin-remove">согласно дизайн-проекту</p>
 							</div>
 						</div>
 						<div>
 							<div>
-								<img class="uk-margin-bottom" data-src="images/logo.svg" width="120" height="120" alt="Мебель" uk-img>
+								<img class="uk-margin-bottom" data-src="images/icons/invest-4.svg" width="130" height="130" alt="Мебель" uk-img>
 								<h3 class="uk-h3 uk-margin-remove">Мебель</h3>
 								<p class="uk-margin-remove">согласно дизайн-проекту</p>
 							</div>
@@ -637,53 +670,93 @@
 			</section>
 
 			<!-- Станьте партнёром компании «ЭКООКНА» -->
-			<section class="uk-section uk-section-secondary uk-section-large uk-text-center" role="region">
+			<section class="uk-section uk-section-secondary uk-text-center" role="region">
 				<div class="uk-container">
-					<h2 class="uk-heading-primary uk-margin-large">Станьте партнёром<br>компании «ЭКООКНА»</h2>
+					<h2 class="uk-h1 uk-text-uppercase uk-margin-large">Станьте партнёром<br>компании «ЭКООКНА»</h2>
 					<button class="uk-button uk-button-default uk-button-large uk-border-pill" type="button" name="button">Запросить подробное коммерческое предложение</button>
 				</div>
 			</section>
 
 			<!-- Ваш бизнес будет работать эффективнее, если будут выполнены следующие рекомендации: -->
-			<section class="uk-section uk-section-default uk-section-large" role="region">
+			<section class="uk-section uk-section-default" role="region">
 				<div class="uk-container uk-container-large">
-					<h2 class="uk-h1">Ваш бизнес будет работать эффективнее, если будут выполнены следующие рекомендации:</h2>
-					<h3>По помещению</h3>
-					<ul class="uk-list uk-list-bullet">
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-					<h3>По персоналу</h3>
-					<ul class="uk-list uk-list-bullet">
-						<li></li>
-						<li></li>
-					</ul>
-					<h3>По предпринимательскому опыту</h3>
-					<ul class="uk-list uk-list-bullet">
-						<li></li>
-						<li></li>
-					</ul>
-					<h3>По обучаемости и компетенциям</h3>
-					<ul class="uk-list uk-list-bullet">
-						<li></li>
-						<li></li>
-					</ul>
+					<h2 class="uk-h1 uk-margin-large">Ваш бизнес будет работать эффективнее,<br><span class="uk-text-primary">если будут выполнены следующие рекомендации:</span></h2>
+					<div class="uk-grid-large uk-grid" uk-grid>
+						<div class="uk-width-2-3@m" uk-margin="margin: uk-margin-medium" uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-small; delay: 100">
+							<div>
+								<h3 class="uk-h3 uk-text-primary">По помещению</h3>
+								<ul class="uk-list uk-list-bullet">
+									<li>Рекомендуемая площадь помещения — от 9-12 м<sup>2</sup> для отдельного офиса и от 5-7 м<sup>2</sup> для совмещенного офиса или «проходного» места.</li>
+									<li>Желательно иметь помещение на 1-м этаже в здании с отдельным входом.</li>
+									<li>Договор аренды минимум на 12 месяцев.</li>
+									<li>Очень важна возможность разместить внешнюю вывеску с логотипом и названием.</li>
+								</ul>
+							</div>
+							<div>
+								<h3 class="uk-h3 uk-text-primary">По персоналу</h3>
+								<ul class="uk-list uk-list-bullet">
+									<li>Сотрудники с опытом работы в оконном или смежном бизнесе.</li>
+									<li>Опыт работы в продажах — от 1 года.</li>
+								</ul>
+							</div>
+							<div>
+								<h3 class="uk-h3 uk-text-primary">По предпринимательскому опыту</h3>
+								<ul class="uk-list uk-list-bullet">
+									<li>Наличие действующего ООО или ИП.</li>
+									<li>Оптимально с опытом работы в оконном или смежном бизнесе.</li>
+								</ul>
+							</div>
+							<div>
+								<h3 class="uk-h3 uk-text-primary">По обучаемости и компетенциям</h3>
+								<ul class="uk-list uk-list-bullet">
+									<li>Желание обучаться и развиваться на рынке светопрозрачных конструкций.</li>
+									<li>Продвинутый пользователь ПК.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="uk-width-1-3@m">
+							<div class="uk-tile uk-tile-primary uk-border-rounded uk-box-shadow-medium">
+								<div class="uk-grid uk-child-width-1-1" uk-grid uk-scrollspy="target: > div > .uk-h2; cls: uk-animation-slide-left-small; delay: 100">
+									<div>
+										<p class="uk-h2 uk-margin-small">от 200 000 руб.</p>
+										<p class="js-price-typeit uk-text-emphasis uk-margin-small uk-heading-bullet">в месяц — средний оборот в сезон</p>
+									</div>
+									<div>
+										<p class="uk-h2 uk-margin-small">от 400 000 руб.</p>
+										<p class="js-price-typeit uk-text-emphasis uk-margin-small uk-heading-bullet">средний оборот в месяц</p>
+									</div>
+									<div>
+										<p class="uk-h2 uk-margin-small">4-5 месяцев</p>
+										<p class="js-price-typeit uk-text-emphasis uk-margin-small uk-heading-bullet">срок окупаемости</p>
+									</div>
+									<div>
+										<p class="uk-h2 uk-margin-small">от 150 000 руб.</p>
+										<p class="js-price-typeit uk-text-emphasis uk-margin-small uk-heading-bullet">стартовые инвестиции в регионе</p>
+									</div>
+									<div>
+										<p class="uk-h2 uk-margin-small">от 250 000 руб.</p>
+										<p class="js-price-typeit uk-text-emphasis uk-margin-small uk-heading-bullet">стартовые инвестиции в Москве</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 
 			<!-- Собственный учебный центр -->
-			<section class="uk-section uk-section-muted uk-section-large" role="region">
-				<div class="uk-container uk-container-large">
-					<div class="uk-flex-middle uk-grid-large uk-grid" uk-grid>
-						<div class="uk-width-1-2@l">
-							<h2 class="uk-heading-primary uk-text-uppercase">Собственный<br><span class="uk-text-primary">учебный центр</span></h2>
-							<p>Вы получите обучение по продукту и техникам продаж у лучших специалистов компании. Учебная программа подстраивается под нужды конкретного франчайзи в зависимости от его предшествующего опыта и навыков.</p>
+			<section class="uk-section uk-section-muted uk-padding-remove" role="region">
+				<div class="uk-container uk-container-expand">
+					<div class="uk-flex-middle uk-grid-match uk-grid-large uk-grid" uk-grid>
+						<div class="uk-width-1-3@l">
+							<div class="uk-tile">
+								<h2 class="uk-h1 uk-text-uppercase">Собственный<br><span class="uk-text-primary">учебный центр</span></h2>
+								<p>Вы получите обучение по продукту и техникам продаж у лучших специалистов компании. Учебная программа подстраивается под нужды конкретного франчайзи в зависимости от его предшествующего опыта и навыков.</p>
+							</div>
 						</div>
-						<div class="uk-width-expand@l">
-							<div>
-								<img class="uk-height-large uk-border-rounded" data-src="images/image1.jpeg" alt="Собственный учебный центр" width="" height="" uk-img>
+						<div class="uk-width-2-3@l  uk-position-relative">
+							<div class="uk-container-item-padding-remove-right uk-cover-container uk-position-relative">
+								<img class="uk-border-rounded uk-cover" data-src="images/img-4.jpg" alt="Собственный учебный центр" width="1200" height="800" uk-img uk-cover>
 							</div>
 						</div>
 					</div>
@@ -691,93 +764,94 @@
 			</section>
 
 			<!-- Наши шоу-румы -->
-			<section class="uk-section uk-section-default uk-section-large" role="region">
+			<section class="uk-section uk-section-default" role="region">
 				<div class="uk-container uk-container-large">
 					<div class="uk-flex-middle uk-grid-large uk-grid" uk-grid>
-						<div class="uk-width-2-3@l">
-							<div class="uk-position-relative uk-visible-toggle uk-ligh" tabindex="-1" uk-slider="clsActivated: uk-transition-active">
-								<ul class="uk-slider-items uk-height-large uk-grid-match uk-grid">
-									<li class="uk-width-5-6 uk-width-1-2@s uk-width-1-3@m">
-										<div class="uk-cover-container uk-border-rounded">
-											<img src="images/image1.jpeg" alt="Наши шоу-румы" uk-cover>
-											<div class="uk-overlay uk-background-default uk-border-rounded uk-position-small uk-position-bottom uk-transition-slide-bottom-small">
-												<h4 class="uk-h4 uk-text-primary uk-margin-remove">Москва</h4>
-												<p class="uk-margin-remove uk-text-small">Адрес шоу-рума в Москве</p>
+						<div class="uk-width-2-3">
+							<div class="uk-slider" uk-slider="center: true; clsActivated: uk-transition-active">
+								<div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+									<ul class="uk-slider-items uk-height-large uk-light uk-child-width-5-6 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-match uk-grid">
+										<li class="uk-transition-toggle" tabindex="0">
+											<div class="uk-inline-clip uk-cover-container uk-border-rounded">
+												<img src="images/image1.jpeg" alt="Наши шоу-румы" uk-cover>
+												<div class="uk-panel uk-position-medium uk-position-bottom uk-transition-slide-bottom-small">
+													<h4 class="uk-h3">Москва</h4>
+												</div>
 											</div>
-										</div>
-									</li>
-									<li class="uk-width-5-6 uk-width-1-2@s uk-width-1-3@m">
-										<div class="uk-cover-container uk-border-rounded">
-											<img src="images/image2.jpeg" alt="Наши шоу-румы" uk-cover>
-											<div class="uk-overlay uk-background-default uk-border-rounded uk-position-small uk-position-bottom uk-transition-slide-bottom-small">
-												<h4 class="uk-h4 uk-text-primary uk-margin-remove">Сергиев Посад</h4>
-												<p class="uk-margin-remove uk-text-small">Адрес шоу-рума в Сергиев Посаде</p>
+										</li>
+										<li>
+											<div class="uk-cover-container uk-border-rounded">
+												<img src="images/image2.jpeg" alt="Наши шоу-румы" uk-cover>
+												<div class="uk-panel uk-position-medium uk-position-bottom uk-transition-slide-bottom-small">
+													<h4 class="uk-h3">Сергиев Посад</h4>
+												</div>
 											</div>
-										</div>
-									</li>
-									<li class="uk-width-5-6 uk-width-1-2@s uk-width-1-3@m">
-										<div class="uk-cover-container uk-border-rounded">
-											<img src="images/image1.jpeg" alt="Наши шоу-румы" uk-cover>
-											<div class="uk-overlay uk-background-default uk-border-rounded uk-position-small uk-position-bottom uk-transition-slide-bottom-small">
-												<h4 class="uk-h4 uk-text-primary uk-margin-remove">Нижний Новгород</h4>
-												<p class="uk-margin-remove uk-text-small">Адрес шоу-рума в Нижнем Новгороде</p>
+										</li>
+										<li>
+											<div class="uk-cover-container uk-border-rounded">
+												<img src="images/image1.jpeg" alt="Наши шоу-румы" uk-cover>
+												<div class="uk-panel uk-position-medium uk-position-bottom uk-transition-slide-bottom-small">
+													<h4 class="uk-h3">Вологда</h4>
+												</div>
 											</div>
-										</div>
-									</li>
-									<li class="uk-width-5-6 uk-width-1-2@s uk-width-1-3@m">
-										<div class="uk-cover-container uk-border-rounded">
-											<img src="images/image2.jpeg" alt="Наши шоу-румы" uk-cover>
-											<div class="uk-overlay uk-background-default uk-border-rounded uk-position-small uk-position-bottom uk-transition-slide-bottom-small">
-												<h4 class="uk-h4 uk-text-primary uk-margin-remove">Клин</h4>
-												<p class="uk-margin-remove uk-text-small">Адрес шоу-рума в Москве</p>
+										</li>
+										<li>
+											<div class="uk-cover-container uk-border-rounded">
+												<img src="images/image2.jpeg" alt="Наши шоу-румы" uk-cover>
+												<div class="uk-panel uk-position-medium uk-position-bottom uk-transition-slide-bottom-small">
+													<h4 class="uk-h3">Тверь</h4>
+												</div>
 											</div>
-										</div>
-									</li>
-									<li class="uk-width-5-6 uk-width-1-2@s uk-width-1-3@m">
-										<div class="uk-cover-container uk-border-rounded">
-											<img src="images/image2.jpeg" alt="Наши шоу-румы" uk-cover>
-											<div class="uk-overlay uk-background-default uk-border-rounded uk-position-small uk-position-bottom uk-transition-slide-bottom-small">
-												<h4 class="uk-h4 uk-text-primary uk-margin-remove">Bottom</h4>
-												<p class="uk-margin-remove uk-text-small">Адрес шоу-рума в Москве</p>
+										</li>
+										<li>
+											<div class="uk-cover-container uk-border-rounded">
+												<img src="images/image2.jpeg" alt="Наши шоу-румы" uk-cover>
+												<div class="uk-panel uk-position-medium uk-position-bottom uk-transition-slide-bottom-small">
+													<h4 class="uk-h3">Череповец</h4>
+												</div>
 											</div>
-										</div>
-									</li>
-									<li class="uk-width-5-6 uk-width-1-2@s uk-width-1-3@m">
-										<div class="uk-cover-container uk-border-rounded">
-											<img src="images/image2.jpeg" alt="Наши шоу-румы" uk-cover>
-											<div class="uk-overlay uk-background-default uk-border-rounded uk-position-small uk-position-bottom uk-transition-slide-bottom-small">
-												<h4 class="uk-h4 uk-text-primary uk-margin-remove">Bottom</h4>
-												<p class="uk-margin-remove uk-text-small">Адрес шоу-рума в Москве</p>
+										</li>
+										<li>
+											<div class="uk-cover-container uk-border-rounded">
+												<img src="images/image2.jpeg" alt="Наши шоу-румы" uk-cover>
+												<div class="uk-panel uk-position-medium uk-position-bottom uk-transition-slide-bottom-small">
+													<h4 class="uk-h3">Тула</h4>
+												</div>
 											</div>
-										</div>
-									</li>
-									<li class="uk-width-5-6 uk-width-1-2@s uk-width-1-3@m">
-										<div class="uk-cover-container uk-border-rounded">
-											<img src="images/image2.jpeg" alt="Наши шоу-румы" uk-cover>
-											<div class="uk-overlay uk-background-default uk-border-rounded uk-position-small uk-position-bottom uk-transition-slide-bottom-small">
-												<h4 class="uk-h4 uk-text-primary uk-margin-remove">Bottom</h4>
-												<p class="uk-margin-remove uk-text-small">Адрес шоу-рума в Москве</p>
+										</li>
+										<li>
+											<div class="uk-cover-container uk-border-rounded">
+												<img src="images/image2.jpeg" alt="Наши шоу-румы" uk-cover>
+												<div class="uk-panel uk-position-medium uk-position-bottom uk-transition-slide-bottom-small">
+													<h4 class="uk-h3">Ярославль</h4>
+												</div>
 											</div>
-										</div>
-									</li>
-								</ul>
-								<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-								<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+										</li>
+										<li>
+											<div class="uk-cover-container uk-border-rounded">
+												<img src="images/image2.jpeg" alt="Наши шоу-румы" uk-cover>
+												<div class="uk-panel uk-position-medium uk-position-bottom uk-transition-slide-bottom-small">
+													<h4 class="uk-h3">Нижний Новгород</h4>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-medium-top"></ul>
 							</div>
 						</div>
-						<div class="uk-width-expand@l">
-							<h2 class="uk-heading-primary uk-text-uppercase">Наши<br><span class="uk-text-primary">шоу-румы</span></h2>
-							<p>Мы стараемся быть ближе к покупателю и для этого открыли уже 7 шоу-румов с самыми яркими и интересными образцами продукции. Наши клиенты могут подержать в руках и попробовать свое будущее окно — никакие красивые слова и рекламные листовки
-								не заменят непосредственного контакта с качественным продуктом! Нам нечего скрывать — мы уверены в качестве каждого изделия и даем возможность убедиться в этом!</p>
+						<div class="uk-width-1-3">
+							<h2 class="uk-h1 uk-text-uppercase">Наши<br><span class="uk-text-primary">шоу-румы</span></h2>
+							<p>Мы стараемся быть ближе к покупателю и для этого открыли уже 7 шоу-румов с самыми яркими и интересными образцами продукции. Наши клиенты могут подержать в руках и попробовать свое будущее окно — никакие красивые слова и рекламные листовки не заменят непосредственного контакта с качественным продуктом! Нам нечего скрывать — мы уверены в качестве каждого изделия и даем возможность убедиться в этом!</p>
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<!-- Приглашаем на эксурсию -->
-			<section class="uk-section uk-section-muted uk-section-large" role="region">
+			<section class="uk-section uk-section-muted" role="region">
 				<div class="uk-container uk-container-large">
-					<h2 class="uk-heading-primary uk-margin-large uk-text-uppercase">Приглашаем<br><span class="uk-text-primary">на эксурсию</span></h2>
+					<h2 class="uk-h1 uk-text-uppercase uk-margin-large">Приглашаем<br><span class="uk-text-primary">на эксурсию</span></h2>
 					<div class="uk-child-width-1-3 uk-grid-match uk-grid" uk-grid>
 						<div>
 							<div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-small uk-background-default">
@@ -843,22 +917,37 @@
 			</section>
 
 			<section class="uk-section uk-section-primary" role="region">
-				<div class="uk-container">
-					<div class="uk-child-width-1-3 uk-grid-small uk-grid" uk-grid>
+				<div class="uk-container uk-container-large">
+					<div class="uk-child-width-expand uk-grid" uk-grid>
 						<div>
-							<p class="">Тест</p>
+							<div class="uk-grid" uk-grid>
+								<div class="uk-width-auto">
+									<img class="uk-border-circle uk-box-shadow-medium" src="images/avatar.jpg" alt="">
+								</div>
+								<div class="uk-width-expand">
+									<p class="uk-h4">Юлия Горина</p>
+									<p>Руководитель франчайзингового подразделения</p>
+									<p class="uk-h4">Контакты:</p>
+									<p>Эл. адрес: <a href="mailto:gorina@ecookna.ru">gorina@ecookna.ru</a>,<br>Телефон: <a href="tel:+79250802810">8 (925) 080-28-10</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="uk-width-auto">
+							<p class="uk-h4">Мы в соц. сетях</p>
+							<a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="icon: facebook; ratio: 1.5"></a>
+							<a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="icon: vimeo; ratio: 1.5"></a>
+							<a href="#" class="uk-icon-link" uk-icon="icon: twitter; ratio: 1.5"></a>
 						</div>
 					</div>
 				</div>
 			</section>
-
 		</main>
 
 		<footer class="uk-section uk-section-primary uk-section-small uk-position-relative" role="contentinfo">
-			<div class="uk-container">
+			<div class="uk-container uk-container-large">
 				<div class="uk-text-center uk-flex-middle uk-child-width-expand@s uk-grid" uk-grid>
 					<div class="uk-text-left@s">
-						<p>© 2002 — 2019 Франшиза «ЭКООКНА»</p>
+						<p>© 2002 — 2019 Франшиза «ЭКООКНА».<br><a href="#">Политика конфиденциальности</a>.</p>
 					</div>
 					<div class="uk-text-right@s">
 						<a href="#" uk-totop uk-scroll></a>
@@ -866,7 +955,6 @@
 				</div>
 			</div>
 		</footer>
-
 	</body>
 
 </html>
