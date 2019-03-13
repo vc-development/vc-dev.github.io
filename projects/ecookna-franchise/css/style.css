@@ -1,0 +1,15 @@
+@font-face {
+	font-display: swap;
+	font-family: 'PF DinDisplay Pro';
+	src: local("PFDinDisplayPro-Regular"), url('../fonts/PFDinDisplayPro-Regular.woff2') format("woff2"), url('../fonts/PFDinDisplayPro-Regular.woff') format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Roboto';
+	src: local("roboto regular"), local("roboto-regular"), url('../fonts/roboto-regular.woff2') format("woff2"), url('../fonts/roboto-regular.woff') format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
