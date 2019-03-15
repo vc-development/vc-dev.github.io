@@ -16,9 +16,9 @@
 
 	<body>
 
-		<header class="uk-background-default uk-sticky" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-active uk-box-shadow-small; cls-inactive: uk-position-relative uk-position-z-index uk-box-shadow-small">
+		<header class="uk-background-default uk-sticky" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-active uk-box-shadow-small; cls-inactive: uk-position-relative uk-position-z-index uk-box-shadow-small" role="banner">
 			<div class="uk-container">
-				<nav class="uk-navbar" data-uk-navbar>
+				<nav class="uk-navbar" data-uk-navbar role="navigation">
 					<div class="uk-navbar-left">
 						<a class="uk-navbar-item uk-logo" href="https://vc-development.github.io/"><span class="uk-text-primary uk-margin-small-right">VC</span> Development</a>
 					</div>
@@ -30,7 +30,7 @@
 			</div>
 		</header>
 
-		<section class="uk-section uk-section-muted uk-section-large uk-position-relative uk-text-center">
+		<section class="uk-section uk-section-muted uk-section-large uk-position-relative uk-text-center" role="region">
 			<div id="holder" class="uk-width-1-1 uk-height-1-1 uk-position-cover uk-overflow-hidden uk-animation-fade"></div>
 			<div class="uk-container">
 				<div class="uk-margin-auto uk-margin-large uk-width-xxlarge uk-position-relative">
@@ -40,7 +40,7 @@
 			</div>
 		</section>
 
-		<section class="uk-section uk-position-relative uk-text-center uk-box-shadow-small">
+		<main class="uk-section uk-position-relative uk-text-center uk-box-shadow-small" role="main">
 			<div class="uk-container">
 				<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid" data-uk-grid data-uk-height-match="target: > div > .uk-card; row: false" data-uk-scrollspy="target: > div > .uk-card; cls: uk-animation-slide-bottom-small; delay: 200">
 					<div>
@@ -117,9 +117,9 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</main>
 
-		<footer class="uk-section uk-section-small uk-section-default uk-position-relative uk-box-shadow-small">
+		<footer class="uk-section uk-section-small uk-section-default uk-position-relative uk-box-shadow-small" role="contentinfo">
 			<div class="uk-container">
 				<div class="uk-text-center uk-flex-middle uk-child-width-expand@s uk-grid" data-uk-grid>
 					<div class="uk-text-left@s">
@@ -132,7 +132,7 @@
 			</div>
 		</footer>
 
-		<aside id="offcanvas" class="uk-offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+		<aside id="offcanvas" class="uk-offcanvas" data-uk-offcanvas="flip: true; overlay: true" role="complementary">
 			<div class="uk-offcanvas-bar">
 				<button class="uk-offcanvas-close" type="button" data-uk-close></button>
 				<div data-uk-margin="margin: uk-margin-top">
