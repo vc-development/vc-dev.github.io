@@ -1,22 +1,40 @@
 document.addEventListener('DOMContentLoaded', function () {
+
 	// var notificationCookie = Cookies.get('notification');
 	// if (!notificationCookie) {
-	// 	setTimeout(function () {
-	// 		UIkit.notification({
-	// 			message: 'Lorem ipsum dolor sit amet',
-	// 			status: 'primary',
-	// 			timeout: 0,
-	// 			pos: 'top-center',
-	// 			clsClose: 'uk-notification-close',
-	// 			clsMsg: 'uk-notification-message notification-сookie'
+	// 	const alert = document.createElement('div');
+	// 	alert.classList.add('uk-alert-primary');
+	// 	alert.setAttribute('data-uk-alert', '');
+	// 	alert.innerHTML = `
+	// 		<a class="uk-button uk-button-primary uk-alert-close" data-uk-close>Принять</a>
+	// 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+	// 	`;
+	// 	document.body.appendChild(alert);
+
+	// 	UIkit.util.on(alert, 'hide', function () {
+	// 		Cookies.set('cookie-notification', 'yes', {
+	// 			expires: 7
 	// 		});
-	// 		UIkit.util.on('.notification-сookie', 'close', function () {
-	// 			Cookies.set('notification', 'yes', {
-	// 				expires: 7
-	// 			});
-	// 		});
-	// 	}, 3000);
+	// 		// alert.remove();
+	// 	});
 	// }
+
+	var cookieNotification = Cookies.get('cookie-notification');
+	if (!cookieNotification) {
+		UIkit.notification({
+			message: '<p>Lorem ipsum dolor sit amet.</p>',
+			status: 'primary',
+			timeout: 0,
+			pos: 'bottom-left uk-position-fixed uk-position-bottom-left uk-width-1-1',
+			clsClose: 'uk-notification-close',
+			clsMsg: 'uk-notification-message uk-background-primary uk-light cookie-notification-close'
+		});
+		UIkit.util.on('.cookie-notification-close', 'close', function () {
+			Cookies.set('cookie-notification', 'yes', {
+				expires: 7
+			});
+		});
+	}
 
 	(function () {
 		var pi = Math.PI;
@@ -184,18 +202,18 @@ document.addEventListener('DOMContentLoaded', function () {
 			Wave.Lines = [];
 
 			Wave.angle = [
-	  rnd(pi2),
-	  rnd(pi2),
-	  rnd(pi2),
-	  rnd(pi2)
-	];
+				rnd(pi2),
+				rnd(pi2),
+				rnd(pi2),
+				rnd(pi2)
+			];
 
 			Wave.speed = [
-	  rnd(speed[0], speed[1]) * rnd_sign(),
-	  rnd(speed[0], speed[1]) * rnd_sign(),
-	  rnd(speed[0], speed[1]) * rnd_sign(),
-	  rnd(speed[0], speed[1]) * rnd_sign(),
-	];
+				rnd(speed[0], speed[1]) * rnd_sign(),
+				rnd(speed[0], speed[1]) * rnd_sign(),
+				rnd(speed[0], speed[1]) * rnd_sign(),
+				rnd(speed[0], speed[1]) * rnd_sign(),
+			];
 
 			return Wave;
 		}
@@ -273,11 +291,11 @@ document.addEventListener('DOMContentLoaded', function () {
 			var speed = Wave.speed;
 
 			Line.angle = [
-	  Math.sin(angle[0] += speed[0]),
-	  Math.sin(angle[1] += speed[1]),
-	  Math.sin(angle[2] += speed[2]),
-	  Math.sin(angle[3] += speed[3])
-	];
+				Math.sin(angle[0] += speed[0]),
+				Math.sin(angle[1] += speed[1]),
+				Math.sin(angle[2] += speed[2]),
+				Math.sin(angle[3] += speed[3])
+			];
 
 			Line.color = color;
 		}
