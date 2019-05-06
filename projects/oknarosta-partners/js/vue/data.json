@@ -1,788 +1,774 @@
 {
-    "types": [
-        {
-            "name": "Пластиковые <br>окна",
-            "title": "Пластиковые окна",
-            "image": "calc-window-1.jpg"
-        },
-        {
-            "name": "Деревянные <br>окна",
-            "title": "Деревянные окна",
-            "image": "calc-window-2.jpg"
-        },
-        {
-            "name": "Остекление <br>балкона",
-            "title": "Остекление балкона",
-            "image": "calc-window-3.jpg"
-        }
-    ],
-    "plastic": {
-        "tarifs": [
-            {
-                "name": "Эконом",
-                "description": "Ничего лишнего: окно для тех, кто ищет бюджетный легкий вариант для квартиры или дачи. Минимальные требования к тепло- и шумоизоляции, привычное открывание, классический сдержанный дизайн.",
-                "image": "calc-econom.jpg"
-            },
-            {
-                "name": "Стандарт",
-                "description": "Полный пакет: окно для тех, кто во всем ищет золотую середину. Оптимальная комплектация: повышенные изоляционные и защитные свойства, надежная фурнитура, усиленная конструкция.",
-                "image": "calc-standart.jpg"
-            },
-            {
-                "name": "Премиум",
-                "description": "Все самое лучшее: окно для требовательных и заботливых. Максимальные показатели защиты от ветра, холода и шума, многофункциональная фурнитура, нестандартные формы, большой выбор декорирования.",
-                "image": "calc-premium.jpg"
-            }
-        ],
-        "sets": [
-            {
-                "start": 0,
-                "count": 3,
-                "active": 0
-            },
-            {
-                "start": 3,
-                "count": 6,
-                "active": 3
-            },
-            {
-                "start": 9,
-                "count": 10,
-                "active": 9
-            },
-            {
-                "start": 19,
-                "count": 10,
-                "active": 19
-            }
-        ]
-    },
-    "names": [
-        "Одностворчатое глухое окно",
-        "Одностворчатое поворотное окно",
-        "Одностворчатое поворотно-откидное окно",
-        "Двустворчатое глухое окно",
-        "Двустворчатое окно с поворотной створкой",
-        "Двустворчатое окно с поворотно-откидной створкой",
-        "Двустворчатое окно с двумя поворотными створками",
-        "Двустворчатое окно с одной поворотно-откидной и одной поворотной створкой",
-        "Двустворчатое окно с двумя поворотно-откидными створками",
-        "Трехстворчатое глухое окно",
-        "Трехстворчатое окно с одной поворотной створкой",
-        "Трехстворчатое окно с одной поворотно-откидной створкой",
-        "Трехстворчатое окно с двумя поворотными створками",
-        "Трехстворчатое окно с одной поворотной и одной поворотно-откидной створкой",
-        "Трехстворчатое окно с двумя поворотно-откидными створками",
-        "Трехстворчатое окно с тремя поворотными створками",
-        "Трехстворчатое окно с двумя поворотными и одной поворотно-откидной створками",
-        "Трехстворчатое окно с двумя поворотно-откидными и одной поворотной створками",
-        "Трехстворчатое окно с тремя поворотно-откидными створками",
-        "Штульповая балконная дверь с сэндвич панелью",
-        "Штульповая балконная дверь с сэндвич панелью с поворотно-откидным механизмом",
-        "Балконная дверь стеклянная с импостом",
-        "Балконная дверь стеклянная с импостом с поворотно-откидным механизмом",
-        "Двойная штульповая балконная дверь с сэндвич панелью с одной поворотно-откидной и одной поворотной створками",
-        "Двойная штульповая балконная дверь с сэндвич панелью с поворотными створками",
-        "Двойная штульповая балконная дверь с сэндвич панелью с двумя поворотно-откидными створками",
-        "Двойная балконная дверь стеклянная с импостом с одной поворотно-откидной и одной поворотной створками",
-        "Двойная балконная дверь стеклянная с импостом с двумя поворотными створками",
-        "Двойная балконная дверь стеклянная с импостом с двумя поворотно-откидными створками"
-    ],
-    "wood": {
-        "sets": [
-            {
-                "start": 0,
-                "count": 3,
-                "active": 0
-            },
-            {
-                "start": 3,
-                "count": 6,
-                "active": 3
-            },
-            {
-                "start": 9,
-                "count": 10,
-                "active": 9
-            }
-        ],
-        "materials": [
-            {
-                "name": "Сосна",
-                "alias": "sosna",
-                "colors": 21,
-                "names": ["1-Сосна бесцветный", "2-Сосна", "3-Сосна RAL", "4-Сосна HEMLOCK", "5-Сосна KIEFER-HEMLOCK", "6-Сосна KIEFER-AFZELIA", "7-Сосна AFZELIA", "8-Сосна EICHE", "9-Сосна TEAK-EICHE", "10-Сосна AFROMOSIA-EICHE", "11-Сосна TEAK", "12-Сосна MAHAGONI", "13-Сосна AFROMOSIA", "14-Сосна NUSSBAUM-EICHE-HELL", "15-Сосна NUSSBAUM-TEAK", "16-Сосна NUSSBAUM", "17-Сосна WENGE-EICHE", "18-Сосна WENGE-EICHE", "19-Сосна NUSSBAUM", "20-Сосна WENGE-MAHAGONI-DUNKEL", "21-Сосна PALISANDER"]
-            },
-            {
-                "name": "Лиственница",
-                "alias": "listvennitsa",
-                "colors": 10,
-                "names": ["1-Лиственница бесцветный", "2-Лиственница", "3-Лиственница HEMLOCK", "4-Лиственница TEAK", "5-Лиственница MAHAGONI", "6-Лиственница AFZELIA", "7-Лиственница KIEFER-HEMLOCK", "8-Лиственница NUSSBAUM-TEAK", "9-Лиственница NUSSBAUM", "10-Лиственница NUSSBAUM-EICHE-HELL"]
-            },
-            {
-                "name": "Дуб",
-                "alias": "dub",
-                "colors": 10,
-                "names": ["1-Дуб бесцветный", "2-Дуб", "3-Дуб HEMLOCK", "4-Дуб TEAK", "5-Дуб MAHAGONI", "6-Дуб AFZELIA", "7-Дуб KIEFER-HEMLOCK", "8-Дуб NUSSBAUM-TEAK", "9-Дуб NUSSBAUM", "10-Дуб NUSSBAUM-EICHE-HELL"]
-            }
-        ]
-    },
-    "balcone": {
-        "materials": [
-            { "name": "Холодное остекление (Алюминий)", "image": "cold.jpg" },
-            { "name": "Теплое остекление (ПВХ)", "image": "warm.jpg" }
-        ],
-        "cold": [
-            {
-                "width": 0,
-                "sashs": [
-                    {
-                        "sash": 0,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 1,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 2,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 3,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 4,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 5,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 6,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    }
-                ]
-            },
-            {
-                "width": 0,
-                "sashs": [
-                    {
-                        "sash": 0,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 1,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 2,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 3,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 4,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 5,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 6,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    }
-                ]
-            },
-            {
-                "width": 0,
-                "sashs": [
-                    {
-                        "sash": 0,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 1,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 2,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 3,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 4,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 5,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 6,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    }
-                ]
-            },
-            {
-                "width": 0,
-                "sashs": [
-                    {
-                        "sash": 0,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 1,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 2,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 3,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 4,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 5,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 6,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    }
-                ]
-            },
-            {
-                "width": 0,
-                "sashs": [
-                    {
-                        "sash": 0,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 1,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 2,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 3,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 4,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 5,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 6,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    }
-                ]
-            },
-            {
-                "width": 0,
-                "sashs": [
-                    {
-                        "sash": 0,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 1,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 2,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 3,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 4,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 5,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    },
-                    {
-                        "sash": 6,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-4.png"
-                        }
-                    }
-                ]
-            }
-        ],
-        "warm": [
-            {
-                "width": 0,
-                "sashs": [
-                    {
-                        "sash": 0,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 1,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 2,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 3,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 4,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 5,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 6,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    }
-                ]
-            },
-            {
-                "width": 0,
-                "sashs": [
-                    {
-                        "sash": 0,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 1,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 2,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 3,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 4,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 5,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 6,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    }
-                ]
-            },
-            {
-                "width": 0,
-                "sashs": [
-                    {
-                        "sash": 0,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 1,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 2,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 3,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 4,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 5,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 6,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    }
-                ]
-            },
-            {
-                "width": 0,
-                "sashs": [
-                    {
-                        "sash": 0,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 1,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 2,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 3,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 4,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 5,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 6,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    }
-                ]
-            },
-            {
-                "width": 0,
-                "sashs": [
-                    {
-                        "sash": 0,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 1,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 2,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 3,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 4,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 5,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 6,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    }
-                ]
-            },
-            {
-                "width": 0,
-                "sashs": [
-                    {
-                        "sash": 0,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 1,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 2,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 3,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 4,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 5,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    },
-                    {
-                        "sash": 6,
-                        "option": {
-                            "value": "Глухая",
-                            "img": "calc-window-1.png"
-                        }
-                    }
-                ]
-            }
-        ]
-    }
+	"types": [{
+			"name": "Пластиковые <br>окна",
+			"title": "Пластиковые окна",
+			"image": "calc-window-1.jpg"
+		},
+		{
+			"name": "Деревянные <br>окна",
+			"title": "Деревянные окна",
+			"image": "calc-window-2.jpg"
+		},
+		{
+			"name": "Остекление <br>балкона",
+			"title": "Остекление балкона",
+			"image": "calc-window-3.jpg"
+		}
+	],
+	"plastic": {
+		"tarifs": [{
+				"name": "Эконом",
+				"description": "Ничего лишнего: окно для тех, кто ищет бюджетный легкий вариант для квартиры или дачи. Минимальные требования к тепло- и шумоизоляции, привычное открывание, классический сдержанный дизайн.",
+				"image": "calc-econom.jpg"
+			},
+			{
+				"name": "Стандарт",
+				"description": "Полный пакет: окно для тех, кто во всем ищет золотую середину. Оптимальная комплектация: повышенные изоляционные и защитные свойства, надежная фурнитура, усиленная конструкция.",
+				"image": "calc-standart.jpg"
+			},
+			{
+				"name": "Премиум",
+				"description": "Все самое лучшее: окно для требовательных и заботливых. Максимальные показатели защиты от ветра, холода и шума, многофункциональная фурнитура, нестандартные формы, большой выбор декорирования.",
+				"image": "calc-premium.jpg"
+			}
+		],
+		"sets": [{
+				"start": 0,
+				"count": 3,
+				"active": 0
+			},
+			{
+				"start": 3,
+				"count": 6,
+				"active": 3
+			},
+			{
+				"start": 9,
+				"count": 10,
+				"active": 9
+			},
+			{
+				"start": 19,
+				"count": 10,
+				"active": 19
+			}
+		]
+	},
+	"names": [
+		"Одностворчатое глухое окно",
+		"Одностворчатое поворотное окно",
+		"Одностворчатое поворотно-откидное окно",
+		"Двустворчатое глухое окно",
+		"Двустворчатое окно с поворотной створкой",
+		"Двустворчатое окно с поворотно-откидной створкой",
+		"Двустворчатое окно с двумя поворотными створками",
+		"Двустворчатое окно с одной поворотно-откидной и одной поворотной створкой",
+		"Двустворчатое окно с двумя поворотно-откидными створками",
+		"Трехстворчатое глухое окно",
+		"Трехстворчатое окно с одной поворотной створкой",
+		"Трехстворчатое окно с одной поворотно-откидной створкой",
+		"Трехстворчатое окно с двумя поворотными створками",
+		"Трехстворчатое окно с одной поворотной и одной поворотно-откидной створкой",
+		"Трехстворчатое окно с двумя поворотно-откидными створками",
+		"Трехстворчатое окно с тремя поворотными створками",
+		"Трехстворчатое окно с двумя поворотными и одной поворотно-откидной створками",
+		"Трехстворчатое окно с двумя поворотно-откидными и одной поворотной створками",
+		"Трехстворчатое окно с тремя поворотно-откидными створками",
+		"Штульповая балконная дверь с сэндвич панелью",
+		"Штульповая балконная дверь с сэндвич панелью с поворотно-откидным механизмом",
+		"Балконная дверь стеклянная с импостом",
+		"Балконная дверь стеклянная с импостом с поворотно-откидным механизмом",
+		"Двойная штульповая балконная дверь с сэндвич панелью с одной поворотно-откидной и одной поворотной створками",
+		"Двойная штульповая балконная дверь с сэндвич панелью с поворотными створками",
+		"Двойная штульповая балконная дверь с сэндвич панелью с двумя поворотно-откидными створками",
+		"Двойная балконная дверь стеклянная с импостом с одной поворотно-откидной и одной поворотной створками",
+		"Двойная балконная дверь стеклянная с импостом с двумя поворотными створками",
+		"Двойная балконная дверь стеклянная с импостом с двумя поворотно-откидными створками"
+	],
+	"wood": {
+		"sets": [{
+				"start": 0,
+				"count": 3,
+				"active": 0
+			},
+			{
+				"start": 3,
+				"count": 6,
+				"active": 3
+			},
+			{
+				"start": 9,
+				"count": 10,
+				"active": 9
+			}
+		],
+		"materials": [{
+				"name": "Сосна",
+				"alias": "sosna",
+				"colors": 21,
+				"names": ["1-Сосна бесцветный", "2-Сосна", "3-Сосна RAL", "4-Сосна HEMLOCK", "5-Сосна KIEFER-HEMLOCK", "6-Сосна KIEFER-AFZELIA", "7-Сосна AFZELIA", "8-Сосна EICHE", "9-Сосна TEAK-EICHE", "10-Сосна AFROMOSIA-EICHE", "11-Сосна TEAK", "12-Сосна MAHAGONI", "13-Сосна AFROMOSIA", "14-Сосна NUSSBAUM-EICHE-HELL", "15-Сосна NUSSBAUM-TEAK", "16-Сосна NUSSBAUM", "17-Сосна WENGE-EICHE", "18-Сосна WENGE-EICHE", "19-Сосна NUSSBAUM", "20-Сосна WENGE-MAHAGONI-DUNKEL", "21-Сосна PALISANDER"]
+			},
+			{
+				"name": "Лиственница",
+				"alias": "listvennitsa",
+				"colors": 10,
+				"names": ["1-Лиственница бесцветный", "2-Лиственница", "3-Лиственница HEMLOCK", "4-Лиственница TEAK", "5-Лиственница MAHAGONI", "6-Лиственница AFZELIA", "7-Лиственница KIEFER-HEMLOCK", "8-Лиственница NUSSBAUM-TEAK", "9-Лиственница NUSSBAUM", "10-Лиственница NUSSBAUM-EICHE-HELL"]
+			},
+			{
+				"name": "Дуб",
+				"alias": "dub",
+				"colors": 10,
+				"names": ["1-Дуб бесцветный", "2-Дуб", "3-Дуб HEMLOCK", "4-Дуб TEAK", "5-Дуб MAHAGONI", "6-Дуб AFZELIA", "7-Дуб KIEFER-HEMLOCK", "8-Дуб NUSSBAUM-TEAK", "9-Дуб NUSSBAUM", "10-Дуб NUSSBAUM-EICHE-HELL"]
+			}
+		]
+	},
+	"balcone": {
+		"materials": [{
+				"name": "Холодное остекление (Алюминий)",
+				"image": "cold.jpg"
+			},
+			{
+				"name": "Теплое остекление (ПВХ)",
+				"image": "warm.jpg"
+			}
+		],
+		"cold": [{
+				"width": 0,
+				"sashs": [{
+						"sash": 0,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 1,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 2,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 3,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 4,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 5,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 6,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					}
+				]
+			},
+			{
+				"width": 0,
+				"sashs": [{
+						"sash": 0,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 1,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 2,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 3,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 4,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 5,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 6,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					}
+				]
+			},
+			{
+				"width": 0,
+				"sashs": [{
+						"sash": 0,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 1,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 2,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 3,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 4,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 5,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 6,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					}
+				]
+			},
+			{
+				"width": 0,
+				"sashs": [{
+						"sash": 0,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 1,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 2,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 3,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 4,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 5,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 6,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					}
+				]
+			},
+			{
+				"width": 0,
+				"sashs": [{
+						"sash": 0,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 1,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 2,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 3,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 4,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 5,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 6,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					}
+				]
+			},
+			{
+				"width": 0,
+				"sashs": [{
+						"sash": 0,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 1,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 2,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 3,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 4,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 5,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					},
+					{
+						"sash": 6,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-4.png"
+						}
+					}
+				]
+			}
+		],
+		"warm": [{
+				"width": 0,
+				"sashs": [{
+						"sash": 0,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 1,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 2,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 3,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 4,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 5,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 6,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					}
+				]
+			},
+			{
+				"width": 0,
+				"sashs": [{
+						"sash": 0,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 1,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 2,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 3,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 4,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 5,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 6,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					}
+				]
+			},
+			{
+				"width": 0,
+				"sashs": [{
+						"sash": 0,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 1,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 2,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 3,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 4,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 5,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 6,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					}
+				]
+			},
+			{
+				"width": 0,
+				"sashs": [{
+						"sash": 0,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 1,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 2,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 3,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 4,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 5,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 6,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					}
+				]
+			},
+			{
+				"width": 0,
+				"sashs": [{
+						"sash": 0,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 1,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 2,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 3,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 4,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 5,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 6,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					}
+				]
+			},
+			{
+				"width": 0,
+				"sashs": [{
+						"sash": 0,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 1,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 2,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 3,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 4,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 5,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					},
+					{
+						"sash": 6,
+						"option": {
+							"value": "Глухая",
+							"img": "calc-window-1.png"
+						}
+					}
+				]
+			}
+		]
+	}
 }

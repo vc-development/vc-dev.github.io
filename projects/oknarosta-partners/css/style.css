@@ -1,50 +1,50 @@
 /* Fonts */
 @font-face {
-    font-display: swap;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/roboto-regular.woff2') format('woff2'), url('../fonts/roboto-regular.woff') format('woff');
+	font-display: swap;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/roboto-regular.woff2') format('woff2'), url('../fonts/roboto-regular.woff') format('woff');
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Montserrat Bold'), local('Montserrat-Bold'), url('../fonts/montserrat-700.woff2') format('woff2'), url('../fonts/montserrat-700.woff') format('woff');
+	font-display: swap;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Montserrat Bold'), local('Montserrat-Bold'), url('../fonts/montserrat-700.woff2') format('woff2'), url('../fonts/montserrat-700.woff') format('woff');
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'), url('../fonts/montserrat-800.woff2') format('woff2'), url('../fonts/montserrat-800.woff') format('woff');
+	font-display: swap;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 800;
+	src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'), url('../fonts/montserrat-800.woff2') format('woff2'), url('../fonts/montserrat-800.woff') format('woff');
 }
 
 /* Noise overlay for video */
 .noise-overlay {
-    background-image: url('../images/noise.gif');
-    opacity: 0.1;
+	background-image: url('../images/noise.gif');
+	opacity: 0.1;
 }
 
 /* Calculator */
 #calc-plastic-style>.uk-active {
-    background-color: #e70e07;
-    color: #fff;
+	background-color: #e70e07;
+	color: #fff;
 }
 
 #calc-plastic-style .uk-padding-small {
-    padding: 20px;
+	padding: 20px;
 }
 
 .calc-active-icons>.uk-active>a {
-    color: #e70e07;
+	color: #e70e07;
 }
 
 .calc-active-icons a {
-    color: #505b67;
+	color: #505b67;
 }
 
 /* .calc-style-tariff > .uk-active > .uk-card {
@@ -61,62 +61,62 @@
 } */
 
 #calc-wood-style>.uk-active {
-    background-color: #e70e07;
-    color: #fff;
+	background-color: #e70e07;
+	color: #fff;
 }
 
 #calc-wood-style .uk-background-primary {
-    color: #fff !important;
+	color: #fff !important;
 }
 
 #calc-wood-style .uk-padding-small {
-    padding: 20px;
+	padding: 20px;
 }
 
 #calc-main>.uk-active>.uk-card {
-    background-color: #e70e07;
+	background-color: #e70e07;
 }
 
 #calc-main>.uk-active>.uk-card .uk-h3 {
-    color: #fff;
+	color: #fff;
 }
 
 #calc-wood-material>.uk-active {
-    background-color: #e70e07;
-    color: #fff;
+	background-color: #e70e07;
+	color: #fff;
 }
 
 .calc-colors .uk-active img {
-    border-radius: 50%;
-    border: 2px #e70e07 solid;
+	border-radius: 50%;
+	border: 2px #e70e07 solid;
 }
 
 .pdl {
-    padding-left: 40px;
+	padding-left: 40px;
 }
 
 .grecaptcha-badge {
-    display: none;
+	display: none;
 }
 
 /* TODO: Remove */
 .or-btn {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: 0;
-    font-size: 0;
-    line-height: 0;
-    background-color: transparent;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+	line-height: 0;
+	background-color: transparent;
 }
 
 /* Vue-testing */
 .button-success {
-    background: #28a745;
-    color: #fff;
+	background: #28a745;
+	color: #fff;
 }
 
 .testing-response a {
-    text-decoration: underline;
+	text-decoration: underline;
 }
