@@ -1,156 +1,160 @@
 <!doctype html>
 <html lang="en-gb" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>VC Development Repository</title>
-		<meta name="description" content="VC Development Repository.">
-		<link rel="stylesheet" href="css/uikit.min.css">
-		<script src="js/uikit.min.js"></script>
-		<script src="js/uikit-icons.min.js"></script>
-		<script src="js/SmoothScroll.min.js"></script>
-		<script src="js/cookie.min.js"></script>
-		<script src="js/script.js"></script>
-	</head>
-	<body>
-		<header class="uk-background-default uk-sticky" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-active uk-box-shadow-small; cls-inactive: uk-position-relative uk-position-z-index uk-box-shadow-small" role="banner">
-			<div class="uk-container">
-				<nav class="uk-navbar" data-uk-navbar role="navigation">
-					<div class="uk-navbar-left">
-						<a class="uk-navbar-item uk-logo" href="https://vc-development.github.io/"><span class="uk-text-primary uk-margin-small-right">VC</span> Development</a>
-					</div>
-					<div class="uk-navbar-right">
-						<a class="uk-navbar-item uk-icon-link uk-icon" href="https://github.com/vc-development/vc-development.github.io" target="_blank" data-uk-icon="icon: github" data-uk-tooltip="title: GitHub; pos: left; animation: uk-animation-slide-left-small; cls: uk-active uk-background-primary"></a>
-						<a class="uk-navbar-toggle" href="#offcanvas" data-uk-toggle data-uk-navbar-toggle-icon accesskey="="></a>
-					</div>
-				</nav>
-			</div>
-		</header>
 
-		<section class="uk-section uk-section-muted uk-section-large uk-position-relative uk-text-center" role="region">
-			<div id="holder" class="uk-width-1-1 uk-height-1-1 uk-position-cover uk-overflow-hidden uk-animation-fade"></div>
-			<div class="uk-container">
-				<div class="uk-margin-auto uk-margin-large uk-width-xxlarge uk-position-relative">
-					<h1 class="uk-heading-small">Some Projects</h1>
-					<p class="uk-text-lead uk-text-emphasis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VC Development Repository</title>
+	<meta name="description" content="VC Development Repository.">
+	<link rel="stylesheet" href="css/uikit.min.css">
+	<script src="js/uikit.min.js"></script>
+	<script src="js/uikit-icons.min.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script src="js/cookie.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<header class="uk-background-default" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; cls-active: uk-active uk-box-shadow-small; cls-inactive: uk-position-relative uk-position-z-index uk-box-shadow-small" role="banner">
+		<div class="uk-container">
+			<nav class="uk-navbar" uk-navbar role="navigation">
+				<div class="uk-navbar-left">
+					<a class="uk-navbar-item uk-logo" href="https://vc-development.github.io/"><span class="uk-text-primary uk-margin-small-right">VC</span> Development</a>
 				</div>
-			</div>
-		</section>
+				<div class="uk-navbar-right">
+					<a class="uk-navbar-item uk-icon-link" href="https://github.com/vc-development/vc-development.github.io" target="_blank" uk-icon="github" uk-tooltip="title: GitHub; pos: left; animation: uk-animation-slide-left-small; cls: uk-active uk-background-primary"></a>
+					<a class="uk-navbar-toggle" href="#offcanvas" uk-toggle uk-navbar-toggle-icon></a>
+				</div>
+			</nav>
+		</div>
+	</header>
 
-		<main class="uk-section uk-position-relative uk-text-center uk-box-shadow-small" role="main">
-			<div class="uk-container">
-				<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid" data-uk-grid data-uk-height-match="target: > div > .uk-card; row: false" data-uk-scrollspy="target: > div > .uk-card; cls: uk-animation-slide-bottom-small; delay: 200">
-					<div>
-						<div class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-overflow-hidden uk-transition-toggle">
-							<div class="uk-card-media-top uk-inline-clip">
-								<img class="uk-transition-scale-up uk-transition-opaque" data-src="images/demo-image.jpg" width="900" height="600" alt="Project Image" data-uk-img>
-								<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
-									<span class="uk-padding-small uk-background-default uk-text-primary uk-border-circle uk-box-shadow-small uk-transition-slide-bottom-small uk-icon" data-uk-icon="icon: link; ratio: 2"></span>
-								</div>
-							</div>
-							<div class="uk-card-body">
-								<span class="uk-label">Landing page</span>
-								<h2 class="uk-card-title uk-margin">Франшиза ЭКООКНА</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-							</div>
-							<a class="uk-position-cover" href="/projects/ecookna-franchise"></a>
-						</div>
-					</div>
-					<div>
-						<div class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-overflow-hidden uk-transition-toggle">
-							<div class="uk-card-media-top uk-inline-clip">
-								<img class="uk-transition-scale-up uk-transition-opaque" data-src="images/demo-image.jpg" width="900" height="600" alt="Project Image" data-uk-img>
-								<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
-									<span class="uk-padding-small uk-background-default uk-text-primary uk-border-circle uk-box-shadow-small uk-transition-slide-bottom-small uk-icon" data-uk-icon="icon: link; ratio: 2"></span>
-								</div>
-							</div>
-							<div class="uk-card-body">
-								<span class="uk-label">Site</span>
-								<h2 class="uk-card-title uk-margin">Oknarosta Partners</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-							</div>
-							<a class="uk-position-cover" href="/projects/oknarosta-partners"></a>
-						</div>
-					</div>
-					<div>
-						<div class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-overflow-hidden uk-transition-toggle">
-							<div class="uk-card-media-top uk-inline-clip">
-								<img class="uk-transition-scale-up uk-transition-opaque" data-src="images/demo-image.jpg" width="900" height="600" alt="Project Image" data-uk-img>
-								<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
-									<span class="uk-padding-small uk-background-default uk-text-primary uk-border-circle uk-box-shadow-small uk-transition-slide-bottom-small uk-icon" data-uk-icon="icon: link; ratio: 2"></span>
-								</div>
-							</div>
-							<div class="uk-card-body">
-								<span class="uk-label">Lorem</span>
-								<h2 class="uk-card-title uk-margin">Project</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-							</div>
-							<a class="uk-position-cover" href="#"></a>
-						</div>
-					</div>
-					<div>
-						<div class="uk-card uk-card-default uk-flex uk-flex-middle uk-flex-center uk-height-large uk-text-muted uk-border-rounded">
-							<div>
-								<span class="uk-icon" data-uk-icon="icon: code"></span>
-								<p>Coming Soon</p>
+	<section class="uk-section uk-section-muted uk-section-large uk-position-relative uk-text-center" role="region">
+		<div id="holder" class="uk-width-1-1 uk-height-1-1 uk-position-cover uk-overflow-hidden uk-animation-fade"></div>
+		<div class="uk-container">
+			<div class="uk-margin-auto uk-margin-large uk-width-xxlarge uk-position-relative">
+				<h1 class="uk-heading-small">Some Projects</h1>
+				<p class="uk-text-lead uk-text-emphasis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+	</section>
+
+	<main class="uk-section uk-position-relative uk-text-center uk-box-shadow-small" role="main">
+		<div class="uk-container">
+			<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid" uk-grid uk-height-match="target: > div > .uk-card; row: false" uk-scrollspy="target: > div > .uk-card; cls: uk-animation-slide-bottom-small; delay: 200">
+				<div>
+					<div class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-overflow-hidden uk-transition-toggle">
+						<div class="uk-card-media-top uk-inline-clip">
+							<img class="uk-transition-scale-up uk-transition-opaque" data-src="images/demo-image.jpg" width="900" height="600" alt="Project Image" uk-img>
+							<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+								<span class="uk-padding-small uk-background-default uk-text-primary uk-border-circle uk-box-shadow-small uk-transition-slide-bottom-small" uk-icon="icon: link; ratio: 2"></span>
 							</div>
 						</div>
+						<div class="uk-card-body">
+							<span class="uk-label">Landing page</span>
+							<h2 class="uk-card-title uk-margin">Франшиза ЭКООКНА</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						</div>
+						<a class="uk-position-cover" href="/projects/ecookna-franchise"></a>
 					</div>
-					<div>
-						<div class="uk-card uk-card-default uk-flex uk-flex-middle uk-flex-center uk-height-large uk-text-muted uk-border-rounded">
-							<div>
-								<span class="uk-icon" data-uk-icon="icon: code"></span>
-								<p>Coming Soon</p>
+				</div>
+				<div>
+					<div
+						class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-overflow-hidden uk-transition-toggle">
+						<div class="uk-card-media-top uk-inline-clip">
+							<img class="uk-transition-scale-up uk-transition-opaque" data-src="images/demo-image.jpg" width="900" height="600" alt="Project Image" uk-img>
+							<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+								<span class="uk-padding-small uk-background-default uk-text-primary uk-border-circle uk-box-shadow-small uk-transition-slide-bottom-small" uk-icon="icon: link; ratio: 2"></span>
 							</div>
 						</div>
+						<div class="uk-card-body">
+							<span class="uk-label">Site</span>
+							<h2 class="uk-card-title uk-margin">Oknarosta Partners</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						</div>
+						<a class="uk-position-cover" href="/projects/oknarosta-partners"></a>
 					</div>
-					<div>
-						<div class="uk-card uk-card-default uk-flex uk-flex-middle uk-flex-center uk-height-large uk-text-muted uk-border-rounded">
-							<div>
-								<span class="uk-icon" data-uk-icon="icon: code"></span>
-								<p>Coming Soon</p>
+				</div>
+				<div>
+					<div class="uk-card uk-card-default uk-card-hover uk-border-rounded uk-overflow-hidden uk-transition-toggle">
+						<div class="uk-card-media-top uk-inline-clip">
+							<img class="uk-transition-scale-up uk-transition-opaque" data-src="images/demo-image.jpg" width="900" height="600" alt="Project Image" uk-img>
+							<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle">
+								<span class="uk-padding-small uk-background-default uk-text-primary uk-border-circle uk-box-shadow-small uk-transition-slide-bottom-small" uk-icon="icon: link; ratio: 2"></span>
 							</div>
+						</div>
+						<div class="uk-card-body">
+							<span class="uk-label">Lorem</span>
+							<h2 class="uk-card-title uk-margin">Project</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						</div>
+						<a class="uk-position-cover" href="#"></a>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card uk-card-default uk-flex uk-flex-middle uk-flex-center uk-height-large uk-text-muted uk-border-rounded">
+						<div>
+							<span uk-icon="icon: code"></span>
+							<p>Coming Soon</p>
 						</div>
 					</div>
 				</div>
-			</div>
-		</main>
-
-		<footer class="uk-section uk-section-small uk-section-default uk-position-relative uk-box-shadow-small" role="contentinfo">
-			<div class="uk-container">
-				<div class="uk-text-center uk-flex-middle uk-child-width-expand@s uk-grid" data-uk-grid>
-					<div class="uk-text-left@s">
-						<p>© 2019 VC Development.</p>
+				<div>
+					<div class="uk-card uk-card-default uk-flex uk-flex-middle uk-flex-center uk-height-large uk-text-muted uk-border-rounded">
+						<div>
+							<span uk-icon="icon: code"></span>
+							<p>Coming Soon</p>
+						</div>
 					</div>
-					<div class="uk-text-right@s">
-						<a href="#" data-uk-totop data-uk-scroll></a>
+				</div>
+				<div>
+					<div class="uk-card uk-card-default uk-flex uk-flex-middle uk-flex-center uk-height-large uk-text-muted uk-border-rounded">
+						<div>
+							<span uk-icon="icon: code"></span>
+							<p>Coming Soon</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</main>
 
-		<aside id="offcanvas" class="uk-offcanvas" data-uk-offcanvas="flip: true; overlay: true" role="complementary">
-			<div class="uk-offcanvas-bar">
-				<button class="uk-offcanvas-close" type="button" data-uk-close></button>
-				<div data-uk-margin="margin: uk-margin-top">
-					<div class="uk-card uk-card-body uk-card-default uk-card-hover">
-						<h3 class="uk-card-title">Card Default</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-					</div>
-					<div class="uk-card uk-card-body uk-card-primary uk-card-hover">
-						<h3 class="uk-card-title">Card Primary</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-					</div>
-					<div class="uk-card uk-card-body uk-card-secondary uk-card-hover">
-						<h3 class="uk-card-title">Card Secondary</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-					</div>
-					<div class="uk-card uk-card-body uk-card-muted uk-card-hover">
-						<h3 class="uk-card-title">Card Muted</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-					</div>
+	<footer class="uk-section uk-section-small uk-section-default uk-position-relative uk-box-shadow-small" role="contentinfo">
+		<div class="uk-container">
+			<div class="uk-text-center uk-flex-middle uk-child-width-expand@s uk-grid" uk-grid>
+				<div class="uk-text-left@s">
+					<p>© 2019 VC Development.</p>
+				</div>
+				<div class="uk-text-right@s">
+					<a href="#" uk-totop uk-scroll></a>
 				</div>
 			</div>
-		</aside>
-	</body>
+		</div>
+	</footer>
+
+	<aside id="offcanvas" uk-offcanvas="flip: true; overlay: true" role="complementary">
+		<div class="uk-offcanvas-bar">
+			<button class="uk-offcanvas-close" type="button" uk-close></button>
+			<div uk-margin="margin: uk-margin-top">
+				<div class="uk-card uk-card-body uk-card-default uk-card-hover">
+					<h3 class="uk-card-title">Card Default</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+				</div>
+				<div class="uk-card uk-card-body uk-card-primary uk-card-hover">
+					<h3 class="uk-card-title">Card Primary</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+				</div>
+				<div class="uk-card uk-card-body uk-card-secondary uk-card-hover">
+					<h3 class="uk-card-title">Card Secondary</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+				</div>
+				<div class="uk-card uk-card-body uk-card-muted uk-card-hover">
+					<h3 class="uk-card-title">Card Muted</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+				</div>
+			</div>
+		</div>
+	</aside>
+</body>
+
 </html>
