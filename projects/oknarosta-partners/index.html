@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru-ru" dir="ltr" vocab="http://schema.org/" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<html lang="ru-ru" dir="ltr">
 
 	<head>
 		<meta charset="utf-8">
@@ -35,6 +35,7 @@
 		<script src="js/vue.min.js"></script>
 		<script src="js/uikit.min.js"></script>
 		<script src="js/uikit-icons-oknarosta.min.js"></script>
+		<script src="js/js.cookie.min.js"></script>
 		<script src="js/inputmask.min.js"></script>
 		<script src="js/script.js"></script>
 	</head>
@@ -124,10 +125,10 @@
 								<p class="uk-text-large uk-text-emphasis">С нами комфортно, тепло и выгодно</p>
 								<div class="uk-flex-middle uk-child-width-auto@s uk-grid-small uk-grid" uk-grid>
 									<div>
-										<button class="uk-button uk-button-primary uk-button-large" type="button">Заказать замер</button>
+										<button class="uk-button uk-button-primary uk-button-large" type="button" uk-toggle="#modal-callback">Заказать замер</button>
 									</div>
 									<div>
-										<img src="images/veka-partner.svg" alt="veka" width="250">
+										<img src="images/veka-partner.svg" alt="veka" width="250" height="63">
 									</div>
 								</div>
 							</div>
@@ -313,7 +314,7 @@
 								<p>Ничего лишнего: окно для тех, кто ищет бюджетный легкий вариант для квартиры или дачи. Стандартные требования к тепло- и шумоизоляции, привычное открывание, классический сдержанный дизайн.</p>
 								<p class="uk-text-bold uk-text-center uk-text-left@m">от <s class="uk-text-large">9 900</s> <span class="uk-h2 uk-text-primary uk-margin-small-left">4 821</span> руб/м<sup><small>2</small></sup></p>
 								<div class="uk-grid-small uk-flex-center uk-flex-left@m uk-grid" uk-grid>
-									<div><button id="plast1-button" class="uk-button uk-button-primary" type="button" data-ajax="/api/?t=form&WEB_FORM_ID=2&tpl=modal&header=<?=urlencode('Запись на бесплатный замер');?>&anon=<?=urlencode('Укажите контактный номер телефона.');?>&is_ajax=Y&subject=<?=urlencode('Бесплатный замер');?>" data-target="#modal-callback">Заказать замер</button></div>
+									<div><button id="plast1-button" class="uk-button uk-button-primary" type="button" uk-toggle="#modal-callback">Заказать замер</button></div>
 									<div><button class="uk-button uk-button-default" type="button" uk-toggle="target: #modal-tariff-economy">Характеристики</button></div>
 								</div>
 								<div id="modal-tariff-economy" uk-modal>
@@ -331,7 +332,7 @@
 											<li>Глянцевая поверхность</li>
 										</ul>
 										<hr class="uk-hr">
-										<div><button class="uk-button uk-button-primary" type="button" data-ajax="/api/?t=form&WEB_FORM_ID=2&tpl=modal&header=<?=urlencode('Запись на бесплатный замер');?>&anon=<?=urlencode('Укажите контактный номер телефона.');?>&is_ajax=Y&subject=<?=urlencode('Бесплатный замер: Тариф Эконом');?>" data-target="#modal-callback">Заказать замер</button></div>
+										<div><button class="uk-button uk-button-primary" type="button" uk-toggle="#modal-callback">Заказать замер</button></div>
 									</div>
 								</div>
 							</div>
@@ -346,7 +347,7 @@
 								<p>Полный пакет: вариант для тех, кто во всем ищет золотую середину. Оптимальная комплектация: повышенные изоляционные и защитные свойства, надежная фурнитура, усиленная конструкция.</p>
 								<p class="uk-text-bold uk-text-center uk-text-left@m">от <s class="uk-text-large">11 400</s> <span class="uk-h2 uk-text-primary uk-margin-small-left">6 253</span> руб/м<sup><small>2</small></sup></p>
 								<div class="uk-grid-small uk-flex-center uk-flex-left@m uk-grid" uk-grid>
-									<div><button id="plast2-button" class="uk-button uk-button-primary" type="button" data-ajax="/api/?t=form&WEB_FORM_ID=2&tpl=modal&header=<?=urlencode('Запись на бесплатный замер');?>&anon=<?=urlencode('Укажите контактный номер телефона.');?>&is_ajax=Y&subject=<?=urlencode('Бесплатный замер');?>" data-target="#modal-callback">Заказать замер</button></div>
+									<div><button id="plast2-button" class="uk-button uk-button-primary" type="button" uk-toggle="#modal-callback">Заказать замер</button></div>
 									<div><button class="uk-button uk-button-default" type="button" uk-toggle="target: #modal-tariff-standard">Характеристики</button></div>
 								</div>
 								<div id="modal-tariff-standard" uk-modal>
@@ -364,7 +365,7 @@
 											<li>Глянцевая поверхность</li>
 										</ul>
 										<hr class="uk-hr">
-										<div><button class="uk-button uk-button-primary" type="button" data-ajax="/api/?t=form&WEB_FORM_ID=2&tpl=modal&header=<?=urlencode('Запись на бесплатный замер');?>&anon=<?=urlencode('Укажите контактный номер телефона.');?>&is_ajax=Y&subject=<?=urlencode('Бесплатный замер: Тариф Стандарт');?>" data-target="#modal-callback">Заказать замер</button></div>
+										<div><button class="uk-button uk-button-primary" type="button" uk-toggle="#modal-callback">Заказать замер</button></div>
 									</div>
 								</div>
 							</div>
@@ -379,7 +380,7 @@
 								<p>Все самое лучшее: вариант для стремящихся к совершенству. Основательная конструкция на долгие годы. Максимальные показатели защиты от ветра, холода и шума, многофункциональная фурнитура.</p>
 								<p class="uk-text-bold uk-text-center uk-text-left@m">от <s class="uk-text-large">14 700</s> <span class="uk-h2 uk-text-primary uk-margin-small-left">7 795</span> руб/м<sup><small>2</small></sup></p>
 								<div class="uk-grid-small uk-flex-center uk-flex-left@m uk-grid" uk-grid>
-									<div><button id="plast3-button" class="uk-button uk-button-primary" type="button" data-ajax="/api/?t=form&WEB_FORM_ID=2&tpl=modal&header=<?=urlencode('Запись на бесплатный замер');?>&anon=<?=urlencode('Укажите контактный номер телефона.');?>&is_ajax=Y&subject=<?=urlencode('Бесплатный замер');?>" data-target="#modal-callback">Заказать замер</button></div>
+									<div><button id="plast3-button" class="uk-button uk-button-primary" type="button" uk-toggle="#modal-callback">Заказать замер</button></div>
 									<div><button class="uk-button uk-button-default" type="button" uk-toggle="target: #modal-tariff-premium">Характеристики</button></div>
 								</div>
 								<div id="modal-tariff-premium" uk-modal>
@@ -397,7 +398,7 @@
 											<li>Глянцевая поверхность</li>
 										</ul>
 										<hr class="uk-hr">
-										<div><button class="uk-button uk-button-primary" type="button" data-ajax="/api/?t=form&WEB_FORM_ID=2&tpl=modal&header=<?=urlencode('Запись на бесплатный замер');?>&anon=<?=urlencode('Укажите контактный номер телефона.');?>&is_ajax=Y&subject=<?=urlencode('Бесплатный замер: Тариф Премиум');?>" data-target="#modal-callback">Заказать замер</button></div>
+										<div><button class="uk-button uk-button-primary" type="button" uk-toggle="#modal-callback">Заказать замер</button></div>
 									</div>
 								</div>
 							</div>
@@ -408,9 +409,9 @@
 		</section>
 
 		<!-- Калькулятор -->
-		<section id="calc-cost-price" class="uk-section-muted">
+		<section id="calc-cost-price" class="uk-section-default">
 			<div class="uk-grid-collapse uk-grid">
-				<div class="uk-width-1-6 uk-background-default uk-visible@l"></div>
+				<div class="uk-width-1-6 uk-background-muted uk-visible@l"></div>
 				<div class="uk-width-2-3@xl uk-width-5-6@l">
 					<div class="uk-tile uk-container uk-container-expand">
 						<h2 class="uk-h1">Рассчитайте стоимость пластиковых окон</h2>
@@ -1143,7 +1144,7 @@
 									<li>Алмазная гравировка</li>
 									<li>Фотопечать на выбор</li>
 								</ul>
-								<button class="uk-button uk-button-default" type="button" data-ajax="/api/?t=form&WEB_FORM_ID=2&tpl=modal&header=<?=urlencode('Запись на бесплатный замер');?>&anon=<?=urlencode('Укажите контактный номер телефона.');?>&is_ajax=Y&subject=<?=urlencode('Консультация: Декор ПВХ');?>" data-target="#modal-callback">Получить консультацию</button>
+								<button class="uk-button uk-button-default" type="button" uk-toggle="#modal-consultation">Получить консультацию</button>
 							</div>
 							<div>
 								<h2 class="uk-h1">Форма</h2>
@@ -1174,7 +1175,7 @@
 										<p class="uk-margin-remove">Больше света для любителей простора и комфорта</p>
 									</div>
 								</div>
-								<button class="uk-button uk-button-default" type="button" data-ajax="/api/?t=form&WEB_FORM_ID=2&tpl=modal&header=<?=urlencode('Запись на бесплатный замер');?>&anon=<?=urlencode('Укажите контактный номер телефона.');?>&is_ajax=Y&subject=<?=urlencode('Консультация: Формы ПФХ');?>" data-target="#modal-callback">Получить консультацию</button>
+								<button class="uk-button uk-button-default" type="button" uk-toggle="#modal-consultation">Получить консультацию</button>
 							</div>
 						</div>
 					</div>
@@ -1389,6 +1390,50 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- Modal: Заказать обратный звонок -->
+		<div id="modal-callback" uk-modal>
+			<div class="uk-modal-dialog uk-modal-body uk-width-large">
+				<button class="uk-modal-close-default" type="button" uk-close></button>
+				<h3 class="uk-text-large uk-text-center">Запись на бесплатный замер</h3>
+				<p class="uk-text-center">Укажите контактный номер телефона.</p>
+				<form action="/" method="post" enctype="multipart/form-data">
+					<div class="uk-margin">
+						<div class="uk-inline uk-width-1-1">
+							<span class="uk-form-icon" uk-icon="icon: or-phone-1; ratio: .7"></span>
+							<input class="uk-input" type="tel" placeholder="+7 (___) ___-__-__" required uk-tooltip="title: Укажите номер телефона; pos: top-left">
+							<a class="uk-form-icon uk-form-icon-flip" href="pdf/privacy-policy.pdf" target="_blank" rel="nofollow" uk-icon="icon: or-shield; ratio: .7" uk-tooltip="title: Отправляя форму Вы принимаете условия политики конфиденциальности в отношении обработки персональных данных.; pos: top-right"></a>
+						</div>
+					</div>
+					<div>
+						<button class="uk-button uk-button-primary uk-width-1-1" type="submit">Отправить</button>
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal: Получить консультацию -->
+		<div id="modal-consultation" uk-modal>
+			<div class="uk-modal-dialog uk-modal-body uk-width-large">
+				<button class="uk-modal-close-default" type="button" uk-close></button>
+				<h3 class="uk-text-large uk-text-center">Получить консультацию</h3>
+				<p class="uk-text-center">Укажите контактный номер телефона.</p>
+				<form action="/" method="post" enctype="multipart/form-data">
+					<div class="uk-margin">
+						<div class="uk-inline uk-width-1-1">
+							<span class="uk-form-icon" uk-icon="icon: or-phone-1; ratio: .7"></span>
+							<input class="uk-input" type="tel" placeholder="+7 (___) ___-__-__" required uk-tooltip="title: Укажите номер телефона; pos: top-left">
+							<a class="uk-form-icon uk-form-icon-flip" href="pdf/privacy-policy.pdf" target="_blank" rel="nofollow" uk-icon="icon: or-shield; ratio: .7" uk-tooltip="title: Отправляя форму Вы принимаете условия политики конфиденциальности в отношении обработки персональных данных.; pos: top-right"></a>
+						</div>
+					</div>
+					<div>
+						<button class="uk-button uk-button-primary uk-width-1-1" type="submit">Отправить</button>
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
 
 	</body>
 
