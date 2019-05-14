@@ -11,6 +11,8 @@
 		<link rel="canonical" href="https://www.oknarosta.ru/">
 		<link rel="dns-prefetch preconnect" href="//www.google-analytics.com">
 		<link rel="dns-prefetch preconnect" href="//www.googletagmanager.com">
+		<link rel="dns-prefetch preconnect" href="//fonts.googleapis.com">
+		<link rel="dns-prefetch preconnect" href="//fonts.gstatic.com">
 		<link rel="dns-prefetch preconnect" href="//api-maps.yandex.ru">
 		<link rel="dns-prefetch preconnect" href="//mc.yandex.ru">
 		<link rel="dns-prefetch preconnect" href="//yandex.ru">
@@ -28,13 +30,13 @@
 		<meta name="theme-color" content="#ffffff">
 		<meta name="format-detection" content="telephone=no">
 		<meta name="format-detection" content="address=no">
-		<link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin="anonymous" type="font/woff2">
-		<link rel="preload" href="fonts/montserrat-800.woff2" as="font" crossorigin="anonymous" type="font/woff2">
-		<link rel="stylesheet" href="css/uikit.oknarosta.min.css">
+		<!-- <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin="anonymous" type="font/woff2"> -->
+		<!-- <link rel="preload" href="fonts/montserrat-800.woff2" as="font" crossorigin="anonymous" type="font/woff2"> -->
+		<link rel="stylesheet" href="css/uikit.oknarostapartners.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/vue.min.js"></script>
 		<script src="js/uikit.min.js"></script>
-		<script src="js/uikit-icons-oknarosta.min.js"></script>
+		<script src="js/uikit-icons-oknarostapartners.min.js"></script>
 		<script src="js/js.cookie.min.js"></script>
 		<script src="js/inputmask.min.js"></script>
 		<script src="js/script.js"></script>
@@ -59,7 +61,7 @@
 		</div>
 
 		<!-- Main Menu -->
-		<header class="uk-section-default uk-visible@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+		<header class="uk-section-default uk-visible@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top;" role="banner">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-flex uk-flex-middle uk-flex-right uk-background-primary uk-light uk-visible@m">
 					<div class="uk-tile uk-tile-xsmall">
@@ -91,7 +93,7 @@
 						<div class="uk-width-1-1" style="border-bottom: 1px solid #ddd;"></div>
 
 						<div class="uk-width-5-6@xl">
-							<nav class="uk-tile uk-padding-remove-vertical uk-navbar" uk-navbar>
+							<nav class="uk-tile uk-padding-remove-vertical uk-navbar" uk-navbar role="navigation">
 								<div class="uk-navbar-left">
 									<ul class="uk-navbar-nav">
 										<li><a class="uk-text-uppercase uk-text-bold uk-text-nowrap" href="#">Пластиковые окна</a></li>
@@ -111,7 +113,7 @@
 		</header>
 
 		<!-- Баннер -->
-		<section class="uk-section-muted">
+		<section class="uk-section-muted" role="region">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-background-primary uk-visible@l uk-first-column"></div>
 				<div class="uk-width-expand">
@@ -140,7 +142,7 @@
 		</section>
 
 		<!-- Заголовок и описание страницы -->
-		<section class="uk-section-default">
+		<section class="uk-section-default" role="region">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-background-primary uk-visible@l"></div>
 				<div class="uk-width-2-3@xl uk-width-5-6@l">
@@ -153,7 +155,7 @@
 		</section>
 
 		<!-- ? -->
-		<section class="uk-section-muted">
+		<section class="uk-section-muted" role="region">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-background-default uk-visible@l"></div>
 				<div class="uk-width-2-3@xl uk-width-5-6@l">
@@ -208,7 +210,7 @@
 		</section>
 
 		<!-- Чем хороши наши окна -->
-		<section class="uk-section-default">
+		<section class="uk-section-default" role="region">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-background-muted uk-visible@l"></div>
 				<div class="uk-width-2-3@xl uk-width-5-6@l">
@@ -295,7 +297,7 @@
 		</section>
 
 		<!-- Пластиковые окна со скидкой 40% -->
-		<section class="uk-section-muted">
+		<section class="uk-section-muted" role="region">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-background-default uk-visible@l"></div>
 				<div class="uk-width-2-3@xl uk-width-5-6@l">
@@ -409,7 +411,7 @@
 		</section>
 
 		<!-- Калькулятор -->
-		<section id="calc-cost-price" class="uk-section-default">
+		<section id="calc-cost-price" class="uk-section-default" role="region">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-background-muted uk-visible@l"></div>
 				<div class="uk-width-2-3@xl uk-width-5-6@l">
@@ -560,7 +562,7 @@
 		</section>
 
 		<!-- Получите скидку 40% на окна ПВХ -->
-		<section class="uk-section-secondary">
+		<section class="uk-section-secondary" role="region">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-visible@l"></div>
 				<div class="uk-width-2-3@xl uk-width-5-6@l">
@@ -593,7 +595,7 @@
 		</section>
 
 		<!-- Выберите аксессуары -->
-		<section class="uk-section-muted">
+		<section class="uk-section-muted" role="region">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-background-default uk-visible@l"></div>
 				<div class="uk-width-2-3@xl uk-width-5-6@l">
@@ -1111,7 +1113,7 @@
 		</section>
 
 		<!-- Хотите узнать стоимость? -->
-		<section class="uk-section-primary">
+		<section class="uk-section-primary" role="region">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-background-muted uk-visible@l"></div>
 				<div class="uk-width-2-3@xl uk-width-5-6@l">
@@ -1125,7 +1127,7 @@
 		</section>
 
 		<!-- Декор / Форма -->
-		<section class="uk-section-default">
+		<section class="uk-section-default" role="region">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-background-primary uk-cover-container uk-visible@l">
 					<img class="uk-blend-multiply uk-cover" data-src="images/decor.jpg" alt="Декор" uk-cover uk-img>
@@ -1184,7 +1186,7 @@
 		</section>
 
 		<!-- Наши работы -->
-		<section class="uk-section-default">
+		<section class="uk-section-default" role="region">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-background-muted uk-cover-container uk-visible@l"></div>
 				<div class="uk-width-expand uk-background-cover">
@@ -1200,7 +1202,7 @@
 		</section>
 
 		<!-- Награды / Отзывы -->
-		<section class="uk-section-muted">
+		<section class="uk-section-muted" role="region">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-background-default uk-visible@l"></div>
 				<div class="uk-width-2-3@xl uk-width-5-6@l">
@@ -1259,7 +1261,7 @@
 		</section>
 
 		<!-- Получите скидку 40% на окна ПВХ -->
-		<section class="uk-section-secondary">
+		<section class="uk-section-secondary" role="region">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-visible@l"></div>
 				<div class="uk-width-2-3@xl uk-width-5-6@l">
@@ -1292,7 +1294,7 @@
 		</section>
 
 		<!-- Мобильный офис -->
-		<section class="uk-section-default">
+		<section class="uk-section-default" role="region">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-background-muted uk-visible@l"></div>
 				<div class="uk-width-2-3@xl uk-width-5-6@l">
@@ -1337,7 +1339,7 @@
 		</section>
 
 		<!-- ? -->
-		<section class="uk-section-muted">
+		<section class="uk-section-muted" role="region">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-background-primary uk-visible@l"></div>
 				<div class="uk-width-2-3@xl uk-width-5-6@l">
@@ -1373,7 +1375,7 @@
 		</section>
 
 		<!-- Footer -->
-		<footer class="uk-section-default">
+		<footer class="uk-section-default" role="contentinfo">
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-background-primary uk-visible@l"></div>
 				<div class="uk-width-2-3@xl uk-width-5-6@l">
@@ -1392,7 +1394,7 @@
 		</footer>
 
 		<!-- Modal: Заказать обратный звонок -->
-		<div id="modal-callback" uk-modal>
+		<div id="modal-callback" uk-modal role="dialog">
 			<div class="uk-modal-dialog uk-modal-body uk-width-large">
 				<button class="uk-modal-close-default" type="button" uk-close></button>
 				<h3 class="uk-text-large uk-text-center">Запись на бесплатный замер</h3>
@@ -1414,7 +1416,7 @@
 		</div>
 
 		<!-- Modal: Получить консультацию -->
-		<div id="modal-consultation" uk-modal>
+		<div id="modal-consultation" uk-modal role="dialog">
 			<div class="uk-modal-dialog uk-modal-body uk-width-large">
 				<button class="uk-modal-close-default" type="button" uk-close></button>
 				<h3 class="uk-text-large uk-text-center">Получить консультацию</h3>

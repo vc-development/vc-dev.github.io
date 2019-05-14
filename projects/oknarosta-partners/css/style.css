@@ -1,5 +1,5 @@
 /* Fonts */
-@font-face {
+/* @font-face {
 	font-family: 'Roboto';
 	font-display: swap;
 	font-style: normal;
@@ -21,7 +21,7 @@
 	font-style: normal;
 	font-weight: 800;
 	src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'), url('../fonts/montserrat-800.woff2') format('woff2'), url('../fonts/montserrat-800.woff') format('woff');
-}
+} */
 
 /* Scrollbar */
 ::-webkit-scrollbar {
