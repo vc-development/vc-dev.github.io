@@ -24,7 +24,7 @@
 } */
 
 /* Scrollbar */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	width: 8px;
 }
 
@@ -55,7 +55,7 @@
 
 ::-webkit-scrollbar-corner {
 	display: none;
-}
+} */
 
 /* Noise overlay for video */
 .noise-overlay {
