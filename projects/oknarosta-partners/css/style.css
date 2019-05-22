@@ -32,12 +32,6 @@
 	display: none;
 }
 
-/* Noise overlay for video */
-/* .noise-overlay {
-	background-image: url('../images/noise.gif');
-	opacity: 0.1;
-} */
-
 /* Calculator */
 #calc-plastic-style>.uk-active {
 	background-color: #e70e07;
@@ -55,19 +49,6 @@
 .calc-active-icons a {
 	color: #505b67;
 }
-
-/* .calc-style-tariff > .uk-active > .uk-card {
-	background-color: #e70e07;
-	color: #fff;
-}
-
-.calc-style-tariff > .uk-active .uk-h3 {
-	color: #fff !important;
-}
-
-.calc-style-tariff > .uk-active a:hover {
-	color: #505b67 !important;
-} */
 
 #calc-wood-style>.uk-active {
 	background-color: #e70e07;
@@ -107,25 +88,3 @@
 .grecaptcha-badge {
 	display: none;
 }
-
-/* TODO: Remove */
-/* .or-btn {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: 0;
-	font-size: 0;
-	line-height: 0;
-	background-color: transparent;
-} */
-
-/* Vue-testing */
-/* .button-success {
-	background: #28a745;
-	color: #fff;
-}
-
-.testing-response a {
-	text-decoration: underline;
-} */
