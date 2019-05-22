@@ -24,7 +24,7 @@
 } */
 
 /* Scrollbar */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
 	width: 8px;
 }
 
@@ -55,13 +55,13 @@
 
 ::-webkit-scrollbar-corner {
 	display: none;
-} */
+}
 
 /* Noise overlay for video */
-.noise-overlay {
+/* .noise-overlay {
 	background-image: url('../images/noise.gif');
 	opacity: 0.1;
-}
+} */
 
 /* Calculator */
 #calc-plastic-style>.uk-active {
@@ -134,7 +134,7 @@
 }
 
 /* TODO: Remove */
-.or-btn {
+/* .or-btn {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -143,14 +143,14 @@
 	font-size: 0;
 	line-height: 0;
 	background-color: transparent;
-}
+} */
 
 /* Vue-testing */
-.button-success {
+/* .button-success {
 	background: #28a745;
 	color: #fff;
 }
 
 .testing-response a {
 	text-decoration: underline;
-}
+} */
