@@ -585,11 +585,177 @@
 			<div class="uk-grid-collapse uk-grid">
 				<div class="uk-width-1-6 uk-background-muted uk-cover-container uk-visible@l"></div>
 				<div class="uk-width-expand uk-background-cover">
-					<div class="uk-tile uk-container uk-container-expand uk-background-cover uk-background-image@s" data-src="images/products/cottage/cottage-our-works.jpg" uk-img>
+					<div class="uk-tile uk-tile-large uk-container uk-container-expand uk-background-cover" data-src="images/products/cottage/cottage-our-works.jpg" uk-img>
 						<div class="uk-card uk-card-body uk-overlay-default uk-width-xlarge uk-box-shadow-small">
 							<h3 class="uk-h1">Наши работы</h3>
 							<p class="uk-text-large">Наши оконные конструкции украшают и сохраняют тепло в десятках тысяч квартир, домов и офисных помещений.</p>
-							<p><a class="uk-button uk-button-primary" href="/o-kompanii/gallery/">Посмотреть все</a></p>
+							<button class="uk-button uk-button-primary" type="button" uk-toggle="target: #modal-gallery">Посмотреть все</button>
+							<div id="modal-gallery" class="uk-modal-container" uk-modal>
+								<div class="uk-modal-dialog">
+									<button class="uk-modal-close-default" type="button" uk-close></button>
+									<div class="uk-modal-header">
+										<h3 class="uk-modal-title">Окна в дом</h3>
+									</div>
+									<div class="uk-modal-body" uk-overflow-auto>
+										<p>Коттедж — широкое поле для воплощения грандиозных идей и простор для реализации нашего профессионального опыта. Ниже представлены как типовые конструкции, так и сложные решения остекления по дизайнерским проектам.</p>
+										<div class="uk-child-width-1-4@l uk-child-width-1-3@s uk-child-width-1-2 uk-grid" uk-grid uk-lightbox="animation: slide">
+											<div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-1.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-1.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div>
+											<div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-2.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-2.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div>
+											<div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-3.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-3.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div>
+											<div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-4.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-4.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div>
+											<div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-5.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-5.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div>
+											<!-- <div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-6.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-6.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div> -->
+											<div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-7.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-7.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div>
+											<div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-8.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-8.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div>
+											<div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-9.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-9.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div>
+											<div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-10.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-10.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div>
+											<div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-11.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-11.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div>
+											<div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-12.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-12.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div>
+											<div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-13.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-13.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div>
+											<div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-14.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-14.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div>
+											<div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-15.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-15.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div>
+											<div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-16.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-16.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div>
+											<div>
+												<div class="uk-transition-toggle uk-box-shadow-small uk-box-shadow-hover-xlarge uk-height-small uk-cover-container" tabindex="0">
+													<img uk-cover data-src="images/company/gallery/cottage/cottage-17.jpeg" alt="Окна в дом" uk-img>
+													<div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+														<span class="uk-transition-fade" uk-icon="icon: search; ratio: 2"></span>
+													</div>
+													<a class="uk-position-cover" href="images/company/gallery/cottage/cottage-17.jpeg" data-caption="Окна в дом"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -642,7 +808,7 @@
 				</div>
 			</div>
 		</section>
-	
+
 		<!-- Получите скидку 40% на окна ПВХ -->
 		<section class="uk-section-secondary" role="region">
 			<div class="uk-grid-collapse uk-grid">
