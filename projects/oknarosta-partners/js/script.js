@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
 
 	// Inputmask
 	new Inputmask('+7 (999) 999-99-99').mask(document.querySelectorAll('input[type="tel"]'));
@@ -27,4 +27,5 @@ document.addEventListener('DOMContentLoaded', () => {
 		)
 		myMap.geoObjects.add(myPlacemark);
 	}
+
 });
