@@ -14,7 +14,7 @@
         }
     ],
     "theme_color": "#e70e07",
-    "background_color": "#e70e07",
+    "background_color": "#ffffff",
     "start_url": "https://vc-development.github.io/projects/oknarosta-partners",
     "display": "standalone"
 }
