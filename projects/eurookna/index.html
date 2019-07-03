@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru-ru" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ЕвроОкна</title>
+	<meta name="description" content="...">
+	<meta name="keywords" content="...">
+	<meta name="rights" content="ЕвроОкна">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<link rel="canonical" href="">
+	<link rel="dns-prefetch preconnect" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch preconnect" href="//fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/uikit.eurookna.min.css">
+	<script src="js/uikit.min.js"></script>
+	<script src="js/uikit-icons-eurookna.min.js"></script>
+	<script src="js/inputmask.min.js"></script>
+</head>
+
+<body>
+	<nav class="uk-hidden@m uk-background-default uk-box-shadow-small uk-navbar" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+		<div class="uk-navbar-left">
+			<a class="uk-navbar-toggle" href="#offcanvas" uk-toggle uk-navbar-toggle-icon></a>
+		</div>
+		<div class="uk-navbar-center">
+			<a class="uk-navbar-item uk-logo uk-padding-small" href="#">
+				<img src="images/logo.svg" width="123" height="30" alt="ЕвроОкна">
+			</a>
+		</div>
+		<div class="uk-navbar-right">
+			<a class="uk-navbar-toggle" href="#modal-4" uk-toggle>
+				<span uk-icon="icon: eo-phone-3; ratio: .9"></span>
+			</a>
+		</div>
+	</nav>
+
+	<div class="uk-visible@m uk-background-center-center uk-text-center" data-src="images/bg-discount.png" style="padding:8px 0;color:#fff;background-color:#f42424;" uk-img>
+		<p class="uk-text-center uk-text-small uk-text-uppercase uk-margin-remove">
+			<a class="uk-link-reset" href="#discount" uk-scroll>Скидка <span class="uk-text-large uk-text-bold">50%</span> до 5 июля!</a>
+		</p>
+	</div>
+
+	<div class="uk-hidden@m uk-padding-small uk-background-muted uk-text-center">
+		<p class="uk-margin-remove uk-text-truncate" uk-scrollspy="cls: uk-animation-fade"><a class="phone-call uk-link-reset" href="tel:+74957256065"><span class="uk-text-primary uk-margin-small-right" uk-icon="icon: eo-delivery-9; ratio: .7"></span>+7 495 <span class="uk-text-primary">725-60-65</span></a></p>
+	</div>
+
+	<header class="uk-visible@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top" role="banner">
+		<!-- Headerbar -->
+		<div class="uk-section uk-section-default uk-section-xsmall">
+			<div class="uk-container">
+				<div class="uk-flex-middle uk-grid-large uk-grid">
+					<div class="uk-width-1-5">
+						<a class="uk-logo" href="#">
+							<img src="images/logo.svg" width="184" height="45" alt="Евроокна">
+						</a>
+					</div>
+					<div class="uk-width-expand">
+						<div class="uk-child-width-1-2 uk-grid-small uk-grid">
+							<div>
+								<a class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical uk-width-1-1 uk-text-truncate call-special" href="#" uk-toggle="target: #modal-1"><span class="uk-margin-small-right" uk-icon="icon: eo-phone-3; ratio: .7"></span>Калькулятор окон</a>
+							</div>
+							<div>
+								<a class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical uk-width-1-1 uk-text-truncate call-special" href="#" uk-toggle="target: #modal-2"><span class="uk-margin-small-right" uk-icon="icon: eo-user-1; ratio: .7"></span>Вызвать замерщика</a>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-auto uk-flex uk-flex-middle uk-flex-right">
+						<span class="uk-text-primary uk-margin-small-right" uk-icon="icon: eo-delivery-9; ratio: 1.5"></span>
+						<div>
+							<div class="uk-margin-remove uk-text-truncate uk-text-bold"><a class="phone-call uk-link-reset" href="tel:+74957256065">+7 495 <span class="uk-text-primary">725-60-65</span></a></div>
+							<div class="uk-margin-remove"><a class="uk-link" href="#">Заказать звонок</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Navbar -->
+		<div class="uk-navbar-container uk-navbar-transparent uk-background-secondary">
+			<div class="uk-container">
+				<nav uk-navbar role="navigation">
+					<ul class="uk-navbar-nav uk-text-bold uk-width-1-1" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+						<li class="uk-flex-auto uk-active" itemprop="name">
+							<a href="#" title="Пластиковые окна" itemprop="url">Пластиковые окна</a>
+						</li>
+						<li class="uk-flex-auto" itemprop="name">
+							<a href="#" title="Балконы и лоджии" itemprop="url">Балконы и лоджии</a>
+						</li>
+						<li class="uk-flex-auto" itemprop="name">
+							<a href="#" title="Деревянные окна" itemprop="url">Деревянные окна</a>
+						</li>
+						<li class="uk-flex-auto" itemprop="name">
+							<a href="#" title="Теплый алюминий" itemprop="url">Теплый алюминий</a>
+						</li>
+						<li class="uk-flex-auto" itemprop="name">
+							<a href="#" title="Рассчитать стоимость" itemprop="url">Рассчитать стоимость</a>
+						</li>
+						<li class="uk-flex-auto">
+							<a href="#contact" title="Контакты" uk-scroll>Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+
+	<!-- Блок с галереей работ  -->
+	<section class="uk-section uk-section-defult">
+		<div class="uk-container">
+			<div class="uk-margin-medium uk-margin-auto uk-width-xxlarge uk-text-center">
+				<h2 class="uk-text-uppercase">Наши работы</h2>
+				<p>Утепление ПВХ-подоконников всегда начинается с их демонтажа. Для этого принято использовать два основных способа. Большинство россиян считает, что вопрос с утеплением помещения можно решить посредством установки ПВХ-окон.</p>
+			</div>
+			<div>
+				<div uk-slider>
+					<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+						<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-match uk-grid" uk-lightbox="animation: fade" uk-height-viewport="offset-bottom: 60">
+							<li>
+								<div class="uk-cover-container">
+									<a class="uk-position-cover" href="images/b1.jpeg" data-caption="Caption 1">
+										<img src="images/b1.jpeg" alt="" uk-cover>
+										<div class="uk-position-center uk-panel"><h1>1</h1></div>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="uk-cover-container">
+									<a class="uk-position-cover" href="images/b2.jpeg" data-caption="Caption 2">
+										<img src="images/b2.jpeg" alt="" uk-cover>
+										<div class="uk-position-center uk-panel"><h1>2</h1></div>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="uk-cover-container">
+									<a class="uk-position-cover" href="images/b1.jpeg" data-caption="Caption 3">
+										<img src="images/b1.jpeg" alt="" uk-cover>
+										<div class="uk-position-center uk-panel"><h1>3</h1></div>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="uk-cover-container">
+									<a class="uk-position-cover" href="images/b2.jpeg" data-caption="Caption 4">
+										<img src="images/b2.jpeg" alt="" uk-cover>
+										<div class="uk-position-center uk-panel"><h1>4</h1></div>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="uk-cover-container">
+									<a class="uk-position-cover" href="images/b1.jpeg" data-caption="Caption 5">
+										<img src="images/b1.jpeg" alt="" uk-cover>
+										<div class="uk-position-center uk-panel"><h1>5</h1></div>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="uk-cover-container">
+									<a class="uk-position-cover" href="images/b2.jpeg" data-caption="Caption 6">
+										<img src="images/b2.jpeg" alt="" uk-cover>
+										<div class="uk-position-center uk-panel"><h1>6</h1></div>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="uk-cover-container">
+									<a class="uk-position-cover" href="images/b1.jpeg" data-caption="Caption 7">
+										<img src="images/b1.jpeg" alt="" uk-cover>
+										<div class="uk-position-center uk-panel"><h1>7</h1></div>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="uk-cover-container">
+									<a class="uk-position-cover" href="images/b2.jpeg" data-caption="Caption 8">
+										<img src="images/b2.jpeg" alt="" uk-cover>
+										<div class="uk-position-center uk-panel"><h1>8</h1></div>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="uk-cover-container">
+									<a class="uk-position-cover" href="images/b1.jpeg" data-caption="Caption 9">
+										<img src="images/b1.jpeg" alt="" uk-cover>
+										<div class="uk-position-center uk-panel"><h1>9</h1></div>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="uk-cover-container">
+									<a class="uk-position-cover" href="images/b2.jpeg" data-caption="Caption 10">
+										<img src="images/b2.jpeg" alt="" uk-cover>
+										<div class="uk-position-center uk-panel"><h1>10</h1></div>
+									</a>
+								</div>
+							</li>
+						</ul>
+						<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+						<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+					</div>
+					<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Блок с фоновой картинкой для SEO-текста  -->
+	<section class="uk-section uk-section-default uk-light uk-background-cover" data-src="images/b1.jpeg" uk-img>
+		<div class="uk-container">
+			<div class="uk-width-large uk-panel">
+				<h2 class="uk-text-uppercase">Демонтаж пластикового подоконника</h2>
+				<p>Утепление ПВХ-подоконников всегда начинается с их демонтажа. Для этого принято использовать два основных способа. Большинство россиян считает, что вопрос с утеплением помещения можно решить посредством установки ПВХ-окон. Однако для эффективного сохранения тепла в жилом или офисном помещении должны быть задействованы абсолютно все элементы оконного проема.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Текстовый блок для SEO-текста -->
+	<section class="uk-section uk-section-default">
+		<div class="uk-container">
+			<div>
+				<p>Для того чтобы решить проблему сквозняков в помещении и снизить расходы на отопление, сегодня принято осуществлять утепление подоконника. Однако прежде чем приступить к данному мероприятию, стоит разобраться с тем, как устанавливается теплоизоляционный материал и что для этого необходимо сделать. Как правило, утепление пластикового подоконника предусматривает его предварительный демонтаж.</p>
+				<p>Проведение демонтажных работ позволит заделать все трещины и сколы на поверхности откоса. За счет этого действия будут исключены сквозняки. Для заделки трещин чаще всего используются акриловые герметики или монтажная пена. Далее осуществляется обратный монтаж подоконной плиты и обработка стыков.</p>
+				<h3>Необходимые инструменты</h3>
+				<p>Большинство россиян считает, что вопрос с утеплением помещения можно решить посредством установки ПВХ-окон. Однако для эффективного сохранения тепла в жилом или офисном помещении должны быть задействованы абсолютно все элементы оконного проема. Особенно это касается подоконника. Именно этот элемент оконной конструкции считается наиболее уязвимым. Поэтому в случае снижения температуры в помещении, в первую очередь, следует проверить область примыкания оконной рамы к подоконной плите. Если оттуда поступает холодный воздух, провоцирующий сквозняки, то жильцам необходимо срочно заняться вопросом утепления именно этой оконной конструкции.</p>
+				<p>Для утепления пластиковых подоконников могут понадобиться следующие инструменты:</p>
+				<ul>
+					<li>молоток;</li>
+					<li>перфоратор;</li>
+					<li>зубило;</li>
+					<li>шпатель;</li>
+					<li>строительный уровень;</li>
+					<li>мелкозубчатая ножовка с жестким и длинным лезвием;</li>
+					<li>нож.</li>						
+				</ul>
+				<p>В процессе проведения монтажных и демонтажных работ может понадобиться веник или щетка с жесткой щетиной, а также пылесос для уборки помещения.</p>
+				<h2>Демонтаж пластикового подоконника</h2>
+				<p>Утепление ПВХ-подоконников всегда начинается с их демонтажа. Для этого принято использовать два основных способа.</p>
+				<p>У сеток бывают разные параметры:</p>
+				<ol>
+					<li>По способу крепежа: на кронштейнах, липучках, крючках;</li>
+					<li>По типу раскрывания окна: съем, сдвиг, стационарная установка или путем скручивания (рулонный метод);</li>
+					<li>По виду самой сетки: рамочные или бескаркасные;</li>
+					<li>По расположению: снаружи или внутри помещения установлена сетка.</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+
+	<div class="uk-section uk-section-muted uk-background-cover uk-background-image@m" data-src="images/bg5.jpg" uk-img>
+		<div class="uk-container">
+			<div class="uk-panel uk-width-auto uk-margin-medium uk-margin-medium-top uk-flex uk-flex-middle uk-float-right uk-text-left@m uk-text-center uk-visible@m" uk-scrollspy="cls: uk-animation-slide-bottom-small">
+				<div>
+					<p class="uk-h1 uk-text-uppercase">Звоните нам, <br>мы работаем <br>круглосуточно</p>
+					<p class="uk-h1 uk-margin-medium" style="font-weight: normal;"><a class="uk-link-reset phone-call" href="tel:+74957256065"><span class="uk-margin-small-right uk-text-primary" uk-icon="icon: eo-delivery-9; ratio: 1.5"></span>+7 (495) 725-60-65</a></p>
+					<a class="uk-button uk-button-danger" href="#" uk-toggle="target: #modal-1"><span class="uk-margin-small-right" uk-icon="eo-phone-3"></span>Заказать звонок</a>
+				</div>
+			</div>
+			<div class="uk-panel uk-background-default uk-box-shadow-small uk-text-left@m uk-text-center uk-hidden@m" uk-scrollspy="cls: uk-animation-slide-bottom-small">
+				<div class="uk-height-medium uk-cover-container">
+					<img class="uk-cover" data-src="images/bg5-small.jpg" width="960" height="300" alt="" uk-img uk-cover>
+				</div>
+				<div class="uk-padding">
+					<h2 class="uk-h2 uk-text-uppercase">Звоните нам, <br>мы работаем <br>круглосуточно</h2>
+					<p class="uk-h2 uk-margin-medium uk-text-primary" style="font-weight: normal;"><a class="phone-call uk-link-reset" href="tel:+74957256065"><span class="uk-text-primary uk-margin-small-right" uk-icon="eo-delivery-9"></span>+7 (495) 725-60-65</a></p>
+					<a class="uk-button uk-button-danger uk-width-auto@s uk-padding-small uk-padding-remove-vertical" href="#" uk-toggle="target: #modal-1"><span class="uk-margin-small-right" uk-icon="eo-phone-3"></span>Заказать звонок</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="contact" class="uk-section uk-section-secondary uk-padding-remove uk-preserve-color">
+		<div id="ymap" class="uk-width-1-1 uk-height-large" uk-toggle="cls: uk-height-large uk-height-medium; mode: media; media: (min-width: 640px)"></div>
+		<div class="uk-container uk-padding">
+			<div class="uk-grid uk-grid-large uk-child-width-1-2@m uk-flex-middle" uk-grid>
+				<div>
+					<h3 class="uk-text-uppercase uk-margin-remove">Адрес центрального офиса продаж:</h3>
+					<p class="uk-margin-remove">127006, г.&nbsp;Москва, м.&nbsp;Новослободская, ул.&nbsp;Долгоруковская, д.&nbsp;21, стр.&nbsp;1, этаж&nbsp;3, офис&nbsp;303, <span class="uk-text-nowrap phone-call">тел.: +7 495 725-60-65</span> (круглосуточно).</p>
+				</div>
+				<div>
+					<div class="uk-grid uk-child-width-1-2@s uk-flex-middle" uk-grid>
+						<div>
+							<p class="uk-text-uppercase">Напишите Ваш вопрос, и мы ответим в ближайшее время.</p>
+						</div>
+						<div>
+							<a class="uk-button uk-button-danger uk-width-1-1" href="#modal-3" uk-toggle>Задать вопрос</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="payment" class="uk-section uk-section-muted">
+		<div class="uk-container">
+			<h2 class="uk-h1 uk-text-center  uk-text-uppercase">Способы оплаты</h2>
+			<p class="uk-text-center uk-text-large">У нас ваши новые окна можно оплатить любым удобным для вас способом.</p>
+			<div class="uk-text-center uk-grid uk-grid-large uk-child-width-1-3@m uk-margin-medium" uk-grid>
+				<div>
+					<span class="uk-text-primary" uk-icon="icon: eo-wallet; ratio: 3"></span>
+					<div class="uk-h2 uk-margin">Наличные</div>
+					<p>Не хотите никуда выходить? Наш менеджер сделает замер, оформит договор и примет оплату. Хотите перед покупкой убедиться в качестве? Приходите в офис продаж — шоу-рум, смотрите, пробуйте и оплачивайте договор там.</p>
+				</div>
+				<div>
+					<span class="uk-text-primary" uk-icon="icon: eo-credit-card-6; ratio: 3"></span>
+					<div class="uk-h2 uk-margin">Банковская карта</div>
+					<p>Оплата пластиковой картой — идеальный вариант для тех, кто ценит свое время и любит комфорт. Вы можете оплатить свой договор в офисе, дома через терминал или на сайте. Быстро, надежно и удобно!</p>
+				</div>
+				<div>
+					<span class="uk-text-primary" uk-icon="icon: eo-percent; ratio: 3"></span>
+					<div class="uk-h2 uk-margin">Рассрочка</div>
+					<p>Вы хотите новые теплые и красивые окна, но не желаете тратить всю сумму сразу? Мы предлагаем удобный вариант рассрочки без процентов и дополнительных комиссий — просто сообщите об этом менеджеру.</p>
+				</div>
+			</div>
+			<div class="uk-margin-medium uk-text-center">
+				<a class="uk-button uk-button-danger uk-width-medium" href="#">Оплатить заказ</a>
+			</div>
+
+			<hr class="uk-margin-medium">
+
+			<div class="uk-child-width-1-4@m uk-child-width-1-3@s" uk-grid>
+				<div>
+					<h3>Продукция</h3>
+					<ul class="uk-nav uk-nav-default">
+						<li><a href="#">Пластиковые окна</a></li>
+						<li><a href="#">Балконы и лоджии</a></li>
+						<li><a href="#">Деревянные окна</a></li>
+						<li><a href="#">Теплый алюминий</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3>Услуги и сервис</h3>
+					<ul class="uk-nav uk-nav-default">
+						<li><a href="#">Остекление балконов</a></li>
+						<li><a href="#">Отделка балконов</a></li>
+						<li><a href="#">Остекление квартир</a></li>
+						<li><a href="#">Замер</a></li>
+						<li><a href="#">Установка</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Ремонт окон</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3>О компании</h3>
+					<ul class="uk-nav uk-nav-default">
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Производство</a></li>
+						<li><a href="#">Наши гарантии</a></li>
+						<li><a href="#">Галерея работ</a></li>
+						<li><a href="#">Отзывы клиентов</a></li>
+						<li><a href="#">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3>Принимаем к оплате</h3>
+					<div class="uk-grid uk-grid-small uk-child-width-expand uk-flex-center uk-flex-middle" uk-grid>
+						<div><img data-src="images/mastercard.svg" width="36" height="" alt="MasterCard" uk-tooltip="MasterCard" uk-img></div>
+						<div><img data-src="images/visacard.svg" width="36" height="" alt="VISA" uk-tooltip="VISA" uk-img></div>
+						<div><img data-src="images/jcbcard.svg" width="36" height="" alt="JCB" uk-tooltip="JCB" uk-img></div>
+						<div><img data-src="images/mircard.svg" width="36" height="" alt="МИР" uk-tooltip="МИР" uk-img></div>
+						<div><a href="https://halvacard.ru/shops/stroitelnye-materialy/EvroOkna" target="_blank" rel="nofollow noopener noreferrer"><img data-src="images/halvacard.svg" width="100" height="35" alt="Халва" uk-tooltip="Халва" uk-img></a></div>
+					</div>
+					<h3>Социальные сети</h3>
+					<div>
+						<a class="uk-margin-small-right" uk-icon="icon: eo-facebook-2; ratio: 1.5" uk-tooltip="Facebook" href="https://www.facebook.com/EuroOknaMoscow" target="_blank" rel="nofollow noopener noreferrer" style="color: #4267b2;"></a>
+						<a class="uk-margin-small-right" uk-icon="icon: eo-vk-2; ratio: 1.5" uk-tooltip="ВКонтакте" href="https://vk.com/eurooknaru" target="_blank" rel="nofollow noopener noreferrer" style="color: #5181b8;"></a>
+						<a uk-icon="icon: eo-youtube-2; ratio: 1.5" uk-tooltip="YouTube" href="https://www.youtube.com/user/EuroOkna" target="_blank" rel="nofollow noopener noreferrer" style="color: #FF0000;"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="uk-section uk-section-xsmall uk-text-muted">
+		<div class="uk-container">
+			<p>© 1995 — 2019 ООО «ЕвроОкна». <br>ВНИМАНИЕ! Наш интернет-ресурс, носит исключительно информационный характер и не является публичной офертой, определяемой положениями Статьи 437(2) ГК РФ.</p>
+			<a class="uk-margin" href="#" uk-totop uk-scroll></a>
+		</div>
+	</footer>
+
+	<div id="modal-1" uk-modal="center: true">
+		<div class="uk-modal-dialog uk-modal-body">
+			<a class="uk-modal-close-default" href="#" uk-close></a>
+			<p class="uk-h3 uk-text-center">Закажите обратный звонок менеджера</p>
+			<p class="uk-text-center">Укажите контактный номер телефона.</p>
+			<!-- <?php $APPLICATION->IncludeComponent('bitrix:form.result.new', 'landing_call_popup', array('WEB_FORM_ID' => '7', 'IGNORE_CUSTOM_TEMPLATE' => 'Y', 'USE_EXTENDED_ERRORS' => 'Y', 'SEF_MODE' => 'N', 'CACHE_TYPE' => 'A', 'CACHE_TIME' => '12600', 'LIST_URL' => 'result_list.php', 'EDIT_URL' => 'result_edit.php', 'SUCCESS_URL' => '', 'CHAIN_ITEM_TEXT' => '', 'CHAIN_ITEM_LINK' => '', 'VARIABLE_ALIASES' => array('WEB_FORM_ID' => 'WEB_FORM_ID', 'RESULT_ID' => 'RESULT_ID'))); ?> -->
+		</div>
+	</div>
+
+	<div id="modal-2" uk-modal="center: true">
+		<div class="uk-modal-dialog uk-modal-body">
+			<a class="uk-modal-close-default" href="#" uk-close></a>
+			<p class="uk-h3 uk-text-center">Запишитесь на бесплатный замер</p>
+			<p class="uk-text-center">Укажите контактный номер телефона.</p>
+			<!-- <?php $APPLICATION->IncludeComponent('bitrix:form.result.new', 'landing_call_popup', array("WEB_FORM_ID" => "7", "IGNORE_CUSTOM_TEMPLATE" => "Y", "USE_EXTENDED_ERRORS" => "Y", "SEF_MODE" => "N", "CACHE_TYPE" => "A", "CACHE_TIME" => "12600", "LIST_URL" => "result_list.php", "EDIT_URL" => "result_edit.php", "SUCCESS_URL" => "", "CHAIN_ITEM_TEXT" => "", "CHAIN_ITEM_LINK" => "", "VARIABLE_ALIASES" => array("WEB_FORM_ID" => "WEB_FORM_ID", "RESULT_ID" => "RESULT_ID"))); ?> -->
+		</div>
+	</div>
+
+	<div id="modal-3" uk-modal="center: true">
+		<div class="uk-modal-dialog uk-modal-body uk-box-shadow-medium">
+			<a class="uk-modal-close-default" href="#" uk-close></a>
+			<p class="uk-h3 uk-text-center">Напишите Ваш вопрос, и мы ответим в ближайшее время.</p>
+			<!-- <?php $APPLICATION->IncludeComponent('bitrix:form.result.new', 'landing_call_ask', array("WEB_FORM_ID" => "7", "IGNORE_CUSTOM_TEMPLATE" => "Y", "USE_EXTENDED_ERRORS" => "Y", "SEF_MODE" => "N", "CACHE_TYPE" => "A", "CACHE_TIME" => "12600", "LIST_URL" => "result_list.php", "EDIT_URL" => "result_edit.php", "SUCCESS_URL" => "", "CHAIN_ITEM_TEXT" => "", "CHAIN_ITEM_LINK" => "", "VARIABLE_ALIASES" => array("WEB_FORM_ID" => "WEB_FORM_ID", "RESULT_ID" => "RESULT_ID"))); ?> -->
+		</div>
+	</div>
+
+	<div id="modal-4" uk-modal="center: true">
+		<div class="uk-modal-dialog uk-modal-body uk-width-1-3@m">
+			<a class="uk-modal-close-default" href="#" uk-close></a>
+			<ul class="uk-flex uk-flex-center" uk-tab="animation: uk-animation-fade">
+				<li><a class="uk-text-uppercase" href="#">Заказать звонок</a></li>
+				<li><a class="uk-text-uppercase" href="#">Заказать замер</a></li>
+			</ul>
+			<ul class="uk-switcher uk-margin">
+				<li>
+					<p class="uk-h3 uk-text-center">Закажите обратный звонок менеджера</p>
+					<p class="uk-text-center">Укажите Ваш контактный номер телефона.</p>
+					<!-- <?php $APPLICATION->IncludeComponent('bitrix:form.result.new', 'landing_call_popup', array("WEB_FORM_ID" => "7", "IGNORE_CUSTOM_TEMPLATE" => "Y", "USE_EXTENDED_ERRORS" => "Y", "SEF_MODE" => "N", "CACHE_TYPE" => "A", "CACHE_TIME" => "12600", "LIST_URL" => "result_list.php", "EDIT_URL" => "result_edit.php", "SUCCESS_URL" => "", "CHAIN_ITEM_TEXT" => "", "CHAIN_ITEM_LINK" => "", "VARIABLE_ALIASES" => array("WEB_FORM_ID" => "WEB_FORM_ID", "RESULT_ID" => "RESULT_ID"))); ?> -->
+				</li>
+				<li>
+					<p class="uk-h3 uk-text-center">Запишитесь на бесплатный замер</p>
+					<p class="uk-text-center">Укажите Ваш контактный номер телефона.</p>
+					<!-- <?php $APPLICATION->IncludeComponent('bitrix:form.result.new', 'landing_call_popup', array("WEB_FORM_ID" => "7", "IGNORE_CUSTOM_TEMPLATE" => "Y", "USE_EXTENDED_ERRORS" => "Y", "SEF_MODE" => "N", "CACHE_TYPE" => "A", "CACHE_TIME" => "12600", "LIST_URL" => "result_list.php", "EDIT_URL" => "result_edit.php", "SUCCESS_URL" => "", "CHAIN_ITEM_TEXT" => "", "CHAIN_ITEM_LINK" => "", "VARIABLE_ALIASES" => array("WEB_FORM_ID" => "WEB_FORM_ID", "RESULT_ID" => "RESULT_ID"))); ?> -->
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="modal-dir" uk-modal="center: true">
+		<div class="uk-modal-dialog uk-modal-body uk-box-shadow-medium">
+			<a class="uk-modal-close-default" href="#" uk-close></a>
+			<p class="uk-h3 uk-text-center">Напишите Ваш вопрос, и мы обязательно Вам ответим.</p>
+			<!-- <?php $APPLICATION->IncludeComponent('bitrix:form.result.new', 'landing_call_dir', array("WEB_FORM_ID" => "1", "IGNORE_CUSTOM_TEMPLATE" => "Y", "USE_EXTENDED_ERRORS" => "Y", "SEF_MODE" => "N", "CACHE_TYPE" => "A", "CACHE_TIME" => "12600", "LIST_URL" => "result_list.php", "EDIT_URL" => "result_edit.php", "SUCCESS_URL" => "", "CHAIN_ITEM_TEXT" => "", "CHAIN_ITEM_LINK" => "", "VARIABLE_ALIASES" => array("WEB_FORM_ID" => "WEB_FORM_ID", "RESULT_ID" => "RESULT_ID"))); ?> -->
+		</div>
+	</div>
+
+	<aside id="offcanvas" uk-offcanvas>
+		<div class="uk-offcanvas-bar uk-box-shadow-medium" uk-margin="margin: uk-margin">
+			<div class="uk-text-center">
+				<a class="uk-logo" href="#">
+					<img class="uk-width-small" data-src="images/logo.svg" alt="Евроокна" uk-img>
+				</a>
+			</div>
+			<hr>
+			<div class="uk-text-center">
+				<p class="uk-text-center uk-margin-remove" style="font-size: 24px;"><a class="phone-call uk-link-reset" href="tel:+74957256065">+7 495 <span class="uk-text-primary">725-60-65</span></a></p>
+				<p class="uk-text-small uk-text-muted uk-margin-remove">прием заявок круглосуточно</p>
+			</div>
+			<hr>
+			<ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+				<li class="uk-active" itemprop="name">
+					<a href="#" itemprop="url">Пластиковые окна</a>
+				</li>
+				<li itemprop="name">
+					<a href="#" itemprop="url">Балконы и лоджии</a>
+				</li>
+				<li itemprop="name">
+					<a href="#" itemprop="url">Деревянные окна</a>
+				</li>
+				<li itemprop="name">
+					<a href="#" itemprop="url">Теплый алюминий</a>
+				</li>
+				<li itemprop="name">
+					<a href="#" itemprop="url">Рассчитать стоимость</a>
+				</li>
+				<li>
+					<a href="#contact" uk-scroll>Контакты</a>
+				</li>
+			</ul>
+			<hr>
+			<div uk-margin="margin: uk-margin">
+				<a class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical uk-width-1-1 uk-text-nowrap" href="#" uk-toggle="target: #modal-1"><span class="uk-margin-small-right" uk-icon="eo-phone-3"></span>Заказать звонок</a>
+				<a class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical uk-width-1-1 uk-text-nowrap" href="#" uk-toggle="target: #modal-2"><span class="uk-margin-small-right" uk-icon="eo-user-1"></span>Вызвать замерщика</a>
+			</div>
+		</div>
+	</aside>
+
+</body>
+
+</html>
