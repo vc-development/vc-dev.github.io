@@ -13,11 +13,16 @@
 	<link rel="canonical" href="">
 	<link rel="dns-prefetch preconnect" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch preconnect" href="//fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch preconnect" href="//api-maps.yandex.ru">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/uikit.eurookna.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" async></script>
+	<script src="js/jquery.min.js"></script>
 	<script src="js/uikit.min.js"></script>
 	<script src="js/uikit-icons-eurookna.min.js"></script>
 	<script src="js/inputmask.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 
 <body>
@@ -107,109 +112,1029 @@
 		</div>
 	</header>
 
+	<!-- Секция с главным баннером -->
+	<section id="discount" class="uk-section uk-section-xsmall uk-background-cover uk-background-image@m" data-src="images/bg1.jpg" uk-img>
+		<div class="uk-container">
+			<div class="uk-grid" uk-grid>
+				<div class="uk-width-expand uk-position-relative uk-visible@m">
+					<div class="uk-grid uk-grid-small uk-flex-right uk-text-right uk-child-width-1-1" uk-grid>
+						<div>
+							<img data-src="images/germany-quality.svg" alt="Немецкое качество" width="100" uk-img uk-scrollspy="cls: uk-animation-fade; delay: 200">
+						</div>
+						<div>
+							<img data-src="images/zolotoye-okno-2018.png" alt="Золотое Окно 2018" width="100" uk-img uk-scrollspy="cls: uk-animation-fade; delay: 200">
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-auto@m uk-width-1-3@l">
+					<div class="uk-panel uk-background-default uk-box-shadow-small" uk-scrollspy="cls: uk-animation-slide-bottom-small">
+						<div class="uk-height-medium uk-cover-container uk-hidden@m">
+							<img class="uk-cover" data-src="images/bg1-small.jpg" width="960" height="300" alt="Пластиковые окна" uk-img uk-cover>
+							<div class="uk-grid uk-grid-small uk-flex-right uk-padding-small uk-text-right uk-child-width-1-1" uk-grid>
+								<div>
+									<img data-src="images/germany-quality.svg" alt="Немецкое качество" width="80" uk-img uk-scrollspy="cls: uk-animation-fade; delay: 200">
+								</div>
+								<div>
+									<img data-src="images/zolotoye-okno-2018.png" alt="Золотое Окно 2018" width="80" uk-img uk-scrollspy="cls: uk-animation-fade; delay: 200">
+								</div>
+							</div>
+						</div>
+						<div class="uk-padding uk-text-left@m uk-text-center">
+							<div uk-scrollspy="cls: uk-animation-slide-bottom-small">
+								<div class="uk-h1 uk-text-uppercase">Пластиковые <br>окна <br><span class="uk-text-danger">скидка 50%</span></div>
+								<p><span class="uk-margin-right"><s class="uk-text-bold uk-text-muted">9 600</s> руб/м<sup>2</sup></span> от <span class="uk-h2 uk-text-bold">4 800</span> руб/м<sup>2</sup></p>
+							</div>
+							<hr uk-scrollspy="cls: uk-animation-scale-up">
+							<div class="uk-text-center uk-text-muted">
+								<div class="uk-countdown uk-child-width-expand uk-grid-collapse uk-grid-small uk-grid" uk-grid uk-countdown="date: 2019-07-07" uk-scrollspy="target: > div > div; cls: uk-animation-slide-bottom-small; delay: 200">
+									<div>
+										<div class="uk-h1 uk-countdown-days uk-text-muted uk-margin-remove"></div>
+										<div class="uk-countdown-label uk-margin-small uk-text-center uk-text-small">Дни</div>
+									</div>
+									<div class="uk-h2 uk-text-muted">:</div>
+									<div>
+										<div class="uk-h1 uk-countdown-hours uk-text-muted uk-margin-remove"></div>
+										<div class="uk-countdown-label uk-margin-small uk-text-center uk-text-small">Часы</div>
+									</div>
+									<div class="uk-h2 uk-text-muted">:</div>
+									<div>
+										<div class="uk-h1 uk-countdown-minutes uk-text-muted uk-margin-remove"></div>
+										<div class="uk-countdown-label uk-margin-small uk-text-center uk-text-small">Мин.</div>
+									</div>
+									<div class="uk-h2 uk-text-muted">:</div>
+									<div>
+										<div class="uk-h1 uk-countdown-seconds uk-text-muted uk-margin-remove"></div>
+										<div class="uk-countdown-label uk-margin-small uk-text-center uk-text-small">Сек.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="uk-panel uk-padding uk-padding-remove-vertical veka">
+							<img class="uk-width-1-1 uk-padding-small uk-padding-remove-horizontal" data-src="images/veka-partner-1.svg" width="300" height="75" alt="VEKA" uk-img>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	<!-- Блок с галереей работ  -->
+	<!-- Пластиковые окна от «ЕвроОкна» -->
+	<section class="uk-section uk-section-default uk-text-center">
+		<div class="uk-container">
+			<div class="uk-position-relative">
+				<div class="uk-width-xxlarge uk-margin-auto" uk-scrollspy="cls: uk-animation-slide-bottom-small">
+					<h1 class="uk-h1 uk-width-xlarge uk-margin-auto uk-text-center uk-text-uppercase">Пластиковые окна от «ЕвроОкна»</h1>
+					<h2 class="uk-h2 uk-width-xlarge uk-margin-auto uk-text-center uk-text-uppercase">Скидка <span class="uk-text-danger">50%</span> только до <span class="uk-text-danger">7 июня</span></h2>
+					<p class="uk-text-muted">Компания «ЕвроОкна» применяет честную политику ценообразования. Собственное производство и оптимизированная система расчета позволяет предлагать клиентам выгодные цены на пластиковые окна.</p>
+				</div>
+				<div class="uk-margin-large uk-child-width-1-3@m uk-grid" uk-grid uk-scrollspy="target: > div > div; cls:uk-animation-slide-bottom-small; delay: 200">
+					<div>
+						<div class="uk-position-relative">
+							<img data-src="images/window-1.png" width="277" height="327" alt="Двухстворчатое окно" uk-img>
+							<div class="uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-top-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+								<div>
+									<p class="uk-margin-remove"><s>25 340</s><br><span class="uk-h2 uk-text-danger">12 600</span><br>руб.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-position-relative">
+							<img data-src="images/window-2.png" width="367" height="327" alt="Трехстворчатое окно" uk-img>
+							<div class="uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-top-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+								<div>
+									<p class="uk-margin-remove"><s>35 180</s><br><span class="uk-h2 uk-text-danger">17 600</span><br>руб.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-position-relative">
+							<img data-src="images/window-3.png" width="302" height="487" alt="Балконный блок" uk-img>
+							<div class="uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-top-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+								<div>
+									<p class="uk-margin-remove"><s>33 010</s><br><span class="uk-h2 uk-text-danger">16 500</span><br>руб.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-hidden@m">
+					<div uk-scrollspy="cls: uk-animation-fade">
+						<a class="uk-button uk-button-danger uk-text-uppercase" href="#" uk-toggle="target: #modal-1">Рассчитать сейчас</a>
+					</div>
+				</div>
+				<div class="uk-visible@m uk-position-bottom-center">
+					<div uk-scrollspy="cls: uk-animation-fade">
+						<a class="uk-button uk-button-danger uk-text-uppercase" href="#" uk-toggle="target: #modal-1">Рассчитать сейчас</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Евро 60 / Евро 70 / Евро 82 -->
+	<section class="uk-section uk-section-muted">
+		<div class="uk-container">
+			<div class="uk-flex uk-flex-center">
+				<div uk-switcher="connect: #slide-product; active: 1; animation: uk-animation-fade; toggle: > *" uk-scrollspy="cls: uk-animation-fade">
+					<a class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical" href="#">Евро 60</a>
+					<a class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical" href="#">Евро 70</a>
+					<a class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical" href="#">Евро 82</a>
+				</div>
+			</div>
+			<ul id="slide-product" class="uk-margin-large uk-switcher" uk-scrollspy="cls: uk-animation-slide-bottom-small">
+				<li>
+					<div class="uk-child-width-1-2@m uk-grid" uk-grid>
+						<div>
+							<div class="uk-child-width-1-2@s uk-grid" uk-grid>
+								<div class="uk-position-relative uk-text-center uk-text-left@s uk-flex-last@s">
+									<img class="uk-position-top-right" data-src="images/veka-logo.png" alt="VEKA" width="100" height="100" uk-img uk-scrollspy="cls:uk-animation-fade; delay: 200">
+									<img class="uk-visible@s" data-src="images/Euro-60.png" alt="VEKA Евро 60" width="244" height="375" uk-img>
+									<img class="uk-hidden@s" data-src="images/Euro-60.png" alt="VEKA Евро 60" style="height: 250px;" uk-img>
+								</div>
+								<div class="uk-text-center uk-text-left@s">
+									<h3 class="uk-h2 uk-margin-remove">Евро 60</h3>
+									<p>Профиль VEKA EUROLINE 60</p>
+									<div class="uk-visible@s">
+										<p class="uk-h3">Целевое назначение</p>
+										<ul class="uk-list uk-list-bullet">
+											<li>Квартиры с типовым энергосбережением</li>
+											<li>Балконы/лоджии</li>
+											<li>Дачные дома</li>
+											<li>Общественные здания</li>
+										</ul>
+										<p>Цена от <span class="uk-h2 uk-text-danger">4 270</span> руб/м<sup>2</sup></p>
+									</div>
+									<div class="uk-text-center uk-text-left@s uk-hidden@m">
+										<p>Цена от <span class="uk-h2 uk-text-danger">4 270</span> руб/м<sup>2</sup></p>
+										<a class="uk-button uk-button-primary" href="#euro-60" uk-toggle>Характеристики</a>
+									</div>
+									<div id="euro-60" uk-modal>
+										<div class="uk-modal-dialog">
+											<a class="uk-modal-close-default" href="#" uk-close></a>
+											<div class="uk-modal-header">
+												<p class="uk-modal-title">Евро 60</p>
+											</div>
+											<div class="uk-modal-body" uk-overflow-auto>
+												<p>Профиль VEKA EUROLINE 60 мм.</p>
+												<p class="uk-h3">Целевое назначение</p>
+												<ul class="uk-list uk-list-bullet">
+													<li>Квартиры с типовым энергосбережением</li>
+													<li>Балконы/лоджии</li>
+													<li>Дачные дома</li>
+													<li>Общественные здания</li>
+												</ul>
+												<hr>
+												<table class="uk-table uk-table-divider uk-table-small uk-table-middle uk-table-responsive">
+													<tbody>
+														<tr>
+															<td class="uk-text-muted">Количество камер</td>
+															<td>3</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Монтажная ширина</td>
+															<td>58 мм</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Толщина наружной стенки</td>
+															<td>3 мм (класс А по ГОСТ 30673-99)</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Максимальная толщина стеклопакета</td>
+															<td>32 мм</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Сопротивление теплопередаче</td>
+															<td>0,68 м<sup>2</sup> х С/Вт</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Количество контуров уплотнения</td>
+															<td>2</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Фурнитура</td>
+															<td>Maco Multi Matic с покрытием silber look</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="uk-visible@m">
+							<table class="uk-table uk-table-divider uk-table-small uk-table-middle uk-table-responsive">
+								<tbody>
+									<tr>
+										<td>Количество камер</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td>Монтажная ширина</td>
+										<td>58 мм</td>
+									</tr>
+									<tr>
+										<td>Толщина наружной стенки</td>
+										<td>3 мм (класс А по ГОСТ 30673-99)</td>
+									</tr>
+									<tr>
+										<td>Максимальная толщина стеклопакета</td>
+										<td>32 мм.</td>
+									</tr>
+									<tr>
+										<td>Сопротивление теплопередаче</td>
+										<td>0,68 м<sup>2</sup> х С/Вт</td>
+									</tr>
+									<tr>
+										<td>Количество контуров уплотнения</td>
+										<td>2</td>
+									</tr>
+									<tr>
+										<td>Фурнитура</td>
+										<td>Maco Multi Matic с покрытием silber look</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="uk-child-width-1-2@m uk-grid" duk-grid>
+						<div>
+							<div class="uk-child-width-1-2@s uk-grid" uk-grid>
+								<div class="uk-position-relative uk-text-center uk-text-left@s uk-flex-last@s">
+									<img class="uk-position-top-right" data-src="images/veka-logo.png" alt="VEKA" width="100" height="100" uk-img uk-scrollspy="cls:uk-animation-fade; delay: 200">
+									<img class="uk-visible@s" data-src="images/Euro-70.png" alt="VEKA Евро 70" width="260" height="375" uk-img>
+									<img class="uk-hidden@s" data-src="images/Euro-70.png" alt="VEKA Евро 70" style="height: 250px;" uk-img>
+								</div>
+								<div class="uk-text-center uk-text-left@s">
+									<h3 class="uk-h2 uk-margin-remove">Евро 70</h3>
+									<p>Профиль VEKA SOFTLINE 70</p>
+									<div class="uk-visible@s">
+										<p class="uk-h3">Целевое назначение</p>
+										<ul class="uk-list uk-list-bullet">
+											<li>Квартиры с повышенным энергосбережением</li>
+											<li>Офисы, апартаменты</li>
+											<li>Дачные дома</li>
+											<li>Загородные жилые дома и коттеджи</li>
+										</ul>
+										<p>Цена от <span class="uk-h2 uk-text-danger">5 170</span> руб/м<sup>2</sup></p>
+									</div>
+									<div class="uk-text-center uk-text-left@s uk-hidden@m">
+										<p>Цена от <span class="uk-h2 uk-text-danger">5 170</span> руб/м<sup>2</sup></p>
+										<a class="uk-button uk-button-primary" href="#euro-70" uk-toggle>Характеристики</a>
+									</div>
+									<div id="euro-70" uk-modal>
+										<div class="uk-modal-dialog">
+											<a class="uk-modal-close-default" href="#" uk-close></a>
+											<div class="uk-modal-header">
+												<p class="uk-modal-title">Евро 70</p>
+											</div>
+											<div class="uk-modal-body" uk-overflow-auto>
+												<p>Профиль VEKA SOFTLINE 70 мм.</p>
+												<p class="uk-h3">Целевое назначение</p>
+												<ul class="uk-list uk-list-bullet">
+													<li>Квартиры с повышенным энергосбережением</li>
+													<li>Офисы, апартаменты</li>
+													<li>Дачные дома</li>
+													<li>Загородные жилые дома и коттеджи</li>
+												</ul>
+												<hr>
+												<table class="uk-table uk-table-divider uk-table-small uk-table-middle uk-table-responsive">
+													<tbody>
+														<tr>
+															<td class="uk-text-muted">Количество камер</td>
+															<td>5</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Монтажная ширина</td>
+															<td>70 мм</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Толщина наружной стенки</td>
+															<td>3 мм (класс А по ГОСТ 30673-99)</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Максимальная толщина стеклопакета</td>
+															<td>40 мм</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Сопротивление теплопередаче</td>
+															<td>0,75 - 0,78 м<sup>2</sup> х С/Вт</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Количество контуров уплотнения</td>
+															<td>2</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Фурнитура</td>
+															<td>Maco Multi Matic с покрытием silber look</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="uk-visible@m">
+							<table class="uk-table uk-table-divider uk-table-small uk-table-middle uk-table-responsive">
+								<tbody>
+									<tr>
+										<td>Количество камер</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>Монтажная ширина</td>
+										<td>70 мм</td>
+									</tr>
+									<tr>
+										<td>Толщина наружной стенки</td>
+										<td>3 мм (класс А по ГОСТ 30673-99)</td>
+									</tr>
+									<tr>
+										<td>Максимальная толщина стеклопакета</td>
+										<td>40 мм</td>
+									</tr>
+									<tr>
+										<td>Сопротивление теплопередаче</td>
+										<td>0,75 - 0,78 м<sup>2</sup> х С/Вт</td>
+									</tr>
+									<tr>
+										<td>Количество контуров уплотнения</td>
+										<td>2</td>
+									</tr>
+									<tr>
+										<td>Фурнитура</td>
+										<td>Maco Multi Matic с покрытием silber look</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="uk-child-width-1-2@m uk-grid" uk-grid>
+						<div>
+							<div class="uk-child-width-1-2@s uk-grid" uk-grid>
+								<div class="uk-position-relative uk-text-center uk-text-left@s uk-flex-last@s">
+									<img class="uk-position-top-right" data-src="images/veka-logo.png" alt="VEKA" width="100" height="100" uk-img uk-scrollspy="cls:uk-animation-fade; delay: 200">
+									<img class="uk-visible@s" data-src="images/Euro-82.png" alt="VEKA Евро 82" width="270" height="375" uk-img>
+									<img class="uk-hidden@s" data-src="images/Euro-82.png" alt="VEKA Евро 82" style="height: 250px;" uk-img>
+								</div>
+								<div class="uk-text-center uk-text-left@s">
+									<h3 class="uk-h2 uk-margin-remove">Евро 82</h3>
+									<p>Профиль VEKA SOFTLINE 82</p>
+									<div class="uk-visible@s">
+										<p class="uk-h3">Целевое назначение</p>
+										<ul class="uk-list uk-list-bullet">
+											<li>Коттеджи, загородные жилые дома, таунхаусы</li>
+											<li>Квартиры нетиповых форматов, лофт, пентхаусы</li>
+											<li>Здания с повышенными требованиями по вибро-шумозащите</li>
+										</ul>
+										<p>Цена от <span class="uk-h2 uk-text-danger">7 790</span> руб/м<sup>2</sup></p>
+									</div>
+									<div class="uk-text-center uk-text-left@s uk-hidden@m">
+										<p>Цена от <span class="uk-h2 uk-text-danger">7 790</span> руб/м<sup>2</sup></p>
+										<a class="uk-button uk-button-primary" href="#euro-82" uk-toggle>Характеристики</a>
+									</div>
+									<div id="euro-82" uk-modal>
+										<div class="uk-modal-dialog">
+											<a class="uk-modal-close-default" href="#" uk-close></a>
+											<div class="uk-modal-header">
+												<p class="uk-modal-title">Евро 82</p>
+											</div>
+											<div class="uk-modal-body" uk-overflow-auto>
+												<p>Профиль VEKA EUROLINE 82 мм.</p>
+												<p class="uk-h3">Целевое назначение</p>
+												<ul class="uk-list uk-list-bullet">
+													<li>Коттеджи, загородные жилые дома, таунхаусы</li>
+													<li>Квартиры нетиповых форматов, лофт, пентхаусы</li>
+													<li>Здания с повышенными требованиями по вибро-шумозащите</li>
+												</ul>
+												<hr>
+												<table class="uk-table uk-table-divider uk-table-small uk-table-middle uk-table-responsive">
+													<tbody>
+														<tr>
+															<td class="uk-text-muted">Количество камер</td>
+															<td>7</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Монтажная ширина</td>
+															<td>82 мм</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Толщина наружной стенки</td>
+															<td>3 мм (класс А по ГОСТ 30673-99)</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Максимальная толщина стеклопакета</td>
+															<td>44 мм</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Сопротивление теплопередаче</td>
+															<td>1,06 м<sup>2</sup> х С/Вт</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Количество контуров уплотнения</td>
+															<td>3</td>
+														</tr>
+														<tr>
+															<td class="uk-text-muted">Фурнитура</td>
+															<td>Maco Multi Matic с покрытием silber look</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="uk-visible@m">
+							<table class="uk-table uk-table-divider uk-table-small uk-table-middle uk-table-responsive">
+								<tbody>
+									<tr>
+										<td>Количество камер</td>
+										<td>7</td>
+									</tr>
+									<tr>
+										<td>Монтажная ширина</td>
+										<td>82 мм</td>
+									</tr>
+									<tr>
+										<td>Толщина наружной стенки</td>
+										<td>3 мм (класс А по ГОСТ 30673-99)</td>
+									</tr>
+									<tr>
+										<td>Максимальная толщина стеклопакета</td>
+										<td>44 мм</td>
+									</tr>
+									<tr>
+										<td>Сопротивление теплопередаче</td>
+										<td>1,06 м<sup>2</sup> х С/Вт</td>
+									</tr>
+									<tr>
+										<td>Количество контуров уплотнения</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td>Фурнитура</td>
+										<td>Maco Multi Matic с покрытием silber look</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- Почему ЕвроОкна -->
+	<section class="uk-section uk-background-cover uk-light" data-src="images/eurookna_bg.jpg" uk-img>
+		<div class="uk-container">
+			<h2 class="uk-h1 uk-text-uppercase uk-text-center uk-text-primary" uk-scrollspy="cls: uk-animation-slide-bottom-small">Почему ЕвроОкна</h2>
+			<div class="uk-text-uppercase uk-margin-large uk-flex-middle uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-large uk-grid" uk-grid uk-scrollspy="target: > div > div; cls: uk-animation-slide-bottom-small; delay: 200">
+				<div>
+					<div class="uk-flex-middle uk-child-width-auto uk-grid">
+						<div><span uk-icon="icon: eo-time-6; ratio: 2"></span></div>
+						<div>Короткие сроки <br>изготовления</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-flex-middle uk-child-width-auto uk-grid">
+						<div><span uk-icon="icon: eo-tools-14; ratio: 2"></span></div>
+						<div>Монтаж <br>по евростандарту</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-flex-middle uk-child-width-auto uk-grid">
+						<div><span uk-icon="icon: eo-award-10; ratio: 2"></span></div>
+						<div>Гарантия на монтаж — <br>5 лет</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-flex-middle uk-child-width-auto uk-grid">
+						<div><span uk-icon="icon: eo-certificate-16; ratio: 2"></span></div>
+						<div>Аттестованные <br>монтажные бригады</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-flex-middle uk-child-width-auto uk-grid">
+						<div><span uk-icon="icon: eo-shield-28; ratio: 2"></span></div>
+						<div>Двойная защита окна <br>при доставке</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-flex-middle uk-child-width-auto uk-grid">
+						<div><span uk-icon="icon: eo-user-15; ratio: 2"></span></div>
+						<div>Персональный <br>менеджер</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Испытайте ваши новые окна -->
+	<section id="discount" class="uk-section uk-section-muted uk-section-small uk-cover-container">
+		<video loop muted playsinline uk-video="autoplay: inview" uk-cover>
+			<source src="video/ecookna-showroom-v3.m4v" type="video/mp4">
+			<source src="video/ecookna-showroom-v3.webm" type="video/webm">
+		</video>
+		<div class="uk-overlay-default uk-position-cover" style="background:rgba(0,0,0,.3);"></div>
+		<div class="uk-container">
+			<div class="uk-grid" uk-grid>
+				<div class="uk-width-expand uk-position-relative uk-visible@s">
+					<img class="uk-float-right uk-box-shadow-small" data-src="images/germany-quality.svg" alt="Немецкое качество" width="100" height="117" uk-img uk-scrollspy="cls: uk-animation-scale-down; delay: 200">
+				</div>
+				<div class="uk-width-1-2@s uk-width-1-3@m">
+					<div class="uk-panel uk-background-default uk-box-shadow-small" data-uk-scrollspy="cls: uk-animation-slide-bottom-small">
+						<div class="uk-padding uk-text-left@m uk-text-center">
+							<div uk-scrollspy="cls: uk-animation-slide-bottom-small">
+								<div class="uk-h2 uk-text-uppercase uk-text-danger">Испытайте ваши новые окна!</div>
+								<p>Протестируйте настоящие евроокна до покупки и получите <a class="uk-text-danger" href="#eo-guardian" uk-scroll>подарок <span class="tada animated infinite uk-margin-small-left" uk-icon="icon: eo-christmas-36; ratio: .9"></a></p>
+							</div>
+							<div class="uk-background-secondary uk-padding-small uk-panel uk-margin" uk-scrollspy="cls: uk-animation-slide-bottom-small">
+								<div class="uk-flex-middle uk-child-width-auto uk-grid-small uk-grid">
+									<div class="uk-text-primary" uk-lightbox>
+										<a class="uk-border-circle uk-background-default uk-padding-small uk-box-shadow-small uk-box-shadow-hover-large" href="https://www.youtube.com/embed/oPUs7k96Myg?rel=0&amp;showinfo=0" rel="nofollow" data-type="iframe" uk-icon="icon: play-circle; ratio: 1.5" uk-scrollspy="cls: uk-animation-scale-up" style="padding:10px;"></a>
+									</div>
+									<div class="uk-width-expand" uk-scrollspy="cls: uk-animation-slide-right-medium">Смотреть видео-тур</div>
+								</div>
+							</div>
+							<div class="uk-text-center uk-text-muted">
+								<div class="uk-countdown uk-child-width-expand uk-grid-small uk-grid-collapse uk-grid" uk-countdown="date: 2019-07-07" uk-scrollspy="target: > div > div; cls: uk-animation-slide-bottom-small; delay: 200">
+									<div>
+										<div class="uk-h1 uk-countdown-days uk-text-muted uk-margin-remove"></div>
+										<div class="uk-countdown-label uk-margin-small uk-text-center uk-text-small">Дни</div>
+									</div>
+									<div class="uk-h2 uk-text-muted">:</div>
+									<div>
+										<div class="uk-h1 uk-countdown-hours uk-text-muted uk-margin-remove"></div>
+										<div class="uk-countdown-label uk-margin-small uk-text-center uk-text-small">Часы</div>
+									</div>
+									<div class="uk-h2 uk-text-muted">:</div>
+									<div>
+										<div class="uk-h1 uk-countdown-minutes uk-text-muted uk-margin-remove"></div>
+										<div class="uk-countdown-label uk-margin-small uk-text-center uk-text-small">Мин.</div>
+									</div>
+									<div class="uk-h2 uk-text-muted">:</div>
+									<div>
+										<div class="uk-h1 uk-countdown-seconds uk-text-muted uk-margin-remove"></div>
+										<div class="uk-countdown-label uk-margin-small uk-text-center uk-text-small">Сек.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="veka uk-panel uk-padding uk-padding-remove-vertical">
+							<img class="uk-width-1-1 uk-padding-small uk-padding-remove-horizontal" data-src="images/veka-partner-1.svg" width="293" height="74" alt="VEKA" uk-img>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Выбирайте защиту в подарок -->
+	<section id="eo-guardian" class="uk-section uk-section-default">
+		<div class="uk-container" uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-small; delay: 200">
+			<div class="uk-text-center uk-width-xxlarge uk-margin-auto uk-margin-medium-bottom">
+				<h2 class="uk-h1 uk-text-uppercase">Выбирайте защиту <span class="uk-text-danger">в подарок!</span></h2>
+				<p class="uk-text-muted">Подберите для своего дома стеклопакет со специальными возможностями. Ваш выбор — наш подарок для надежной защиты и ощущения уверенности!</p>
+			</div>
+			<div>
+				<div class="uk-flex uk-flex-center">
+					<div class="uk-margin-medium" uk-switcher="connect: #slide-product-2; animation: uk-animation-fade; toggle: > *">
+						<a class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical" href="#">Защита от шума</a>
+						<a class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical" href="#">Защита от солнца</a>
+					</div>
+				</div>
+				<ul id="slide-product-2" class="uk-switcher uk-margin">
+					<li>
+						<div class="uk-flex-middle uk-child-width-1-2@m uk-grid" uk-grid>
+							<div class="uk-text-center">
+								<img data-src="images/eo-image-1.png" alt="Шумозащитный стеклопакет Guardian" width="580" height="414" uk-img>
+							</div>
+							<div class="uk-text-left@m uk-text-center">
+								<img data-src="images/guardian-glass-logo.svg" alt="Guardian" width="250" height="40" uk-img>
+								<h3 class="uk-h2 uk-text-uppercase uk-margin">Шумозащитный стеклопакет</h3>
+								<p>За счет увеличенной толщины наружного стекла и разных по ширине камер в шумозащитном стеклопакете звуковая волна рассеивается и поглощается: дома будет тихо даже рядом с автомагистралью.</p>
+								<a class="uk-button uk-button-danger" href="#modal-1" uk-toggle>Получить в подарок</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="uk-flex-middle uk-child-width-1-2@m uk-grid" uk-grid>
+							<div class="uk-text-center">
+								<img data-src="images/eo-image-2.png" alt="Мультифункциональный стеклопакет Guardian" width="580" height="414" uk-img>
+							</div>
+							<div class="uk-text-left@m uk-text-center">
+								<img data-src="images/guardian-glass-logo.svg" alt="Guardian" width="250" height="40" uk-img>
+								<h3 class="uk-h2 uk-text-uppercase uk-margin">Мультифункциональный стеклопакет</h3>
+								<p>Такие стеклопакеты значительно снижают расходы на отопление зимой и на кондиционирование летом. Высокая теплоизолирующая способность препятствует появлению «эффекта сквозняка».</p>
+								<a class="uk-button uk-button-danger" href="#modal-1" uk-toggle>Получить в подарок</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<!-- Качественная фурнитура -->
+	<section class="uk-section uk-background-cover uk-background-image@m bg-special-2" data-src="images/bg3.jpg" uk-img>
+		<div class="uk-container">
+			<div class="uk-flex-middle uk-child-width-1-2@m uk-grid-collapse uk-grid" uk-grid>
+				<div class="uk-width-auto uk-margin-auto-right uk-visible@m" uk-margin="margin: uk-margin-medium" uk-scrollspy="target: > div > div; cls: uk-animation-slide-right-medium; delay: 200">
+					<div class="uk-flex-middle uk-child-width-auto uk-grid">
+						<div class="uk-text-primary"><span uk-icon="icon: eo-flask-9; ratio: 2"></span></div>
+						<div class="uk-text-large">Антикоррозионная <br>пропитка</div>
+					</div>
+					<div class="uk-flex-middle uk-child-width-auto uk-grid">
+						<div class="uk-text-primary"><span uk-icon="icon: eo-gear-11; ratio: 2"></span></div>
+						<div class="uk-text-large">45000 открываний <br>створок</div>
+					</div>
+					<div class="uk-flex-middle uk-child-width-auto uk-grid">
+						<div class="uk-text-primary"><span uk-icon="icon: eo-award-17; ratio: 2"></span></div>
+						<div class="uk-text-large">10 лет гарантия <br>от MACO</div>
+					</div>
+					<div class="uk-flex-middle uk-child-width-auto uk-grid">
+						<div class="uk-text-primary"><span uk-icon="icon: eo-weather-65; ratio: 2"></span></div>
+						<div class="uk-text-large">Отсутствие <br>сквозняков</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-panel uk-background-default uk-text-left@m uk-text-center uk-box-shadow-small" uk-scrollspy="cls:uk-animation-slide-bottom-medium">
+						<div class="uk-height-medium uk-cover-container uk-hidden@m">
+							<img data-src="images/bg3-small.jpg" width="960" height="300" alt="Качественная фурнитура" uk-img uk-cover>
+							<img class="uk-position-small uk-position-top-right uk-hidden@m" data-src="images/maco-logo.png" alt="Качественная фурнитура MACO" uk-img uk-scrollspy="cls:uk-animation-scale-down; delay: 200">
+						</div>
+						<div class="uk-padding" uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 200">
+							<div class="uk-child-width-expand uk-grid">
+								<div>
+									<h2 class="uk-h1 uk-margin uk-text-uppercase uk-text-left@m uk-text-center">Качественная <br>фурнитура</h2>
+								</div>
+								<div class="uk-visible@m">
+									<img class="uk-float-right" data-src="images/maco-logo.png" alt="Качественная фурнитура MACO" width="68" height="80" uk-img>
+								</div>
+							</div>
+							<p class="uk-text-muted uk-margin-remove-bottom">Наши окна оборудованы европейской фурнитурой премиум класса MACO. Сверхпрочные конструкции имеют антикоррозийную пропитку и выдерживают до 45 000 открываний. Инновационная система механизмов фурнитуры обеспечивает постоянный приток свежего воздуха без сквозняков. Летом свежо, осенью комфортно, зимой тепло!</p>
+							<hr class="uk-hidden@m">
+							<div class="uk-hidden@m uk-child-width-1-4@s uk-grid" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 200">
+								<div>
+									<span class="uk-text-primary" uk-icon="icon: eo-flask-9; ratio: 1.5"></span>
+									<p>Антикоррозионная <br>пропитка</p>
+								</div>
+								<div>
+									<span class="uk-text-primary" uk-icon="icon: eo-gear-11; ratio: 1.5"></span>
+									<p>45000 открываний <br>створок</p>
+								</div>
+								<div>
+									<span class="uk-text-primary" uk-icon="icon: eo-award-17; ratio: 1.5"></span>
+									<p>10 лет гарантия <br>от MACO</p>
+								</div>
+								<div>
+									<span class="uk-text-primary" uk-icon="icon: eo-weather-65; ratio: 1.5"></span>
+									<p>Отсутствие <br>сквозняков</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- О компании -->
+	<section class="uk-section uk-section-default uk-text-center">
+		<div class="uk-container">
+			<div class="uk-width-xxlarge uk-margin-auto uk-margin-medium-bottom" uk-scrollspy="cls:uk-animation-slide-bottom-small">
+				<h2 class="uk-h1 uk-text-uppercase">О компании</h2>
+				<p class="uk-text-muted">Компания «Евроокна» помогает клиентам подбирать лучшие решения, учитывая пожелания к характеристикам окна и его стоимости. Окно — это объект, которым Вы будете пользоваться много лет, поэтому для нас очень важно, чтобы Вы сделали правильный выбор.</p>
+			</div>
+			<div class="uk-text-uppercase uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-large uk-grid" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-small; delay: 200">
+				<div>
+					<span class="uk-heading-small uk-text-primary uk-text-bold uk-margin-bottom">24</span>
+					<p>года успешной работы</p>
+				</div>
+				<div>
+					<span class="uk-heading-small uk-text-primary uk-text-bold uk-margin-bottom">50</span>
+					<p>лет — срок эксплуатации <br>профилей VEKA</p>
+				</div>
+				<div>
+					<span class="uk-heading-small uk-text-primary uk-text-bold uk-margin-bottom">24</span>
+					<p>часа — поддержка клиентов</p>
+				</div>
+				<div>
+					<span class="uk-heading-small uk-text-primary uk-text-bold uk-margin-bottom">1</span>
+					<p>место по Москве <br>по качеству услуг</p>
+				</div>
+				<div>
+					<span class="uk-heading-small uk-text-primary uk-text-bold uk-margin-bottom counter">2018</span>
+					<p>год — в тройке самых известных <br>оконных компаний Москвы</p>
+				</div>
+				<div>
+					<span class="uk-heading-small uk-text-primary uk-text-bold uk-margin-bottom">14</span>
+					<p>раз победитель премии <br>"Золотое окно"</p>
+				</div>
+				<div>
+					<span class="uk-text-primary uk-margin-small-bottom" uk-icon="icon: eo-gear-1; ratio: 2"></span>
+					<p>собственное <br>производство</p>
+				</div>
+				<div>
+					<span class="uk-heading-small uk-text-primary uk-text-bold uk-margin-bottom">130</span>
+					<p>окон в день устанавливают <br>наши монтажные бригады</p>
+				</div>
+				<div>
+					<span class="uk-text-primary uk-margin-small-bottom" uk-icon="icon: eo-currency-14; ratio: 2"></span>
+					<p>честные цены</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Нас рекомендуют -->
+	<section class="uk-section uk-section-muted uk-text-center">
+		<div class="uk-container">
+			<div class="uk-margin-auto uk-width-xxlarge" uk-scrollspy="cls: uk-animation-slide-bottom-small">
+				<h2 class="uk-h1 uk-text-uppercase">Нас рекомендуют!</h2>
+				<p class="uk-text-muted">Каждый месяц мы проводим исследование индекса удовлетворенности клиентов нашей работой. Оценка проводится на основании качественных показателей в составе комплексного опроса по 10-бальной шкале.</p>
+			</div>
+			<div class="uk-margin-medium" uk-scrollspy="cls: uk-animation-fade">
+				<img data-src="images/chart.png" width="1200" height="247" alt="Нас рекомендуют" uk-img>
+			</div>
+			<div class="uk-margin uk-child-width-1-2 uk-child-width-1-4@m uk-grid" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-small; delay: 300">
+				<div>
+					<p><span class="uk-heading-small uk-text-primary uk-text-bold">15%</span> <br>Нейтральные</p>
+				</div>
+				<div>
+					<p><span class="uk-heading-small uk-text-success uk-text-bold">79%</span> <br>Рекомендуют нас</p>
+				</div>
+				<div>
+					<p><span class="uk-heading-small uk-text-muted uk-text-bold">6%</span> <br>Не рекомендуют</p>
+				</div>
+				<div>
+					<p class="uk-text-break"><span class="uk-heading-small uk-text-bold" style="color: #FFBD01;">38%</span> <br>Рост удов&shy;лет&shy;во&shy;рён&shy;нос&shy;ти</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Качественная работа — высокая репутация -->
+	<section class="uk-section uk-section-default uk-text-center">
+		<div class="uk-container">
+			<div class="uk-margin-auto uk-margin-medium uk-width-xxlarge" uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 200">
+				<h2 class="uk-h1 uk-text-uppercase">Качественная работа — высокая репутация</h2>
+				<p class="uk-text-muted uk-margin-auto uk-width-xxlarge">Уже несколько лет «Евроокна» выбирают для реализации проектов телепередачи «Школа&nbsp;ремонта». К нам обращаются за стильными современными решениями для прогрессивных московских семей.</p>
+			</div>
+			<div class="uk-margin-medium uk-text-left@s uk-text-center uk-flex-middle uk-child-width-1-2@m uk-grid" uk-grid>
+				<div>
+					<img class="uk-box-shadow-small" data-src="images/client-5.jpg" width="960" height="630" uk-img uk-scrollspy="cls: uk-animation-slide-bottom-small">
+				</div>
+				<div>
+					<div class="uk-flex-middle uk-child-width-1-2 uk-grid" uk-grid uk-scrollspy="target: > div > div; cls: uk-animation-slide-bottom-small; delay: 100">
+						<div>
+							<div class="uk-flex-middle uk-child-width-1-2@s uk-grid-small uk-grid" uk-grid>
+								<div>
+									<img class="uk-box-shadow-medium uk-border-circle" data-src="images/client-1.jpg" alt="Татьяна Овсиенко" width="130" height="130" uk-img>
+								</div>
+								<div>
+									<p>Татьяна <br><span class="uk-text-uppercase">Овсиенко</span></p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="uk-flex-middle uk-child-width-1-2@s uk-grid-small uk-grid" uk-grid>
+								<div>
+									<img class="uk-box-shadow-medium uk-border-circle" data-src="images/client-2.jpg" alt="Владимир Маркин" width="130" height="130" uk-img>
+								</div>
+								<div>
+									<p>Владимир <br><span class="uk-text-uppercase">Маркин</span></p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="uk-flex-middle uk-child-width-1-2@s uk-grid-small uk-grid" uk-grid>
+								<div>
+									<img class="uk-box-shadow-medium uk-border-circle" data-src="images/client-3.jpg" alt="Тамара Семина" width="130" height="130" uk-img>
+								</div>
+								<div>
+									<p>Тамара <br><span class="uk-text-uppercase">Семина</span></p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="uk-flex-middle uk-child-width-1-2@s uk-grid-small uk-grid" uk-grid>
+								<div>
+									<img class="uk-box-shadow-medium uk-border-circle" data-src="images/client-4.jpg" alt="Марк Захаров" width="130" height="130" uk-img>
+								</div>
+								<div>
+									<p>Марк <br><span class="uk-text-uppercase">Захаров</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Отзывы клиентов -->
+	<section class="uk-section uk-section-default uk-text-center">
+		<div class="uk-container">
+			<div class="uk-margin-auto uk-margin-medium uk-width-xxlarge" uk-scrollspy="cls:uk-animation-slide-bottom-small">
+				<h2 class="uk-h1 uk-text-uppercase">Отзывы клиентов</h2>
+				<p class="uk-text-lead uk-margin">250 000 клиентов уже выбрали наши окна</p>
+				<p class="uk-text-muted">Каждый месяц мы проводим исследование индекса удовлетворенности клиентов нашей работой. Оценка проводится на основании качественных показателей в составе комплексного опроса по 10-бальной шкале.</p>
+			</div>
+			<ul class="uk-flex-center" uk-tab="animation: uk-animation-fade">
+				<li><a class="uk-h4 uk-text-uppercase" href="#" uk-scrollspy="cls: uk-animation-slide-left-small">Прочитать</a></li>
+				<li><a class="uk-h4 uk-text-uppercase" href="#" uk-scrollspy="cls: uk-animation-slide-right-small">Прослушать</a></li>
+			</ul>
+			<ul class="uk-switcher uk-margin">
+				<li>
+					<div class="uk-child-width-expand@s uk-child-width-1-3 uk-grid-small uk-grid" uk-grid uk-lightbox uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-small; delay: 200">
+						<div>
+							<a class="uk-padding-small uk-background-default uk-display-inline-block uk-link-muted uk-text-center uk-box-shadow-small uk-box-shadow-hover-xlarge" href="images/review-image-1.jpg" data-alt="Отзыв клиента договор №183818" data-caption="Отзыв клиента договор №183818" uk-tooltip="title: Отзыв клиента договор №183818; pos: top; cls: uk-active uk-text-center">
+								<img data-src="images/review-thumb-1.jpg" alt="Отзыв клиента договор №183818" uk-img>
+							</a>
+						</div>
+						<div>
+							<a class="uk-padding-small uk-background-default uk-display-inline-block uk-link-muted uk-text-center uk-box-shadow-small uk-box-shadow-hover-xlarge" href="images/review-image-2.jpg" data-alt="Отзыв клиента договор №182644" data-caption="Отзыв клиента договор №182644" uk-tooltip="title: Отзыв клиента договор №182644; pos: top; cls: uk-active uk-text-center">
+								<img data-src="images/review-thumb-2.jpg" alt="Отзыв клиента договор №182644" uk-img>
+							</a>
+						</div>
+						<div>
+							<a class="uk-padding-small uk-background-default uk-display-inline-block uk-link-muted uk-text-center uk-box-shadow-small uk-box-shadow-hover-xlarge" href="images/review-image-3.jpg" data-alt="Отзыв клиента договор №180838/1" data-caption="Отзыв клиента договор №180838/1" uk-tooltip="title: Отзыв клиента договор №180838/1; pos: top; cls: uk-active uk-text-center">
+								<img data-src="images/review-thumb-3.jpg" alt="Отзыв клиента договор №180838/1" uk-img>
+							</a>
+						</div>
+						<div>
+							<a class="uk-padding-small uk-background-default uk-display-inline-block uk-link-muted uk-text-center uk-box-shadow-small uk-box-shadow-hover-xlarge" href="images/review-image-4.jpg" data-alt="Отзыв клиента договор №180948" data-caption="Отзыв клиента договор №180948" uk-tooltip="title: Отзыв клиента договор №180948; pos: top; cls: uk-active uk-text-center">
+								<img data-src="images/review-thumb-4.jpg" alt="Отзыв клиента договор №180948" uk-img>
+							</a>
+						</div>
+						<div>
+							<a class="uk-padding-small uk-background-default uk-display-inline-block uk-link-muted uk-text-center uk-box-shadow-small uk-box-shadow-hover-xlarge" href="images/review-image-5.jpg" data-alt="Отзыв клиента договор №181164" data-caption="Отзыв клиента договор №181164" uk-tooltip="title: Отзыв клиента договор №181164; pos: top; cls: uk-active uk-text-center">
+								<img data-src="images/review-thumb-5.jpg" alt="Отзыв клиента договор №181164" uk-img>
+							</a>
+						</div>
+						<div>
+							<a class="uk-padding-small uk-background-default uk-display-inline-block uk-link-muted uk-text-center uk-box-shadow-small uk-box-shadow-hover-xlarge" href="images/review-image-6.jpg" data-alt="Отзыв клиента договор №182882" data-caption="Отзыв клиента договор №182882" uk-tooltip="title: Отзыв клиента договор №182882; pos: top; cls: uk-active uk-text-center">
+								<img data-src="images/review-thumb-6.jpg" alt="Отзыв клиента договор №182882" uk-img>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="uk-flex-middle uk-flex-center uk-child-width-expand@m uk-child-width-1-4@s uk-child-width-1-2 uk-grid-small uk-grid" uk-grid uk-lightbox uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-small; delay: 200">
+						<div>
+							<a class="uk-border-circle uk-background-default uk-box-shadow-small uk-box-shadow-hover-large uk-padding-small" href="audio/1.mp3" data-alt="Аудио отзыв №1" data-caption="Аудио отзыв №1" uk-tooltip="title: Аудио отзыв №1<br>Длительность 00:22; pos: top; cls: uk-active uk-text-center" type="video" uk-icon="icon: eo-media-control-4; ratio: 2"></a>
+						</div>
+						<div>
+							<a class="uk-border-circle uk-background-default uk-box-shadow-small uk-box-shadow-hover-large uk-padding-small" href="audio/2.mp3" data-alt="Аудио отзыв №2" data-caption="Аудио отзыв №2" uk-tooltip="title: Аудио отзыв №2<br>Длительность 00:40; pos: top; cls: uk-active uk-text-center" type="video" uk-icon="icon: eo-media-control-4; ratio: 2"></a>
+						</div>
+						<div>
+							<a class="uk-border-circle uk-background-default uk-box-shadow-small uk-box-shadow-hover-large uk-padding-small" href="audio/3.mp3" data-alt="Аудио отзыв №3" data-caption="Аудио отзыв №3" uk-tooltip="title: Аудио отзыв №3<br>Длительность 01:02; pos: top; cls: uk-active uk-text-center" type="video" uk-icon="icon: eo-media-control-4; ratio: 2"></a>
+						</div>
+						<div>
+							<a class="uk-border-circle uk-background-default uk-box-shadow-small uk-box-shadow-hover-large uk-padding-small" href="audio/4.mp3" data-alt="Аудио отзыв №4" data-caption="Аудио отзыв №4" uk-tooltip="title: Аудио отзыв №4<br>Длительность 00:43; pos: top; cls: uk-active uk-text-center" type="video" uk-icon="icon: eo-media-control-4; ratio: 2"></a>
+						</div>
+						<div>
+							<a class="uk-border-circle uk-background-default uk-box-shadow-small uk-box-shadow-hover-large uk-padding-small" href="audio/5.mp3" data-alt="Аудио отзыв №5" data-caption="Аудио отзыв №5" uk-tooltip="title: Аудио отзыв №5<br>Длительность 01:13; pos: top; cls: uk-active uk-text-center" type="video" uk-icon="icon: eo-media-control-4; ratio: 2"></a>
+						</div>
+						<div>
+							<a class="uk-border-circle uk-background-default uk-box-shadow-small uk-box-shadow-hover-large uk-padding-small" href="audio/6.mp3" data-alt="Аудио отзыв №6" data-caption="Аудио отзыв №6" uk-tooltip="title: Аудио отзыв №6<br>Длительность 00:39; pos: top; cls: uk-active uk-text-center" type="video" uk-icon="icon: eo-media-control-4; ratio: 2"></a>
+						</div>
+						<div>
+							<a class="uk-border-circle uk-background-default uk-box-shadow-small uk-box-shadow-hover-large uk-padding-small" href="audio/7.mp3" data-alt="Аудио отзыв №7" data-caption="Аудио отзыв №7" uk-tooltip="title: Аудио отзыв №7<br>Длительность 00:36; pos: top; cls: uk-active uk-text-center" type="video" uk-icon="icon: eo-media-control-4; ratio: 2"></a>
+						</div>
+						<div>
+							<a class="uk-border-circle uk-background-default uk-box-shadow-small uk-box-shadow-hover-large uk-padding-small" href="audio/8.mp3" data-alt="Аудио отзыв №8" data-caption="Аудио отзыв №8" uk-tooltip="title: Аудио отзыв №8<br>Длительность 00:45; pos: top; cls: uk-active uk-text-center" type="video" uk-icon="icon: eo-media-control-4; ratio: 2"></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="uk-margin-medium uk-flex-center uk-child-width-auto uk-grid">
+				<div>
+					<a class="uk-button uk-button-danger uk-text-uppercase uk-scrollspy-inview uk-animation-slide-bottom-small" href="#" uk-toggle="target: #modal-1" uk-scrollspy="cls: uk-animation-slide-bottom-small">Оставить отзыв</a>
+				</div>
+				<div>
+					<a class="uk-button uk-button-danger uk-text-uppercase uk-scrollspy-inview uk-animation-slide-bottom-small" href="#" uk-toggle="target: #modal-dir" uk-scrollspy="cls: uk-animation-slide-bottom-small">Написать директору</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<!-- Секция с галереей работ  -->
 	<section class="uk-section uk-section-defult">
 		<div class="uk-container">
 			<div class="uk-margin-medium uk-margin-auto uk-width-xxlarge uk-text-center">
 				<h2 class="uk-text-uppercase">Наши работы</h2>
 				<p>Утепление ПВХ-подоконников всегда начинается с их демонтажа. Для этого принято использовать два основных способа. Большинство россиян считает, что вопрос с утеплением помещения можно решить посредством установки ПВХ-окон.</p>
 			</div>
-			<div>
-				<div uk-slider>
-					<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-						<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-match uk-grid" uk-lightbox="animation: fade" uk-height-viewport="offset-bottom: 60">
-							<li>
-								<div class="uk-cover-container">
-									<a class="uk-position-cover" href="images/b1.jpeg" data-caption="Caption 1">
-										<img src="images/b1.jpeg" alt="" uk-cover>
-										<div class="uk-position-center uk-panel"><h1>1</h1></div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-cover-container">
-									<a class="uk-position-cover" href="images/b2.jpeg" data-caption="Caption 2">
-										<img src="images/b2.jpeg" alt="" uk-cover>
-										<div class="uk-position-center uk-panel"><h1>2</h1></div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-cover-container">
-									<a class="uk-position-cover" href="images/b1.jpeg" data-caption="Caption 3">
-										<img src="images/b1.jpeg" alt="" uk-cover>
-										<div class="uk-position-center uk-panel"><h1>3</h1></div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-cover-container">
-									<a class="uk-position-cover" href="images/b2.jpeg" data-caption="Caption 4">
-										<img src="images/b2.jpeg" alt="" uk-cover>
-										<div class="uk-position-center uk-panel"><h1>4</h1></div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-cover-container">
-									<a class="uk-position-cover" href="images/b1.jpeg" data-caption="Caption 5">
-										<img src="images/b1.jpeg" alt="" uk-cover>
-										<div class="uk-position-center uk-panel"><h1>5</h1></div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-cover-container">
-									<a class="uk-position-cover" href="images/b2.jpeg" data-caption="Caption 6">
-										<img src="images/b2.jpeg" alt="" uk-cover>
-										<div class="uk-position-center uk-panel"><h1>6</h1></div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-cover-container">
-									<a class="uk-position-cover" href="images/b1.jpeg" data-caption="Caption 7">
-										<img src="images/b1.jpeg" alt="" uk-cover>
-										<div class="uk-position-center uk-panel"><h1>7</h1></div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-cover-container">
-									<a class="uk-position-cover" href="images/b2.jpeg" data-caption="Caption 8">
-										<img src="images/b2.jpeg" alt="" uk-cover>
-										<div class="uk-position-center uk-panel"><h1>8</h1></div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-cover-container">
-									<a class="uk-position-cover" href="images/b1.jpeg" data-caption="Caption 9">
-										<img src="images/b1.jpeg" alt="" uk-cover>
-										<div class="uk-position-center uk-panel"><h1>9</h1></div>
-									</a>
-								</div>
-							</li>
-							<li>
-								<div class="uk-cover-container">
-									<a class="uk-position-cover" href="images/b2.jpeg" data-caption="Caption 10">
-										<img src="images/b2.jpeg" alt="" uk-cover>
-										<div class="uk-position-center uk-panel"><h1>10</h1></div>
-									</a>
-								</div>
-							</li>
-						</ul>
-						<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-						<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-					</div>
-					<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+			<div uk-slider>
+				<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+					<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-match uk-grid" uk-lightbox="animation: fade" uk-height-viewport="offset-bottom: 60">
+						<li>
+							<div class="uk-cover-container">
+								<a class="uk-position-cover" href="images/b1.jpeg" data-type="image" data-alt="Caption 1" data-caption="Caption 1">
+									<img src="images/b1.jpeg" alt="Caption 1" uk-cover>
+									<div class="uk-position-center uk-panel"><h1>1</h1></div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-cover-container">
+								<a class="uk-position-cover" href="images/b2.jpeg" data-type="image" data-alt="Caption 2" data-caption="Caption 2">
+									<img src="images/b2.jpeg" alt="Caption 2" uk-cover>
+									<div class="uk-position-center uk-panel"><h1>2</h1></div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-cover-container">
+								<a class="uk-position-cover" href="images/b1.jpeg" data-type="image" data-alt="Caption 3" data-caption="Caption 3">
+									<img src="images/b1.jpeg" alt="Caption 3" uk-cover>
+									<div class="uk-position-center uk-panel"><h1>3</h1></div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-cover-container">
+								<a class="uk-position-cover" href="images/b2.jpeg" data-type="image" data-alt="Caption 4" data-caption="Caption 4">
+									<img src="images/b2.jpeg" alt="Caption 4" uk-cover>
+									<div class="uk-position-center uk-panel"><h1>4</h1></div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-cover-container">
+								<a class="uk-position-cover" href="images/b1.jpeg" data-type="image" data-alt="Caption 5" data-caption="Caption 5">
+									<img src="images/b1.jpeg" alt="Caption 5" uk-cover>
+									<div class="uk-position-center uk-panel"><h1>5</h1></div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-cover-container">
+								<a class="uk-position-cover" href="images/b2.jpeg" data-type="image" data-alt="Caption 6" data-caption="Caption 6">
+									<img src="images/b2.jpeg" alt="Caption 6" uk-cover>
+									<div class="uk-position-center uk-panel"><h1>6</h1></div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-cover-container">
+								<a class="uk-position-cover" href="images/b1.jpeg" data-type="image" data-alt="Caption 7" data-caption="Caption 7">
+									<img src="images/b1.jpeg" alt="Caption 7" uk-cover>
+									<div class="uk-position-center uk-panel"><h1>7</h1></div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-cover-container">
+								<a class="uk-position-cover" href="images/b2.jpeg" data-type="image" data-alt="Caption 8" data-caption="Caption 8">
+									<img src="images/b2.jpeg" alt="Caption 8" uk-cover>
+									<div class="uk-position-center uk-panel"><h1>8</h1></div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-cover-container">
+								<a class="uk-position-cover" href="images/b1.jpeg" data-type="image" data-alt="Caption 9" data-caption="Caption 9">
+									<img src="images/b1.jpeg" alt="Caption 9" uk-cover>
+									<div class="uk-position-center uk-panel"><h1>9</h1></div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="uk-cover-container">
+								<a class="uk-position-cover" href="images/b2.jpeg" data-type="image" data-alt="Caption 10" data-caption="Caption 10">
+									<img src="images/b2.jpeg" alt="Caption 10" uk-cover>
+									<div class="uk-position-center uk-panel"><h1>10</h1></div>
+								</a>
+							</div>
+						</li>
+					</ul>
+					<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+					<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
 				</div>
+				<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
 			</div>
 		</div>
 	</section>
 
-	<!-- Блок с фоновой картинкой для SEO-текста  -->
+	<!-- Секция с фоновой картинкой для SEO-текста  -->
 	<section class="uk-section uk-section-default uk-light uk-background-cover" data-src="images/b1.jpeg" uk-img>
 		<div class="uk-container">
 			<div class="uk-width-large uk-panel">
@@ -219,7 +1144,7 @@
 		</div>
 	</section>
 
-	<!-- Текстовый блок для SEO-текста -->
+	<!-- Секция с SEO-текстом -->
 	<section class="uk-section uk-section-default">
 		<div class="uk-container">
 			<div>
@@ -479,7 +1404,6 @@
 			</div>
 		</div>
 	</aside>
-
 </body>
 
 </html>
