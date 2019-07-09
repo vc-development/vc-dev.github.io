@@ -26,7 +26,7 @@
 </head>
 
 <body>
-	<nav class="uk-hidden@m uk-background-default uk-box-shadow-small uk-navbar" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+	<nav class="uk-hidden@l uk-background-default uk-box-shadow-small uk-navbar" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
 		<div class="uk-navbar-left">
 			<a class="uk-navbar-toggle" href="#offcanvas" uk-toggle uk-navbar-toggle-icon></a>
 		</div>
@@ -42,41 +42,44 @@
 		</div>
 	</nav>
 
-	<div class="uk-visible@m uk-background-center-center uk-text-center" data-src="images/bg-discount.png" style="padding:8px 0;color:#fff;background-color:#f42424;" uk-img>
+	<div class="uk-visible@l uk-background-center-center uk-text-center" data-src="images/bg-discount.png" style="padding:8px 0;color:#fff;background-color:#f42424;" uk-img>
 		<p class="uk-text-center uk-text-small uk-text-uppercase uk-margin-remove">
 			<a class="uk-link-reset" href="#discount" uk-scroll>Скидка <span class="uk-text-large uk-text-bold">50%</span> до 5 июля!</a>
 		</p>
 	</div>
 
-	<div class="uk-hidden@m uk-padding-small uk-background-muted uk-text-center">
+	<div class="uk-hidden@l uk-padding-small uk-background-muted uk-text-center">
 		<p class="uk-margin-remove uk-text-truncate" uk-scrollspy="cls: uk-animation-fade"><a class="phone-call uk-link-reset" href="tel:+74957256065"><span class="uk-text-primary uk-margin-small-right" uk-icon="icon: eo-delivery-9; ratio: .7"></span>+7 495 <span class="uk-text-primary">725-60-65</span></a></p>
 	</div>
 
-	<header class="uk-visible@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top" role="banner">
+	<header class="uk-visible@l" uk-sticky="show-on-up: true; animation: uk-animation-slide-top" role="banner">
 		<!-- Headerbar -->
 		<div class="uk-section uk-section-default uk-section-xsmall">
 			<div class="uk-container">
-				<div class="uk-flex-middle uk-grid-large uk-grid">
+				<div class="uk-flex-middle uk-grid">
 					<div class="uk-width-1-5">
 						<a class="uk-logo" href="#">
 							<img src="images/logo.svg" width="184" height="45" alt="Евроокна">
 						</a>
 					</div>
+					<div class="uk-width-auto">
+						<div class="uk-text-small uk-text-uppercase" style="line-height: .5;">Нам <br><span class="uk-h2 uk-text-primary">23</span> <br>года</div>
+					</div>
 					<div class="uk-width-expand">
-						<div class="uk-child-width-1-2 uk-grid-small uk-grid">
+						<div class="uk-flex-right uk-child-width-auto uk-grid">
 							<div>
-								<a class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical uk-width-1-1 uk-text-truncate call-special" href="#" uk-toggle="target: #modal-1"><span class="uk-margin-small-right" uk-icon="icon: eo-phone-3; ratio: .7"></span>Калькулятор окон</a>
+								<a class="uk-button uk-button-default uk-text-truncate call-special" href="#" uk-toggle="target: #modal-2"><span class="uk-margin-small-right" uk-icon="icon: eo-user-1; ratio: .7"></span>Вызвать замерщика</a>
 							</div>
 							<div>
-								<a class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical uk-width-1-1 uk-text-truncate call-special" href="#" uk-toggle="target: #modal-2"><span class="uk-margin-small-right" uk-icon="icon: eo-user-1; ratio: .7"></span>Вызвать замерщика</a>
+								<a class="uk-button uk-button-default uk-text-truncate call-special" href="#" uk-toggle="target: #modal-1"><span class="uk-margin-small-right" uk-icon="icon: eo-phone-3; ratio: .7"></span>Заказать звонок</a>
 							</div>
 						</div>
 					</div>
 					<div class="uk-width-auto uk-flex uk-flex-middle uk-flex-right">
 						<span class="uk-text-primary uk-margin-small-right" uk-icon="icon: eo-delivery-9; ratio: 1.5"></span>
-						<div>
+						<div class="uk-text-right">
 							<div class="uk-margin-remove uk-text-truncate uk-text-bold"><a class="phone-call uk-link-reset" href="tel:+74957256065">+7 495 <span class="uk-text-primary">725-60-65</span></a></div>
-							<div class="uk-margin-remove"><a class="uk-link" href="#">Заказать звонок</a></div>
+							<div class="uk-margin-remove"><a class="uk-link uk-text-danger uk-text-small uk-text-uppercase uk-text-bold" href="#">Заказать звонок</a></div>
 						</div>
 					</div>
 				</div>
@@ -178,16 +181,44 @@
 		</div>
 	</section>
 
+	<section class="uk-section uk-section-small uk-background-secondary">
+		<div class="uk-container">
+			<div class="uk-child-width-1-3@m uk-grid" uk-grid>
+				<div>
+					<p class="uk-text-uppercase uk-h3 uk-text-left@m uk-text-center">Оставьте заявку сейчас <br>и получите скидку 50% <br>+ подарок</p>
+				</div>
+				<div class="uk-width-expand">
+						<form method="post" action="">
+							<div class="uk-child-width-1-2@s uk-grid" uk-grid>
+								<div>
+									<div class="uk-inline uk-width-1-1">
+										<span class="uk-form-icon" uk-icon="icon: eo-phone-3; ratio: .7"></span>
+										<input class="uk-input uk-width-1-1 phone-mask" type="tel" placeholder="+7 (___) ___-__-__" required uk-tooltip="title: Укажите Ваш номер телефона; pos: top-left" style="border-color: transparent;">
+									</div>
+								</div>
+								<div>
+									<button class="uk-button uk-button-danger uk-text-uppercase uk-width-1-1" type="submit">Оставьте заявку</button>
+								</div>
+							</div>
+							<div class="uk-margin-top">
+								<label class="uk-text-small"><input class="uk-checkbox uk-margin-small-right" type="checkbox" checked required>Даю согласие на обработку моих персональных данных в соответствии с <a href="https://www.eurookna.ru/privacy-policy.pdf" target="_blank" rel="nofollow">политикой конфиденциальности</a></label>
+							</div>
+						</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- Пластиковые окна от «ЕвроОкна» -->
-	<section class="uk-section uk-section-default uk-text-center">
+	<!-- <section class="uk-section uk-section-default uk-text-center">
 		<div class="uk-container">
 			<div class="uk-position-relative">
-				<div class="uk-width-xxlarge uk-margin-auto" uk-scrollspy="cls: uk-animation-slide-bottom-small">
+				<div class="uk-width-xxlarge uk-margin-auto">
 					<h1 class="uk-h1 uk-width-xlarge uk-margin-auto uk-text-center uk-text-uppercase">Пластиковые окна от «ЕвроОкна»</h1>
 					<h2 class="uk-h2 uk-width-xlarge uk-margin-auto uk-text-center uk-text-uppercase">Скидка <span class="uk-text-danger">50%</span> только до <span class="uk-text-danger">7 июня</span></h2>
 					<p class="uk-text-muted">Компания «ЕвроОкна» применяет честную политику ценообразования. Собственное производство и оптимизированная система расчета позволяет предлагать клиентам выгодные цены на пластиковые окна.</p>
 				</div>
-				<div class="uk-margin-large uk-child-width-1-3@m uk-grid" uk-grid uk-scrollspy="target: > div > div; cls:uk-animation-slide-bottom-small; delay: 200">
+				<div class="uk-margin-large uk-child-width-1-4@m uk-grid" uk-grid>
 					<div>
 						<div class="uk-position-relative">
 							<img data-src="images/window-1.png" width="277" height="327" alt="Двухстворчатое окно" uk-img>
@@ -231,19 +262,281 @@
 				</div>
 			</div>
 		</div>
+	</section> -->
+
+	<!-- Пластиковые окна от «ЕвроОкна» -->
+	<section class="uk-section uk-section-default">
+		<div class="uk-container">
+			<div class="uk-position-relative">
+				<div class="uk-width-xlarge uk-margin-auto uk-margin-medium uk-text-center">
+					<h1 class="uk-h1 uk-text-uppercase">Пластиковые окна от «ЕвроОкна»</h1>
+					<h2 class="uk-h2 uk-text-uppercase">Скидка <span class="uk-text-danger">50%</span> только до <span class="uk-text-danger">7 июня</span></h2>
+					<p class="uk-text-muted">Компания «ЕвроОкна» применяет честную политику ценообразования. Собственное производство и оптимизированная система расчета позволяет предлагать клиентам выгодные цены на пластиковые окна.</p>
+				</div>
+				<div class="uk-flex uk-flex-center">
+					<div uk-switcher="connect: #slide-product-type; animation: uk-animation-fade; toggle: > *">
+						<a class="uk-button uk-button-default" href="#">Тип 1</a>
+						<a class="uk-button uk-button-default" href="#">Тип 2</a>
+						<a class="uk-button uk-button-default" href="#">Тип 3</a>
+					</div>
+				</div>
+				<ul id="slide-product-type" class="uk-margin-large uk-switcher">
+					<li>
+						<div class="uk-child-width-1-4@m uk-grid" uk-grid uk-height-match="target: > div > div > .eo-product-type-img">
+							<div>
+								<div class="uk-position-relative">
+									<h3 class="uk-text-uppercase uk-text-center">Двухстворчатое</h3>
+									<div class="eo-product-type-img uk-panel">
+										<img data-src="images/window-1.png" width="277" height="327" alt="Двухстворчатое окно" uk-img>
+										<div class="uk-text-center uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-bottom-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+											<div>
+												<p class="uk-margin-remove"><s>25 340</s><br><span class="uk-h2 uk-text-danger">12 600</span><br>руб.</p>
+											</div>
+										</div>
+									</div>
+									<p class="uk-text-bold">Размер 1900х1700 мм (2.05 м2)</p>
+									<ul class="uk-list uk-list-bullet">
+										<li>Поворотно откидная створка</li>
+										<li>WHS 60: 4 камеры 60 мм</li>
+										<li>Стеклопакет: 24/32 мм, энергосберегающий</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div class="uk-position-relative">
+									<h3 class="uk-text-uppercase uk-text-center">Трёхстворчатое</h3>
+									<div class="eo-product-type-img uk-panel">
+										<img data-src="images/window-2.png" width="367" height="327" alt="Трехстворчатое окно" uk-img>
+										<div class="uk-text-center uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-bottom-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+											<div>
+												<p class="uk-margin-remove"><s>35 180</s><br><span class="uk-h2 uk-text-danger">17 600</span><br>руб.</p>
+											</div>
+										</div>
+									</div>
+									<p class="uk-text-bold">Размер 1900х1700 мм (2.05 м2)</p>
+									<ul class="uk-list uk-list-bullet">
+										<li>Поворотно откидная створка</li>
+										<li>WHS 60: 4 камеры 60 мм</li>
+										<li>Стеклопакет: 24/32 мм, энергосберегающий</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div class="uk-position-relative">
+									<h3 class="uk-text-uppercase uk-text-center">Балконный блок</h3>
+									<div class="eo-product-type-img uk-panel">
+										<img data-src="images/window-3.png" width="302" height="487" alt="Балконный блок" uk-img>
+										<div class="uk-text-center uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-bottom-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+											<div>
+												<p class="uk-margin-remove"><s>33 010</s><br><span class="uk-h2 uk-text-danger">16 500</span><br>руб.</p>
+											</div>
+										</div>
+									</div>
+									<p class="uk-text-bold">Размер 1900х1700 мм (2.05 м2)</p>
+									<ul class="uk-list uk-list-bullet">
+										<li>Поворотно откидная створка</li>
+										<li>WHS 60: 4 камеры 60 мм</li>
+										<li>Стеклопакет: 24/32 мм, энергосберегающий</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div class="uk-position-relative">
+									<h3 class="uk-text-uppercase uk-text-center">Деревянное</h3>
+									<div class="eo-product-type-img uk-panel">
+										<img data-src="images/derevyannye-okna/okno-1.png" width="302" height="487" alt="Балконный блок" uk-img>
+										<div class="uk-text-center uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-bottom-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+											<div>
+												<p class="uk-margin-remove"><s>33 010</s><br><span class="uk-h2 uk-text-danger">16 500</span><br>руб.</p>
+											</div>
+										</div>
+									</div>
+									<p class="uk-text-bold">Размер 1900х1700 мм (2.05 м2)</p>
+									<ul class="uk-list uk-list-bullet">
+										<li>Поворотно откидная створка</li>
+										<li>WHS 60: 4 камеры 60 мм</li>
+										<li>Стеклопакет: 24/32 мм, энергосберегающий</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="uk-child-width-1-4@m uk-grid" uk-grid uk-height-match="target: > div > div > .eo-product-type-img">
+							<div>
+								<div class="uk-position-relative">
+									<h3 class="uk-text-uppercase uk-text-center">Двухстворчатое</h3>
+									<div class="eo-product-type-img uk-panel">
+										<img data-src="images/window-1.png" width="277" height="327" alt="Двухстворчатое окно" uk-img>
+										<div class="uk-text-center uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-bottom-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+											<div>
+												<p class="uk-margin-remove"><s>25 340</s><br><span class="uk-h2 uk-text-danger">12 600</span><br>руб.</p>
+											</div>
+										</div>
+									</div>
+									<p class="uk-text-bold">Размер 1900х1700 мм (2.05 м2)</p>
+									<ul class="uk-list uk-list-bullet">
+										<li>Поворотно откидная створка</li>
+										<li>WHS 60: 4 камеры 60 мм</li>
+										<li>Стеклопакет: 24/32 мм, энергосберегающий</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div class="uk-position-relative">
+									<h3 class="uk-text-uppercase uk-text-center">Трёхстворчатое</h3>
+									<div class="eo-product-type-img uk-panel">
+										<img data-src="images/window-2.png" width="367" height="327" alt="Трехстворчатое окно" uk-img>
+										<div class="uk-text-center uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-bottom-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+											<div>
+												<p class="uk-margin-remove"><s>35 180</s><br><span class="uk-h2 uk-text-danger">17 600</span><br>руб.</p>
+											</div>
+										</div>
+									</div>
+									<p class="uk-text-bold">Размер 1900х1700 мм (2.05 м2)</p>
+									<ul class="uk-list uk-list-bullet">
+										<li>Поворотно откидная створка</li>
+										<li>WHS 60: 4 камеры 60 мм</li>
+										<li>Стеклопакет: 24/32 мм, энергосберегающий</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div class="uk-position-relative">
+									<h3 class="uk-text-uppercase uk-text-center">Балконный блок</h3>
+									<div class="eo-product-type-img uk-panel">
+										<img data-src="images/window-3.png" width="302" height="487" alt="Балконный блок" uk-img>
+										<div class="uk-text-center uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-bottom-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+											<div>
+												<p class="uk-margin-remove"><s>33 010</s><br><span class="uk-h2 uk-text-danger">16 500</span><br>руб.</p>
+											</div>
+										</div>
+									</div>
+									<p class="uk-text-bold">Размер 1900х1700 мм (2.05 м2)</p>
+									<ul class="uk-list uk-list-bullet">
+										<li>Поворотно откидная створка</li>
+										<li>WHS 60: 4 камеры 60 мм</li>
+										<li>Стеклопакет: 24/32 мм, энергосберегающий</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div class="uk-position-relative">
+									<h3 class="uk-text-uppercase uk-text-center">Деревянное</h3>
+									<div class="eo-product-type-img uk-panel">
+										<img data-src="images/window-3.png" width="302" height="487" alt="Балконный блок" uk-img>
+										<div class="uk-text-center uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-bottom-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+											<div>
+												<p class="uk-margin-remove"><s>33 010</s><br><span class="uk-h2 uk-text-danger">16 500</span><br>руб.</p>
+											</div>
+										</div>
+									</div>
+									<p class="uk-text-bold">Размер 1900х1700 мм (2.05 м2)</p>
+									<ul class="uk-list uk-list-bullet">
+										<li>Поворотно откидная створка</li>
+										<li>WHS 60: 4 камеры 60 мм</li>
+										<li>Стеклопакет: 24/32 мм, энергосберегающий</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="uk-child-width-1-4@m uk-grid" uk-grid uk-height-match="target: > div > div > .eo-product-type-img">
+							<div>
+								<div class="uk-position-relative">
+									<h3 class="uk-text-uppercase uk-text-center">Двухстворчатое</h3>
+									<div class="eo-product-type-img uk-panel">
+										<img data-src="images/window-1.png" width="277" height="327" alt="Двухстворчатое окно" uk-img>
+										<div class="uk-text-center uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-bottom-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+											<div>
+												<p class="uk-margin-remove"><s>25 340</s><br><span class="uk-h2 uk-text-danger">12 600</span><br>руб.</p>
+											</div>
+										</div>
+									</div>
+									<p class="uk-text-bold">Размер 1900х1700 мм (2.05 м2)</p>
+									<ul class="uk-list uk-list-bullet">
+										<li>Поворотно откидная створка</li>
+										<li>WHS 60: 4 камеры 60 мм</li>
+										<li>Стеклопакет: 24/32 мм, энергосберегающий</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div class="uk-position-relative">
+									<h3 class="uk-text-uppercase uk-text-center">Трёхстворчатое</h3>
+									<div class="eo-product-type-img uk-panel">
+										<img data-src="images/window-2.png" width="367" height="327" alt="Трехстворчатое окно" uk-img>
+										<div class="uk-text-center uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-bottom-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+											<div>
+												<p class="uk-margin-remove"><s>35 180</s><br><span class="uk-h2 uk-text-danger">17 600</span><br>руб.</p>
+											</div>
+										</div>
+									</div>
+									<p class="uk-text-bold">Размер 1900х1700 мм (2.05 м2)</p>
+									<ul class="uk-list uk-list-bullet">
+										<li>Поворотно откидная створка</li>
+										<li>WHS 60: 4 камеры 60 мм</li>
+										<li>Стеклопакет: 24/32 мм, энергосберегающий</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div class="uk-position-relative">
+									<h3 class="uk-text-uppercase uk-text-center">Балконный блок</h3>
+									<div class="eo-product-type-img uk-panel">
+										<img data-src="images/window-3.png" width="302" height="487" alt="Балконный блок" uk-img>
+										<div class="uk-text-center uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-bottom-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+											<div>
+												<p class="uk-margin-remove"><s>33 010</s><br><span class="uk-h2 uk-text-danger">16 500</span><br>руб.</p>
+											</div>
+										</div>
+									</div>
+									<p class="uk-text-bold">Размер 1900х1700 мм (2.05 м2)</p>
+									<ul class="uk-list uk-list-bullet">
+										<li>Поворотно откидная створка</li>
+										<li>WHS 60: 4 камеры 60 мм</li>
+										<li>Стеклопакет: 24/32 мм, энергосберегающий</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<div class="uk-position-relative">
+									<h3 class="uk-text-uppercase uk-text-center">Деревянное</h3>
+									<div class="eo-product-type-img uk-panel">
+										<img data-src="images/window-3.png" width="302" height="487" alt="Балконный блок" uk-img>
+										<div class="uk-text-center uk-box-shadow-small uk-padding-small uk-text-bold uk-background-secondary uk-width-small uk-position-bottom-left uk-flex uk-flex-center uk-flex-middle uk-border-circle" style="top: 100px; width: 130px; height: 130px;">
+											<div>
+												<p class="uk-margin-remove"><s>33 010</s><br><span class="uk-h2 uk-text-danger">16 500</span><br>руб.</p>
+											</div>
+										</div>
+									</div>
+									<p class="uk-text-bold">Размер 1900х1700 мм (2.05 м2)</p>
+									<ul class="uk-list uk-list-bullet">
+										<li>Поворотно откидная створка</li>
+										<li>WHS 60: 4 камеры 60 мм</li>
+										<li>Стеклопакет: 24/32 мм, энергосберегающий</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</section>
 
 	<!-- Евро 60 / Евро 70 / Евро 82 -->
 	<section class="uk-section uk-section-muted">
 		<div class="uk-container">
 			<div class="uk-flex uk-flex-center">
-				<div uk-switcher="connect: #slide-product; active: 1; animation: uk-animation-fade; toggle: > *" uk-scrollspy="cls: uk-animation-fade">
+				<div uk-switcher="connect: #slide-product; active: 1; animation: uk-animation-fade; toggle: > *">
 					<a class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical" href="#">Евро 60</a>
 					<a class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical" href="#">Евро 70</a>
 					<a class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical" href="#">Евро 82</a>
 				</div>
 			</div>
-			<ul id="slide-product" class="uk-margin-large uk-switcher" uk-scrollspy="cls: uk-animation-slide-bottom-small">
+			<ul id="slide-product" class="uk-margin-large uk-switcher">
 				<li>
 					<div class="uk-child-width-1-2@m uk-grid" uk-grid>
 						<div>
@@ -595,7 +888,56 @@
 	</section>
 
 	<!-- Почему ЕвроОкна -->
-	<section class="uk-section uk-background-cover uk-light" data-src="images/eurookna_bg.jpg" uk-img>
+	<section class="uk-section">
+		<div class="uk-container">
+			<h2 class="uk-h1 uk-text-uppercase uk-text-center">Почему ЕвроОкна</h2>
+			<div class="uk-margin-large uk-flex-middle uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-large uk-grid" uk-grid>
+				<div>
+					<div class="uk-text-bold uk-text-uppercase uk-flex-middle uk-child-width-auto uk-grid-small uk-grid">
+						<div><span class="uk-text-primary" uk-icon="icon: eo-time-6; ratio: 2"></span></div>
+						<div>Короткие сроки <br>изготовления</div>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, blanditiis iure? Est repellat officiis consectetur sunt exercitationem quam quas, assumenda error ut quod possimus dolore veniam excepturi molestias maxime sapiente.</p>
+				</div>
+				<div>
+					<div class="uk-text-bold uk-text-uppercase uk-flex-middle uk-child-width-auto uk-grid-small uk-grid">
+						<div><span class="uk-text-primary" uk-icon="icon: eo-tools-14; ratio: 2"></span></div>
+						<div>Монтаж <br>по евростандарту</div>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, blanditiis iure? Est repellat officiis consectetur sunt exercitationem quam quas, assumenda error ut quod possimus dolore veniam excepturi molestias maxime sapiente.</p>
+				</div>
+				<div>
+					<div class="uk-text-bold uk-text-uppercase uk-flex-middle uk-child-width-auto uk-grid-small uk-grid">
+						<div><span class="uk-text-primary" uk-icon="icon: eo-award-10; ratio: 2"></span></div>
+						<div>Гарантия на монтаж — <br>5 лет</div>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, blanditiis iure? Est repellat officiis consectetur sunt exercitationem quam quas, assumenda error ut quod possimus dolore veniam excepturi molestias maxime sapiente.</p>
+				</div>
+				<div>
+					<div class="uk-text-bold uk-text-uppercase uk-flex-middle uk-child-width-auto uk-grid-small uk-grid">
+						<div><span class="uk-text-primary" uk-icon="icon: eo-certificate-16; ratio: 2"></span></div>
+						<div>Аттестованные <br>монтажные бригады</div>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, blanditiis iure? Est repellat officiis consectetur sunt exercitationem quam quas, assumenda error ut quod possimus dolore veniam excepturi molestias maxime sapiente.</p>
+				</div>
+				<div>
+					<div class="uk-text-bold uk-text-uppercase uk-flex-middle uk-child-width-auto uk-grid-small uk-grid">
+						<div><span class="uk-text-primary" uk-icon="icon: eo-shield-28; ratio: 2"></span></div>
+						<div>Двойная защита окна <br>при доставке</div>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, blanditiis iure? Est repellat officiis consectetur sunt exercitationem quam quas, assumenda error ut quod possimus dolore veniam excepturi molestias maxime sapiente.</p>
+				</div>
+				<div>
+					<div class="uk-text-bold uk-text-uppercase uk-flex-middle uk-child-width-auto uk-grid-small uk-grid">
+						<div><span class="uk-text-primary" uk-icon="icon: eo-user-15; ratio: 2"></span></div>
+						<div>Персональный <br>менеджер</div>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, blanditiis iure? Est repellat officiis consectetur sunt exercitationem quam quas, assumenda error ut quod possimus dolore veniam excepturi molestias maxime sapiente.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section class="uk-section uk-background-cover uk-light" data-src="images/eurookna_bg.jpg" uk-img>
 		<div class="uk-container">
 			<h2 class="uk-h1 uk-text-uppercase uk-text-center uk-text-primary" uk-scrollspy="cls: uk-animation-slide-bottom-small">Почему ЕвроОкна</h2>
 			<div class="uk-text-uppercase uk-margin-large uk-flex-middle uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-large uk-grid" uk-grid uk-scrollspy="target: > div > div; cls: uk-animation-slide-bottom-small; delay: 200">
@@ -637,7 +979,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- Испытайте ваши новые окна -->
 	<section id="discount" class="uk-section uk-section-muted uk-section-small uk-cover-container">
@@ -741,6 +1083,34 @@
 						</div>
 					</li>
 				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="uk-section uk-section-small uk-background-secondary">
+		<div class="uk-container">
+			<div class="uk-child-width-1-3@m uk-grid" uk-grid>
+				<div>
+					<p class="uk-text-uppercase uk-h3 uk-text-left@m uk-text-center">Оставьте заявку сейчас <br>и получите скидку 50% <br>+ подарок</p>
+				</div>
+				<div class="uk-width-expand">
+						<form method="post" action="">
+							<div class="uk-child-width-1-2@s uk-grid" uk-grid>
+								<div>
+									<div class="uk-inline uk-width-1-1">
+										<span class="uk-form-icon" uk-icon="icon: eo-phone-3; ratio: .7"></span>
+										<input class="uk-input uk-width-1-1 phone-mask" type="tel" placeholder="+7 (___) ___-__-__" required uk-tooltip="title: Укажите Ваш номер телефона; pos: top-left" style="border-color: transparent;">
+									</div>
+								</div>
+								<div>
+									<button class="uk-button uk-button-danger uk-text-uppercase uk-width-1-1" type="submit">Оставьте заявку</button>
+								</div>
+							</div>
+							<div class="uk-margin-top">
+								<label class="uk-text-small"><input class="uk-checkbox uk-margin-small-right" type="checkbox" checked required>Даю согласие на обработку моих персональных данных в соответствии с <a href="https://www.eurookna.ru/privacy-policy.pdf" target="_blank" rel="nofollow">политикой конфиденциальности</a></label>
+							</div>
+						</form>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -1042,95 +1412,28 @@
 				<h2 class="uk-text-uppercase">Наши работы</h2>
 				<p>Утепление ПВХ-подоконников всегда начинается с их демонтажа. Для этого принято использовать два основных способа. Большинство россиян считает, что вопрос с утеплением помещения можно решить посредством установки ПВХ-окон.</p>
 			</div>
-			<div uk-slider>
-				<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-					<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-match uk-grid" uk-lightbox="animation: fade" uk-height-viewport="offset-bottom: 60">
-						<li>
-							<div class="uk-cover-container">
-								<a class="uk-position-cover" href="images/b1.jpeg" data-type="image" data-alt="Caption 1" data-caption="Caption 1">
-									<img src="images/b1.jpeg" alt="Caption 1" uk-cover>
-									<div class="uk-position-center uk-panel"><h1>1</h1></div>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div class="uk-cover-container">
-								<a class="uk-position-cover" href="images/b2.jpeg" data-type="image" data-alt="Caption 2" data-caption="Caption 2">
-									<img src="images/b2.jpeg" alt="Caption 2" uk-cover>
-									<div class="uk-position-center uk-panel"><h1>2</h1></div>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div class="uk-cover-container">
-								<a class="uk-position-cover" href="images/b1.jpeg" data-type="image" data-alt="Caption 3" data-caption="Caption 3">
-									<img src="images/b1.jpeg" alt="Caption 3" uk-cover>
-									<div class="uk-position-center uk-panel"><h1>3</h1></div>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div class="uk-cover-container">
-								<a class="uk-position-cover" href="images/b2.jpeg" data-type="image" data-alt="Caption 4" data-caption="Caption 4">
-									<img src="images/b2.jpeg" alt="Caption 4" uk-cover>
-									<div class="uk-position-center uk-panel"><h1>4</h1></div>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div class="uk-cover-container">
-								<a class="uk-position-cover" href="images/b1.jpeg" data-type="image" data-alt="Caption 5" data-caption="Caption 5">
-									<img src="images/b1.jpeg" alt="Caption 5" uk-cover>
-									<div class="uk-position-center uk-panel"><h1>5</h1></div>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div class="uk-cover-container">
-								<a class="uk-position-cover" href="images/b2.jpeg" data-type="image" data-alt="Caption 6" data-caption="Caption 6">
-									<img src="images/b2.jpeg" alt="Caption 6" uk-cover>
-									<div class="uk-position-center uk-panel"><h1>6</h1></div>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div class="uk-cover-container">
-								<a class="uk-position-cover" href="images/b1.jpeg" data-type="image" data-alt="Caption 7" data-caption="Caption 7">
-									<img src="images/b1.jpeg" alt="Caption 7" uk-cover>
-									<div class="uk-position-center uk-panel"><h1>7</h1></div>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div class="uk-cover-container">
-								<a class="uk-position-cover" href="images/b2.jpeg" data-type="image" data-alt="Caption 8" data-caption="Caption 8">
-									<img src="images/b2.jpeg" alt="Caption 8" uk-cover>
-									<div class="uk-position-center uk-panel"><h1>8</h1></div>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div class="uk-cover-container">
-								<a class="uk-position-cover" href="images/b1.jpeg" data-type="image" data-alt="Caption 9" data-caption="Caption 9">
-									<img src="images/b1.jpeg" alt="Caption 9" uk-cover>
-									<div class="uk-position-center uk-panel"><h1>9</h1></div>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div class="uk-cover-container">
-								<a class="uk-position-cover" href="images/b2.jpeg" data-type="image" data-alt="Caption 10" data-caption="Caption 10">
-									<img src="images/b2.jpeg" alt="Caption 10" uk-cover>
-									<div class="uk-position-center uk-panel"><h1>10</h1></div>
-								</a>
-							</div>
-						</li>
+			<div class="uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade">
+				<div class="uk-position-relative">
+					<ul class="uk-slideshow-items">
+						<li><img src="images/b1.jpeg" alt="Наши работы" uk-cover></li>
+						<li><img src="images/b2.jpeg" alt="Наши работы" uk-cover></li>
+						<li><img src="images/b1.jpeg" alt="Наши работы" uk-cover></li>
+						<li><img src="images/b2.jpeg" alt="Наши работы" uk-cover></li>
+						<li><img src="images/b1.jpeg" alt="Наши работы" uk-cover></li>
+						<li><img src="images/b2.jpeg" alt="Наши работы" uk-cover></li>
 					</ul>
-					<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-					<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+					<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+					<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
 				</div>
-				<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-			</div>
+				<ul class="uk-thumbnav uk-margin uk-child-width-expand">
+					<li uk-slideshow-item="0"><a href="#"><img src="images/b1.jpeg" alt="Наши работы"></a></li>
+					<li uk-slideshow-item="1"><a href="#"><img src="images/b2.jpeg" alt="Наши работы"></a></li>
+					<li uk-slideshow-item="2"><a href="#"><img src="images/b1.jpeg" alt="Наши работы"></a></li>
+					<li uk-slideshow-item="3"><a href="#"><img src="images/b2.jpeg" alt="Наши работы"></a></li>
+					<li uk-slideshow-item="4"><a href="#"><img src="images/b1.jpeg" alt="Наши работы"></a></li>
+					<li uk-slideshow-item="5"><a href="#"><img src="images/b2.jpeg" alt="Наши работы"></a></li>
+				</ul>
+            </div>
 		</div>
 	</section>
 
@@ -1172,6 +1475,62 @@
 					<li>По виду самой сетки: рамочные или бескаркасные;</li>
 					<li>По расположению: снаружи или внутри помещения установлена сетка.</li>
 				</ol>
+			</div>
+		</div>
+	</section>
+
+	<!-- Секция с подкатегорией продуктов -->
+	<section class="uk-section uk-section-muted">
+		<div class="uk-container">
+			<div class="uk-width-xlarge uk-margin-auto uk-margin-medium uk-text-center">
+				<h2 class="uk-h1 uk-text-uppercase">Подкатегории продуктов</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam odio ab, blanditiis id, quibusdam unde voluptatum repellat expedita voluptatem laudantium eligendi maiores quaerat sed distinctio maxime? Voluptas neque hic voluptate.</p>
+			</div>
+			<div class="uk-child-width-1-2@m" uk-grid>
+				<div>
+					<div class="uk-inline">
+						<img src="images/b1.jpeg" alt="">
+						<div class="uk-overlay uk-overlay-default uk-position-cover">
+							<h2>Теплое остекление</h2>
+							<p>Пластиковые окна защитят от дождя</p>
+							<p>Цена от: <br><span class="uk-h2 uk-text-danger">12 345 руб.</span></p>
+							<a class="uk-button uk-button-primary" href="#">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-inline">
+						<img src="images/b2.jpeg" alt="">
+						<div class="uk-overlay uk-overlay-default uk-position-cover">
+							<h2>Холодное остекление</h2>
+							<p>Алюминиевые окна защитят от дождя</p>
+							<p>Цена от: <br><span class="uk-h2 uk-text-danger">21 345 руб.</span></p>
+							<a class="uk-button uk-button-primary" href="#">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-inline">
+						<img src="images/b1.jpeg" alt="">
+						<div class="uk-overlay uk-overlay-default uk-position-cover">
+							<h2>Отделка балкона</h2>
+							<p>Любые дизайнерские решения</p>
+							<p>Цена от: <br><span class="uk-h2 uk-text-danger">26 345 руб.</span></p>
+							<a class="uk-button uk-button-primary" href="#">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-inline">
+						<img src="images/b2.jpeg" alt="">
+						<div class="uk-overlay uk-overlay-default uk-position-cover">
+							<h2>Панорамное остекление</h2>
+							<p>От пола до потолка</p>
+							<p>Цена от: <br><span class="uk-h2 uk-text-danger">32 345 руб.</span></p>
+							<a class="uk-button uk-button-primary" href="#">Подробнее</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -1247,7 +1606,7 @@
 
 			<hr class="uk-margin-medium">
 
-			<div class="uk-child-width-1-4@m uk-child-width-1-3@s" uk-grid>
+			<div class="uk-child-width-1-5@m uk-child-width-1-3@s uk-grid-small" uk-grid>
 				<div>
 					<h3>Продукция</h3>
 					<ul class="uk-nav uk-nav-default">
@@ -1282,7 +1641,31 @@
 					</ul>
 				</div>
 				<div>
-					<h3>Принимаем к оплате</h3>
+					<ul class="uk-nav uk-link-text uk-text-bold">
+						<li><a href="#">Пункт меню 1</a></li>
+						<li><a href="#">Пункт меню 2</a></li>
+						<li><a href="#">Пункт меню 3</a></li>
+						<li><a href="#">Пункт меню 4</a></li>
+						<li><a href="#">Пункт меню 5</a></li>
+						<li><a href="#">Пункт меню 6</a></li>
+						<li><a href="#">Пункт меню 7</a></li>
+						<li><a href="#">Пункт меню 8</a></li>
+					</ul>
+				</div>
+				<div>
+					<div>
+						<a class="uk-margin-small-right" uk-icon="icon: eo-facebook-2; ratio: 1.5" uk-tooltip="Facebook" href="https://www.facebook.com/EuroOknaMoscow" target="_blank" rel="nofollow noopener noreferrer" style="color: #4267b2;"></a>
+						<a class="uk-margin-small-right" uk-icon="icon: eo-vk-2; ratio: 1.5" uk-tooltip="ВКонтакте" href="https://vk.com/eurooknaru" target="_blank" rel="nofollow noopener noreferrer" style="color: #5181b8;"></a>
+						<a uk-icon="icon: eo-youtube-2; ratio: 1.5" uk-tooltip="YouTube" href="https://www.youtube.com/user/EuroOkna" target="_blank" rel="nofollow noopener noreferrer" style="color: #FF0000;"></a>
+					</div>
+					<div class="uk-margin uk-text-bold">
+						<a class="phone-call uk-link-reset" href="tel:+74957256065">+7 495 <span class="uk-text-primary">725-60-65</span></a><br>
+						<a class="uk-link uk-text-danger uk-text-small uk-text-uppercase uk-text-bold" href="#">Заказать звонок</a>
+					</div>
+					<div>
+						<p class="">127006, г.&nbsp;Москва, м.&nbsp;Новослободская, ул.&nbsp;Долгоруковская, д.&nbsp;21, стр.&nbsp;1, этаж&nbsp;3, офис&nbsp;303. <br>Tел.: +7 495 725-60-65 (круглосуточно).</p>
+					</div>
+					<h3 class="uk-margin">Принимаем к оплате</h3>
 					<div class="uk-grid uk-grid-small uk-child-width-expand uk-flex-center uk-flex-middle" uk-grid>
 						<div><img data-src="images/mastercard.svg" width="36" height="" alt="MasterCard" uk-tooltip="MasterCard" uk-img></div>
 						<div><img data-src="images/visacard.svg" width="36" height="" alt="VISA" uk-tooltip="VISA" uk-img></div>
@@ -1290,21 +1673,15 @@
 						<div><img data-src="images/mircard.svg" width="36" height="" alt="МИР" uk-tooltip="МИР" uk-img></div>
 						<div><a href="https://halvacard.ru/shops/stroitelnye-materialy/EvroOkna" target="_blank" rel="nofollow noopener noreferrer"><img data-src="images/halvacard.svg" width="100" height="35" alt="Халва" uk-tooltip="Халва" uk-img></a></div>
 					</div>
-					<h3>Социальные сети</h3>
-					<div>
-						<a class="uk-margin-small-right" uk-icon="icon: eo-facebook-2; ratio: 1.5" uk-tooltip="Facebook" href="https://www.facebook.com/EuroOknaMoscow" target="_blank" rel="nofollow noopener noreferrer" style="color: #4267b2;"></a>
-						<a class="uk-margin-small-right" uk-icon="icon: eo-vk-2; ratio: 1.5" uk-tooltip="ВКонтакте" href="https://vk.com/eurooknaru" target="_blank" rel="nofollow noopener noreferrer" style="color: #5181b8;"></a>
-						<a uk-icon="icon: eo-youtube-2; ratio: 1.5" uk-tooltip="YouTube" href="https://www.youtube.com/user/EuroOkna" target="_blank" rel="nofollow noopener noreferrer" style="color: #FF0000;"></a>
-					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<footer class="uk-section uk-section-xsmall uk-text-muted">
+	<footer class="uk-section uk-section-xsmall uk-text-muted uk-text-small">
 		<div class="uk-container">
-			<p>© 1995 — 2019 ООО «ЕвроОкна». <br>ВНИМАНИЕ! Наш интернет-ресурс, носит исключительно информационный характер и не является публичной офертой, определяемой положениями Статьи 437(2) ГК РФ.</p>
-			<a class="uk-margin" href="#" uk-totop uk-scroll></a>
+			<p>ВНИМАНИЕ! Наш интернет-ресурс, носит исключительно информационный характер и не является публичной офертой, определяемой положениями Статьи 437(2) ГК РФ.<br>© 1995 — 2019 ООО «ЕвроОкна».</p>
+			<!-- <a class="uk-margin" href="#" uk-totop uk-scroll></a> -->
 		</div>
 	</footer>
 
