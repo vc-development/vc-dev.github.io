@@ -1,0 +1,52 @@
+html {
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	-webkit-text-size-adjust: 100%;
+	background: #fff;
+	color: #333;
+}
+
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4,
+.uk-h5,
+.uk-h6,
+.uk-heading-2xlarge,
+.uk-heading-large,
+.uk-heading-medium,
+.uk-heading-small,
+.uk-heading-xlarge,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Oswald', Arial, sans-serif;
+	font-weight: 400;
+	color: #111;
+	text-transform: uppercase;
+}
+
+.uk-button {
+	font-family: 'Oswald', Arial, sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.uk-button-primary {
+	background-color: #312783;
+	color: #fff;
+	border: 1px solid transparent;
+}
+
+.uk-navbar-item,
+.uk-navbar-nav>li>a,
+.uk-navbar-toggle {
+	font-size: 16px;
+	font-family: 'Oswald', Arial, sans-serif;
+}
