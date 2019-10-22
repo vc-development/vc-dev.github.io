@@ -19,22 +19,22 @@ document.addEventListener('DOMContentLoaded', function () {
 	// 	});
 	// }
 
-	var cookieNotification = Cookies.get('cookie-notification');
-	if (!cookieNotification) {
-		UIkit.notification({
-			message: '<p>Lorem ipsum dolor sit amet.</p>',
-			status: 'primary',
-			timeout: 0,
-			pos: 'bottom-left uk-position-fixed uk-position-bottom-left uk-width-1-1',
-			clsClose: 'uk-notification-close',
-			clsMsg: 'uk-notification-message uk-background-primary uk-light cookie-notification-close'
-		});
-		UIkit.util.on('.cookie-notification-close', 'close', function () {
-			Cookies.set('cookie-notification', 'yes', {
-				expires: 7
-			});
-		});
-	}
+	// var cookieNotification = Cookies.get('cookie-notification');
+	// if (!cookieNotification) {
+	// 	UIkit.notification({
+	// 		message: '<p>Lorem ipsum dolor sit amet.</p>',
+	// 		status: 'primary',
+	// 		timeout: 0,
+	// 		pos: 'bottom-left uk-position-fixed uk-position-bottom-left uk-width-1-1',
+	// 		clsClose: 'uk-notification-close',
+	// 		clsMsg: 'uk-notification-message uk-background-primary uk-light cookie-notification-close'
+	// 	});
+	// 	UIkit.util.on('.cookie-notification-close', 'close', function () {
+	// 		Cookies.set('cookie-notification', 'yes', {
+	// 			expires: 7
+	// 		});
+	// 	});
+	// }
 
 	(function () {
 		var pi = Math.PI;
