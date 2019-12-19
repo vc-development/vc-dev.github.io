@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru-ru" dir="ltr" vocab="https://schema.org/" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb#">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Каталог</title>
+		<link rel="stylesheet" href="css/uikit.thermoup.min.css">
+		<link rel="stylesheet" href="css/nouislider.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/uikit.min.js"></script>
+		<script src="js/uikit-icons-thermoup.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body data-instant-intensity="viewport" itemscope itemtype="https://schema.org/WebPage">
+		<header class="uk-section-secondary uk-preserve-color uk-light uk-background-cover" data-src="images/black-bg.jpg" data-uk-img itemscope itemtype="https://schema.org/WPHeader" role="banner">
+			<div class="uk-section uk-section-xsmall">
+				<div class="uk-container">
+					<div class="uk-margin uk-flex-middle uk-flex-between" data-uk-grid>
+						<!-- Logo -->
+						<div class="uk-width-1-5">
+							<a class="uk-logo" href="/index.html" rel="home">
+								<img src="images/thermoup-logo.svg" alt="ThermoUp" width="163" height="35">
+							</a>
+						</div>
+						<!-- Menu -->
+						<div class="uk-width-expand uk-visible@l">
+							<nav class="uk-panel">
+								<ul class="uk-subnav uk-flex-center">
+									<li class="uk-active"><a href="#">Как заказать</a></li>
+									<li><a href="#">Как оплатить</a></li>
+									<li><a href="#">Гарантия и возврат</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+						<!-- Phone -->
+						<div class="uk-width-auto">
+							<div class="uk-flex uk-flex-right uk-flex-middle">
+								<a class="uk-border-rounded uk-margin-large-right uk-position-relative" data-uk-icon="cart" href="#offcanvas-cart" data-uk-toggle>
+									<span class="uk-badge uk-position-top-right uk-transform-center" style="background-color: #ffae00; left: 100%; top: 0">5</span>
+								</a>
+								<div class="uk-panel uk-text-right">
+									<a class="uk-text-nowrap uk-text-primary uk-h5" href="tel:84957778899">8 (495) <span class="uk-text-bold uk-text-primary uk-h3">777-88-99</span></a>
+									<br class="uk-visible@l"><a class="uk-margin-small-left uk-h5" href="#modal-callback">обратный звонок</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="uk-section uk-section-xsmall uk-padding-remove-top">
+				<div class="uk-container">
+					<div class="uk-margin" data-uk-grid>
+						<div class="uk-width-1-4">
+							<div>
+								<button class="uk-button uk-button-default uk-width-1-1" type="button"><span class="uk-margin-small-right" data-uk-icon="grid"></span>Продукция</button>
+								<div class="uk-border-rounded uk-box-shadow-medium" data-uk-dropdown>
+									<ul class="uk-nav uk-dropdown-nav">
+										<li class="uk-active"><a href="#">Напольные обогреватели</a></li>
+										<li><a href="#">Настенные обогреватели</a></li>
+										<li><a href="#">Потолочные обогреватели</a></li>
+										<li><a href="#">Стеклянные полотенцесушители</a></li>
+										<li><a href="#">Аксессуары для обогревателей</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="uk-width-3-4">
+							<div>
+								<form class="uk-panel" action="" method="post" data-uk-grid>
+									<div class="uk-width-2-3">
+										<div>
+											<div class="uk-inline uk-width-1-1 uk-search uk-search-default">
+												<span uk-search-icon></span>
+												<input class="uk-search-input uk-border-rounded" type="search" placeholder="Введите наименование товара">
+											</div>
+										</div>
+									</div>
+									<div class="uk-width-1-3">
+										<div>
+											<button class="uk-button uk-button-primary uk-border-rounded uk-width-1-1" type="button">Поиск</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main uk-height-viewport="expand: true" itemprop="mainContentOfPage" role="main">
+			<div class="uk-section uk-section-default uk-section-small">
+				<div class="uk-container">
+					<div class="uk-grid-match" uk-grid>
+						<!-- Banner 1 -->
+						<div class="uk-width-expand@m">
+							<div class="uk-card uk-card-secondary uk-card-body uk-border-rounded">
+								<div></div>
+								<canvas width="600" height="200"></canvas>
+							</div>
+						</div>
+						<!-- Banner 2 -->
+						<div class="uk-width-expand@m">
+							<div class="uk-card uk-card-primary uk-card-body uk-border-rounded">
+								<div></div>
+								<canvas width="600" height="200"></canvas>
+							</div>
+						</div>
+					</div>
+
+					<div uk-grid>
+						<!-- Filter -->
+						<div class="uk-width-1-4">
+							<h3 class="uk-text-bold">Фильтр</h3>
+							<form class="uk-card uk-card-default uk-card-body uk-card-small uk-border-rounded">
+								<ul class="uk-nav uk-nav-default">
+									<li class="uk-parent">
+										<a href="#"><span class="uk-h4 uk-text-bold">Метод установки</span></a>
+										<ul class="uk-nav-sub">
+											<li><label><input class="uk-checkbox uk-margin-small-right" type="checkbox" checked>На пол</label></li>
+											<li><label><input class="uk-checkbox uk-margin-small-right" type="checkbox">На стену</label></li>
+											<li><label><input class="uk-checkbox uk-margin-small-right" type="checkbox">На потолок</label></li>
+										</ul>
+									</li>
+									<li class="uk-parent">
+										<a href="#"><span class="uk-h4 uk-text-bold">Цвет</span></a>
+										<ul class="uk-nav-sub">
+											<li>...</li>
+											<li>...</li>
+										</ul>
+									</li>
+									<li class="uk-parent">
+										<a href="#"><span class="uk-h4 uk-text-bold">Мощность</span></a>
+										<ul class="uk-nav-sub">
+											<li><input class="uk-range" type="range" value="2" min="0" max="10" step="0.1" /></li>
+										</ul>
+									</li>
+									<li class="uk-parent">
+										<a href="#"><span class="uk-h4 uk-text-bold">Варианты</span></a>
+										<div class="uk-text-uppercase">Выберите квадратуру</div>
+										<ul class="uk-nav-sub">
+											<li><label><input class="uk-checkbox uk-margin-small-right" type="checkbox">до 25 м<sup>2</sup></label></li>
+											<li><label><input class="uk-checkbox uk-margin-small-right" type="checkbox">до 45 м<sup>2</sup></label></li>
+											<li><label><input class="uk-checkbox uk-margin-small-right" type="checkbox">до 75 м<sup>2</sup></label></li>
+											<li><label><input class="uk-checkbox uk-margin-small-right" type="checkbox">более 100 м<sup>2</sup></label></li>
+										</ul>
+									</li>
+								</ul>
+								<hr />
+								<button class="uk-button uk-button-text" type="button">Сбросить</button>
+							</form>
+						</div>
+						<!-- Results -->
+						<div class="uk-width-expand">
+							<div>
+								<h3 class="uk-text-bold">Новинки</h3>
+								<div class="uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-match" uk-grid>
+									<div>
+										<div class="uk-card uk-card-default uk-card-small uk-border-rounded uk-overflow-hidden">
+											<div class="uk-position-relative uk-height-medium uk-background-muted">
+												<div class="uk-label uk-position-top-left uk-position-small">-15%</div>
+												<div class="uk-text-success uk-position-bottom-right uk-position-small">в наличии</div>
+												<img data-src="images/product.png" alt="" width="" height="" uk-img />
+											</div>
+											<div class="uk-card-body">
+												<div class="uk-flex uk-flex-middle uk-flex-between">
+													<!-- Артикул -->
+													<div class="uk-text-small uk-text-muted">Артикул: 1754343</div>
+													<!-- Оценка -->
+													<div>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-muted" uk-icon="icon: star; ratio: .7"></span>
+													</div>
+												</div>
+												<!-- Заголовок -->
+												<h3 class="uk-h5 uk-text-bold uk-margin-small">Инфракрасный потолочный обогреватель ThermoUp TOP 1500</h3>
+												<div class="uk-flex uk-flex-middle uk-flex-between">
+													<!-- Стоимость -->
+													<div class="uk-h3 uk-text-bold uk-text-danger uk-margin-remove">17 500</div>
+													<!-- Кнопка -->
+													<div>
+														<button class="uk-button uk-button-primary uk-button-small uk-border-rounded" type="button">Купить</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="uk-card uk-card-default uk-card-small uk-border-rounded uk-overflow-hidden">
+											<div class="uk-position-relative uk-height-medium uk-background-muted">
+												<div class="uk-label uk-position-top-left uk-position-small">-15%</div>
+												<div class="uk-text-success uk-position-bottom-right uk-position-small">в наличии</div>
+												<img data-src="images/product.png" alt="" width="" height="" uk-img />
+											</div>
+											<div class="uk-card-body">
+												<div class="uk-flex uk-flex-middle uk-flex-between">
+													<!-- Артикул -->
+													<div class="uk-text-small uk-text-muted">Артикул: 1754343</div>
+													<!-- Оценка -->
+													<div>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-muted" uk-icon="icon: star; ratio: .7"></span>
+													</div>
+												</div>
+												<!-- Заголовок -->
+												<h3 class="uk-h5 uk-text-bold uk-margin-small">Инфракрасный потолочный обогреватель ThermoUp TOP 1500</h3>
+												<div class="uk-flex uk-flex-middle uk-flex-between">
+													<!-- Стоимость -->
+													<div class="uk-h3 uk-text-bold uk-text-danger uk-margin-remove">17 500</div>
+													<!-- Кнопка -->
+													<div>
+														<button class="uk-button uk-button-primary uk-button-small uk-border-rounded" type="button">Купить</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="uk-card uk-card-default uk-card-small uk-border-rounded uk-overflow-hidden">
+											<div class="uk-position-relative uk-height-medium uk-background-muted">
+												<div class="uk-label uk-position-top-left uk-position-small">-15%</div>
+												<div class="uk-text-success uk-position-bottom-right uk-position-small">в наличии</div>
+												<img data-src="images/product.png" alt="" width="" height="" uk-img />
+											</div>
+											<div class="uk-card-body">
+												<div class="uk-flex uk-flex-middle uk-flex-between">
+													<!-- Артикул -->
+													<div class="uk-text-small uk-text-muted">Артикул: 1754343</div>
+													<!-- Оценка -->
+													<div>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-muted" uk-icon="icon: star; ratio: .7"></span>
+													</div>
+												</div>
+												<!-- Заголовок -->
+												<h3 class="uk-h5 uk-text-bold uk-margin-small">Инфракрасный потолочный обогреватель ThermoUp TOP 1500</h3>
+												<div class="uk-flex uk-flex-middle uk-flex-between">
+													<!-- Стоимость -->
+													<div class="uk-h3 uk-text-bold uk-text-danger uk-margin-remove">17 500</div>
+													<!-- Кнопка -->
+													<div>
+														<button class="uk-button uk-button-primary uk-button-small uk-border-rounded" type="button">Купить</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="uk-card uk-card-default uk-card-small uk-border-rounded uk-overflow-hidden">
+											<div class="uk-position-relative uk-height-medium uk-background-muted">
+												<div class="uk-label uk-position-top-left uk-position-small">-15%</div>
+												<div class="uk-text-success uk-position-bottom-right uk-position-small">в наличии</div>
+												<img data-src="images/product.png" alt="" width="" height="" uk-img />
+											</div>
+											<div class="uk-card-body">
+												<div class="uk-flex uk-flex-middle uk-flex-between">
+													<!-- Артикул -->
+													<div class="uk-text-small uk-text-muted">Артикул: 1754343</div>
+													<!-- Оценка -->
+													<div>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-muted" uk-icon="icon: star; ratio: .7"></span>
+													</div>
+												</div>
+												<!-- Заголовок -->
+												<h3 class="uk-h5 uk-text-bold uk-margin-small">Инфракрасный потолочный обогреватель ThermoUp TOP 1500</h3>
+												<div class="uk-flex uk-flex-middle uk-flex-between">
+													<!-- Стоимость -->
+													<div class="uk-h3 uk-text-bold uk-text-danger uk-margin-remove">17 500</div>
+													<!-- Кнопка -->
+													<div>
+														<button class="uk-button uk-button-primary uk-button-small uk-border-rounded" type="button">Купить</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="uk-card uk-card-default uk-card-small uk-border-rounded uk-overflow-hidden">
+											<div class="uk-position-relative uk-height-medium uk-background-muted">
+												<div class="uk-label uk-position-top-left uk-position-small">-15%</div>
+												<div class="uk-text-success uk-position-bottom-right uk-position-small">в наличии</div>
+												<img data-src="images/product.png" alt="" width="" height="" uk-img />
+											</div>
+											<div class="uk-card-body">
+												<div class="uk-flex uk-flex-middle uk-flex-between">
+													<!-- Артикул -->
+													<div class="uk-text-small uk-text-muted">Артикул: 1754343</div>
+													<!-- Оценка -->
+													<div>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-muted" uk-icon="icon: star; ratio: .7"></span>
+													</div>
+												</div>
+												<!-- Заголовок -->
+												<h3 class="uk-h5 uk-text-bold uk-margin-small">Инфракрасный потолочный обогреватель ThermoUp TOP 1500</h3>
+												<div class="uk-flex uk-flex-middle uk-flex-between">
+													<!-- Стоимость -->
+													<div class="uk-h3 uk-text-bold uk-text-danger uk-margin-remove">17 500</div>
+													<!-- Кнопка -->
+													<div>
+														<button class="uk-button uk-button-primary uk-button-small uk-border-rounded" type="button">Купить</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="uk-card uk-card-default uk-card-small uk-border-rounded uk-overflow-hidden">
+											<div class="uk-position-relative uk-height-medium uk-background-muted">
+												<div class="uk-label uk-position-top-left uk-position-small">-15%</div>
+												<div class="uk-text-success uk-position-bottom-right uk-position-small">в наличии</div>
+												<img data-src="images/product.png" alt="" width="" height="" uk-img />
+											</div>
+											<div class="uk-card-body">
+												<div class="uk-flex uk-flex-middle uk-flex-between">
+													<!-- Артикул -->
+													<div class="uk-text-small uk-text-muted">Артикул: 1754343</div>
+													<!-- Оценка -->
+													<div>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-primary" uk-icon="icon: star; ratio: .7"></span>
+														<span class="uk-text-muted" uk-icon="icon: star; ratio: .7"></span>
+													</div>
+												</div>
+												<!-- Заголовок -->
+												<h3 class="uk-h5 uk-text-bold uk-margin-small">Инфракрасный потолочный обогреватель ThermoUp TOP 1500</h3>
+												<div class="uk-flex uk-flex-middle uk-flex-between">
+													<!-- Стоимость -->
+													<div class="uk-h3 uk-text-bold uk-text-danger uk-margin-remove">17 500</div>
+													<!-- Кнопка -->
+													<div>
+														<button class="uk-button uk-button-primary uk-button-small uk-border-rounded" type="button">Купить</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="uk-section uk-section-secondary uk-text-small uk-background-cover" data-src="images/black-bg.jpg" data-uk-img>
+			<div class="uk-container">
+				<div class="uk-grid-small" data-uk-grid>
+					<div class="uk-width-1-5">
+						<img data-src="images/thermoup-logo.svg" width="" height="" alt="" data-uk-img>
+						<p>© 2017-2019 ThermoUp. <br>Все права защищены.</p>
+						<hr>
+						<nav class="uk-nav uk-nav-default">
+							<li><a href="#">Политика конфиденциальности</a></li>
+							<li><a href="#">Правила поставки</a></li>
+							<li><a href="#">Сертификаты</a></li>
+							<li><a href="#">Договор оферты</a></li>
+							<li><a href="#">Документы для скачивания</a></li>
+						</nav>
+					</div>
+					<div class="uk-width-expand">
+						<div class="uk-child-width-auto uk-grid-small" data-uk-grid>
+							<div>
+								<a class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical" href="#"><span class="uk-margin-small-right" data-uk-icon="grid"></span>Интернет магазин</a>
+							</div>
+							<div class="uk-width-expand">
+								<nav class="uk-child-width-auto" data-uk-grid>
+									<div>
+										<ul class="uk-nav uk-nav-default">
+											<li class="uk-nav-header"><a href="#">Виды обогревателей</a></li>
+											<li><a href="#">ThermoUp FLOOR</a></li>
+											<li><a href="#">ThermoUp WALL</a></li>
+											<li><a href="#">ThermoUp TOP</a></li>
+											<li><a href="#">Принцип работы</a></li>
+											</li>
+										</ul>
+									</div>
+									<div>
+										<ul class="uk-nav uk-nav-default">
+											<li class="uk-nav-header"><a href="#">FAQ</a></li>
+										</ul>
+									</div>
+									<div>
+										<ul class="uk-nav uk-nav-default">
+											<li class="uk-nav-header"><a href="#">Блог</a></li>
+										</ul>
+									</div>
+									<div>
+										<ul class="uk-nav uk-nav-default">
+											<li class="uk-nav-header"><a href="#">О компании</a></li>
+											<li><a href="#">Доставка и оплата</a></li>
+											<li><a href="#">Обмен и возврат</a></li>
+											<li><a href="#">Стать партнёром</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+						</div>
+						<div class="uk-margin-medium">
+							<p>Способы оплаты</p>
+							<span class="uk-margin-small-right" data-uk-icon="icon: credit-card; ratio: 2"></span>
+							<span class="uk-margin-small-right" data-uk-icon="icon: credit-card; ratio: 2"></span>
+							<span class="uk-margin-small-right" data-uk-icon="icon: credit-card; ratio: 2"></span>
+							<span class="uk-margin-small-right" data-uk-icon="icon: credit-card; ratio: 2"></span>
+						</div>
+					</div>
+					<div class="uk-width-1-5">
+						<div class="uk-panel">
+							<p><span class="uk-margin-small-right" data-uk-icon="receiver"></span><a href="tel:+74957778899">8 (495) 777-88-99</a></p>
+							<p><span class="uk-margin-small-right" data-uk-icon="mail"></span><a href="mailto:info@thermo-up.com">info@thermo-up.com</a></p>
+							<p>Адрес: <br>Россия, г. Москва, посёлок завода Мосрентген, д. 12 (здание завода «Мосрентген»)</p>
+							<p>
+								<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="facebook"></a>
+								<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="twitter"></a>
+								<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="instagram"></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/instantpage.min.js" type="module" defer></script>
+	</body>
+</html>

@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="ru-ru" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Каталог</title>
+		<link rel="stylesheet" href="css/uikit.thermoup.min.css">
+		<link rel="stylesheet" href="css/nouislider.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/uikit.min.js"></script>
+		<script src="js/uikit-icons-thermoup.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<header class="uk-section-secondary uk-preserve-color uk-light uk-background-cover" data-src="images/black-bg.jpg" data-uk-img itemscope itemtype="https://schema.org/WPHeader" role="banner">
+			<div class="uk-section uk-section-xsmall">
+				<div class="uk-container">
+					<div class="uk-margin uk-flex-middle uk-flex-between" data-uk-grid>
+						<!-- Logo -->
+						<div class="uk-width-1-5">
+							<a class="uk-logo" href="/index.html" rel="home">
+								<img src="images/thermoup-logo.svg" alt="ThermoUp" width="163" height="35">
+							</a>
+						</div>
+						<!-- Menu -->
+						<div class="uk-width-expand uk-visible@l">
+							<nav class="uk-panel">
+								<ul class="uk-subnav uk-flex-center">
+									<li class="uk-active"><a href="#">Как заказать</a></li>
+									<li><a href="#">Как оплатить</a></li>
+									<li><a href="#">Гарантия и возврат</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+						<!-- Phone -->
+						<div class="uk-width-auto">
+							<div class="uk-flex uk-flex-right uk-flex-middle">
+								<a class="uk-border-rounded uk-margin-large-right uk-position-relative" data-uk-icon="cart" href="#offcanvas-cart" data-uk-toggle>
+									<span class="uk-badge uk-position-top-right uk-transform-center" style="background-color: #ffae00; left: 100%; top: 0">5</span>
+								</a>
+								<div class="uk-panel uk-text-right">
+									<a class="uk-text-nowrap uk-text-primary uk-h5" href="tel:84957778899">8 (495) <span class="uk-text-bold uk-text-primary uk-h3">777-88-99</span></a>
+									<br class="uk-visible@l"><a class="uk-margin-small-left uk-h5" href="#modal-callback">обратный звонок</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="uk-section uk-section-xsmall uk-padding-remove-top">
+				<div class="uk-container">
+					<div class="uk-margin" data-uk-grid>
+						<div class="uk-width-1-4">
+							<div>
+								<button class="uk-button uk-button-default uk-width-1-1" type="button"><span class="uk-margin-small-right" data-uk-icon="grid"></span>Продукция</button>
+								<div class="uk-border-rounded uk-box-shadow-medium" data-uk-dropdown>
+									<ul class="uk-nav uk-dropdown-nav">
+										<li class="uk-active"><a href="#">Напольные обогреватели</a></li>
+										<li><a href="#">Настенные обогреватели</a></li>
+										<li><a href="#">Потолочные обогреватели</a></li>
+										<li><a href="#">Стеклянные полотенцесушители</a></li>
+										<li><a href="#">Аксессуары для обогревателей</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="uk-width-3-4">
+							<div>
+								<form class="uk-panel" action="" method="post" data-uk-grid>
+									<div class="uk-width-2-3">
+										<div>
+											<div class="uk-inline uk-width-1-1 uk-search uk-search-default">
+												<span uk-search-icon></span>
+												<input class="uk-search-input uk-border-rounded" type="search" placeholder="Введите наименование товара">
+											</div>
+										</div>
+									</div>
+									<div class="uk-width-1-3">
+										<div>
+											<button class="uk-button uk-button-primary uk-border-rounded uk-width-1-1" type="button">Поиск</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="uk-section uk-section-default">
+			<div class="uk-container">
+				<h2 class="uk-text-bold">Оформление заказа</h2>
+				<hr class="uk-divider-small">
+				<div data-uk-grid>
+					<div class="uk-width-expand">
+
+						<div uk-margin uk-switcher="animation: uk-animation-fade; toggle: > *">
+							<button class="uk-button uk-button-primary" type="button">Физическое лицо</button>
+							<button class="uk-button uk-button-default" type="button">Юридическое лицо</button>
+						</div>
+						<div class="uk-switcher uk-margin">
+							<!-- Физическое лицо -->
+							<div>
+								<div class="uk-margin uk-gid-small" data-uk-grid>
+									<div class="uk-width-auto">
+										<label><input class="uk-radio uk-margin-small-right" type="radio" name="radio3" checked>Доставка</label>
+									</div>
+									<div class="uk-width-auto">
+										<label><input class="uk-radio uk-margin-small-right" type="radio" name="radio3">Самовывоз</label>
+									</div>
+								</div>
+
+								<div class="uk-margin-medium">
+									<div class="uk-h3 uk-heading-line uk-text-bold uk-margin-remove"><span>Адрес доставки</span></div>
+									<div class="uk-text-muted">Введите точный адрес или <a href="#">выберите адрес доставки на карте</a></div>
+									<div class="uk-margin uk-gid-small" data-uk-grid>
+										<div class="uk-width-1-2@s">
+											<label><input class="uk-input uk-width-1-1 uk-text-italic" type="text" placeholder="Введите город"></label>
+										</div>
+										<div class="uk-width-1-2@s">
+											<label><input class="uk-input uk-width-1-1 uk-text-italic" type="text" placeholder="Улица и дом"></label>
+										</div>
+									</div>
+
+									<div class="uk-h3 uk-heading-line uk-text-bold uk-margin-remove"><span>Доставка курьером</span></div>
+									<div class="uk-margin">
+										<label><input class="uk-radio uk-margin-small-right" type="radio" name="radio1" checked>Доставка курьером по Москве (300 руб.)</label>
+									</div>
+									<div class="uk-margin">
+										<label><input class="uk-radio uk-margin-small-right" type="radio" name="radio1">Доставка по Ближайшему Подмосковью (согласно условий доставки)</label>
+									</div>
+									<div class="uk-margin">
+										<label><input class="uk-radio uk-margin-small-right" type="radio" name="radio1">СДЭК (доставка курьером)</label>
+									</div>
+
+									<div class="uk-h3 uk-heading-line uk-text-bold uk-margin-remove"><span>Оплата</span></div>
+									<div class="uk-text-muted">Выберите оптимальный способ оплаты</div>
+									<div class="uk-margin uk-gid-small" data-uk-grid>
+										<div class="uk-width-1-3@s">
+											<label><input class="uk-radio uk-margin-small-right" type="radio" name="radio2" checked>Visa или MasterCard</label>
+										</div>
+										<div class="uk-width-1-3@s">
+											<label><input class="uk-radio uk-margin-small-right" type="radio" name="radio2">Наличный платеж</label>
+										</div>
+										<div class="uk-width-1-3@s">
+											<label><input class="uk-radio uk-margin-small-right" type="radio" name="radio2">Безналичный платеж</label>
+										</div>
+									</div>
+
+									<div class="uk-h3 uk-heading-line uk-text-bold"><span>Контактные данные</span></div>
+									<div class="uk-gid-small" data-uk-grid>
+										<div class="uk-width-1-3@s">
+											<label><input class="uk-input uk-width-1-1 uk-text-italic" type="text" placeholder="Имя" required></label>
+										</div>
+										<div class="uk-width-1-3@s">
+											<label><input class="uk-input uk-width-1-1 uk-text-italic" type="tel" placeholder="Телефон" required></label>
+										</div>
+										<div class="uk-width-1-3@s">
+											<label><input class="uk-input uk-width-1-1 uk-text-italic" type="email" placeholder="Email" required></label>
+										</div>
+									</div>
+
+									<div class="uk-h3 uk-heading-line uk-text-bold"><span>Комментарий к заказу</span></div>
+									<textarea class="uk-textarea uk-text-italic" name="" id="" cols="30" rows="5" placeholder="Оставьте необходимые уточнения для менеджера по заказу"></textarea>
+
+									<div class="uk-margin-medium uk-flex-middle uk-gid-small" data-uk-grid>
+										<div class="uk-width-1-3@s">
+											<label><input class="uk-checkbox uk-margin-small-right" type="checkbox" checked>Хочу получать смс о состоянии заказа</label>
+										</div>
+										<div class="uk-width-1-3@s">
+											<label><input class="uk-checkbox uk-margin-small-right" type="checkbox" checked>Позвонить мне для уточнения заказа</label>
+										</div>
+										<div class="uk-width-1-3@s">
+											<button class="uk-button uk-button-primary uk-width-1-1 uk-text-nowrap" type="button">Оформить заказ</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Юридическое лицо -->
+							<div>
+								<div class="uk-margin uk-gid-small" data-uk-grid>
+									<div class="uk-width-auto">
+										<label><input class="uk-radio uk-margin-small-right" type="radio" name="radio5" checked>Доставка</label>
+									</div>
+									<div class="uk-width-auto">
+										<label><input class="uk-radio uk-margin-small-right" type="radio" name="radio5">Самовывоз</label>
+									</div>
+								</div>
+
+								<div class="uk-margin-medium">
+									<div class="uk-h3 uk-heading-line uk-text-bold uk-margin-remove"><span>Адрес доставки</span></div>
+									<div class="uk-text-muted">Введите точный адрес или <a href="#">выберите адрес доставки на карте</a></div>
+									<div class="uk-margin uk-gid-small" data-uk-grid>
+										<div class="uk-width-1-2@s">
+											<label><input class="uk-input uk-width-1-1 uk-text-italic" type="text" placeholder="Введите город"></label>
+										</div>
+										<div class="uk-width-1-2@s">
+											<label><input class="uk-input uk-width-1-1 uk-text-italic" type="text" placeholder="Улица и дом"></label>
+										</div>
+									</div>
+
+									<div class="uk-h3 uk-heading-line uk-text-bold uk-margin-remove"><span>Доставка курьером</span></div>
+									<div class="uk-margin">
+										<label><input class="uk-radio uk-margin-small-right" type="radio" name="radio6" checked>Доставка курьером по Москве (300 руб.)</label>
+									</div>
+									<div class="uk-margin">
+										<label><input class="uk-radio uk-margin-small-right" type="radio" name="radio6">Доставка по Ближайшему Подмосковью (согласно условий доставки)</label>
+									</div>
+									<div class="uk-margin">
+										<label><input class="uk-radio uk-margin-small-right" type="radio" name="radio6">СДЭК (доставка курьером)</label>
+									</div>
+
+									<div class="uk-h3 uk-heading-line uk-text-bold uk-margin-remove"><span>Оплата</span></div>
+									<div class="uk-text-muted">Выберите оптимальный способ оплаты</div>
+									<div class="uk-margin uk-gid-small" data-uk-grid>
+										<div class="uk-width-1-3@s">
+											<label><input class="uk-radio uk-margin-small-right" type="radio" name="radio7" checked>Visa или MasterCard</label>
+										</div>
+										<div class="uk-width-1-3@s">
+											<label><input class="uk-radio uk-margin-small-right" type="radio" name="radio7">Наличный платеж</label>
+										</div>
+										<div class="uk-width-1-3@s">
+											<label><input class="uk-radio uk-margin-small-right" type="radio" name="radio7">Безналичный платеж</label>
+										</div>
+									</div>
+
+									<div class="uk-h3 uk-heading-line uk-text-bold"><span>Контактные данные</span></div>
+									<div class="uk-gid-small" data-uk-grid>
+										<div class="uk-width-1-3@s">
+											<label><input class="uk-input uk-width-1-1 uk-text-italic" type="text" placeholder="Имя" required></label>
+										</div>
+										<div class="uk-width-1-3@s">
+											<label><input class="uk-input uk-width-1-1 uk-text-italic" type="tel" placeholder="Телефон" required></label>
+										</div>
+										<div class="uk-width-1-3@s">
+											<label><input class="uk-input uk-width-1-1 uk-text-italic" type="email" placeholder="Email" required></label>
+										</div>
+									</div>
+
+									<div class="uk-h3 uk-heading-line uk-text-bold"><span>Комментарий к заказу</span></div>
+									<textarea class="uk-textarea uk-text-italic" name="" id="" cols="30" rows="5" placeholder="Оставьте необходимые уточнения для менеджера по заказу"></textarea>
+
+									<div class="uk-margin-medium uk-flex-middle uk-gid-small" data-uk-grid>
+										<div class="uk-width-1-3@s">
+											<label><input class="uk-checkbox uk-margin-small-right" type="checkbox" checked>Хочу получать смс о состоянии заказа</label>
+										</div>
+										<div class="uk-width-1-3@s">
+											<label><input class="uk-checkbox uk-margin-small-right" type="checkbox" checked>Позвонить мне для уточнения заказа</label>
+										</div>
+										<div class="uk-width-1-3@s">
+											<a class="uk-button uk-button-primary uk-width-1-1 uk-text-nowrap" href="/order-success.html">Оформить заказ</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="uk-width-1-3@m">
+						<div class="uk-card uk-card-body uk-background-muted uk-border-rounded uk-box-shadow-small">
+							<h3>Ваш заказ:</h3>
+							<div class="uk-grid-small" data-uk-grid>
+								<div class="uk-width-expand uk-text-bold" data-uk-leader>Сумма заказа</div>
+								<div class="uk-text-bold">12 445 руб.</div>
+							</div>
+							<div class="uk-grid-small" data-uk-grid>
+								<div class="uk-width-expand uk-text-bold" data-uk-leader>Доставка</div>
+								<div class="uk-text-bold">12 445 руб.</div>
+							</div>
+							<div class="uk-grid-small" data-uk-grid>
+								<div class="uk-width-expand uk-text-bold uk-text-primary" data-uk-leader>Итого</div>
+								<div class="uk-text-bold uk-text-primary">12 445 руб.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="uk-section uk-section-secondary uk-text-small uk-background-cover" data-src="images/black-bg.jpg" data-uk-img>
+			<div class="uk-container">
+				<div class="uk-grid-small" data-uk-grid>
+					<div class="uk-width-1-5">
+						<img data-src="images/thermoup-logo.svg" width="" height="" alt="" data-uk-img>
+						<p>© 2017-2019 ThermoUp. <br>Все права защищены.</p>
+						<hr>
+						<nav class="uk-nav uk-nav-default">
+							<li><a href="#">Политика конфиденциальности</a></li>
+							<li><a href="#">Правила поставки</a></li>
+							<li><a href="#">Сертификаты</a></li>
+							<li><a href="#">Договор оферты</a></li>
+							<li><a href="#">Документы для скачивания</a></li>
+						</nav>
+					</div>
+					<div class="uk-width-expand">
+						<div class="uk-child-width-auto uk-grid-small" data-uk-grid>
+							<div>
+								<a class="uk-button uk-button-default uk-padding-small uk-padding-remove-vertical" href="#"><span class="uk-margin-small-right" data-uk-icon="grid"></span>Интернет магазин</a>
+							</div>
+							<div class="uk-width-expand">
+								<nav class="uk-child-width-auto" data-uk-grid>
+									<div>
+										<ul class="uk-nav uk-nav-default">
+											<li class="uk-nav-header"><a href="#">Виды обогревателей</a></li>
+											<li><a href="#">ThermoUp FLOOR</a></li>
+											<li><a href="#">ThermoUp WALL</a></li>
+											<li><a href="#">ThermoUp TOP</a></li>
+											<li><a href="#">Принцип работы</a></li>
+											</li>
+										</ul>
+									</div>
+									<div>
+										<ul class="uk-nav uk-nav-default">
+											<li class="uk-nav-header"><a href="#">FAQ</a></li>
+										</ul>
+									</div>
+									<div>
+										<ul class="uk-nav uk-nav-default">
+											<li class="uk-nav-header"><a href="#">Блог</a></li>
+										</ul>
+									</div>
+									<div>
+										<ul class="uk-nav uk-nav-default">
+											<li class="uk-nav-header"><a href="#">О компании</a></li>
+											<li><a href="#">Доставка и оплата</a></li>
+											<li><a href="#">Обмен и возврат</a></li>
+											<li><a href="#">Стать партнёром</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+						</div>
+						<div class="uk-margin-medium">
+							<p>Способы оплаты</p>
+							<span class="uk-margin-small-right" data-uk-icon="icon: credit-card; ratio: 2"></span>
+							<span class="uk-margin-small-right" data-uk-icon="icon: credit-card; ratio: 2"></span>
+							<span class="uk-margin-small-right" data-uk-icon="icon: credit-card; ratio: 2"></span>
+							<span class="uk-margin-small-right" data-uk-icon="icon: credit-card; ratio: 2"></span>
+						</div>
+					</div>
+					<div class="uk-width-1-5">
+						<div class="uk-panel">
+							<p><span class="uk-margin-small-right" data-uk-icon="receiver"></span><a href="tel:+74957778899">8 (495) 777-88-99</a></p>
+							<p><span class="uk-margin-small-right" data-uk-icon="mail"></span><a href="mailto:info@thermo-up.com">info@thermo-up.com</a></p>
+							<p>Адрес: <br>Россия, г. Москва, посёлок завода Мосрентген, д. 12 (здание завода «Мосрентген»)</p>
+							<p>
+								<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="facebook"></a>
+								<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="twitter"></a>
+								<a href="#" class="uk-icon-link uk-margin-small-right" data-uk-icon="instagram"></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

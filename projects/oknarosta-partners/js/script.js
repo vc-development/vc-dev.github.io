@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
 				preset: 'islands#greenDotIconWithCaption',
 				iconColor: '#cc0000'
 			}
-		)
+		);
+
 		myMap.geoObjects.add(myPlacemark);
 	}
 
